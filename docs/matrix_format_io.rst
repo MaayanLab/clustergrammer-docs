@@ -1,22 +1,24 @@
-Input Matrix Format
--------------------
-Clustergrammer.py takes as input either:
+Matrix Formats and Input/Output
+------------------------------
+Clustergrammer takes as input either:
 
-- a tab-separated matrix file with unique row and column names as input
-- a Pandas DataFrame
+- a tab-separated matrix file
+- a Pandas DataFrame (using :ref:`clustergrammer_py`)
 
-The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. Titles will be shown as a title above row/column names or a name adjacent to row/column categories.
+The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In call cases, row and column names must be unique. Optional, name/category titles will be shown as titles above row/column names or names adjacent to row/column categories, respectively.
 
 
 Simple Matrix Format
 ====================
-The simplest file format is shown here:
+The simplest tab-separated file format is shown here:
 ::
 
   	Col-A	Col-B	Col-C
   Row-A	0.0	-0.1	1.0
   Row-B	3.0	0.0	8.0
   Row-C	0.2	0.1	2.5
+
+The first line gives the column names and starts with a blank tab. The first column of each row gives the name of this row followed by the data in each row of the matrix. See the `example_tsv.txt`_ for an example of this matrix format.
 
 Simple Matrix-Category Format
 =============================
@@ -74,3 +76,4 @@ Clustergrammer.py can load a matrix directly from a file or from a Pandas DataFr
 For more information about Clustergrammer.py and its API see :ref:`clustergrammer_py`.
 
 .. _`example matrix files`: https://github.com/MaayanLab/clustergrammer/tree/master/txt
+.. _`example_tsv.txt`: https://github.com/MaayanLab/clustergrammer/blob/master/txt/example_tsv.txt

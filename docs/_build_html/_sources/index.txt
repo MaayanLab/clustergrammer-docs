@@ -53,10 +53,11 @@ Contents:
    web_app
    jupyter_widget
    viz_interaction
+   case_studies
    clustergrammer_js
    clustergrammer_py
    developing_with_clustergrammer
-   input_matrix_data_formats
+   matrix_format_io
    license
 
 
@@ -69,6 +70,7 @@ Indices and tables
 Contact
 =======
 Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) for support, comments, and suggestions.
+
 
 .. _`Clustergrammer web application`: http://amp.pharm.mssm.edu/clustergrammer/
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
