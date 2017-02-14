@@ -93,10 +93,11 @@
 <li class="toctree-l1"><a class="reference internal" href="web_app.html">Web Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Jupyter Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer.js</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer.py</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing with Clustergrammer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input_matrix_data_formats.html">Input Matrix Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
@@ -146,7 +147,8 @@
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer is an interactive web-based tool for visualizing high-dimensional data as hierarchically clustered heatmap. Clustergrammer can be used in three main ways: 1) web application, Jupyter notebook interactive widget, and JavaScript and Python libraries. This section will provide quick instructions on how to</p>
+<p>Clustergrammer is an interactive web-based tool for visualizing high-dimensional data as hierarchically clustered heatmap. Clustergrammer can be used in three main ways: 1) web application, Jupyter notebook interactive widget, and JavaScript and Python libraries.</p>
+<p>This section will provide quick instructions on how to generate a visualization using Clustergrammer and interact with that visualization.</p>
 </div>
 <div class="section" id="clustergrammer-web">
 <span id="getting-started-web-app"></span><h2>Clustergrammer-Web<a class="headerlink" href="#clustergrammer-web" title="Permalink to this headline">¶</a></h2>
@@ -159,7 +161,7 @@
 </div>
 <div class="section" id="interacting-with-clustergrammer">
 <h2>Interacting with Clustergrammer<a class="headerlink" href="#interacting-with-clustergrammer" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer is built to enable users to intuitively explore/analyze high-dimensional datasets and has many interactive features including:</p>
+<p>Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data including:</p>
 <ul class="simple">
 <li>zooming/panning</li>
 <li>row and column reordering (e.g. reorder based on sum)</li>
@@ -168,12 +170,13 @@
 <li>interactive row/column categories</li>
 <li>cropping</li>
 </ul>
-<p>Clustergrammer also have biology-specific features including:</p>
+<p>Clustergrammer also has biology-specific features including:</p>
 <ul class="simple">
 <li>mouseover gene (row) names to show the full name and description of a gene (through <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>)</li>
 <li>find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a></li>
 </ul>
-</div>
+<p>Press play or interact with the demo to see</p>
+<iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe></div>
 <div class="section" id="clustergrammer-js-web-development">
 <span id="getting-started-web-development"></span><h2>Clustergrammer.js Web Development<a class="headerlink" href="#clustergrammer-js-web-development" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.</p>

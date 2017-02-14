@@ -18,7 +18,7 @@ The simplest tab-separated file format is shown here:
   Row-B	3.0	0.0	8.0
   Row-C	0.2	0.1	2.5
 
-The first line gives the column names and starts with a blank tab. The first column of each row gives the name of this row followed by the data in each row of the matrix. See the `example_tsv.txt`_ for an example of this matrix format.
+The first line gives the column names and starts with a blank tab. The first column of each row gives the name of this row followed by the data in each row of the matrix. See `example_tsv.txt`_ for an example of this matrix format.
 
 Simple Matrix-Category Format
 =============================
@@ -27,7 +27,7 @@ Row and column categories can also be included in the matrix in the following wa
 .. image:: _static/cat_tsv.png
 	:width: 700px
 
-This screenshot of an Excel spreadsheet shows a single row category being added as an additional column of strings (e.g. ``Type: Interesting``) and a single column category being added as an additional row of strings (e.g. ``Gender: Male``). Up to 15 categories can be added in a similar manner. Titles for row or column names or categories can be added by prefixing each string with ``'Title: '`` (note that a space after the colon). For example the title of the column names is ``Cell Line`` and the title of the row categories is ``Gender``.
+This screenshot of an Excel spreadsheet shows a single row category being added as an additional column of strings (e.g. ``Type: Interesting``) and a single column category being added as an additional row of strings (e.g. ``Gender: Male``). Up to 15 categories can be added in a similar manner. Titles for row or column names or categories can be added by prefixing each string with ``'Title: '`` (note that a space after the colon). For example the title of the column names is ``Cell Line`` and the title of the row categories is ``Gender``. See `rc_two_cats.txt`_ for an exmaple of this matrix format.
 
 Tuple Matrix-Category Format
 ============================
@@ -40,13 +40,13 @@ Row/column names and categories can also be encoded as Python tuples as shown be
 	('Gene: TP53','Type: Not Interesting')	8.3	4.098	-12.2
 	('Gene: IRAK','Type: Not Interesting')	7.23	3.01	0.88
 
-This format is easier to work with in Python and can be imported/exported easily into Pandas DataFrames. Note that 'titles' have been added to row/column names and categories as discussed above.
+This format is easier to work with in Python and can be imported/exported easily into Pandas DataFrames and as tab-separated files. Note that titles have been added to row/column names and categories as discussed above. See `tuple_cats`_ for an example of this matrix format.
 
 Matrix File Examples
 ====================
 Several example tab-separated matrix files can be found in `example matrix files`_.
 
-Loading and Exporting into Clustergrammer.py
+Matrix Input/Output to Clustergrammer.py
 ============================================
 Clustergrammer.py can load a matrix directly from a file or from a Pandas DataFrame as well as export to a file or Pandas DataFrame:
 ::
@@ -77,3 +77,5 @@ For more information about Clustergrammer.py and its API see :ref:`clustergramme
 
 .. _`example matrix files`: https://github.com/MaayanLab/clustergrammer/tree/master/txt
 .. _`example_tsv.txt`: https://github.com/MaayanLab/clustergrammer/blob/master/txt/example_tsv.txt
+.. _`rc_two_cats.txt`: https://github.com/MaayanLab/clustergrammer/blob/master/txt/rc_two_cats.txt
+.. _`tuple_cats`: https://github.com/MaayanLab/clustergrammer/blob/master/txt/tuple_cats.txt

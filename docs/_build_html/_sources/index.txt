@@ -11,7 +11,7 @@ Please read the :doc:`getting_started` guide for more information.
 
 Interactive Demo
 ================
-Press play or interact with the demo below:
+Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data. Press play or interact with the demo below to see some of Clustergrammer's interactive features:
 
 .. raw:: html
 
@@ -53,6 +53,7 @@ Contents:
    web_app
    jupyter_widget
    viz_interaction
+   biology_specific_features
    case_studies
    clustergrammer_js
    clustergrammer_py

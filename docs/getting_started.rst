@@ -3,7 +3,9 @@ Getting Started
 
 Introduction
 ============
-Clustergrammer is an interactive web-based tool for visualizing high-dimensional data as hierarchically clustered heatmap. Clustergrammer can be used in three main ways: 1) web application, Jupyter notebook interactive widget, and JavaScript and Python libraries. This section will provide quick instructions on how to
+Clustergrammer is an interactive web-based tool for visualizing high-dimensional data as hierarchically clustered heatmap. Clustergrammer can be used in three main ways: 1) web application, Jupyter notebook interactive widget, and JavaScript and Python libraries.
+
+This section will provide quick instructions on how to generate a visualization using Clustergrammer and interact with that visualization.
 
 .. _getting_started_web_app:
 
@@ -20,7 +22,7 @@ Here is a link to a notebook with an example interactive widget hosted on nbview
 
 Interacting with Clustergrammer
 ===============================
-Clustergrammer is built to enable users to intuitively explore/analyze high-dimensional datasets and has many interactive features including:
+Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data including:
 
 - zooming/panning
 - row and column reordering (e.g. reorder based on sum)
@@ -29,10 +31,17 @@ Clustergrammer is built to enable users to intuitively explore/analyze high-dime
 - interactive row/column categories
 - cropping
 
-Clustergrammer also have biology-specific features including:
+Clustergrammer also has biology-specific features including:
 
 - mouseover gene (row) names to show the full name and description of a gene (through `Harmonizome`_)
 - find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through `Enrichr`_
+
+Press play or interact with the demo to see
+
+.. raw:: html
+
+         <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe>
+
 
 
 .. _getting_started_web_development:
