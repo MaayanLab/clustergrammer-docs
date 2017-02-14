@@ -147,7 +147,7 @@
             
   <div class="section" id="clustergrammer-py">
 <span id="id1"></span><h1>Clustergrammer-PY<a class="headerlink" href="#clustergrammer-py" title="Permalink to this headline">¶</a></h1>
-<p>Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the JSON for the front-end Clustergrammer.js visualization library.</p>
+<p>Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the JSON for the front-end Clustergrammer.js visualization library. Clustergramer-PY is compatable with Python 2 and 3.</p>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -165,7 +165,7 @@
 <p>or the source code can be obtained from the <a class="reference external" href="http://github.com/MaayanLab/clustergrammer-py">GitHub repo</a>.</p>
 </div>
 <div class="section" id="python-workflow-example">
-<span id="id2"></span><h2>Python Workflow Example<a class="headerlink" href="#python-workflow-example" title="Permalink to this headline">¶</a></h2>
+<span id="clustergrammer-py-workflow"></span><h2>Python Workflow Example<a class="headerlink" href="#python-workflow-example" title="Permalink to this headline">¶</a></h2>
 <p>This workflow shows how to cluster a matrix of data and generate a visualization JSON (for use by Clustergrammer.js) from a matrix file:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># make network object</span>
 <span class="kn">from</span> <span class="nn">clustergrammer</span> <span class="k">import</span> <span class="n">Network</span>
@@ -184,7 +184,7 @@
 <p>The file <code class="docutils literal"><span class="pre">mult_view.json</span></code> will be loaded by the front-end and used to build the interactive visualization.</p>
 </div>
 <div class="section" id="clustergrammer-py-api">
-<span id="id3"></span><h2>Clustergrammer-PY API<a class="headerlink" href="#clustergrammer-py-api" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Clustergrammer-PY API<a class="headerlink" href="#clustergrammer-py-api" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer-PY generates a Network object, which is used to load a matrix (e.g. from a Pandas DataFrame), normalize/filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.</p>
 </div>
 <div class="section" id="clustergrammer-py-development">

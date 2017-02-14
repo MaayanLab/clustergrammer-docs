@@ -2,7 +2,7 @@
 
 Clustergrammer-PY
 -----------------
-Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the JSON for the front-end Clustergrammer.js visualization library.
+Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the JSON for the front-end Clustergrammer.js visualization library. Clustergramer-PY is compatable with Python 2 and 3.
 
 Dependencies
 ============
@@ -20,7 +20,7 @@ Clustergrammer-PY can be installed using pip (`package index`_) with the followi
 
 or the source code can be obtained from the `GitHub repo`_.
 
-.. _python_workflow_example:
+.. _clustergrammer_py_workflow:
 
 Python Workflow Example
 =======================

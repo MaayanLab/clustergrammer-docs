@@ -20,7 +20,7 @@ Clustergrammer can be used to generate interactive visualizations for your own w
 
 The easiest way to generate a visualize of your own data on a webpage is to:
 
-#. follow the :ref:`python_workflow_example` to cluster your matrix and generate the front-end JSON
+#. follow the :ref:`clustergrammer_py_workflow` to cluster your matrix and generate the front-end JSON
 #. then use the :ref:`example_pages` workflow to visualize your calculated JSON
 
 These examples require Clustergrammer's JavaScript and Python libraries:
