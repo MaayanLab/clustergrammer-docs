@@ -30,8 +30,8 @@ Clustergrammer is built to enable users to intuitively explore/analyze high-dime
 
 .. _getting_started_web_development:
 
-Getting Started Web Development
-================================
+Getting Started Clustergrammer Web Development
+==============================================
 Clustergrammer can be used to generate a interactive visualizations for your web application. Clustergrammer consists of two parts:
 
 #. the front-end Clustergrammer.js JavaScript library makes the interactive visualization
