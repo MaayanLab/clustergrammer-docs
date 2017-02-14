@@ -54,8 +54,9 @@ Clustergrammer.js JSON Format
 =============================
 The JSON format required for Clustergrammer.js is described here:
 
-Open Source Code
-================
+.. _clustergrammer_js_dev:
+Clustergrammer-JS Development
+=============================
 Clustergrammer-JS' source code can be found in the `clustergrammer`_ GihHub repo. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.
 
 Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in `src`_. Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to raise an issue.

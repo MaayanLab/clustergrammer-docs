@@ -29,9 +29,10 @@ and recieve a permanent link to their visualization. Below is an example in Pyth
 
   link = r.text
 
+.. _clustergrammer_web_dev:
 
-Open Source Code
-================
+Clustergrammer-Web Development
+==============================
 Clustergrammer-Web is a `dockerized`_ web application built using the Python library `Flask`_. Clustergrammer-Web uses the :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries and the source code can be found in the `clustergrammer-web`_ GitHub repo.
 
 

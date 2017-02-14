@@ -47,7 +47,9 @@ Clustergrammer-PY API
 =====================
 Clustergrammer-PY generates a Network object, which is used to load a matrix (e.g. from a Pandas DataFrame), normalize/filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.
 
-Developing Clustergrammer-PY
+.. _clustergrammer_py_dev:
+
+Clustergrammer-PY Development
 =============================
 Clustergrammer-PY's source code can be found in the `clustergrammer-py`_ GitHub repo. The Clustergrammer-PY library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.
 
