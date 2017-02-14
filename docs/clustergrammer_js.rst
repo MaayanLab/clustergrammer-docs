@@ -46,6 +46,8 @@ The `clustergrammer`_ contains several example pages demonstrating how to make a
 
 The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
 
+.. _clustergrammer_js_api:
+
 Clustergrammer-JS API
 =====================
 Clustergrammer-JS' API allows users to pass options to the front-end visualization, such as optional callback functions.
@@ -62,7 +64,9 @@ Clustergrammer-JS Development
 =============================
 Clustergrammer-JS' source code can be found in the `clustergrammer`_ GihHub repo. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.
 
-Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in `src`_. Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to raise an issue.
+Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in `src`_.
+
+Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to raise an issue.
 
 .. _`SVG`: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 .. _`clustergrammer`: https://github.com/MaayanLab/clustergrammer

@@ -3,13 +3,13 @@ Getting Started
 
 Introduction
 ============
-Clustergrammer is a web-based tool for visualizing high-dimensional data as hierarchically interactive and shareable clustered heatmap. Clustergrammer can be used in three main ways:
+Clustergrammer is a web-based tool for visualizing high-dimensional data as interactive and shareable hierarchically clustered heatmaps. Clustergrammer can be used in three main ways:
 
 #. :ref:`clustergrammer_web`
 #. :ref:`clustergrammer_widget`
 #. :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries
 
-This section will provide quick instructions on how to generate a visualization from a matrix of data using the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` as well as instructions on how to interact with the visualization. For developers interested in building their own web page using Clustergrammer, please see the :ref:`building_web_page` section.
+This section will provide instructions on how to quickly generate a visualization from a matrix of data using the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` as well as instructions on how to interact with the visualization. For developers interested in building their own web page using Clustergrammer, please see the :ref:`building_web_page` section.
 
 .. _getting_started_web_app:
 

@@ -2,7 +2,7 @@
 
 Welcome to Clustergrammer's Documentation!
 ------------------------------------------
-Clustergrammer is an web-based visualization tool that enables users to easily generate highly interactive and shareable/embeddable heatmap visualizations of high-dimensional data. The front-end is built using D3.js and back-end calculations are done using Python. The easiest ways to use Clustergrammer are to:
+Clustergrammer is a web-based tool for visualizing high-dimensional data as interactive and shareable hierarchically clustered heatmaps. The front-end is built using D3.js and back-end calculations are done using Python. The easiest ways to use Clustergrammer are to:
 
 - upload a file with your data to the `Clustergrammer web application`_,
 - or visualize your data within a Jupyter notebook using Clustergrammer-Widget.
@@ -55,11 +55,11 @@ Contents:
    viz_interaction
    biology_specific_features
    case_studies
+   matrix_format_io
    building_webpage
    clustergrammer_js
    clustergrammer_py
    developing_with_clustergrammer
-   matrix_format_io
    license
 
 

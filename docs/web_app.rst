@@ -7,11 +7,14 @@ The Clustergrammer web application (referred to as Clustergrammer-Web) enables u
 Uploading Data through the Homepage
 ====================================
 
+.. _clustergrammer_web_api:
+
 Web Application API
 ===================
 Clustergrammer-Web's RESful API enables users to programatically generate visualizations. The API can be useful for users that need to generate many clustergrams or developers that need to automatically generate visualizations for their own web application.
 
 *Matrix Upload*
+
 Users can post a matrix file to Clustergrammer-Web using the endpoint
 ::
 
