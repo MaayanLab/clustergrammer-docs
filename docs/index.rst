@@ -6,6 +6,8 @@
 Welcome to Clustergrammer's documentation!
 ==========================================
 
+Something
+
 Contents:
 
 .. toctree::
