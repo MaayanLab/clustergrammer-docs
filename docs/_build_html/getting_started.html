@@ -168,7 +168,7 @@
 <li>interactive row/column categories</li>
 <li>cropping</li>
 </ul>
-<p>Clustergrammer also have biology specific features including:</p>
+<p>Clustergrammer also have biology-specific features including:</p>
 <ul class="simple">
 <li>mouseover gene (row) names to show the full name and description of a gene (through <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>)</li>
 <li>find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a></li>
@@ -176,17 +176,26 @@
 </div>
 <div class="section" id="getting-started-clustergrammer-js-web-development">
 <span id="getting-started-web-development"></span><h2>Getting Started Clustergrammer.js Web Development<a class="headerlink" href="#getting-started-clustergrammer-js-web-development" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer can be used to generate a interactive visualizations for your web application. Clustergrammer consists of two parts:</p>
-<ol class="arabic simple">
-<li>the front-end Clustergrammer.js JavaScript library makes the interactive visualization</li>
-<li>the back-end Clustergrammer.py Python library clusters a matrix of data and makes the JSON for the front-end</li>
-</ol>
-<p>These libraries can be installed npm, <code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>, and pip, <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">clustergrammer</span></code>, respectively.</p>
+<p>Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.</p>
+<p><em>Webpage Examples</em></p>
 <p>The easiest way to generate a visualize of your own data on a webpage is to:</p>
 <ol class="arabic simple">
 <li>follow the <a class="reference internal" href="clustergrammer_py.html#python-workflow-example"><span class="std std-ref">Python Workflow Example</span></a> to cluster your matrix and generate the front-end JSON</li>
 <li>then use the <a class="reference internal" href="clustergrammer_js.html#example-pages"><span class="std std-ref">Example Pages</span></a> workflow to visualize your calculated JSON</li>
 </ol>
+<p>These examples require Clustergrammer&#8217;s JavaScript and Python libraries:</p>
+<ol class="arabic simple">
+<li>the front-end Clustergrammer.js JavaScript library makes the interactive visualization</li>
+<li>the back-end Clustergrammer.py Python library clusters a matrix of data and makes the JSON for the front-end</li>
+</ol>
+<p>These libraries can be installed npm, <code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>, and pip, <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">clustergrammer</span></code>, respectively.</p>
+<p><em>Embedding Information</em>
+The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">iframe</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;iframe_preview&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt&quot;</span> <span class="n">frameborder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Users can upload their data using the upload section of the web app <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer">homepage</a></p>
+<p>or upload their data using the web app API.</p>
 </div>
 </div>
 

@@ -29,7 +29,7 @@ Clustergrammer is built to enable users to intuitively explore/analyze high-dime
 - interactive row/column categories
 - cropping
 
-Clustergrammer also have biology specific features including:
+Clustergrammer also have biology-specific features including:
 
 - mouseover gene (row) names to show the full name and description of a gene (through `Harmonizome`_)
 - find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through `Enrichr`_
@@ -39,19 +39,33 @@ Clustergrammer also have biology specific features including:
 
 Getting Started Clustergrammer.js Web Development
 =================================================
-Clustergrammer can be used to generate a interactive visualizations for your web application. Clustergrammer consists of two parts:
+Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.
 
-#. the front-end Clustergrammer.js JavaScript library makes the interactive visualization
-#. the back-end Clustergrammer.py Python library clusters a matrix of data and makes the JSON for the front-end
 
-These libraries can be installed npm, ``npm install Clustergrammer``, and pip, ``pip install clustergrammer``, respectively.
-
+*Webpage Examples*
 
 The easiest way to generate a visualize of your own data on a webpage is to:
 
 #. follow the :ref:`python_workflow_example` to cluster your matrix and generate the front-end JSON
 #. then use the :ref:`example_pages` workflow to visualize your calculated JSON
 
+These examples require Clustergrammer's JavaScript and Python libraries:
+
+#. the front-end Clustergrammer.js JavaScript library makes the interactive visualization
+#. the back-end Clustergrammer.py Python library clusters a matrix of data and makes the JSON for the front-end
+
+These libraries can be installed npm, ``npm install Clustergrammer``, and pip, ``pip install clustergrammer``, respectively.
+
+*Embedding Information*
+The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:
+::
+
+  <iframe id="iframe_preview" src="http://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt" frameborder="0"></iframe>
+
+Users can upload their data using the upload section of the web app `homepage`_
 
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
+.. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer
+
+or upload their data using the web app API.
