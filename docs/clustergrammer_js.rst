@@ -42,19 +42,22 @@ The id of the container where the visualizaton will be made is passed as ``root`
 
 Example Pages
 =============
-The `Clustergrammer.js repo`_ contains several example pages demonstrating how to make a webpage with a Clustergramemr heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization.
+The `clustergrammer`_ contains several example pages demonstrating how to make a webpage with a Clustergramemr heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization.
 
 The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
 
-Clustergrammer.js API
+Clustergrammer-JS API
 =====================
-Clustergrammer.js' API allows users to pass options to the front-end visualization, such as optional callback functions.
+Clustergrammer-JS' API allows users to pass options to the front-end visualization, such as optional callback functions.
 
-Clustergrammer.js JSON Format
-=============================
+.. _clustergrammer_json:
+
+Clustergrammer-JSON
+===================
 The JSON format required for Clustergrammer.js is described here:
 
 .. _clustergrammer_js_dev:
+
 Clustergrammer-JS Development
 =============================
 Clustergrammer-JS' source code can be found in the `clustergrammer`_ GihHub repo. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.

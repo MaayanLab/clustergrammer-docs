@@ -32,7 +32,7 @@
   
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
         <link rel="next" title="Clustergrammer-PY" href="clustergrammer_py.html"/>
-        <link rel="prev" title="Case Studies" href="case_studies.html"/> 
+        <link rel="prev" title="Building a Webpage" href="building_webpage.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,23 +83,24 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="web_app.html">Clustergrammer Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_app.html">Clustergrammer Web App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Clustergrammer Jupyter Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology Specific Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Building a Webpage</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer-JS</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#javascript-workflow-example">JavaScript Workflow Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#example-pages">Example Pages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-js-api">Clustergrammer.js API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-js-json-format">Clustergrammer.js JSON Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-js-api">Clustergrammer-JS API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-json">Clustergrammer-JSON</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-js-development">Clustergrammer-JS Development</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing with Clustergrammer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
@@ -181,20 +182,20 @@
 </div>
 <div class="section" id="example-pages">
 <span id="id3"></span><h2>Example Pages<a class="headerlink" href="#example-pages" title="Permalink to this headline">¶</a></h2>
-<p>The <a href="#id4"><span class="problematic" id="id5">`Clustergrammer.js repo`_</span></a> contains several example pages demonstrating how to make a webpage with a Clustergramemr heatmap. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/index.html">index.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> show how to make a full-screen resizable visualization.</p>
+<p>The <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">clustergrammer</a> contains several example pages demonstrating how to make a webpage with a Clustergramemr heatmap. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/index.html">index.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> show how to make a full-screen resizable visualization.</p>
 <p>The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/multiple_clustergrams.html">multiple_clust.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_multiple_clustergrams.js">load_multiple_clustergrams.js</a> show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.</p>
 </div>
 <div class="section" id="clustergrammer-js-api">
-<h2>Clustergrammer.js API<a class="headerlink" href="#clustergrammer-js-api" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer.js&#8217; API allows users to pass options to the front-end visualization, such as optional callback functions.</p>
+<h2>Clustergrammer-JS API<a class="headerlink" href="#clustergrammer-js-api" title="Permalink to this headline">¶</a></h2>
+<p>Clustergrammer-JS&#8217; API allows users to pass options to the front-end visualization, such as optional callback functions.</p>
 </div>
-<div class="section" id="clustergrammer-js-json-format">
-<h2>Clustergrammer.js JSON Format<a class="headerlink" href="#clustergrammer-js-json-format" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="clustergrammer-json">
+<span id="id4"></span><h2>Clustergrammer-JSON<a class="headerlink" href="#clustergrammer-json" title="Permalink to this headline">¶</a></h2>
 <p>The JSON format required for Clustergrammer.js is described here:</p>
 </div>
 <div class="section" id="clustergrammer-js-development">
 <span id="clustergrammer-js-dev"></span><h2>Clustergrammer-JS Development<a class="headerlink" href="#clustergrammer-js-development" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-JS&#8217; source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">clustergrammer</a> GihHub repo. The Clustergrammer-JS library is utilized by the <a class="reference internal" href="web_app.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web Application</span></a> and the <a class="reference internal" href="jupyter_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>.</p>
+<p>Clustergrammer-JS&#8217; source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">clustergrammer</a> GihHub repo. The Clustergrammer-JS library is utilized by the <a class="reference internal" href="web_app.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="jupyter_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>.</p>
 <p>Clustergrammer-JS is built with <a class="reference external" href="https://webpack.github.io/">Webpack Module Bundler</a> from the source files in <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/tree/master/src">src</a>. Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez or Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/issues">issues</a> feature to raise an issue.</p>
 </div>
 </div>
@@ -209,7 +210,7 @@
         <a href="clustergrammer_py.html" class="btn btn-neutral float-right" title="Clustergrammer-PY" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="case_studies.html" class="btn btn-neutral" title="Case Studies" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="building_webpage.html" class="btn btn-neutral" title="Building a Webpage" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
