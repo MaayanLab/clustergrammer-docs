@@ -68,6 +68,8 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`search`
 
+.. _contact:
+
 Contact
 =======
 Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) for support, comments, and suggestions.

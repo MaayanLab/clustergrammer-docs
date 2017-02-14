@@ -83,8 +83,8 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="web_app.html">Web Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Jupyter Widget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_app.html">Clustergrammer Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Clustergrammer Jupyter Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology Specific Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
@@ -148,13 +148,13 @@
             
   <div class="section" id="clustergrammer-js">
 <span id="id1"></span><h1>Clustergrammer-JS<a class="headerlink" href="#clustergrammer-js" title="Permalink to this headline">¶</a></h1>
-<p>Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in SVG using the visualization library <a class="reference external" href="https://d3js.org/">D3.js</a></p>
+<p>Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in <a class="reference external" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> using the visualization library <a class="reference external" href="https://d3js.org/">D3.js</a></p>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>D3.js</li>
-<li>JQuery</li>
-<li>Underscore</li>
+<li><a class="reference external" href="https://d3js.org/">D3.js</a></li>
+<li><a class="reference external" href="https://jquery.com/">JQuery</a></li>
+<li><a class="reference external" href="http://underscorejs.org/">Underscore</a></li>
 </ul>
 </div>
 <div class="section" id="installation">
@@ -163,7 +163,7 @@
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="n">clustergrammer</span>
 </pre></div>
 </div>
-<p>or the source code can be obtained from the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer.js repo</a>.</p>
+<p>or the source code and library, <code class="docutils literal"><span class="pre">clustergrammer.js</span></code>, can be obtained from the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">clustergrammer</a> Github repo.</p>
 </div>
 <div class="section" id="javascript-workflow-example">
 <span id="id2"></span><h2>JavaScript Workflow Example<a class="headerlink" href="#javascript-workflow-example" title="Permalink to this headline">¶</a></h2>
@@ -181,7 +181,7 @@
 </div>
 <div class="section" id="example-pages">
 <span id="id3"></span><h2>Example Pages<a class="headerlink" href="#example-pages" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer.js repo</a> contains several example pages demonstrating how to make a webpage with a Clustergramemr heatmap. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/index.html">index.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> show how to make a full-screen resizable visualization.</p>
+<p>The <a href="#id4"><span class="problematic" id="id5">`Clustergrammer.js repo`_</span></a> contains several example pages demonstrating how to make a webpage with a Clustergramemr heatmap. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/index.html">index.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> show how to make a full-screen resizable visualization.</p>
 <p>The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/multiple_clustergrams.html">multiple_clust.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_multiple_clustergrams.js">load_multiple_clustergrams.js</a> show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.</p>
 </div>
 <div class="section" id="clustergrammer-js-api">
@@ -194,6 +194,8 @@
 </div>
 <div class="section" id="open-source-code">
 <h2>Open Source Code<a class="headerlink" href="#open-source-code" title="Permalink to this headline">¶</a></h2>
+<p>Clustergrammer-JS&#8217; source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">clustergrammer</a> GihHub repo. The Clustergrammer-JS library is utilized by the <a class="reference internal" href="web_app.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web Application</span></a> and the <a class="reference internal" href="jupyter_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>.</p>
+<p>Clustergrammer-JS is built with <a class="reference external" href="https://webpack.github.io/">Webpack Module Bundler</a> from the source files in <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/tree/master/src">src</a>. Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez or Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/issues">issues</a> feature to raise an issue.</p>
 </div>
 </div>
 

@@ -49,7 +49,7 @@ Clustergrammer-PY generates a Network object, which is used to load a matrix (e.
 
 Developing Clustergrammer-PY
 =============================
-Clustergrammer-PY's source code can be found in the `clustergrammer-py`_ Github repo. The Clustergrammer-PY library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.
+Clustergrammer-PY's source code can be found in the `clustergrammer-py`_ GitHub repo. The Clustergrammer-PY library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.
 
 .. _`GitHub repo`: http://github.com/MaayanLab/clustergrammer-py
 .. _`package index`: https://pypi.python.org/pypi?:action=display&name=clustergrammer

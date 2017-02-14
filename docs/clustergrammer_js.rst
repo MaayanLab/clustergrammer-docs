@@ -2,15 +2,15 @@
 
 Clustergrammer-JS
 -----------------
-Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in SVG using the visualization library `D3.js`_
+Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in `SVG`_ using the visualization library `D3.js`_
 
 
 Dependencies
 ============
 
-- D3.js
-- JQuery
-- Underscore
+- `D3.js`_
+- `JQuery`_
+- `Underscore`_
 
 Installation
 ============
@@ -19,7 +19,7 @@ Clustergrammer.js can be installed using node package manager (`npm package`_) w
 
   npm install clustergrammer
 
-or the source code can be obtained from the `Clustergrammer.js repo`_.
+or the source code and library, ``clustergrammer.js``, can be obtained from the `clustergrammer`_ Github repo.
 
 .. _javascript_workflow_example:
 
@@ -56,11 +56,20 @@ The JSON format required for Clustergrammer.js is described here:
 
 Open Source Code
 ================
+Clustergrammer-JS' source code can be found in the `clustergrammer`_ GihHub repo. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.
 
-.. _`Clustergrammer.js repo`: https://github.com/MaayanLab/clustergrammer
+Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in `src`_. Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to raise an issue.
+
+.. _`SVG`: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
+.. _`clustergrammer`: https://github.com/MaayanLab/clustergrammer
 .. _`npm package`: https://www.npmjs.com/package/clustergrammer
 .. _`index.html`: https://github.com/MaayanLab/clustergrammer/blob/master/index.html
 .. _`load_clustergram.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js
 .. _`multiple_clust.html`: https://github.com/MaayanLab/clustergrammer/blob/master/multiple_clustergrams.html
 .. _`load_multiple_clustergrams.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/load_multiple_clustergrams.js
 .. _`D3.js`: https://d3js.org/
+.. _`JQuery`: https://jquery.com/
+.. _`Underscore`: http://underscorejs.org/
+.. _`Webpack Module Bundler`: https://webpack.github.io/
+.. _`src`: https://github.com/MaayanLab/clustergrammer/tree/master/src
+.. _`issues`: https://github.com/MaayanLab/clustergrammer/issues
