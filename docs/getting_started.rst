@@ -20,18 +20,25 @@ Here is a link to a notebook with an example interactive widget hosted on nbview
 
 Interacting with Clustergrammer
 ===============================
-Clustergrammer is built to enable users to intuitively explore/analyze high-dimensional datasets and has many interactive features:
+Clustergrammer is built to enable users to intuitively explore/analyze high-dimensional datasets and has many interactive features including:
 
 - zooming/panning
-- row/column reordering (e.g. reorder based on sum)
+- row and column reordering (e.g. reorder based on sum)
 - interactive dendrogram
-- dimensionality reduction (e.g. filter rows based on variance)
+- dimensionality reduction (e.g. filter rows based on variance)a
 - interactive row/column categories
+- cropping
+
+Clustergrammer also have biology specific features including:
+
+- mouseover gene (row) names to show the full name and description of a gene (through `Harmonizome`_)
+- find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through `Enrichr`_
+
 
 .. _getting_started_web_development:
 
-Getting Started Clustergrammer Web Development
-==============================================
+Getting Started Clustergrammer.js Web Development
+=================================================
 Clustergrammer can be used to generate a interactive visualizations for your web application. Clustergrammer consists of two parts:
 
 #. the front-end Clustergrammer.js JavaScript library makes the interactive visualization
@@ -45,3 +52,6 @@ The easiest way to generate a visualize of your own data on a webpage is to:
 #. follow the :ref:`python_workflow_example` to cluster your matrix and generate the front-end JSON
 #. then use the :ref:`example_pages` workflow to visualize your calculated JSON
 
+
+.. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
+.. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/

@@ -87,7 +87,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#getting-started-clustergrammer-web">Getting Started Clustergrammer-Web</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#getting-started-clustergrammer-widget">Getting Started Clustergrammer-Widget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interacting-with-clustergrammer">Interacting with Clustergrammer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-started-clustergrammer-web-development">Getting Started Clustergrammer Web Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-clustergrammer-js-web-development">Getting Started Clustergrammer.js Web Development</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="web_app.html">Web Application</a></li>
@@ -159,17 +159,23 @@
 </div>
 <div class="section" id="interacting-with-clustergrammer">
 <h2>Interacting with Clustergrammer<a class="headerlink" href="#interacting-with-clustergrammer" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer is built to enable users to intuitively explore/analyze high-dimensional datasets and has many interactive features:</p>
+<p>Clustergrammer is built to enable users to intuitively explore/analyze high-dimensional datasets and has many interactive features including:</p>
 <ul class="simple">
 <li>zooming/panning</li>
-<li>row/column reordering (e.g. reorder based on sum)</li>
+<li>row and column reordering (e.g. reorder based on sum)</li>
 <li>interactive dendrogram</li>
-<li>dimensionality reduction (e.g. filter rows based on variance)</li>
+<li>dimensionality reduction (e.g. filter rows based on variance)a</li>
 <li>interactive row/column categories</li>
+<li>cropping</li>
+</ul>
+<p>Clustergrammer also have biology specific features including:</p>
+<ul class="simple">
+<li>mouseover gene (row) names to show the full name and description of a gene (through <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>)</li>
+<li>find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a></li>
 </ul>
 </div>
-<div class="section" id="getting-started-clustergrammer-web-development">
-<span id="getting-started-web-development"></span><h2>Getting Started Clustergrammer Web Development<a class="headerlink" href="#getting-started-clustergrammer-web-development" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="getting-started-clustergrammer-js-web-development">
+<span id="getting-started-web-development"></span><h2>Getting Started Clustergrammer.js Web Development<a class="headerlink" href="#getting-started-clustergrammer-js-web-development" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer can be used to generate a interactive visualizations for your web application. Clustergrammer consists of two parts:</p>
 <ol class="arabic simple">
 <li>the front-end Clustergrammer.js JavaScript library makes the interactive visualization</li>
