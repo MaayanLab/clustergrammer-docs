@@ -1,6 +1,9 @@
-Clustergrammer.js
+.. _clustergrammer_js:
+
+Clustergrammer-JS
 -----------------
-The front-end library Clustergrammer.js builds the interactive heatmap visualization in SVG using the visualization library D3.js. Clustergrammer is built using Webpack Module Developer.
+Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in SVG using the visualization library `D3.js`_
+
 
 Dependencies
 ============
@@ -47,10 +50,12 @@ Clustergrammer.js API
 =====================
 Clustergrammer.js' API allows users to pass options to the front-end visualization, such as optional callback functions.
 
-
 Clustergrammer.js JSON Format
 =============================
 The JSON format required for Clustergrammer.js is described here:
+
+Open Source Code
+================
 
 .. _`Clustergrammer.js repo`: https://github.com/MaayanLab/clustergrammer
 .. _`npm package`: https://www.npmjs.com/package/clustergrammer
@@ -58,3 +63,4 @@ The JSON format required for Clustergrammer.js is described here:
 .. _`load_clustergram.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js
 .. _`multiple_clust.html`: https://github.com/MaayanLab/clustergrammer/blob/master/multiple_clustergrams.html
 .. _`load_multiple_clustergrams.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/load_multiple_clustergrams.js
+.. _`D3.js`: https://d3js.org/

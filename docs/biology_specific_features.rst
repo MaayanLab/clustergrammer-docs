@@ -4,10 +4,15 @@ Clustergrammer was built to visualize high-dimensional biological data (e.g. gen
 
 Mouseover Gene Name and Description
 ===================================
-The human genome consists of over 20,000 genes and modern high-throughput measurements are capable of making mesurements across the entire genome (e.g. genome-wide expression studies). Human genes have been given official gene symbols (e.g. EGFR) and these are usually used to label genes in these datasets. Since no biologist can be knowledgable about every gene in the genome a common task for biologists is looking up the names and descriptions of genes in a dataset or visualization. To streamline this, Clustergrammer automatically gives the full name and description of a gene (provided by data aggregated through the `Harmonizome`_) as a tooltip when a user mouses over a gene label. This simple feature speeds up analysis of big gene-level data.
+The human genome consists of over 20,000 genes and modern high-throughput measurements are capable of making mesurements across the entire genome (e.g. genome-wide expression studies). Human genes have been given official gene symbols (e.g. EGFR) and these are frequently used to label genes in these datasets. Since no biologist can be knowledgable about every gene in the genome a common task for biologists is looking up the names and descriptions of genes in a dataset or visualization. To streamline this, Clustergrammer automatically gives the full name and description of a gene (provided by data aggregated through the `Harmonizome`_) as a tooltip when a user mouses over a gene label. This simple feature speeds up analysis of large gene-level datasets.
 
 Enrichment Analysis
 ===================
+The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis a popular method to identify biological information specific to a list of genes - e.g. a biologist may use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their measured set of up-regulated genes and thereby form hypotheses about potential up-stream regulators in their system.
+
+When a user visualizes a matrix with genes as rows, Clustergrammer automatically enables intergration with the enrichment analysis tool `Enrichr`_. Users can export their genes of interest to Enrichr using the interactive dendrogram or import enrichment results from Enrichr using the Enrichr tool on the top left.
+
 
 .. _`CCLE Explorer`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
+.. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/

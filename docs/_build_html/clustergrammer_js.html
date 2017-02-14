@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Clustergrammer.js &mdash; Clustergrammer 1.0.0 documentation</title>
+  <title>Clustergrammer-JS &mdash; Clustergrammer 1.0.0 documentation</title>
   
 
   
@@ -31,8 +31,8 @@
 
   
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
-        <link rel="next" title="Clustergrammer.py" href="clustergrammer_py.html"/>
-        <link rel="prev" title="Interacting with the Visualization" href="viz_interaction.html"/> 
+        <link rel="next" title="Clustergrammer-PY" href="clustergrammer_py.html"/>
+        <link rel="prev" title="Case Studies" href="case_studies.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -85,19 +85,22 @@
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web_app.html">Web Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Jupyter Widget</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interacting with the Visualization</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer.js</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology Specific Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer-JS</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#javascript-workflow-example">JavaScript Workflow Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#example-pages">Example Pages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-js-api">Clustergrammer.js API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-js-json-format">Clustergrammer.js JSON Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-source-code">Open Source Code</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing with Clustergrammer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input_matrix_data_formats.html">Input Matrix Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
@@ -129,7 +132,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Clustergrammer.js</li>
+    <li>Clustergrammer-JS</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -144,8 +147,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="clustergrammer-js">
-<h1>Clustergrammer.js<a class="headerlink" href="#clustergrammer-js" title="Permalink to this headline">¶</a></h1>
-<p>The front-end library Clustergrammer.js builds the interactive heatmap visualization in SVG using the visualization library D3.js. Clustergrammer is built using Webpack Module Developer.</p>
+<span id="id1"></span><h1>Clustergrammer-JS<a class="headerlink" href="#clustergrammer-js" title="Permalink to this headline">¶</a></h1>
+<p>Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in SVG using the visualization library <a class="reference external" href="https://d3js.org/">D3.js</a></p>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -163,7 +166,7 @@
 <p>or the source code can be obtained from the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer.js repo</a>.</p>
 </div>
 <div class="section" id="javascript-workflow-example">
-<span id="id1"></span><h2>JavaScript Workflow Example<a class="headerlink" href="#javascript-workflow-example" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>JavaScript Workflow Example<a class="headerlink" href="#javascript-workflow-example" title="Permalink to this headline">¶</a></h2>
 <p>This workflow shows how to make a visualization using a JSON produced by Clustergrammer.py</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">load</span> <span class="n">visualization</span> <span class="n">JSON</span> <span class="n">to</span> <span class="n">network_data</span>
 <span class="n">var</span> <span class="n">args</span> <span class="o">=</span> <span class="p">{</span>
@@ -177,7 +180,7 @@
 <p>The id of the container where the visualizaton will be made is passed as <code class="docutils literal"><span class="pre">root</span></code> (this root container must be made by the user). The visualization JSON contains the information necessary to make the visualization and is passed as <code class="docutils literal"><span class="pre">network_data</span></code>. See the Clustergrammer.js API for additional arguments that can be passed to Clustergrammer.js.</p>
 </div>
 <div class="section" id="example-pages">
-<span id="id2"></span><h2>Example Pages<a class="headerlink" href="#example-pages" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>Example Pages<a class="headerlink" href="#example-pages" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer.js repo</a> contains several example pages demonstrating how to make a webpage with a Clustergramemr heatmap. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/index.html">index.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> show how to make a full-screen resizable visualization.</p>
 <p>The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/multiple_clustergrams.html">multiple_clust.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_multiple_clustergrams.js">load_multiple_clustergrams.js</a> show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.</p>
 </div>
@@ -189,6 +192,9 @@
 <h2>Clustergrammer.js JSON Format<a class="headerlink" href="#clustergrammer-js-json-format" title="Permalink to this headline">¶</a></h2>
 <p>The JSON format required for Clustergrammer.js is described here:</p>
 </div>
+<div class="section" id="open-source-code">
+<h2>Open Source Code<a class="headerlink" href="#open-source-code" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -198,10 +204,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clustergrammer_py.html" class="btn btn-neutral float-right" title="Clustergrammer.py" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="clustergrammer_py.html" class="btn btn-neutral float-right" title="Clustergrammer-PY" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="viz_interaction.html" class="btn btn-neutral" title="Interacting with the Visualization" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="case_studies.html" class="btn btn-neutral" title="Case Studies" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

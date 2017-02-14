@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Web Application &mdash; Clustergrammer 1.0.0 documentation</title>
+  <title>Clustergrammer Web Application &mdash; Clustergrammer 1.0.0 documentation</title>
   
 
   
@@ -83,17 +83,20 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Web Application</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#uploading-data-through-homepage">Uploading Data through Homepage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer Web Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-data-through-the-homepage">Uploading Data through the Homepage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#web-application-api">Web Application API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-source-code">Open Source Code</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Jupyter Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer.js</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology Specific Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing with Clustergrammer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input_matrix_data_formats.html">Input Matrix Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
@@ -125,7 +128,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Web Application</li>
+    <li>Clustergrammer Web Application</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -139,17 +142,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="web-application">
-<h1>Web Application<a class="headerlink" href="#web-application" title="Permalink to this headline">¶</a></h1>
-<p>The Clustergrammer web application (referred to as Clustergrammer-web) enables users to easily generate interactive and shareable heatmap visualizations.</p>
-<div class="section" id="uploading-data-through-homepage">
-<h2>Uploading Data through Homepage<a class="headerlink" href="#uploading-data-through-homepage" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="clustergrammer-web-application">
+<span id="clustergrammer-web"></span><h1>Clustergrammer Web Application<a class="headerlink" href="#clustergrammer-web-application" title="Permalink to this headline">¶</a></h1>
+<p>The Clustergrammer web application (referred to as Clustergrammer-Web) enables users to easily generate interactive and shareable heatmap visualizations.</p>
+<div class="section" id="uploading-data-through-the-homepage">
+<h2>Uploading Data through the Homepage<a class="headerlink" href="#uploading-data-through-the-homepage" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="web-application-api">
 <h2>Web Application API<a class="headerlink" href="#web-application-api" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-web&#8217;s RESful API enables users to programatically generate visualizations. The API can be useful for users that need to generate many clustergrams or developers that need to automatically generate visualizations for their own web application.</p>
+<p>Clustergrammer-Web&#8217;s RESful API enables users to programatically generate visualizations. The API can be useful for users that need to generate many clustergrams or developers that need to automatically generate visualizations for their own web application.</p>
 <p><em>Matrix Upload</em>
-Users can post a matrix file to Clustergrammer-web using the endpoint</p>
+Users can post a matrix file to Clustergrammer-Web using the endpoint</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">amp</span><span class="o">.</span><span class="n">pharm</span><span class="o">.</span><span class="n">mssm</span><span class="o">.</span><span class="n">edu</span><span class="o">/</span><span class="n">clustergrammer</span><span class="o">/</span><span class="n">matrix_upload</span><span class="o">/</span>
 </pre></div>
 </div>
@@ -164,6 +167,10 @@ Users can post a matrix file to Clustergrammer-web using the endpoint</p>
 <span class="n">link</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="open-source-code">
+<h2>Open Source Code<a class="headerlink" href="#open-source-code" title="Permalink to this headline">¶</a></h2>
+<p>Clustergrammer-Web is a <a class="reference external" href="https://docs.docker.com/">dockerized</a> web application built using the Python library <a class="reference external" href="http://flask.pocoo.org/">Flask</a>. Clustergrammer-Web uses the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> and <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> libraries and the source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-web/">clustergrammer-web</a> GitHub repo.</p>
 </div>
 </div>
 
