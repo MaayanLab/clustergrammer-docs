@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
-        <link rel="next" title="Web Application" href="web_app.html"/>
+        <link rel="next" title="Clustergrammer Web App" href="web_app.html"/>
         <link rel="prev" title="Welcome to Clustergrammer’s Documentation!" href="index.html"/> 
 
   
@@ -87,17 +87,17 @@
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-web">Clustergrammer-Web</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-widget">Clustergrammer-Widget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interacting-with-clustergrammer">Interacting with Clustergrammer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-js-web-development">Clustergrammer.js Web Development</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="web_app.html">Web Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Jupyter Widget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_app.html">Clustergrammer Web App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Clustergrammer Jupyter Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology Specific Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer.js</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer.py</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing with Clustergrammer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Building a Webpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
@@ -148,13 +148,13 @@
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer is an interactive web-based tool for visualizing high-dimensional data as hierarchically clustered heatmap. Clustergrammer can be used in three main ways:</p>
+<p>Clustergrammer is a web-based tool for visualizing high-dimensional data as hierarchically interactive and shareable clustered heatmap. Clustergrammer can be used in three main ways:</p>
 <ol class="arabic simple">
-<li>Clustergrammer-Web: web application</li>
-<li>Clustergrammer-Widget: Jupyter notebook interactive widget</li>
-<li>JavaScript and Python libraries</li>
+<li><a class="reference internal" href="web_app.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a></li>
+<li><a class="reference internal" href="jupyter_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a></li>
+<li><a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> and <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> libraries</li>
 </ol>
-<p>This section will provide quick instructions on how to generate a visualization using Clustergrammer and interact with that visualization.</p>
+<p>This section will provide quick instructions on how to generate a visualization from a matrix of data using the <a class="reference internal" href="web_app.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="jupyter_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> as well as instructions on how to interact with the visualization. For developers interested in building their own web page using Clustergrammer, please see the <a class="reference internal" href="building_webpage.html#building-web-page"><span class="std std-ref">Building a Webpage</span></a> section.</p>
 </div>
 <div class="section" id="clustergrammer-web">
 <span id="getting-started-web-app"></span><h2>Clustergrammer-Web<a class="headerlink" href="#clustergrammer-web" title="Permalink to this headline">¶</a></h2>
@@ -176,35 +176,13 @@
 <li>interactive row/column categories</li>
 <li>cropping</li>
 </ul>
-<p>Clustergrammer also has biology-specific features including:</p>
+<p>Press play or interact with the demo to see</p>
+<iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe><p>For more information on interacting with the visualization please see the <a class="reference internal" href="viz_interaction.html#viz-interaction"><span class="std std-ref">Interactive Visualization</span></a> section. Clustergrammer also has biology-specific features including:</p>
 <ul class="simple">
 <li>mouseover gene (row) names to show the full name and description of a gene (through <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>)</li>
 <li>find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a></li>
 </ul>
-<p>Press play or interact with the demo to see</p>
-<iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe></div>
-<div class="section" id="clustergrammer-js-web-development">
-<span id="getting-started-web-development"></span><h2>Clustergrammer.js Web Development<a class="headerlink" href="#clustergrammer-js-web-development" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.</p>
-<p><em>Webpage Examples</em></p>
-<p>The easiest way to generate a visualize of your own data on a webpage is to:</p>
-<ol class="arabic simple">
-<li>follow the <a class="reference internal" href="clustergrammer_py.html#python-workflow-example"><span class="std std-ref">Python Workflow Example</span></a> to cluster your matrix and generate the front-end JSON</li>
-<li>then use the <a class="reference internal" href="clustergrammer_js.html#example-pages"><span class="std std-ref">Example Pages</span></a> workflow to visualize your calculated JSON</li>
-</ol>
-<p>These examples require Clustergrammer&#8217;s JavaScript and Python libraries:</p>
-<ol class="arabic simple">
-<li>the front-end Clustergrammer.js JavaScript library makes the interactive visualization</li>
-<li>the back-end Clustergrammer.py Python library clusters a matrix of data and makes the JSON for the front-end</li>
-</ol>
-<p>These libraries can be installed npm, <code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>, and pip, <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">clustergrammer</span></code>, respectively.</p>
-<p><em>Embedding Information</em></p>
-<p>The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">iframe</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;iframe_preview&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt&quot;</span> <span class="n">frameborder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>Users can upload their data using the upload section of the web app <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer">homepage</a></p>
-<p>or upload their data using the web app API.d</p>
+<p>For more information on Clustergrammer&#8217;s biology specific features please see the <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> section.</p>
 </div>
 </div>
 
@@ -215,7 +193,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="web_app.html" class="btn btn-neutral float-right" title="Web Application" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="web_app.html" class="btn btn-neutral float-right" title="Clustergrammer Web App" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Welcome to Clustergrammer’s Documentation!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

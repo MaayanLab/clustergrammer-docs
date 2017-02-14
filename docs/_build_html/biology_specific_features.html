@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Biology Specific Features &mdash; Clustergrammer 1.0.0 documentation</title>
+  <title>Biology-Specific Features &mdash; Clustergrammer 1.0.0 documentation</title>
   
 
   
@@ -83,18 +83,19 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="web_app.html">Web Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Jupyter Widget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_app.html">Clustergrammer Web App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Clustergrammer Jupyter Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Biology Specific Features</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Biology-Specific Features</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#mouseover-gene-name-and-description">Mouseover Gene Name and Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#enrichment-analysis">Enrichment Analysis</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer.js</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer.py</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing with Clustergrammer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Building a Webpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
@@ -127,7 +128,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Biology Specific Features</li>
+    <li>Biology-Specific Features</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -142,16 +143,18 @@
            <div itemprop="articleBody">
             
   <div class="section" id="biology-specific-features">
-<h1>Biology Specific Features<a class="headerlink" href="#biology-specific-features" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Biology-Specific Features<a class="headerlink" href="#biology-specific-features" title="Permalink to this headline">¶</a></h1>
 <p>Clustergrammer was built to visualize high-dimensional biological data (e.g. genome-wide expression data), but can be generally applied to any high-dimensional data (e.g. any matrix). Clustergrammer has several biology-specific features that faciliate analysis of gene-level biological data, such as: gene-expression data, proteomics-data, etc. To take advantage of these feaatures gene-level data (e.g. dimensions) must be given as rows. See <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/CCLE/">CCLE Explorer</a> for examples of gene-expression data.</p>
 <div class="section" id="mouseover-gene-name-and-description">
 <h2>Mouseover Gene Name and Description<a class="headerlink" href="#mouseover-gene-name-and-description" title="Permalink to this headline">¶</a></h2>
 <p>The human genome consists of over 20,000 genes and modern high-throughput measurements are capable of making mesurements across the entire genome (e.g. genome-wide expression studies). Human genes have been given official gene symbols (e.g. EGFR) and these are frequently used to label genes in these datasets. Since no biologist can be knowledgable about every gene in the genome a common task for biologists is looking up the names and descriptions of genes in a dataset or visualization. To streamline this, Clustergrammer automatically gives the full name and description of a gene (provided by data aggregated through the <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>) as a tooltip when a user mouses over a gene label. This simple feature speeds up analysis of large gene-level datasets.</p>
+<p>The JavaScript file <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js">hzome_functions.js</a> provides this functionality by utilizing <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>&#8216;s RESTful API to obtain gene names and descriptions on mouseover events. <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js">hzome_functions.js</a> is passed to <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> as a callback function. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> for an example use case.</p>
 </div>
 <div class="section" id="enrichment-analysis">
 <h2>Enrichment Analysis<a class="headerlink" href="#enrichment-analysis" title="Permalink to this headline">¶</a></h2>
 <p>The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis a popular method to identify biological information specific to a list of genes - e.g. a biologist may use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their measured set of up-regulated genes and thereby form hypotheses about potential up-stream regulators in their system.</p>
 <p>When a user visualizes a matrix with genes as rows, Clustergrammer automatically enables intergration with the enrichment analysis tool <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>. Users can export their genes of interest to Enrichr using the interactive dendrogram or import enrichment results from Enrichr using the Enrichr tool on the top left.</p>
+<p>The JavaScript file <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js">Enrichrgram.js</a> provides this functionality using <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>&#8216;s RESTful API to generate enrichment results from a list of input genes. <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js">Enrichrgram.js</a> works with the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> API to depict enriched terms and their associated genes as row categories by adding/removing row categories.</p>
 </div>
 </div>
 

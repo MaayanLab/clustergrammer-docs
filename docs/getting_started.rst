@@ -3,13 +3,13 @@ Getting Started
 
 Introduction
 ============
-Clustergrammer is an interactive web-based tool for visualizing high-dimensional data as hierarchically clustered heatmap. Clustergrammer can be used in three main ways:
+Clustergrammer is a web-based tool for visualizing high-dimensional data as hierarchically interactive and shareable clustered heatmap. Clustergrammer can be used in three main ways:
 
-#. Clustergrammer-Web: web application
-#. Clustergrammer-Widget: Jupyter notebook interactive widget
-#. JavaScript and Python libraries
+#. :ref:`clustergrammer_web`
+#. :ref:`clustergrammer_widget`
+#. :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries
 
-This section will provide quick instructions on how to generate a visualization using Clustergrammer and interact with that visualization.
+This section will provide quick instructions on how to generate a visualization from a matrix of data using the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` as well as instructions on how to interact with the visualization. For developers interested in building their own web page using Clustergrammer, please see the :ref:`building_web_page` section.
 
 .. _getting_started_web_app:
 
@@ -35,51 +35,19 @@ Clustergrammer produces highly interactive visualizations that enable intuitive 
 - interactive row/column categories
 - cropping
 
-Clustergrammer also has biology-specific features including:
-
-- mouseover gene (row) names to show the full name and description of a gene (through `Harmonizome`_)
-- find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through `Enrichr`_
-
 Press play or interact with the demo to see
 
 .. raw:: html
 
          <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe>
 
+For more information on interacting with the visualization please see the :ref:`viz_interaction` section. Clustergrammer also has biology-specific features including:
 
+- mouseover gene (row) names to show the full name and description of a gene (through `Harmonizome`_)
+- find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through `Enrichr`_
 
-.. _getting_started_web_development:
-
-Clustergrammer.js Web Development
-=================================
-Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.
-
-
-*Webpage Examples*
-
-The easiest way to generate a visualize of your own data on a webpage is to:
-
-#. follow the :ref:`python_workflow_example` to cluster your matrix and generate the front-end JSON
-#. then use the :ref:`example_pages` workflow to visualize your calculated JSON
-
-These examples require Clustergrammer's JavaScript and Python libraries:
-
-#. the front-end Clustergrammer.js JavaScript library makes the interactive visualization
-#. the back-end Clustergrammer.py Python library clusters a matrix of data and makes the JSON for the front-end
-
-These libraries can be installed npm, ``npm install Clustergrammer``, and pip, ``pip install clustergrammer``, respectively.
-
-*Embedding Information*
-
-The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:
-::
-
-  <iframe id="iframe_preview" src="http://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt" frameborder="0"></iframe>
-
-Users can upload their data using the upload section of the web app `homepage`_
+For more information on Clustergrammer's biology specific features please see the :ref:`biology_specific_features` section.
 
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
 .. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer
-
-or upload their data using the web app API.d

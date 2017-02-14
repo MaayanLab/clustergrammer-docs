@@ -96,7 +96,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
@@ -144,7 +144,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="building-a-webpage">
-<h1>Building a Webpage<a class="headerlink" href="#building-a-webpage" title="Permalink to this headline">¶</a></h1>
+<span id="building-web-page"></span><h1>Building a Webpage<a class="headerlink" href="#building-a-webpage" title="Permalink to this headline">¶</a></h1>
 <p>Clustergrammer can be used by developers to add interactive heatmap visualizations to their web pages and web applications.</p>
 <div class="section" id="embedding-clustergrammer">
 <h2>Embedding Clustergrammer<a class="headerlink" href="#embedding-clustergrammer" title="Permalink to this headline">¶</a></h2>
@@ -152,6 +152,26 @@
 <div class="section" id="clustergrammer-web-page">
 <h2>Clustergrammer Web Page<a class="headerlink" href="#clustergrammer-web-page" title="Permalink to this headline">¶</a></h2>
 <p>The Clustergrammer-JS library can be used to generate an interactive visualization in your webpage. Simply include the <code class="docutils literal"><span class="pre">clustergrammer.js</span></code> script in your page and load the pre-calculated <a class="reference internal" href="clustergrammer_js.html#clustergrammer-json"><span class="std std-ref">Clustergrammer-JSON</span></a> to generate a visualization.</p>
+<p>Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.</p>
+<p><em>Webpage Examples</em></p>
+<p>The easiest way to generate a visualize of your own data on a webpage is to:</p>
+<ol class="arabic simple">
+<li>follow the <a class="reference internal" href="clustergrammer_py.html#python-workflow-example"><span class="std std-ref">Python Workflow Example</span></a> to cluster your matrix and generate the front-end JSON</li>
+<li>then use the <a class="reference internal" href="clustergrammer_js.html#example-pages"><span class="std std-ref">Example Pages</span></a> workflow to visualize your calculated JSON</li>
+</ol>
+<p>These examples require Clustergrammer&#8217;s JavaScript and Python libraries:</p>
+<ol class="arabic simple">
+<li>the front-end Clustergrammer.js JavaScript library makes the interactive visualization</li>
+<li>the back-end Clustergrammer.py Python library clusters a matrix of data and makes the JSON for the front-end</li>
+</ol>
+<p>These libraries can be installed npm, <code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>, and pip, <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">clustergrammer</span></code>, respectively.</p>
+<p><em>Embedding Information</em></p>
+<p>The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">iframe</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;iframe_preview&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt&quot;</span> <span class="n">frameborder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Users can upload their data using the upload section of the web app <a href="#id1"><span class="problematic" id="id2">`homepage`_</span></a></p>
+<p>or upload their data using the web app API.</p>
 </div>
 <div class="section" id="clustergrammer-web-app">
 <h2>Clustergrammer Web App<a class="headerlink" href="#clustergrammer-web-app" title="Permalink to this headline">¶</a></h2>
