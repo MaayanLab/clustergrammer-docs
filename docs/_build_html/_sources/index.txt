@@ -66,6 +66,9 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`search`
 
+Contact
+=======
+Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) for support, comments, and suggestions.
 
 .. _`Clustergrammer web application`: http://amp.pharm.mssm.edu/clustergrammer/
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/

@@ -84,15 +84,15 @@
                 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-started-clustergrammer-web">Getting Started Clustergrammer-Web</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-started-clustergrammer-widget">Getting Started Clustergrammer-Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-web">Clustergrammer-Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-widget">Clustergrammer-Widget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interacting-with-clustergrammer">Interacting with Clustergrammer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-started-clustergrammer-js-web-development">Getting Started Clustergrammer.js Web Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-js-web-development">Clustergrammer.js Web Development</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="web_app.html">Web Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Jupyter Widget</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interacting with the Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer.js</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer.py</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing with Clustergrammer</a></li>
@@ -148,12 +148,12 @@
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer is an interactive web-based tool for visualizing high-dimensional data as hierarchically clustered heatmap. Clustergrammer can be used in three main ways: 1) web application, Jupyter notebook interactive widget, and JavaScript and Python libraries. This section will provide quick instructions on how to</p>
 </div>
-<div class="section" id="getting-started-clustergrammer-web">
-<span id="getting-started-web-app"></span><h2>Getting Started Clustergrammer-Web<a class="headerlink" href="#getting-started-clustergrammer-web" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="clustergrammer-web">
+<span id="getting-started-web-app"></span><h2>Clustergrammer-Web<a class="headerlink" href="#clustergrammer-web" title="Permalink to this headline">¶</a></h2>
 <p>Instructions for using the web application...</p>
 </div>
-<div class="section" id="getting-started-clustergrammer-widget">
-<span id="getting-started-widget"></span><h2>Getting Started Clustergrammer-Widget<a class="headerlink" href="#getting-started-clustergrammer-widget" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="clustergrammer-widget">
+<span id="getting-started-widget"></span><h2>Clustergrammer-Widget<a class="headerlink" href="#clustergrammer-widget" title="Permalink to this headline">¶</a></h2>
 <p>Here is a link to a notebook with an example interactive widget hosted on nbviewer:
 <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Interactive Widget</a></p>
 </div>
@@ -174,8 +174,8 @@
 <li>find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a></li>
 </ul>
 </div>
-<div class="section" id="getting-started-clustergrammer-js-web-development">
-<span id="getting-started-web-development"></span><h2>Getting Started Clustergrammer.js Web Development<a class="headerlink" href="#getting-started-clustergrammer-js-web-development" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="clustergrammer-js-web-development">
+<span id="getting-started-web-development"></span><h2>Clustergrammer.js Web Development<a class="headerlink" href="#clustergrammer-js-web-development" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.</p>
 <p><em>Webpage Examples</em></p>
 <p>The easiest way to generate a visualize of your own data on a webpage is to:</p>
@@ -189,13 +189,13 @@
 <li>the back-end Clustergrammer.py Python library clusters a matrix of data and makes the JSON for the front-end</li>
 </ol>
 <p>These libraries can be installed npm, <code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>, and pip, <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">clustergrammer</span></code>, respectively.</p>
-<p><em>Embedding Information</em>
-The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:</p>
+<p><em>Embedding Information</em></p>
+<p>The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">iframe</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;iframe_preview&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt&quot;</span> <span class="n">frameborder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Users can upload their data using the upload section of the web app <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer">homepage</a></p>
-<p>or upload their data using the web app API.</p>
+<p>or upload their data using the web app API.d</p>
 </div>
 </div>
 

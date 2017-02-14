@@ -84,11 +84,12 @@
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Web Application</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#uploading-data">Uploading Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-data-through-homepage">Uploading Data through Homepage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#web-application-api">Web Application API</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter_widget.html">Jupyter Widget</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interacting with the Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viz_interaction.html">Interactive Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer.js</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer.py</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing with Clustergrammer</a></li>
@@ -140,9 +141,29 @@
             
   <div class="section" id="web-application">
 <h1>Web Application<a class="headerlink" href="#web-application" title="Permalink to this headline">¶</a></h1>
-<p>The Clustergrammer web application enables users to easily generate interactive and shareable heatmap visualizations.</p>
-<div class="section" id="uploading-data">
-<h2>Uploading Data<a class="headerlink" href="#uploading-data" title="Permalink to this headline">¶</a></h2>
+<p>The Clustergrammer web application (referred to as Clustergrammer-web) enables users to easily generate interactive and shareable heatmap visualizations.</p>
+<div class="section" id="uploading-data-through-homepage">
+<h2>Uploading Data through Homepage<a class="headerlink" href="#uploading-data-through-homepage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="web-application-api">
+<h2>Web Application API<a class="headerlink" href="#web-application-api" title="Permalink to this headline">¶</a></h2>
+<p>Clustergrammer-web&#8217;s RESful API enables users to programatically generate visualizations. The API can be useful for users that need to generate many clustergrams or developers that need to automatically generate visualizations for their own web application.</p>
+<p><em>Matrix Upload</em>
+Users can post a matrix file to Clustergrammer-web using the endpoint</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">amp</span><span class="o">.</span><span class="n">pharm</span><span class="o">.</span><span class="n">mssm</span><span class="o">.</span><span class="n">edu</span><span class="o">/</span><span class="n">clustergrammer</span><span class="o">/</span><span class="n">matrix_upload</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>and recieve a permanent link to their visualization. Below is an example in Python 2.7 showing the post request and how to obtain the link from the response object:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;example_matrix.txt&#39;</span>
+<span class="n">upload_url</span> <span class="o">=</span> <span class="s1">&#39;http://amp.pharm.mssm.edu/clustergrammer/matrix_upload/&#39;</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">upload_url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)})</span>
+
+<span class="n">link</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
+</pre></div>
+</div>
 </div>
 </div>
 

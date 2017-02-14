@@ -7,14 +7,14 @@ Clustergrammer is an interactive web-based tool for visualizing high-dimensional
 
 .. _getting_started_web_app:
 
-Getting Started Clustergrammer-Web
-==================================
+Clustergrammer-Web
+==================
 Instructions for using the web application...
 
 .. _getting_started_widget:
 
-Getting Started Clustergrammer-Widget
-=====================================
+Clustergrammer-Widget
+=====================
 Here is a link to a notebook with an example interactive widget hosted on nbviewer:
 `Interactive Widget <http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb>`_
 
@@ -37,8 +37,8 @@ Clustergrammer also have biology-specific features including:
 
 .. _getting_started_web_development:
 
-Getting Started Clustergrammer.js Web Development
-=================================================
+Clustergrammer.js Web Development
+=================================
 Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.
 
 
@@ -57,6 +57,7 @@ These examples require Clustergrammer's JavaScript and Python libraries:
 These libraries can be installed npm, ``npm install Clustergrammer``, and pip, ``pip install clustergrammer``, respectively.
 
 *Embedding Information*
+
 The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:
 ::
 
@@ -68,4 +69,4 @@ Users can upload their data using the upload section of the web app `homepage`_
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
 .. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer
 
-or upload their data using the web app API.
+or upload their data using the web app API.d
