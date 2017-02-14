@@ -55,6 +55,7 @@ Contents:
    viz_interaction
    biology_specific_features
    case_studies
+   building_webpage
    clustergrammer_js
    clustergrammer_py
    developing_with_clustergrammer

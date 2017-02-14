@@ -1,7 +1,7 @@
 .. _clustergrammer_web:
 
-Clustergrammer Web Application
-------------------------------
+Clustergrammer Web App
+----------------------
 The Clustergrammer web application (referred to as Clustergrammer-Web) enables users to easily generate interactive and shareable heatmap visualizations.
 
 Uploading Data through the Homepage
