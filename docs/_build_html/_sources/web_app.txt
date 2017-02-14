@@ -4,13 +4,28 @@ Clustergrammer Web App
 ----------------------
 The Clustergrammer web application (referred to as Clustergrammer-Web) enables users to easily generate interactive and shareable heatmap visualizations.
 
+.. _clustergrammer_web_upload:
+
 Uploading Data through the Homepage
 ====================================
 
+**add upload screenshots**
+
+
+.. _clustergrammer_web_viz:
+
+Clustergrammer-Web Visualization
+================================
+Uploading a matrix to Clustergrammer-Web will redirect the user to a new permanent and shareable page with three views of their data:
+
+#. clustered heatmap view of their matrix
+#. clustered similarity matrix of the columns in their original matrix
+#. clustered similarity matrix of the rows in their original matrix
+
 .. _clustergrammer_web_api:
 
-Web Application API
-===================
+Clustergrammer-Web API
+======================
 Clustergrammer-Web's RESful API enables users to programatically generate visualizations. The API can be useful for users that need to generate many clustergrams or developers that need to automatically generate visualizations for their own web application.
 
 *Matrix Upload*
@@ -20,7 +35,7 @@ Users can post a matrix file to Clustergrammer-Web using the endpoint
 
   http://amp.pharm.mssm.edu/clustergrammer/matrix_upload/
 
-and recieve a permanent link to their visualization. Below is an example in Python 2.7 showing the post request and how to obtain the link from the response object:
+and receive a permanent link to their visualization. Below is an example in Python 2.7 showing the post request and how to obtain the link from the response object:
 ::
 
   import requests

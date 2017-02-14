@@ -2,16 +2,16 @@
 
 Clustergrammer Jupyter Widget
 -----------------------------
-Clustergrammer can be used within a Jupyter notebook as an interactive HTML widget and is compatable with Python 2 and 3. Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a Pandas DataFrame.
+Clustergrammer can be used within a Jupyter notebook as an interactive HTML widget and is compatable with Python 2 and 3. Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame.
 
 
 Dependencies
 ============
 
-- Numpy
-- SciPy
-- Pandas
-- ipywidgets
+- `Numpy`_
+- `SciPy`_
+- `Pandas`_
+- `ipywidgets`_
 
 Installation
 ============
@@ -29,9 +29,9 @@ To enable rendering interactive widgets on `nbviewer`_ you must have `ipywidgets
 
 Clustergrammer-Widget Workflow Example
 ======================================
-The Jupyter notebook `Running_clustergrammer_widget.ipynb`_ (which is rendered using `_nbviewer`) shows how to visualize a matrix from a file and Pandas DataFrame. The following code snippits are from the notebook.
+The Jupyter notebook `Running_clustergrammer_widget.ipynb`_ (which is rendered using `nbviewer`_) shows how to visualize a matrix from a file and `Pandas`_ DataFrame. The following code snippits are from the notebook.
 
-This example shows how to visualize a matrix of gene expression data saved as a tab-separated file using :ref:`clustergrammer_py` and Clustergrammer-Widget:
+This example shows how to visualize a matrix of gene expression data saved as a tab-separated file:
 ::
 
   # import clustergrammer_widgets and initialize network object
@@ -47,7 +47,7 @@ This example shows how to visualize a matrix of gene expression data saved as a 
   # make interactive widget
   clustergrammer_widget(network=net.widget())
 
-Clustergrammer-Widget can also be thought of as a
+Clustergrammer-Widget can also be thought of as a general purpose `Pandas`_ DataFrame viewer
 
 .. _clustergrammer_widget_dev:
 
@@ -58,10 +58,13 @@ Clustergrammer-Widget's source code can be found in the `clustergrammer-widget`_
 Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to raise an issue.
 
 .. _`ipywidgets version 6`: https://github.com/ipython/ipywidgets/releases
-.. _`ipywidgets`: https://github.com/ipython/ipywidgets
+.. _`ipywidgets`: http://ipywidgets.readthedocs.io/en/latest/
 .. _`cookie cutter`: https://github.com/jupyter/widget-cookiecutter
 .. _`issues`: https://github.com/MaayanLab/clustergrammer-widget/issues
 .. _`clustergrammer-widget`: https://github.com/MaayanLab/clustergrammer-widget
 .. _`nbviewer`: http://nbviewer.jupyter.org/
 .. _`Rendering Interactive Widgets on nbviewer`: http://ipywidgets.readthedocs.io/en/latest/embedding.html?highlight=save#rendering-interactive-widgets-on-nbviewer
 .. _`Running_clustergrammer_widget.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
+.. _`Pandas`: http://pandas.pydata.org/
+.. _`Numpy`: http://www.numpy.org/
+.. _`SciPy`: https://www.scipy.org/

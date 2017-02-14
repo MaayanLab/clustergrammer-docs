@@ -50,4 +50,3 @@ For more information on Clustergrammer's biology specific features please see th
 
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
-.. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer

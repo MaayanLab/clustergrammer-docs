@@ -146,14 +146,14 @@
             
   <div class="section" id="clustergrammer-jupyter-widget">
 <span id="clustergrammer-widget"></span><h1>Clustergrammer Jupyter Widget<a class="headerlink" href="#clustergrammer-jupyter-widget" title="Permalink to this headline">¶</a></h1>
-<p>Clustergrammer can be used within a Jupyter notebook as an interactive HTML widget and is compatable with Python 2 and 3. Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a Pandas DataFrame.</p>
+<p>Clustergrammer can be used within a Jupyter notebook as an interactive HTML widget and is compatable with Python 2 and 3. Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame.</p>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Numpy</li>
-<li>SciPy</li>
-<li>Pandas</li>
-<li>ipywidgets</li>
+<li><a class="reference external" href="http://www.numpy.org/">Numpy</a></li>
+<li><a class="reference external" href="https://www.scipy.org/">SciPy</a></li>
+<li><a class="reference external" href="http://pandas.pydata.org/">Pandas</a></li>
+<li><a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a></li>
 </ul>
 </div>
 <div class="section" id="installation">
@@ -168,8 +168,8 @@
 </div>
 <div class="section" id="clustergrammer-widget-workflow-example">
 <span id="clustergrammer-widget-workflow"></span><h2>Clustergrammer-Widget Workflow Example<a class="headerlink" href="#clustergrammer-widget-workflow-example" title="Permalink to this headline">¶</a></h2>
-<p>The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> (which is rendered using <cite>_nbviewer</cite>) shows how to visualize a matrix from a file and Pandas DataFrame. The following code snippits are from the notebook.</p>
-<p>This example shows how to visualize a matrix of gene expression data saved as a tab-separated file using <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> and Clustergrammer-Widget:</p>
+<p>The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> (which is rendered using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>) shows how to visualize a matrix from a file and <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame. The following code snippits are from the notebook.</p>
+<p>This example shows how to visualize a matrix of gene expression data saved as a tab-separated file:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># import clustergrammer_widgets and initialize network object</span>
 <span class="kn">from</span> <span class="nn">clustergrammer_widget</span> <span class="k">import</span> <span class="o">*</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
@@ -184,11 +184,11 @@
 <span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>Clustergrammer-Widget can also be thought of as a</p>
+<p>Clustergrammer-Widget can also be thought of as a general purpose <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame viewer</p>
 </div>
 <div class="section" id="clustergrammer-widget-development">
 <span id="clustergrammer-widget-dev"></span><h2>Clustergrammer-Widget Development<a class="headerlink" href="#clustergrammer-widget-development" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-Widget&#8217;s source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">clustergrammer-widget</a> GitHub repo. Clustergrammer-Widget is built using the <a class="reference external" href="https://github.com/ipython/ipywidgets">ipywidgets</a> framework (using the <a class="reference external" href="https://github.com/jupyter/widget-cookiecutter">cookie cutter</a> template).</p>
+<p>Clustergrammer-Widget&#8217;s source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">clustergrammer-widget</a> GitHub repo. Clustergrammer-Widget is built using the <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a> framework (using the <a class="reference external" href="https://github.com/jupyter/widget-cookiecutter">cookie cutter</a> template).</p>
 <p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez or Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget/issues">issues</a> feature to raise an issue.</p>
 </div>
 </div>
