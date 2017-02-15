@@ -25,6 +25,7 @@ Use Cases
 Clustergrammer was built to visualize biological data it is generally applicable for visualizing high-dimensional data in general. Below are links to several example use cases for Clustergrammer (see :ref:`case_studies` for more information):
 
 - `Cancer Cell Line Encyclopedia Gene Expression Data`_
+- `Zika Virus RNA-seq Data Visualization`_
 - `Iris flower dataset`_
 - `MNIST Handwritten Digit Dataset`_
 
@@ -59,12 +60,14 @@ Contents:
 
 
 .. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer/
-.. _`Iris flower dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
-.. _`MNIST Handwritten Digit Dataset`: https://maayanlab.github.io/MNIST_heatmaps/
-.. _`Cancer Cell Line Encyclopedia Gene Expression Data`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`D3.js`: https://d3js.org/
 .. _`Python`: https://www.python.org/
 .. _`nbviewer`: http://nbviewer.jupyter.org/
 .. _`Jupyter`: http://jupyter.org/
 .. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 .. _`example notebook`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
+
+.. _`Cancer Cell Line Encyclopedia Gene Expression Data`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
+.. _`Zika Virus RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb
+.. _`Iris flower dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
+.. _`MNIST Handwritten Digit Dataset`: https://maayanlab.github.io/MNIST_heatmaps/
