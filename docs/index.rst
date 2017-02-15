@@ -2,10 +2,12 @@
 
 Welcome to Clustergrammer's Documentation!
 ------------------------------------------
-Clustergrammer is a web-based tool for visualizing high-dimensional data as interactive and shareable hierarchically clustered heatmaps. The front-end is built using D3.js and back-end calculations are done using Python. The easiest ways to use Clustergrammer are to:
+Clustergrammer is a web-based tool for visualizing high-dimensional data (e.g. a matrix) as interactive and shareable hierarchically clustered heatmaps. Clustergrammer's front-end (:ref:`clustergrammer_js`) is built using `D3.js`_ and its back-end (:ref:`clustergrammer_py`) is built using `Python`_. The easiest ways to use Clustergrammer to produce an interactive and shareable heatmap visualization are to:
 
-- upload a file with your data to the Clustergrammer web application ``_,
-- or visualize your data within a Jupyter notebook using Clustergrammer-Widget.
+- upload a tab-separated matrix file using the Clustergrammer web app `homepage`_
+- or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share with `nbviewer`_
+
+The :ref:`clustergrammer_web` is the quickest way for a user to generate an interactive and shareable visualization (see `example visualization`_). For more technical users, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebook workflows and shared through Jupyter's `nbviewer`_ (see `example notebook`_). Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web appliications (see examples in :ref:`app_integration`).
 
 Please read the :doc:`getting_started` guide for more information.
 
@@ -17,15 +19,6 @@ Clustergrammer produces highly interactive visualizations that enable intuitive 
 
          <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe>
 
-About Clustergrammer
-====================
-Clustergrammer is a web-based visualization tool for visualizing high-dimensional data (e.g. a matrix of data) using hierarchically clustered heatmaps. Clustergrammer's front-end (Clustergrammer.js) is built using D3.js and its back-end (Clustergrammer.py) is built using Python (e.g. SciPy). The Clustergrammer project is modular and can be used in several ways:
-
-#. :ref:`clustergrammer_web`
-#. :ref:`clustergrammer_widget`
-#. :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries
-
-The web application is the easiest way for a user to generate an interactive and shareable visualization. For more technical users, the Jupyter widget enables visualizations to be built within Jupyter notebook workflows and shared through Jupyter's Nbviewer. Finally, web developers can use Clustergrammer's libraries or Clustergrammer-Web's API to dynamically generate visualizations for their own web appliications.
 
 Use Cases
 =========
@@ -59,6 +52,7 @@ Contents:
    building_webpage
    clustergrammer_js
    clustergrammer_py
+   app_integration
    developing_with_clustergrammer
    license
 
@@ -85,3 +79,9 @@ Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.
 .. _`Iris flower dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
 .. _`MNIST Handwritten Digit Dataset`: https://maayanlab.github.io/MNIST_heatmaps/
 .. _`Cancer Cell Line Encyclopedia Gene Expression Data`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
+.. _`D3.js`: https://d3js.org/
+.. _`Python`: https://www.python.org/
+.. _`nbviewer`: http://nbviewer.jupyter.org/
+.. _`Jupyter`: http://jupyter.org/
+.. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
+.. _`example notebook`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
