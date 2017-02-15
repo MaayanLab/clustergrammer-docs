@@ -148,13 +148,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-formats-and-input-output">
-<h1>Matrix Formats and Input/Output<a class="headerlink" href="#matrix-formats-and-input-output" title="Permalink to this headline">¶</a></h1>
+<span id="matrix-format-io"></span><h1>Matrix Formats and Input/Output<a class="headerlink" href="#matrix-formats-and-input-output" title="Permalink to this headline">¶</a></h1>
 <p>Clustergrammer takes as input either:</p>
 <ul class="simple">
 <li>a tab-separated matrix file</li>
 <li>a Pandas DataFrame (using <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>)</li>
 </ul>
-<p>The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In call cases, row and column names must be unique. Optional, name/category titles will be shown as titles above row/column names or names adjacent to row/column categories, respectively. The front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library can visualize matrices up to ~500,000 to ~1,000,000 cells large, but very large matrices may take a long time to cluster using the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> library. Clustergrammer is also optimized to visualize matrices with more rows than columns.</p>
+<p>The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In call cases, row and column names must be unique. Optional, name/category titles will be shown as titles above row/column names or names adjacent to row/column categories, respectively. The front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library can visualize matrices up to ~500,000 to ~1,000,000 cells large, but very large matrices may take a long time to cluster using the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> library. Clustergrammer is also optimized to visualize matrices with more rows than columns. Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer&#8217;s <a class="reference internal" href="interacting_with_viz.html#interactive-dim-reduction"><span class="std std-ref">Interactive Dimensionality Reduction</span></a>.</p>
 <div class="section" id="simple-matrix-format">
 <h2>Simple Matrix Format<a class="headerlink" href="#simple-matrix-format" title="Permalink to this headline">¶</a></h2>
 <p>The simplest tab-separated file format is shown here:</p>

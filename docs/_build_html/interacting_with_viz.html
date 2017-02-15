@@ -90,7 +90,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#zooming-and-panning">Zooming and Panning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#mouseover-interactions">Mouseover Interactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#row-and-column-reordering">Row and Column Reordering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dimensionality-reduction-row-filtering">Dimensionality Reduction (Row Filtering)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-dimensionality-reduction">Interactive Dimensionality Reduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interactive-dendrogram">Interactive Dendrogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interactive-categories">Interactive Categories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dendrogram-cropping">Dendrogram Cropping</a></li>
@@ -101,6 +101,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#row-searching">Row Searching</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#expanding">Expanding</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#biology-specific-interactions">Biology Specific Interactions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#row-downsampling">Row Downsampling</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
@@ -158,7 +159,7 @@
             
   <div class="section" id="interacting-with-the-visualization">
 <span id="interacting-with-viz"></span><h1>Interacting with the Visualization<a class="headerlink" href="#interacting-with-the-visualization" title="Permalink to this headline">¶</a></h1>
-<p>Data visualizations benefit enormously from user interactions that allow users to explore and generate new views of their data. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. This section will cover the types of interactions available to the user.</p>
+<p>Data visualizations benefit enormously from user interactions that allow users to explore and generate new views of their data. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are consistent across the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> and are built using <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>. This section will cover the types of interactions available to the user.</p>
 <div class="section" id="introduction-to-clustergrams-heatmaps">
 <h2>Introduction to Clustergrams/Heatmaps<a class="headerlink" href="#introduction-to-clustergrams-heatmaps" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row/column labels, commonly referred to as a heatmap or clustergram (this documentation uses heatmap and clustergram interchangeably, see <a class="reference external" href="http://www.pnas.org/content/95/25/14863.full">Eisen et al., 1998</a> for an early example using biological data). Clustergrams also typically have <a class="reference external" href="https://en.wikipedia.org/wiki/Dendrogram">dendrogram trees</a> to depict the hierarchy of row and column clusters produced by <a class="reference external" href="https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html">hierarchical clustering</a>.</p>
@@ -172,22 +173,27 @@
 <div class="section" id="mouseover-interactions">
 <h2>Mouseover Interactions<a class="headerlink" href="#mouseover-interactions" title="Permalink to this headline">¶</a></h2>
 <p>Mousing over visualization elements brings up more information in tooltips. For instance, mousing over matrix cells brings up a tooltip with the row name, column name, and value of the matrix cell.</p>
+<blockquote>
+<div><strong>&lt;add-screenshot of mouseover tooltip&gt;</strong></div></blockquote>
 <p>See <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a> for information about adding callback functions to mouseover events and <a class="reference internal" href="biology_specific_features.html#hzome-gene-info"><span class="std std-ref">Mouseover Gene Name and Description</span></a> for biology specific mouseover behavior.</p>
 </div>
 <div class="section" id="row-and-column-reordering">
-<h2>Row and Column Reordering<a class="headerlink" href="#row-and-column-reordering" title="Permalink to this headline">¶</a></h2>
+<span id="row-col-reordering"></span><h2>Row and Column Reordering<a class="headerlink" href="#row-and-column-reordering" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer allows users to order rows and columns based on:</p>
 <ul class="simple">
 <li>sum or variance</li>
 <li>hierarchical clustering order</li>
 <li>label order</li>
 </ul>
-<p>by using the reordering-buttons on the sidebar.</p>
-<p>Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see <a class="reference internal" href="#interactive-categories"><span class="std std-ref">Interactive Categories</span></a>).</p>
-<p>For instance, the matrix can be reorderd based on the value in a single row by double-clicking the row label or the matrix can be reorderd based on row categories by double-clicking the category label.</p>
+<p>by using the reordering-buttons on the sidebar. This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see <a class="reference internal" href="#interactive-categories"><span class="std std-ref">Interactive Categories</span></a>). For small matrices reordering events are animated to help users visually track the effects of the transformation.</p>
 </div>
-<div class="section" id="dimensionality-reduction-row-filtering">
-<h2>Dimensionality Reduction (Row Filtering)<a class="headerlink" href="#dimensionality-reduction-row-filtering" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interactive-dimensionality-reduction">
+<span id="interactive-dim-reduction"></span><h2>Interactive Dimensionality Reduction<a class="headerlink" href="#interactive-dimensionality-reduction" title="Permalink to this headline">¶</a></h2>
+<p>Dimensionality reduction is a useful data analysis technique (e.g. <a class="reference external" href="https://en.wikipedia.org/wiki/Principal_component_analysis">PCA</a> , <a class="reference external" href="https://lvdmaaten.github.io/tsne/">t-SNE</a>) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds-thousands of dimensions) down to a number that can be easily be analyzed and visualized (e.g. two-three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.</p>
+<p>Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this dimensionality reduction on clustering (where matrix rows represent dimensions, see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>). Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar. The sliders allow users to select their top 500, 250, 100, 50, 20, and 10 rows (clustered views of the filtered matrices are pre-calculated by <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>). This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low sum may not be of interest) and determining the effect of these dimensions on clustering.</p>
+<blockquote>
+<div><strong>&lt;addscreenshot of sidebar filters&gt;</strong></div></blockquote>
+<p>For small matrices dimensionality reduction is animated to help the user visualize the effects this transformation. Clustergrammer employs the concept of <a class="reference external" href="https://bost.ocks.org/mike/constancy/">object constancy</a> by using animations to help the user visually follow changes to their data. Filtering out dimensions (rows) occurs in two steps: 1) filtered rows fade out, then the remaining rows rearrange themselves into their new order (e.g. clustering order). Adding back in dimensions (rows) occurs in two steps: the current rows rearrange themselves into their new positions, then the new rows fade into view.</p>
 </div>
 <div class="section" id="interactive-dendrogram">
 <h2>Interactive Dendrogram<a class="headerlink" href="#interactive-dendrogram" title="Permalink to this headline">¶</a></h2>
@@ -218,6 +224,9 @@
 </div>
 <div class="section" id="biology-specific-interactions">
 <h2>Biology Specific Interactions<a class="headerlink" href="#biology-specific-interactions" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="row-downsampling">
+<h2>Row Downsampling<a class="headerlink" href="#row-downsampling" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

@@ -11,7 +11,7 @@ The Clustergrammer web application (referred to as Clustergrammer-Web) enables u
 Uploading Data through the Homepage
 ====================================
 
-**add upload screenshots**
+  **<add-screenshot upload screenshots>**
 
 
 .. _clustergrammer_web_viz:

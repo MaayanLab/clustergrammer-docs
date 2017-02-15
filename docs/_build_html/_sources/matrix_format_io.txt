@@ -1,3 +1,5 @@
+.. _matrix_format_io:
+
 Matrix Formats and Input/Output
 ------------------------------
 Clustergrammer takes as input either:
@@ -5,7 +7,7 @@ Clustergrammer takes as input either:
 - a tab-separated matrix file
 - a Pandas DataFrame (using :ref:`clustergrammer_py`)
 
-The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In call cases, row and column names must be unique. Optional, name/category titles will be shown as titles above row/column names or names adjacent to row/column categories, respectively. The front-end :ref:`clustergrammer_js` library can visualize matrices up to ~500,000 to ~1,000,000 cells large, but very large matrices may take a long time to cluster using the :ref:`clustergrammer_py` library. Clustergrammer is also optimized to visualize matrices with more rows than columns.
+The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In call cases, row and column names must be unique. Optional, name/category titles will be shown as titles above row/column names or names adjacent to row/column categories, respectively. The front-end :ref:`clustergrammer_js` library can visualize matrices up to ~500,000 to ~1,000,000 cells large, but very large matrices may take a long time to cluster using the :ref:`clustergrammer_py` library. Clustergrammer is also optimized to visualize matrices with more rows than columns. Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer's :ref:`interactive_dim_reduction`.
 
 Simple Matrix Format
 ====================

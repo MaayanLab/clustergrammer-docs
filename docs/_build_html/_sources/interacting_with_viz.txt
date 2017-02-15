@@ -2,7 +2,7 @@
 
 Interacting with the Visualization
 ----------------------------------
-Data visualizations benefit enormously from user interactions that allow users to explore and generate new views of their data. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. This section will cover the types of interactions available to the user.
+Data visualizations benefit enormously from user interactions that allow users to explore and generate new views of their data. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` and are built using :ref:`clustergrammer_js`. This section will cover the types of interactions available to the user.
 
 Introduction to Clustergrams/Heatmaps
 =====================================
@@ -20,7 +20,11 @@ Mouseover Interactions
 ======================
 Mousing over visualization elements brings up more information in tooltips. For instance, mousing over matrix cells brings up a tooltip with the row name, column name, and value of the matrix cell.
 
+  **<add-screenshot of mouseover tooltip>**
+
 See :ref:`clustergrammer_js_api` for information about adding callback functions to mouseover events and :ref:`hzome_gene_info` for biology specific mouseover behavior.
+
+.. _row_col_reordering:
 
 Row and Column Reordering
 =========================
@@ -30,14 +34,19 @@ Clustergrammer allows users to order rows and columns based on:
 - hierarchical clustering order
 - label order
 
-by using the reordering-buttons on the sidebar.
+by using the reordering-buttons on the sidebar. This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see :ref:`interactive_categories`). For small matrices reordering events are animated to help users visually track the effects of the transformation.
 
-Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see :ref:`interactive_categories`).
+.. _interactive_dim_reduction:
 
-For instance, the matrix can be reorderd based on the value in a single row by double-clicking the row label or the matrix can be reorderd based on row categories by double-clicking the category label.
+Interactive Dimensionality Reduction
+====================================
+Dimensionality reduction is a useful data analysis technique (e.g. `PCA`_ , `t-SNE`_) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds-thousands of dimensions) down to a number that can be easily be analyzed and visualized (e.g. two-three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.
 
-Dimensionality Reduction (Row Filtering)
-========================================
+Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this dimensionality reduction on clustering (where matrix rows represent dimensions, see :ref:`matrix_format_io`). Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar. The sliders allow users to select their top 500, 250, 100, 50, 20, and 10 rows (clustered views of the filtered matrices are pre-calculated by :ref:`clustergrammer_py`). This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low sum may not be of interest) and determining the effect of these dimensions on clustering.
+
+  **<addscreenshot of sidebar filters>**
+
+For small matrices dimensionality reduction is animated to help the user visualize the effects this transformation. Clustergrammer employs the concept of `object constancy`_ by using animations to help the user visually follow changes to their data. Filtering out dimensions (rows) occurs in two steps: 1) filtered rows fade out, then the remaining rows rearrange themselves into their new order (e.g. clustering order). Adding back in dimensions (rows) occurs in two steps: the current rows rearrange themselves into their new positions, then the new rows fade into view.
 
 Interactive Dendrogram
 ======================
@@ -71,7 +80,12 @@ Expanding
 Biology Specific Interactions
 =============================
 
+Row Downsampling
+================
+
 .. _`Eisen et al., 1998`: http://www.pnas.org/content/95/25/14863.full
 .. _`dendrogram trees`: https://en.wikipedia.org/wiki/Dendrogram
 .. _`t-SNE`: https://lvdmaaten.github.io/tsne/
 .. _`hierarchical clustering`: https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html
+.. _`PCA`: https://en.wikipedia.org/wiki/Principal_component_analysis
+.. _`object constancy`: https://bost.ocks.org/mike/constancy/
