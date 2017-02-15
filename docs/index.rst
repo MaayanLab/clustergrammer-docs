@@ -4,7 +4,7 @@ Welcome to Clustergrammer's Documentation!
 ------------------------------------------
 Clustergrammer is a web-based tool for visualizing high-dimensional data as interactive and shareable hierarchically clustered heatmaps. The front-end is built using D3.js and back-end calculations are done using Python. The easiest ways to use Clustergrammer are to:
 
-- upload a file with your data to the `Clustergrammer web application`_,
+- upload a file with your data to the Clustergrammer web application ``_,
 - or visualize your data within a Jupyter notebook using Clustergrammer-Widget.
 
 Please read the :doc:`getting_started` guide for more information.
@@ -21,9 +21,9 @@ About Clustergrammer
 ====================
 Clustergrammer is a web-based visualization tool for visualizing high-dimensional data (e.g. a matrix of data) using hierarchically clustered heatmaps. Clustergrammer's front-end (Clustergrammer.js) is built using D3.js and its back-end (Clustergrammer.py) is built using Python (e.g. SciPy). The Clustergrammer project is modular and can be used in several ways:
 
-#. :ref:`Web application <getting_started_web_app>`
-#. Jupyter Notebook :ref:`Interactive Widget <getting_started_widget>`
-#. `JavaScript <https://github.com/MaayanLab/clustergrammer>`_ and `Python <https://github.com/MaayanLab/clustergrammer-py>`_ Libraries
+#. :ref:`clustergrammer_web`
+#. :ref:`clustergrammer_widget`
+#. :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries
 
 The web application is the easiest way for a user to generate an interactive and shareable visualization. For more technical users, the Jupyter widget enables visualizations to be built within Jupyter notebook workflows and shared through Jupyter's Nbviewer. Finally, web developers can use Clustergrammer's libraries or Clustergrammer-Web's API to dynamically generate visualizations for their own web appliications.
 
@@ -76,7 +76,7 @@ Contact
 Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) for support, comments, and suggestions.
 
 
-.. _`Clustergrammer web application`: http://amp.pharm.mssm.edu/clustergrammer/
+.. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer/
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
 .. _`GEN3VA`: http://amp.pharm.mssm.edu/gen3va/
 .. _`L1000CDS2`: http://amp.pharm.mssm.edu/l1000cds2/
