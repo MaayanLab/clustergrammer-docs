@@ -50,7 +50,7 @@ Contents:
    :maxdepth: 2
 
    getting_started
-   web_app
+   clustergrammer_web
    jupyter_widget
    viz_interaction
    biology_specific_features

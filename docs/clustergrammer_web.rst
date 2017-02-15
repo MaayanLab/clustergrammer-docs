@@ -2,6 +2,8 @@
 
 Clustergrammer Web App
 ----------------------
+|github-version|
+
 The Clustergrammer web application (referred to as Clustergrammer-Web) enables users to easily generate interactive and shareable heatmap visualizations.
 
 .. _clustergrammer_web_upload:
@@ -57,3 +59,8 @@ Clustergrammer-Web is a `dockerized`_ web application built using the Python lib
 .. _`Flask`: http://flask.pocoo.org/
 .. _`dockerized`: https://docs.docker.com/
 .. _`clustergrammer-web`: https://github.com/MaayanLab/clustergrammer-web/
+
+.. |github-version| image:: https://img.shields.io/github/release/MaayanLab/clustergrammer-web.svg
+    :alt: version
+    :scale: 100%
+    :target: https://github.com/MaayanLab/clustergrammer-web
