@@ -2,7 +2,7 @@
 
 Interacting with the Visualization
 ----------------------------------
-Clustergrammer produces highly interactive heatmaps. This section will cover the types of interaction that are available.
+Data visualizations benefit enormously from interaction. Clustergrammer produces highly interactive heatmaps that enable users to intuitively interact with complex datasets and this section will cover the types of interactions available to the user.
 
 Zooming and Panning
 ===================

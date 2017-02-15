@@ -1,0 +1,11 @@
+run sphinx-autobuild (within docs directory)
+--------------------
+sphinx-autobuild . _build_html
+
+run spell check
+---------------
+sphinx-build -b spelling -d build/doctrees  . build/spelling
+
+add words to dictionary
+-----------------------
+edit spelling_wordlist.txt

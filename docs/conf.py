@@ -41,7 +41,12 @@ sphinx.environment.BuildEnvironment.warn_node = _warn_node
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['sphinxcontrib.spelling']
+
+spelling_word_list_filename='spelling_wordlist.txt'
+
+spelling_ignore_pypi_package_names=True
+spelling_ignore_acronyms=True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
