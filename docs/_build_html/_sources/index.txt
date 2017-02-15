@@ -22,7 +22,7 @@ Please read the :doc:`getting_started` guide for more detailed information on us
 
 Use Cases
 =========
-Clustergrammer was built to visualize biological data it is generally applicable for visualizing high-dimensional data in general. Below are links to several example use cases for Clustergrammer (see :ref:`case_studies` for more information):
+Clustergrammer was built to visualize biological data but is applicable for visualizing high-dimensional data in general. Below are links to several example use cases for Clustergrammer (see :ref:`case_studies` for more information):
 
 - `Cancer Cell Line Encyclopedia Gene Expression Data`_
 - `Zika Virus RNA-seq Data Visualization`_

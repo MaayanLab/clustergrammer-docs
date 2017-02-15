@@ -2,7 +2,7 @@
 
 Case Studies
 ------------
-Clustergrammer was built to visualize biological data it is generally applicable for visualizing high-dimensional data in general. Below are links to several example use cases for Clustergrammer:
+Clustergrammer was built to visualize biological data but is applicable for visualizing high-dimensional data in general. Below are links to several example use cases for Clustergrammer:
 
 - `Cancer Cell Line Encyclopedia Gene Expression Data`_
 - `Zika Virus RNA-seq Data Visualization`_
