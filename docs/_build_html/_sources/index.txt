@@ -11,18 +11,18 @@ Clustergrammer is a web-based tool for visualizing high-dimensional data (e.g. a
 Using Clustergrammer
 ====================
 
-The easiest ways to use Clustergrammer to produce an interactive and shareable heatmap visualization are to:
+The easiest ways to use Clustergrammer to produce an interactive and shareable heatmap visualization of your own data are to:
 
 - upload a tab-separated matrix file using the Clustergrammer web app `homepage`_
-- or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share with `nbviewer`_
+- or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share using `nbviewer`_
 
-The :ref:`clustergrammer_web` is the quickest way for a user to generate an interactive and shareable visualization (see `example visualization`_). For more technical users, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebook workflows and shared through Jupyter's `nbviewer`_ (see `example notebook`_). Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
+The :ref:`clustergrammer_web` is the quickest way for a user to generate an interactive and shareable visualization (see `example visualization`_). For more technical users that want to produce the visualization as part of a workflow, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebooks and shared through Jupyter's `nbviewer`_ (see `example notebook`_). Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
 
 Please read the :doc:`getting_started` guide for more detailed information on using Clustergrammer.
 
 Use Cases
 =========
-Clustergrammer was built to visualize biological data but is applicable for visualizing high-dimensional data in general. Below are links to several example use cases for Clustergrammer (see :ref:`case_studies` for more information):
+Clustergrammer was built to visualize biological data but is applicable for visualizing high-dimensional data in general. Below are links to several example use cases (see :ref:`case_studies` for more information):
 
 - `Cancer Cell Line Encyclopedia Gene Expression Data`_
 - `Zika Virus RNA-seq Data Visualization`_

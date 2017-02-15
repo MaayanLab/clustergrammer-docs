@@ -1,4 +1,6 @@
 Clustergrammer
+clustergrams
+clustergram
 app
 Avi
 Ma'ayan
@@ -15,7 +17,6 @@ dendrogram
 IFrame
 pre
 resizable
-clustergrams
 nbviewer
 screenshot
 snippits
@@ -26,3 +27,11 @@ tooltip
 Workflow
 programmatically
 apps
+resizable
+clustergrams
+nbviewer
+screenshot
+snippits
+numpy
+Heatmap
+heatmap

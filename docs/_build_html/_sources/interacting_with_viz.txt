@@ -2,7 +2,11 @@
 
 Interacting with the Visualization
 ----------------------------------
-Data visualizations benefit enormously from interaction. Clustergrammer produces highly interactive heatmaps that enable users to intuitively interact with complex datasets and this section will cover the types of interactions available to the user.
+Data visualizations benefit enormously from user interactions that allow users to explore and generate new views of their data. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. This section will cover the types of interactions available to the user.
+
+Heatmap/Clustergram Introduction
+================================
+Clustergrammer visualizes high-dimensional data as a heirarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers), commonly referred to as a heatmap or clustergram (this documentation uses heatmap and clustergram interchangably, see `Eisen et al., 1998`_ for an example using biological data).
 
 Zooming and Panning
 ===================
@@ -45,3 +49,5 @@ Expanding
 
 Biology Specific Interactions
 =============================
+
+.. _`Eisen et al., 1998`: http://www.pnas.org/content/95/25/14863.full
