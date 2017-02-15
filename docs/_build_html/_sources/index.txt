@@ -2,7 +2,7 @@
 
 Welcome to Clustergrammer's Documentation!
 ------------------------------------------
-Clustergrammer is a web-based tool for visualizing high-dimensional data (e.g. a matrix) as an interactive and shareable hierarchically clustered heatmap. Clustergrammer's front-end (:ref:`clustergrammer_js`) is built using `D3.js`_ and its back-end (:ref:`clustergrammer_py`) is built using `Python`_. Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis, see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features:
+Clustergrammer is a web-based tool for visualizing high-dimensional data (e.g. a matrix) as an interactive and shareable hierarchically clustered heatmap. Clustergrammer's front-end (:ref:`clustergrammer_js`) is built using `D3.js`_ and its back-end (:ref:`clustergrammer_py`) is built using `Python`_. Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis, see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features (see: :ref:`interacting_with_viz` for more information):
 
 .. raw:: html
 
@@ -46,7 +46,7 @@ Contents:
    getting_started
    clustergrammer_web
    clustergrammer_widget
-   viz_interaction
+   interacting_with_viz
    biology_specific_features
    case_studies
    matrix_format_io
@@ -56,8 +56,6 @@ Contents:
    app_integration
    developing_with_clustergrammer
    license
-
-
 
 .. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer/
 .. _`D3.js`: https://d3js.org/

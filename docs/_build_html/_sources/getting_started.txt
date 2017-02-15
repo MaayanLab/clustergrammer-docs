@@ -35,13 +35,15 @@ Clustergrammer produces highly interactive visualizations that enable intuitive 
 - interactive row/column categories
 - cropping
 
-Press play or interact with the demo to see
+Press play or interact with the demo:
 
 .. raw:: html
 
          <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe>
 
-For more information on interacting with the visualization please see the :ref:`viz_interaction` section. Clustergrammer also has biology-specific features including:
+For more information please see the :ref:`interacting_with_viz` section.
+
+Clustergrammer also has biology-specific features including:
 
 - mouseover gene (row) names to show the full name and description of a gene (through `Harmonizome`_)
 - find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through `Enrichr`_

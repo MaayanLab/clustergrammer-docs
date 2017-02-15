@@ -1,8 +1,11 @@
-.. _viz_interaction:
+.. _interacting_with_viz:
 
-Interactive Visualization
--------------------------
+Interacting with the Visualization
+----------------------------------
 Clustergrammer produces highly interactive heatmaps. This section will cover the types of interaction that are available.
+
+Brush-Cropping
+==============
 
 Downloading Data
 ================
