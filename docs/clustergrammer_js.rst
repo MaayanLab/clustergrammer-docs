@@ -22,7 +22,7 @@ Clustergrammer.js can be installed using node package manager (`npm package`_) w
 
   npm install clustergrammer
 
-or the source code and library, ``clustergrammer.js``, can be obtained from the `clustergrammer`_ Github repo.
+or the source code and library, ``clustergrammer.js``, can be obtained from the `clustergrammer`_ GitHub repo.
 
 .. _javascript_workflow_example:
 
@@ -39,13 +39,13 @@ This workflow shows how to make a visualization using a JSON produced by Cluster
 
   var cgm = Clustergrammer(args);
 
-The id of the container where the visualizaton will be made is passed as ``root`` (this root container must be made by the user). The visualization JSON contains the information necessary to make the visualization and is passed as ``network_data``. See the Clustergrammer.js API for additional arguments that can be passed to Clustergrammer.js.
+The id of the container where the visualization will be made is passed as ``root`` (this root container must be made by the user). The visualization JSON contains the information necessary to make the visualization and is passed as ``network_data``. See the Clustergrammer.js API for additional arguments that can be passed to Clustergrammer.js.
 
 .. _example_pages:
 
 Example Pages
 =============
-The `clustergrammer`_ contains several example pages demonstrating how to make a webpage with a Clustergramemr heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization.
+The `clustergrammer`_ contains several example pages demonstrating how to make a webpage with a Clustergrammer heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization.
 
 The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
 
