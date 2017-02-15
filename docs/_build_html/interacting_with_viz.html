@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Interacting with the Visualization &mdash; Clustergrammer 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
+        <link rel="next" title="Biology-Specific Features" href="biology_specific_features.html"/>
+        <link rel="prev" title="Clustergrammer Jupyter Widget" href="clustergrammer_widget.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Clustergrammer
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer Jupyter Widget</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interacting with the Visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#zooming-and-panning">Zooming and Panning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mouseover-interactions">Mouseover Interactions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#row-and-column-reordering">Row and Column Reordering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dimensionality-reduction-row-filtering">Dimensionality Reduction (Row Filtering)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-dendrogram">Interactive Dendrogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-categories">Interactive Categories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dendrogram-cropping">Dendrogram Cropping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#brush-cropping">Brush-Cropping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-data-to-file">Downloading Data to File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#taking-a-snapshot-of-the-visualization">Taking a Snapshot of the Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changing-the-opacity">Changing the Opacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#row-searching">Row Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#expanding">Expanding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biology-specific-interactions">Biology Specific Interactions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Clustergrammer for Web-development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_integration.html">Clustergrammer App Integrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Clustergrammer</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Interacting with the Visualization</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/interacting_with_viz.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="interacting-with-the-visualization">
+<span id="interacting-with-viz"></span><h1>Interacting with the Visualization<a class="headerlink" href="#interacting-with-the-visualization" title="Permalink to this headline">¶</a></h1>
+<p>Clustergrammer produces highly interactive heatmaps. This section will cover the types of interaction that are available.</p>
+<div class="section" id="zooming-and-panning">
+<h2>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="mouseover-interactions">
+<h2>Mouseover Interactions<a class="headerlink" href="#mouseover-interactions" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="row-and-column-reordering">
+<h2>Row and Column Reordering<a class="headerlink" href="#row-and-column-reordering" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="dimensionality-reduction-row-filtering">
+<h2>Dimensionality Reduction (Row Filtering)<a class="headerlink" href="#dimensionality-reduction-row-filtering" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="interactive-dendrogram">
+<h2>Interactive Dendrogram<a class="headerlink" href="#interactive-dendrogram" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="interactive-categories">
+<h2>Interactive Categories<a class="headerlink" href="#interactive-categories" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="dendrogram-cropping">
+<h2>Dendrogram Cropping<a class="headerlink" href="#dendrogram-cropping" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="brush-cropping">
+<h2>Brush-Cropping<a class="headerlink" href="#brush-cropping" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="downloading-data-to-file">
+<h2>Downloading Data to File<a class="headerlink" href="#downloading-data-to-file" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="taking-a-snapshot-of-the-visualization">
+<h2>Taking a Snapshot of the Visualization<a class="headerlink" href="#taking-a-snapshot-of-the-visualization" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="changing-the-opacity">
+<h2>Changing the Opacity<a class="headerlink" href="#changing-the-opacity" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="row-searching">
+<h2>Row Searching<a class="headerlink" href="#row-searching" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="expanding">
+<h2>Expanding<a class="headerlink" href="#expanding" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="biology-specific-interactions">
+<h2>Biology Specific Interactions<a class="headerlink" href="#biology-specific-interactions" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="biology_specific_features.html" class="btn btn-neutral float-right" title="Biology-Specific Features" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="clustergrammer_widget.html" class="btn btn-neutral" title="Clustergrammer Jupyter Widget" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Nicolas F. Fernandez.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
