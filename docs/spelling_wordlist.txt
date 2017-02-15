@@ -35,3 +35,6 @@ snippits
 numpy
 Heatmap
 heatmap
+Heatmaps
+heatmaps
+interpretability
