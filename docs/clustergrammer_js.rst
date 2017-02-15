@@ -2,6 +2,8 @@
 
 Clustergrammer-JS
 -----------------
+|npm-status|
+
 Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in `SVG`_ using the visualization library `D3.js`_
 
 
@@ -81,3 +83,12 @@ Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the
 .. _`Webpack Module Bundler`: https://webpack.github.io/
 .. _`src`: https://github.com/MaayanLab/clustergrammer/tree/master/src
 .. _`issues`: https://github.com/MaayanLab/clustergrammer/issues
+
+
+[![NPM](https://img.shields.io/npm/v/clustergrammer.svg)](https://www.npmjs.com/package/clustergrammer)
+
+
+.. |npm-status| image:: https://img.shields.io/npm/v/clustergrammer.svg
+    :alt: build status
+    :scale: 100%
+    :target: https://www.npmjs.com/package/clustergrammer
