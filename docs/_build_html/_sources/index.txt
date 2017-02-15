@@ -16,7 +16,7 @@ The easiest ways to use Clustergrammer to produce an interactive and shareable h
 - upload a tab-separated matrix file using the Clustergrammer web app `homepage`_
 - or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share with `nbviewer`_
 
-The :ref:`clustergrammer_web` is the quickest way for a user to generate an interactive and shareable visualization (see `example visualization`_). For more technical users, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebook workflows and shared through Jupyter's `nbviewer`_ (see `example notebook`_). Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web appliications (see examples in :ref:`app_integration`).
+The :ref:`clustergrammer_web` is the quickest way for a user to generate an interactive and shareable visualization (see `example visualization`_). For more technical users, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebook workflows and shared through Jupyter's `nbviewer`_ (see `example notebook`_). Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
 
 Please read the :doc:`getting_started` guide for more detailed information on using Clustergrammer.
 

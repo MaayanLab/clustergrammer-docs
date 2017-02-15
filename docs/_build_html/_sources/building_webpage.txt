@@ -12,7 +12,7 @@ The Clustergrammer web app can be used to produce visualizations that are embedd
 
   <iframe id="iframe_preview" src="http://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt" frameborder="0"></iframe>
 
-Users can obtain a permanent link to their visualization by manually uploading their data  using the upload section of Clustergrammer-Web's `homepage`_ and copying the URL to the full-screen version of their visualization. Alternatively users can programatically upload their data using the :ref:`clustergrammer_web_api` and receive their permanent links through the API.
+Users can obtain a permanent link to their visualization by manually uploading their data  using the upload section of Clustergrammer-Web's `homepage`_ and copying the URL to the full-screen version of their visualization. Alternatively users can programmatically upload their data using the :ref:`clustergrammer_web_api` and receive their permanent links through the API.
 
 
 Adding Clustergrammer to a Page
