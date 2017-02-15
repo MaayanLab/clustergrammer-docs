@@ -1,8 +1,0 @@
-clustergrammer_py.rst:7: (Clustergramer) 
-clustergrammer_py.rst:7: (compatable) 
-clustergrammer_web.rst:31: (programatically) 
-clustergrammer_widget.rst:8: (compatable) 
-developing_with_clustergrammer.rst:10: (apps) 
-index.rst:19: (appliications) 
-license.rst:6: (thrid) 
-matrix_format_io.rst:29: (exmaple) 

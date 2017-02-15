@@ -28,7 +28,7 @@ Uploading a matrix to Clustergrammer-Web will redirect the user to a new permane
 
 Clustergrammer-Web API
 ======================
-Clustergrammer-Web's RESful API enables users to programatically generate visualizations. The API can be useful for users that need to generate many clustergrams or developers that need to automatically generate visualizations for their own web application.
+Clustergrammer-Web's RESful API enables users to programmatically generate visualizations. The API can be useful for users that need to generate many clustergrams or developers that need to automatically generate visualizations for their own web application.
 
 *Matrix Upload*
 
