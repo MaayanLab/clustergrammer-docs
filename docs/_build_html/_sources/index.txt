@@ -51,7 +51,7 @@ Contents:
 
    getting_started
    clustergrammer_web
-   jupyter_widget
+   clustergrammer_widget
    viz_interaction
    biology_specific_features
    case_studies
