@@ -24,6 +24,7 @@ numpy
 scipy
 json
 tooltip
+tooltips
 Workflow
 programmatically
 apps
@@ -38,3 +39,5 @@ heatmap
 Heatmaps
 heatmaps
 interpretability
+downsampling
+downsampled

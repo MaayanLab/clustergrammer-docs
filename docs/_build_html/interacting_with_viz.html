@@ -101,7 +101,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#row-searching">Row Searching</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#expanding">Expanding</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#biology-specific-interactions">Biology Specific Interactions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#row-downsampling">Row Downsampling</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
@@ -167,8 +166,9 @@
 </div>
 <div class="section" id="zooming-and-panning">
 <h2>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer allows users to zoom and pan by scrolling and dragging. This is useful for working with large datasets (where labels are not readable wihouth zooming) and for zooming into regions of interest of your data.</p>
-<p>Zooming occurs in two stages. First zooming/panning occurs in the direction that matrix cells have been more compressed (e.g. if there are more more rows than columns, then matrix cells will be compressed in the vertical direction and will be wide). Once zooming has de-compressed matrix cells (e.g. matrix cells are now squares) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction.</p>
+<p>Clustergrammer allows users to zoom and pan by scrolling and dragging. This is useful for working with large datasets (where labels are not readable without zooming) and for zooming into regions of interest of your data.</p>
+<p>Zooming occurs in two stages. First zooming/panning occurs in the direction that matrix cells have been more compressed (e.g. if there are more more rows than columns, then matrix cells will be compressed in the vertical direction and will be wide). Once zooming has decompressed matrix cells (e.g. matrix cells are now squares) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction.</p>
+<p>Clustergrammer is capable of visualizing matrices with ~500,000 to ~1,000,000 matrix cells, but is optimized to visualize matrices with more rows than columns. Clustergrammer uses row-downsampling to improve the visualization performance with large matrices. If a user visualizes a matrix with a large number of rows (e.g. &gt;1000-2000) such that each matrix cell is less than 1 pixel tall, then Clustergrammer will perform downsampling. When zoomed out, the user will see a downsampled version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix cells are &gt; 1 pixels tall). Clustergrammer will also not display row labels until their font size is above ~5 pixels and they are readable. Clustergrammer will also hide row/column labels while zooming into large matrices to improve performance.</p>
 </div>
 <div class="section" id="mouseover-interactions">
 <h2>Mouseover Interactions<a class="headerlink" href="#mouseover-interactions" title="Permalink to this headline">¶</a></h2>
@@ -192,7 +192,7 @@
 <p>Dimensionality reduction is a useful data analysis technique (e.g. <a class="reference external" href="https://en.wikipedia.org/wiki/Principal_component_analysis">PCA</a> , <a class="reference external" href="https://lvdmaaten.github.io/tsne/">t-SNE</a>) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds-thousands of dimensions) down to a number that can be easily be analyzed and visualized (e.g. two-three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.</p>
 <p>Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this dimensionality reduction on clustering (where matrix rows represent dimensions, see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>). Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar. The sliders allow users to select their top 500, 250, 100, 50, 20, and 10 rows (clustered views of the filtered matrices are pre-calculated by <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>). This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low sum may not be of interest) and determining the effect of these dimensions on clustering.</p>
 <blockquote>
-<div><strong>&lt;addscreenshot of sidebar filters&gt;</strong></div></blockquote>
+<div><strong>&lt;add-screenshot of sidebar filters and maybe before after fiiltering&gt;</strong></div></blockquote>
 <p>For small matrices dimensionality reduction is animated to help the user visualize the effects this transformation. Clustergrammer employs the concept of <a class="reference external" href="https://bost.ocks.org/mike/constancy/">object constancy</a> by using animations to help the user visually follow changes to their data. Filtering out dimensions (rows) occurs in two steps: 1) filtered rows fade out, then the remaining rows rearrange themselves into their new order (e.g. clustering order). Adding back in dimensions (rows) occurs in two steps: the current rows rearrange themselves into their new positions, then the new rows fade into view.</p>
 </div>
 <div class="section" id="interactive-dendrogram">
@@ -224,9 +224,6 @@
 </div>
 <div class="section" id="biology-specific-interactions">
 <h2>Biology Specific Interactions<a class="headerlink" href="#biology-specific-interactions" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="row-downsampling">
-<h2>Row Downsampling<a class="headerlink" href="#row-downsampling" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

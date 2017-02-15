@@ -45,7 +45,7 @@ This format is easier to work with in Python and can be imported/exported easily
 
 Category Types: String and Value
 ================================
-Row and column categories can be of type: string or value. If categories are given as strings (e.g. containing letters and not just numbers) then categories will be depicted using different colors. If categories are of type value (e.g. all categories contain no letters and only numbers) then categories will be depicted using a two colors (grey for positive and orange for negative) and the value will be depicted as opacity (similar to how matrix cells are visually encoded).
+Row and column categories can be of type: string or value. If categories are given as strings (e.g. containing letters and not just numbers) then categories will be depicted using different colors. If categories are of type value (e.g. all categories contain no letters and only numbers) then categories will be depicted using a two colors (gray for positive and orange for negative) and the value will be depicted as opacity (similar to how matrix cells are visually encoded).
 
 Value-based categories can be useful for adding a dimension of data to your visualization (e.g. time) that you would like to compare to your other dimensions, but would not like to influence your clustering. Value-based and String-based categories can also be used to reorder your matrix (see :ref:`interactive_categories`).
 
