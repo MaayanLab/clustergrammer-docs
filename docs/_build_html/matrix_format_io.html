@@ -92,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#simple-matrix-format">Simple Matrix Format</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#simple-matrix-category-format">Simple Matrix-Category Format</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tuple-matrix-category-format">Tuple Matrix-Category Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#category-types-string-and-value">Category Types: String and Value</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#matrix-file-examples">Matrix File Examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#matrix-input-output-to-clustergrammer-py">Matrix Input/Output to Clustergrammer.py</a></li>
 </ul>
@@ -181,6 +182,11 @@
 </pre></div>
 </div>
 <p>This format is easier to work with in Python and can be imported/exported easily into Pandas DataFrames and as tab-separated files. Note that titles have been added to row/column names and categories as discussed above. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/txt/tuple_cats.txt">tuple_cats</a> for an example of this matrix format.</p>
+</div>
+<div class="section" id="category-types-string-and-value">
+<h2>Category Types: String and Value<a class="headerlink" href="#category-types-string-and-value" title="Permalink to this headline">¶</a></h2>
+<p>Row and column categories can be of type: string or value. If categories are given as strings (e.g. containing letters and not just numbers) then categories will be depicted using different colors. If categories are of type value (e.g. all categories contain no letters and only numbers) then categories will be depicted using a two colors (grey for positive and orange for negative) and the value will be depicted as opacity (similar to how matrix cells are visually encoded).</p>
+<p>Value-based categories can be useful for adding a dimension of data to your visualization (e.g. time) that you would like to compare to your other dimensions, but would not like to influence your clustering. Value-based and String-based categories can also be used to reorder your matrix (see <a class="reference internal" href="interacting_with_viz.html#interactive-categories"><span class="std std-ref">Interactive Categories</span></a>).</p>
 </div>
 <div class="section" id="matrix-file-examples">
 <h2>Matrix File Examples<a class="headerlink" href="#matrix-file-examples" title="Permalink to this headline">¶</a></h2>

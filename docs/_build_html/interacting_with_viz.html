@@ -161,17 +161,30 @@
 <p>Data visualizations benefit enormously from user interactions that allow users to explore and generate new views of their data. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. This section will cover the types of interactions available to the user.</p>
 <div class="section" id="introduction-to-clustergrams-heatmaps">
 <h2>Introduction to Clustergrams/Heatmaps<a class="headerlink" href="#introduction-to-clustergrams-heatmaps" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row and column labels, commonly referred to as a heatmap or clustergram (this documentation uses heatmap and clustergram interchangeably, see <a class="reference external" href="http://www.pnas.org/content/95/25/14863.full">Eisen et al., 1998</a> for an early example using biological data). Clustergrams also typically have <a class="reference external" href="https://en.wikipedia.org/wiki/Dendrogram">dendrogram trees</a> to depict the hierarchy of row and column clusters formed from hierarchical clustering.</p>
+<p>Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row/column labels, commonly referred to as a heatmap or clustergram (this documentation uses heatmap and clustergram interchangeably, see <a class="reference external" href="http://www.pnas.org/content/95/25/14863.full">Eisen et al., 1998</a> for an early example using biological data). Clustergrams also typically have <a class="reference external" href="https://en.wikipedia.org/wiki/Dendrogram">dendrogram trees</a> to depict the hierarchy of row and column clusters produced by <a class="reference external" href="https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html">hierarchical clustering</a>.</p>
 <p>Heatmaps are a powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. <a class="reference external" href="https://lvdmaaten.github.io/tsne/">t-SNE</a>). For instance, columns can depict measurements (e.g. data-points) and rows can depict dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions. However, static heatmaps are of limited use for visualizing large datasets (e.g. matrix cells and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns.</p>
 </div>
 <div class="section" id="zooming-and-panning">
 <h2>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Permalink to this headline">¶</a></h2>
+<p>Clustergrammer allows users to zoom and pan by scrolling and dragging. This is useful for working with large datasets (where labels are not readable wihouth zooming) and for zooming into regions of interest of your data.</p>
+<p>Zooming occurs in two stages. First zooming/panning occurs in the direction that matrix cells have been more compressed (e.g. if there are more more rows than columns, then matrix cells will be compressed in the vertical direction and will be wide). Once zooming has de-compressed matrix cells (e.g. matrix cells are now squares) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction.</p>
 </div>
 <div class="section" id="mouseover-interactions">
 <h2>Mouseover Interactions<a class="headerlink" href="#mouseover-interactions" title="Permalink to this headline">¶</a></h2>
+<p>Mousing over visualization elements brings up more information in tooltips. For instance, mousing over matrix cells brings up a tooltip with the row name, column name, and value of the matrix cell.</p>
+<p>See <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a> for information about adding callback functions to mouseover events and <a class="reference internal" href="biology_specific_features.html#hzome-gene-info"><span class="std std-ref">Mouseover Gene Name and Description</span></a> for biology specific mouseover behavior.</p>
 </div>
 <div class="section" id="row-and-column-reordering">
 <h2>Row and Column Reordering<a class="headerlink" href="#row-and-column-reordering" title="Permalink to this headline">¶</a></h2>
+<p>Clustergrammer allows users to order rows and columns based on:</p>
+<ul class="simple">
+<li>sum or variance</li>
+<li>hierarchical clustering order</li>
+<li>label order</li>
+</ul>
+<p>by using the reordering-buttons on the sidebar.</p>
+<p>Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see <a class="reference internal" href="#interactive-categories"><span class="std std-ref">Interactive Categories</span></a>).</p>
+<p>For instance, the matrix can be reorderd based on the value in a single row by double-clicking the row label or the matrix can be reorderd based on row categories by double-clicking the category label.</p>
 </div>
 <div class="section" id="dimensionality-reduction-row-filtering">
 <h2>Dimensionality Reduction (Row Filtering)<a class="headerlink" href="#dimensionality-reduction-row-filtering" title="Permalink to this headline">¶</a></h2>
@@ -180,7 +193,7 @@
 <h2>Interactive Dendrogram<a class="headerlink" href="#interactive-dendrogram" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="interactive-categories">
-<h2>Interactive Categories<a class="headerlink" href="#interactive-categories" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Interactive Categories<a class="headerlink" href="#interactive-categories" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="dendrogram-cropping">
 <h2>Dendrogram Cropping<a class="headerlink" href="#dendrogram-cropping" title="Permalink to this headline">¶</a></h2>

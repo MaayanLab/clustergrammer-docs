@@ -4,6 +4,8 @@ Biology-Specific Features
 -------------------------
 Clustergrammer was built to visualize high-dimensional biological data (e.g. genome-wide expression data), but can be generally applied to any high-dimensional data (e.g. any matrix). Clustergrammer has several biology-specific features that facilitate analysis of gene-level biological data, such as: gene-expression data, proteomics-data, etc. To take advantage of these features gene-level data (e.g. dimensions) must be given as rows. See `CCLE Explorer`_ for examples of gene-expression data. These features are available in the :ref:`clustergrammer_web` as well as the :ref:`clustergrammer_widget`.
 
+.. _hzome_gene_info:
+
 Mouseover Gene Name and Description
 ===================================
 The human genome consists of over 20,000 genes and modern high-throughput measurements are capable of making measurements across the entire genome (e.g. genome-wide expression studies). Human genes have official gene symbols (e.g. EGFR) that are frequently used to label genes in these datasets. Since no biologist can be knowledgeable about every gene in the genome a common and repetitive task for biologists is looking up the names and descriptions of genes (given as official gene symbols) in a dataset or visualization. To streamline this, Clustergrammer automatically gives the full name and description of a gene (provided by data aggregated through the `Harmonizome`_) as a tooltip when a user mouses over a gene label. This simple feature speeds up analysis of large gene-level datasets.
