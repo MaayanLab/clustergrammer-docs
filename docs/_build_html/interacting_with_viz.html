@@ -93,9 +93,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#interactive-dimensionality-reduction">Interactive Dimensionality Reduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interactive-dendrogram">Interactive Dendrogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interactive-categories">Interactive Categories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dendrogram-cropping">Dendrogram Cropping</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#brush-cropping">Brush-Cropping</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#downloading-data-to-file">Downloading Data to File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cropping">Cropping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-data-from-the-visualization">Downloading Data from the Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#taking-a-snapshot-of-the-visualization">Taking a Snapshot of the Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#changing-the-opacity">Changing the Opacity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#row-searching">Row Searching</a></li>
@@ -167,14 +166,16 @@
 <div class="section" id="zooming-and-panning">
 <h2>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer allows users to zoom and pan by scrolling and dragging. This is useful for working with large datasets (where labels are not readable without zooming) and for zooming into regions of interest of your data.</p>
+<p><strong>Zooming Panning Behavior</strong></p>
 <p>Zooming occurs in two stages. First zooming/panning occurs in the direction that matrix cells have been more compressed (e.g. if there are more more rows than columns, then matrix cells will be compressed in the vertical direction and will be wide). Once zooming has decompressed matrix cells (e.g. matrix cells are now squares) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction.</p>
-<p>Clustergrammer is capable of visualizing matrices with ~500,000 to ~1,000,000 matrix cells, but is optimized to visualize matrices with more rows than columns. Clustergrammer uses row-downsampling to improve the visualization performance with large matrices. If a user visualizes a matrix with a large number of rows (e.g. &gt;1000-2000) such that each matrix cell is less than 1 pixel tall, then Clustergrammer will perform downsampling. When zoomed out, the user will see a downsampled version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix cells are &gt; 1 pixels tall). Clustergrammer will also not display row labels until their font size is above ~5 pixels and they are readable. Clustergrammer will also hide row/column labels while zooming into large matrices to improve performance.</p>
+<p><strong>Large Matrix Behavior</strong></p>
+<p>Clustergrammer is capable of visualizing matrices with ~500,000 to ~1,000,000 matrix cells, but is optimized to visualize matrices with more rows than columns. Clustergrammer uses row-downsampling to improve visualization performance with large matrices. If a user visualizes a matrix with a large number of rows (e.g. &gt;1000-2000) such that each matrix cell is less than 1 pixel tall, then Clustergrammer will perform downsampling. When zoomed out, the user will see a downsampled version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix cells are &gt; 1 pixels tall). Clustergrammer will also not display row labels until their font size is above ~5 pixels and they are readable. Clustergrammer will also hide row/column labels while zooming into large matrices to improve performance.</p>
 </div>
 <div class="section" id="mouseover-interactions">
 <h2>Mouseover Interactions<a class="headerlink" href="#mouseover-interactions" title="Permalink to this headline">¶</a></h2>
 <p>Mousing over visualization elements brings up more information in tooltips. For instance, mousing over matrix cells brings up a tooltip with the row name, column name, and value of the matrix cell.</p>
 <blockquote>
-<div><strong>&lt;add-screenshot of mouseover tooltip&gt;</strong></div></blockquote>
+<div><strong>&lt;screenshot of mouseover tooltip&gt;</strong></div></blockquote>
 <p>See <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a> for information about adding callback functions to mouseover events and <a class="reference internal" href="biology_specific_features.html#hzome-gene-info"><span class="std std-ref">Mouseover Gene Name and Description</span></a> for biology specific mouseover behavior.</p>
 </div>
 <div class="section" id="row-and-column-reordering">
@@ -190,40 +191,55 @@
 <div class="section" id="interactive-dimensionality-reduction">
 <span id="interactive-dim-reduction"></span><h2>Interactive Dimensionality Reduction<a class="headerlink" href="#interactive-dimensionality-reduction" title="Permalink to this headline">¶</a></h2>
 <p>Dimensionality reduction is a useful data analysis technique (e.g. <a class="reference external" href="https://en.wikipedia.org/wiki/Principal_component_analysis">PCA</a> , <a class="reference external" href="https://lvdmaaten.github.io/tsne/">t-SNE</a>) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds-thousands of dimensions) down to a number that can be easily be analyzed and visualized (e.g. two-three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.</p>
+<p><strong>Row Filter Sliders</strong></p>
 <p>Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this dimensionality reduction on clustering (where matrix rows represent dimensions, see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>). Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar. The sliders allow users to select their top 500, 250, 100, 50, 20, and 10 rows (clustered views of the filtered matrices are pre-calculated by <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>). This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low sum may not be of interest) and determining the effect of these dimensions on clustering.</p>
 <blockquote>
-<div><strong>&lt;add-screenshot of sidebar filters and maybe before after fiiltering&gt;</strong></div></blockquote>
+<div><strong>&lt;screenshot of sidebar filters and maybe before after fiiltering&gt;</strong></div></blockquote>
+<p><strong>Visualizing Dimensionality Reduction</strong></p>
 <p>For small matrices dimensionality reduction is animated to help the user visualize the effects this transformation. Clustergrammer employs the concept of <a class="reference external" href="https://bost.ocks.org/mike/constancy/">object constancy</a> by using animations to help the user visually follow changes to their data. Filtering out dimensions (rows) occurs in two steps: 1) filtered rows fade out, then the remaining rows rearrange themselves into their new order (e.g. clustering order). Adding back in dimensions (rows) occurs in two steps: the current rows rearrange themselves into their new positions, then the new rows fade into view.</p>
 </div>
 <div class="section" id="interactive-dendrogram">
-<h2>Interactive Dendrogram<a class="headerlink" href="#interactive-dendrogram" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Interactive Dendrogram<a class="headerlink" href="#interactive-dendrogram" title="Permalink to this headline">¶</a></h2>
+<p><em>explain what a dendrogram is</em></p>
+<p><em>explain how a user can interact with the dendrogram</em></p>
+<p><em>explain how a user can crop using the dendrogram</em></p>
 </div>
 <div class="section" id="interactive-categories">
-<span id="id1"></span><h2>Interactive Categories<a class="headerlink" href="#interactive-categories" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Interactive Categories<a class="headerlink" href="#interactive-categories" title="Permalink to this headline">¶</a></h2>
+<p><em>Explain why categories are useful</em></p>
+<p><em>mouseover highlighting, reordering, dendrogram breakdown</em></p>
+<p><em>category types: string value</em></p>
+<p><em>category updating API</em></p>
 </div>
-<div class="section" id="dendrogram-cropping">
-<h2>Dendrogram Cropping<a class="headerlink" href="#dendrogram-cropping" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cropping">
+<h2>Cropping<a class="headerlink" href="#cropping" title="Permalink to this headline">¶</a></h2>
+<p><em>brush cropping</em></p>
 </div>
-<div class="section" id="brush-cropping">
-<h2>Brush-Cropping<a class="headerlink" href="#brush-cropping" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="downloading-data-to-file">
-<h2>Downloading Data to File<a class="headerlink" href="#downloading-data-to-file" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="downloading-data-from-the-visualization">
+<h2>Downloading Data from the Visualization<a class="headerlink" href="#downloading-data-from-the-visualization" title="Permalink to this headline">¶</a></h2>
+<p>Obtaining the underlying data from a visualization for re-use and re-analysis can be a tedious task. To facilitate this common task, Clustergrammer&#8217;s sidebar has a download icon, shown below, that allows users to download the matrix of data in the visualization. The downloaded data reflects the current state of the matrix, e.g. filtering, cropping, and reordering will be reflected in the downloaded data.</p>
+<blockquote>
+<div><strong>&lt;screenshot of download button in sidebar&gt;</strong></div></blockquote>
 </div>
 <div class="section" id="taking-a-snapshot-of-the-visualization">
 <h2>Taking a Snapshot of the Visualization<a class="headerlink" href="#taking-a-snapshot-of-the-visualization" title="Permalink to this headline">¶</a></h2>
+<p><em>stateful snapshots of matrix</em></p>
 </div>
 <div class="section" id="changing-the-opacity">
 <h2>Changing the Opacity<a class="headerlink" href="#changing-the-opacity" title="Permalink to this headline">¶</a></h2>
+<p><em>useful for dealing with outlier values</em></p>
 </div>
 <div class="section" id="row-searching">
 <h2>Row Searching<a class="headerlink" href="#row-searching" title="Permalink to this headline">¶</a></h2>
+<p><em>useful for working with large datasets, animated</em></p>
 </div>
 <div class="section" id="expanding">
 <h2>Expanding<a class="headerlink" href="#expanding" title="Permalink to this headline">¶</a></h2>
+<p><em>when displaying in constrained spaces</em></p>
 </div>
 <div class="section" id="biology-specific-interactions">
 <h2>Biology Specific Interactions<a class="headerlink" href="#biology-specific-interactions" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id3"><span class="problematic" id="id4">**</span></a></p>
 </div>
 </div>
 
