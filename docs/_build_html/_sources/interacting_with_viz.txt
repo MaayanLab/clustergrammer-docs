@@ -31,6 +31,19 @@ Mousing over visualization elements brings up more information in tooltips. For 
 
 See :ref:`clustergrammer_js_api` for information about adding callback functions to mouseover events and :ref:`hzome_gene_info` for biology specific mouseover behavior.
 
+.. _sidebar_interactions:
+
+Sidebar Interactions
+====================
+Clustergrammer visualizations have a sidebar section that contains:
+
+- optional about section (see :ref:`clustergrammer_js_api`)
+- icon buttons: share_, snapshot_, download_, cropping_
+- row and column reordering buttons
+- row search box
+- opacity slider
+- row-filter-sliders
+
 .. _row_col_reordering:
 
 Row and Column Reordering
@@ -81,9 +94,13 @@ Interactive Categories
 
 *category updating API*
 
+.. _cropping:
+
 Cropping
 ========
 *brush cropping*
+
+.. _download:
 
 Downloading Data from the Visualization
 =======================================
@@ -91,9 +108,18 @@ Obtaining the underlying data from a visualization for re-use and re-analysis ca
 
   **<screenshot of download button in sidebar>**
 
+.. _snapshot:
+
 Taking a Snapshot of the Visualization
 ======================================
 *stateful snapshots of matrix*
+
+.. _share_heatmap:
+.. _share:
+
+Sharing your Interactive Heatmap
+================================
+Interactive heatmaps produced with the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` (when notebooks are rendered through `nbviewer`_) can easily be shared with collaborators by sharing the URL of the visualization on the web app or the notebook. Users can also click the share button on the sidebar (see :ref:`sidebar_interactions`) sidebar to get this shareable URL.
 
 Changing the Opacity
 ====================
@@ -109,7 +135,7 @@ Expanding
 
 Biology Specific Interactions
 =============================
-**
+
 
 .. _`Eisen et al., 1998`: http://www.pnas.org/content/95/25/14863.full
 .. _`dendrogram trees`: https://en.wikipedia.org/wiki/Dendrogram
@@ -117,3 +143,4 @@ Biology Specific Interactions
 .. _`hierarchical clustering`: https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html
 .. _`PCA`: https://en.wikipedia.org/wiki/Principal_component_analysis
 .. _`object constancy`: https://bost.ocks.org/mike/constancy/
+.. _`nbviewer`: http://nbviewer.jupyter.org/
