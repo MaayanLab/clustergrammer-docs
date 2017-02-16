@@ -2,32 +2,32 @@
 
 Interacting with the Visualization
 ----------------------------------
-Data visualizations benefit enormously from user interactions that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` and are built using the :ref:`clustergrammer_js` library. This section will cover the types of interactions that are available to the user.
+Data visualizations benefit enormously from user interaction that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are built using the :ref:`clustergrammer_js` library and are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. This section will cover the types of interactions that are available to the user.
 
 Introduction to Clustergrams/Heatmaps
 =====================================
-Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row/column labels, commonly referred to as a heatmap or clustergram (this documentation uses the terms 'heatmap' and 'clustergram' interchangeably, see `Eisen et al., 1998`_ for an early example using biological data). Clustergrams also typically use `dendrogram trees`_ to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_.
+Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row/column labels, which is commonly referred to as a heatmap or clustergram (this documentation uses the terms 'heatmap' and 'clustergram' interchangeably; see `Eisen et al., 1998`_ for an early example using biological data). Clustergrams also typically use `dendrogram trees`_ to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_.
 
-Heatmaps are powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. `t-SNE`_). For instance, columns can depict measurements (e.g. data-points) and rows can depict dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. in thousand-dimensional space). However, static heatmaps are of limited use for visualizing large datasets (e.g. for large matrices, visualization elements and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns.
+Heatmaps are powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. `t-SNE`_). For instance, columns can depict data-points (e.g. measured entities) and rows can depict data-dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. in thousand-dimensional space). However, static heatmaps are of limited use for visualizing large datasets (e.g. for large matrices, visualization elements and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns.
 
 .. _zooming_and_panning:
 
 Zooming and Panning
 ===================
-Clustergrammer allows users to zoom and pan into the heatmap by scrolling and dragging. This is useful for working with large datasets (where labels are not readable without zooming) and for zooming into regions of interest.
+Clustergrammer allows users to zoom and pan into their heatmap by scrolling and dragging. This is useful for working with large datasets (where labels are not readable without zooming) and for zooming into regions of interest.
 
 **Zooming and Panning Behavior**
 
-Zooming occurs in two stages. First zooming/panning occurs in the direction that matrix cells have been more compressed (e.g. if there are more more rows than columns, then matrix cells will be compressed in the vertical direction and the cells will be wide). Once zooming has decompressed matrix cells (e.g. matrix cells height and width are the same) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction.
+In general, zooming and panning occur in two stages. First zooming/panning occurs in the direction that matrix-cells have been more compressed (e.g. if there are more more rows than columns, then matrix-cells will be compressed in the vertical direction and the matrix-cells will be wide). Once zooming has decompressed matrix-cells (e.g. matrix-cells height and width are the same) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix-cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction. For symmetrical matrices, e.g. adjacency matrices, matrix-cells always have equal width and height and zooming/panning always occurs in both directions.
 
 **Large Matrix Zooming and Panning Behavior**
 
-Clustergrammer is capable of visualizing matrices with ~500,000 to ~750,000 matrix cells, but is optimized to visualize matrices with more rows than columns. Clustergrammer uses row-downsampling to improve visualization performance for large matrices. If a user visualizes a matrix with a large number of rows (e.g. >1000-2000) such that each matrix cell is less than 1 pixel tall, then Clustergrammer will perform row downsampling. When zoomed out, the user will see a downsampled (e.g. coarse grained) version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix cells are > 1 pixels tall). Clustergrammer will also only display row labels when theeir font size is at a readable level (above ~5 pixels). Clustergrammer will also hide row/column labels while zooming into large matrices to improve performance.
+Clustergrammer is capable of visualizing matrices with up to ~500,000 to ~750,000 matrix-cells, but is optimized to visualize matrices with more rows than columns. Clustergrammer uses row-downsampling to improve visualization performance for large matrices. If a user visualizes a matrix with a large number of rows (e.g. >1000-2000) such that each matrix-cell is less than 1 pixel tall, then Clustergrammer will perform row downsampling. When zoomed out, the user will see a downsampled (e.g. coarse grained) version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix-cells are > 1 pixel tall). Clustergrammer will only display row labels when their font size is at a readable level (above ~5 pixels). Clustergrammer will also hide row/column labels while zooming into large matrices to improve performance.
 
 
 Mouseover Interactions
 ======================
-Mousing over visualization elements brings up more information in tooltips. For instance, mousing over matrix cells brings up a tooltip with the row name, column name, and value of the matrix cell.
+Mousing over elements in the heatmap (e.g. row names) brings up additional information using tooltips. For instance, mousing over matrix-cells brings up a tooltip with the row name, column name, and value of the matrix-cell (see below).
 
   **<screenshot of mouseover tooltip>**
 
@@ -37,26 +37,28 @@ See :ref:`clustergrammer_js_api` for information about adding callback functions
 
 Sidebar Interactions
 ====================
-Clustergrammer visualizations have a sidebar section that contain:
+Clustergrammer visualizations have a sidebar section that contain the following interactive components:
 
-- optional about section (see :ref:`clustergrammer_js_api`)
-- icon buttons: :ref:`share <share_heatmap>`, snapshot_, download_, cropping_
+- icon-buttons: :ref:`share <share_heatmap>`, snapshot_, download_, crop_
 - :ref:`Row and Column Reordering Buttons <row_col_reordering>`
 - :ref:`Row Search Box <search>`
 - :ref:`Opacity Slider<opacity>`
 - :ref:`Row Filter Sliders <interactive_dim_reduction>`
+- optional about section (see :ref:`clustergrammer_js_api`)
+
+The sidebar can be hidden by clicking the expand button at the top left of the heatmap and restored by clicking the menu button.
 
 .. _row_col_reordering:
 
 Row and Column Reordering
 =========================
-Clustergrammer allows users to order rows and columns based on:
+Clustergrammer's sidebar reordering-buttons allows users to order rows and columns based on:
 
 - sum or variance
 - hierarchical clustering order
 - label order
 
-by using the reordering-buttons on the sidebar. This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see :ref:`interactive_categories`). For small matrices reordering events are animated to help users visually track the effects of the transformation.
+This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see :ref:`interactive_categories`). For small matrices reordering events are animated to help users visually track the effects of this transformation.
 
 .. _interactive_dim_reduction:
 
@@ -111,7 +113,7 @@ Row or column categories are represented by an extra column or row, respectively
 
 Row categories can be updated using the :ref:`clustergrammer_js_api`, which can be used by developers to add dynamic categories. This feature is used by :ref:`Enrichrgram <enrichrgram>` to visualize enrichment analysis results (see :ref:`biology_specific_features` for more information).
 
-.. _cropping:
+.. _crop:
 
 Cropping
 ========
