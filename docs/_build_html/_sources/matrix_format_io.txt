@@ -65,8 +65,8 @@ Clustergrammer.py can load a matrix directly from a file or from a Pandas DataFr
 	from clustergrammer import Network
 	net = Network()
 
-	# load matrix
-	##############
+	# load matrix from file or DataFrame
+	####################################
 
 	# load data from file
 	net.load_file('your_matrix.txt')

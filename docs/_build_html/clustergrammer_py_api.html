@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Clustergrammer-PY &mdash; Clustergrammer 1.0.0 documentation</title>
+  <title>Clustergrammer API &mdash; Clustergrammer 1.0.0 documentation</title>
   
 
   
@@ -31,8 +31,8 @@
 
   
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
-        <link rel="next" title="Clustergrammer API" href="clustergrammer_py_api.html"/>
-        <link rel="prev" title="Clustergrammer-JS" href="clustergrammer_js.html"/> 
+        <link rel="next" title="App Integration Examples" href="app_integration.html"/>
+        <link rel="prev" title="Clustergrammer-PY" href="clustergrammer_py.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -91,15 +91,8 @@
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Clustergrammer for Web-development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer-PY</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#python-workflow-example">Python Workflow Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-py-api">Clustergrammer-PY API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-py-development">Clustergrammer-PY Development</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py_api.html">Clustergrammer API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="app_integration.html">App Integration Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
@@ -133,11 +126,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Clustergrammer-PY</li>
+    <li>Clustergrammer API</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/clustergrammer_py.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/clustergrammer_py_api.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -147,53 +140,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="clustergrammer-py">
-<span id="id1"></span><h1>Clustergrammer-PY<a class="headerlink" href="#clustergrammer-py" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://pypi.python.org/pypi?:action=display&amp;name=clustergrammer"><img alt="version" src="https://img.shields.io/pypi/v/clustergrammer.svg" /></a></p>
-<p>Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for the front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> visualization library. Clustergrammer-PY is compatible with Python 2 and 3.</p>
-<div class="section" id="dependencies">
-<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference external" href="http://www.numpy.org/">Numpy</a></li>
-<li><a class="reference external" href="https://www.scipy.org/">SciPy</a></li>
-<li><a class="reference external" href="http://pandas.pydata.org/">Pandas</a></li>
-</ul>
-</div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-PY can be installed using pip (<a class="reference external" href="https://pypi.python.org/pypi?:action=display&amp;name=clustergrammer">package index</a>) with the following:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">clustergrammer</span>
-</pre></div>
-</div>
-<p>or the source code can be obtained from the <a class="reference external" href="http://github.com/MaayanLab/clustergrammer-py">GitHub repo</a>.</p>
-</div>
-<div class="section" id="python-workflow-example">
-<span id="clustergrammer-py-workflow"></span><h2>Python Workflow Example<a class="headerlink" href="#python-workflow-example" title="Permalink to this headline">¶</a></h2>
-<p>This workflow shows how to cluster a matrix of data from a file or DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>) and generate a <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> (for use by <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># make network object and load file</span>
-<span class="kn">from</span> <span class="nn">clustergrammer</span> <span class="k">import</span> <span class="n">Network</span>
-<span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
-
-<span class="c1"># load matrix from file</span>
-<span class="n">net</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s1">&#39;your_matrix.txt&#39;</span><span class="p">)</span>
-
-<span class="c1"># or load matrix from DataFrame</span>
-<span class="n">net</span><span class="o">.</span><span class="n">load_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-
-<span class="c1"># calculate clustering using default parameters</span>
-<span class="n">net</span><span class="o">.</span><span class="n">make_clust</span><span class="p">()</span>
-
-<span class="c1"># save visualization JSON to file</span>
-<span class="n">net</span><span class="o">.</span><span class="n">write_json_to_file</span><span class="p">(</span><span class="s1">&#39;viz&#39;</span><span class="p">,</span> <span class="s1">&#39;mult_view.json&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>The file <code class="docutils literal"><span class="pre">mult_view.json</span></code> will be loaded by the front-end and used to build the interactive visualization. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/make_clustergrammer.py">make_clustergrammer.py</a> for an additional example.</p>
-</div>
-<div class="section" id="clustergrammer-py-api">
-<span id="id2"></span><h2>Clustergrammer-PY API<a class="headerlink" href="#clustergrammer-py-api" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-PY generates a Network object (see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/__init__.py">Network class definition</a>), which is used to load a matrix (e.g. from a Pandas <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html">DataFrame</a>), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.</p>
-<p>When a matrix is loaded into an instance of <code class="docutils literal"><span class="pre">Network</span></code> (e.g. <code class="docutils literal"><span class="pre">net</span></code>) it is stored in the data, <code class="docutils literal"><span class="pre">dat</span></code>, attribute. Normalization and filtering will modify the <code class="docutils literal"><span class="pre">dat</span></code> representation of the matrix. When the matrix is clustered (by calling <span class="xref std std-ref">make_clust</span>)</p>
-<span class="target" id="module-clustergrammer"></span><dl class="class">
+  <div class="section" id="module-clustergrammer">
+<span id="clustergrammer-api"></span><h1>Clustergrammer API<a class="headerlink" href="#module-clustergrammer" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
 <dt id="clustergrammer.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer.Network" title="Permalink to this definition">¶</a></dt>
 <dd><p>version 1.2.0
@@ -328,12 +277,6 @@ views is later referred to as requested_views.</p>
 </dd></dl>
 
 </div>
-<div class="section" id="clustergrammer-py-development">
-<span id="clustergrammer-py-dev"></span><h2>Clustergrammer-PY Development<a class="headerlink" href="#clustergrammer-py-development" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-PY&#8217;s source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py">clustergrammer-py</a> GitHub repo. The Clustergrammer-PY library is utilized by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>.</p>
-<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez or Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/issues">issues</a> feature to raise an issue.</p>
-</div>
-</div>
 
 
            </div>
@@ -342,10 +285,10 @@ views is later referred to as requested_views.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clustergrammer_py_api.html" class="btn btn-neutral float-right" title="Clustergrammer API" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="app_integration.html" class="btn btn-neutral float-right" title="App Integration Examples" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="clustergrammer_js.html" class="btn btn-neutral" title="Clustergrammer-JS" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="clustergrammer_py.html" class="btn btn-neutral" title="Clustergrammer-PY" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

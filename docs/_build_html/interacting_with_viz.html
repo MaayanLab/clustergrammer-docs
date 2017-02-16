@@ -111,7 +111,8 @@
 <li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Clustergrammer for Web-development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
-<li class="toctree-l1"><a class="reference internal" href="app_integration.html">Clustergrammer App Integrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_py_api.html">Clustergrammer API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_integration.html">App Integration Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
@@ -189,7 +190,7 @@
 <span id="id3"></span><h2>Sidebar Interactions<a class="headerlink" href="#sidebar-interactions" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer visualizations have a sidebar section that contain the following interactive components:</p>
 <ul class="simple">
-<li>icon-buttons: <a class="reference internal" href="#share-heatmap"><span class="std std-ref">share</span></a>, <a class="reference internal" href="#snapshot">snapshot</a>, <a class="reference internal" href="#download">download</a>, <a href="#id7"><span class="problematic" id="id8">crop_</span></a></li>
+<li>icon-buttons: <a class="reference internal" href="#share-heatmap"><span class="std std-ref">share</span></a>, <a class="reference internal" href="#snapshot">snapshot</a>, <a class="reference internal" href="#download">download</a>, <a class="reference internal" href="#crop">crop</a></li>
 <li><a class="reference internal" href="#row-col-reordering"><span class="std std-ref">Row and Column Reordering Buttons</span></a></li>
 <li><a class="reference internal" href="#search"><span class="std std-ref">Row Search Box</span></a></li>
 <li><a class="reference internal" href="#opacity"><span class="std std-ref">Opacity Slider</span></a></li>
@@ -243,7 +244,7 @@
 <p>Row categories can be updated using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>, which can be used by developers to add dynamic categories. This feature is used by <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to visualize enrichment analysis results (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 </div>
 <div class="section" id="cropping">
-<span id="id6"></span><h2>Cropping<a class="headerlink" href="#cropping" title="Permalink to this headline">¶</a></h2>
+<span id="crop"></span><h2>Cropping<a class="headerlink" href="#cropping" title="Permalink to this headline">¶</a></h2>
 <p>Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest specified by brushing (e.g. dragging a region of interest using the mouse). Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the <a class="reference internal" href="#download"><span class="std std-ref">Download Icon</span></a> to export a small region of the matrix or in combination with <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to perform enrichment analysis on a subset of clustered genes.</p>
 </div>
 <div class="section" id="download-icon">
