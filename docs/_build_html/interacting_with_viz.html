@@ -186,14 +186,14 @@
 <ul class="simple">
 <li>optional about section (see <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>)</li>
 <li>icon buttons: <a class="reference internal" href="#share-heatmap"><span class="std std-ref">share</span></a>, <a class="reference internal" href="#snapshot">snapshot</a>, <a class="reference internal" href="#download">download</a>, <a class="reference internal" href="#cropping">cropping</a></li>
-<li>row and column <a class="reference internal" href="#reordering">reordering</a> buttons</li>
+<li><a class="reference internal" href="#row-col-reordering"><span class="std std-ref">Row and Column Reordering Buttons</span></a></li>
 <li><a class="reference internal" href="#search"><span class="std std-ref">Row Search Box</span></a></li>
 <li><a class="reference internal" href="#opacity"><span class="std std-ref">Opacity Slider</span></a></li>
 <li><a class="reference internal" href="#interactive-dim-reduction"><span class="std std-ref">Row Filter Sliders</span></a></li>
 </ul>
 </div>
 <div class="section" id="row-and-column-reordering">
-<span id="reordering"></span><span id="row-col-reordering"></span><h2>Row and Column Reordering<a class="headerlink" href="#row-and-column-reordering" title="Permalink to this headline">¶</a></h2>
+<span id="row-col-reordering"></span><h2>Row and Column Reordering<a class="headerlink" href="#row-and-column-reordering" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer allows users to order rows and columns based on:</p>
 <ul class="simple">
 <li>sum or variance</li>
@@ -229,11 +229,11 @@
 </div>
 <div class="section" id="categories">
 <span id="interactive-categories"></span><h2>Categories<a class="headerlink" href="#categories" title="Permalink to this headline">¶</a></h2>
-<p>Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, our columns may represent cell lines and our categories may represent the tissues of these cell lines.</p>
-<p><em>Explain why categories are useful</em></p>
-<p><em>category types: string value</em></p>
-<p><em>mouseover highlighting, reordering, dendrogram breakdown</em></p>
-<p><em>category updating API</em></p>
+<p>Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, our columns may represent cell lines and our categories may represent the tissues of these cell lines. Overlaying categories on our heatmap can help us understand the relationship between our prior knowledge and our data. For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that our prior knowledge agrees with clustering identified in a data-driven manner. Similarly we can explore how categories are distributed when the matrix is <a class="reference internal" href="#row-col-reordering"><span class="std std-ref">reordered</span></a>. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information on how to encode categories in your data.</p>
+<p><strong>Interacting with Categories</strong></p>
+<p>Row or column categories are represented by an extra column or row, respectively, of colored cells underneath row or column labels. Categories can be of type string or value (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>): each string-type category has a different color while each value-type category has a different opacity. The categories also have titles positioned adjacent to the categories. Mousing over a category will highlight this category and dim the other categories to facilitate visualization of a specific category. Double-clicking a category title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories.</p>
+<p><strong>Updating Categories</strong></p>
+<p>Row categories can be updated using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>, which can be used by developers to add dynamic categories. This feature is used by <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to visualize enrichment analysis results (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 </div>
 <div class="section" id="cropping">
 <span id="id2"></span><h2>Cropping<a class="headerlink" href="#cropping" title="Permalink to this headline">¶</a></h2>

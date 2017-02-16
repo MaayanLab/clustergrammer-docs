@@ -39,13 +39,12 @@ Clustergrammer visualizations have a sidebar section that contain:
 
 - optional about section (see :ref:`clustergrammer_js_api`)
 - icon buttons: :ref:`share <share_heatmap>`, snapshot_, download_, cropping_
-- row and column reordering_ buttons
+- :ref:`Row and Column Reordering Buttons <row_col_reordering>`
 - :ref:`Row Search Box <search>`
 - :ref:`Opacity Slider<opacity>`
 - :ref:`Row Filter Sliders <interactive_dim_reduction>`
 
 .. _row_col_reordering:
-.. _reordering:
 
 Row and Column Reordering
 =========================
@@ -100,18 +99,15 @@ Each dendrogram cluster has a small triangular crop button above it that allows 
 
 Categories
 ==========
-Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, our columns may represent cell lines and our categories may represent the tissues of these cell lines.
+Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, our columns may represent cell lines and our categories may represent the tissues of these cell lines. Overlaying categories on our heatmap can help us understand the relationship between our prior knowledge and our data. For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that our prior knowledge agrees with clustering identified in a data-driven manner. Similarly we can explore how categories are distributed when the matrix is :ref:`reordered <row_col_reordering>`. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please see :ref:`matrix_format_io` for more information on how to encode categories in your data.
 
+**Interacting with Categories**
 
-*Explain why categories are useful*
+Row or column categories are represented by an extra column or row, respectively, of colored cells underneath row or column labels. Categories can be of type string or value (see :ref:`matrix_format_io`): each string-type category has a different color while each value-type category has a different opacity. The categories also have titles positioned adjacent to the categories. Mousing over a category will highlight this category and dim the other categories to facilitate visualization of a specific category. Double-clicking a category title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories.
 
-*category types: string value*
+**Updating Categories**
 
-
-*mouseover highlighting, reordering, dendrogram breakdown*
-
-
-*category updating API*
+Row categories can be updated using the :ref:`clustergrammer_js_api`, which can be used by developers to add dynamic categories. This feature is used by :ref:`Enrichrgram <enrichrgram>` to visualize enrichment analysis results (see :ref:`biology_specific_features` for more information).
 
 .. _cropping:
 
