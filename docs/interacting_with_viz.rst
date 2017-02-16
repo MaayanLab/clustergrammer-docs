@@ -64,17 +64,17 @@ This can be useful for identifying broad patterns in your data. Users can also r
 
 Interactive Dimensionality Reduction
 ====================================
-Dimensionality reduction is a useful data analysis technique (e.g. `PCA`_ , `t-SNE`_) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds-thousands of dimensions) down to a number that can be easily be analyzed and visualized (e.g. two-three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.
+Dimensionality reduction is a useful data analysis technique (e.g. `PCA`_ , `t-SNE`_) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds to thousands of dimensions) down to a number that can be easily be visualized (e.g. two or three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.
 
 **Row Filter Sliders**
 
-Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this dimensionality reduction on clustering (where matrix rows represent dimensions, see :ref:`matrix_format_io`). Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar. The sliders allow users to select their top 500, 250, 100, 50, 20, and 10 rows (clustered views of the filtered matrices are pre-calculated by :ref:`clustergrammer_py`). This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low sum may not be of interest) and determining the effect of these dimensions on clustering.
+Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this transformation on clustering. Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar and choose to show the top 500, 250, 100, 50, 20, and 10 rows. This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low absolute value sum) and determining the effect of these dimensions on clustering. Clustered views of the filtered matrices are pre-calculated by :ref:`clustergrammer_py`.
 
   **<screenshot of sidebar filters and maybe before after fiiltering>**
 
 **Visualizing Dimensionality Reduction**
 
-For small matrices dimensionality reduction is animated to help the user visualize the effects this transformation. Clustergrammer employs the concept of `object constancy`_ by using animations to help the user visually follow changes to their data. Filtering out dimensions (rows) occurs in two steps: 1) filtered rows fade out, then the remaining rows rearrange themselves into their new order (e.g. clustering order). Adding back in dimensions (rows) occurs in two steps: the current rows rearrange themselves into their new positions, then the new rows fade into view.
+For small matrices dimensionality reduction is animated to help the user visualize the effects this transformation. Clustergrammer employs the concept of `object constancy`_ by using animations to help the user visually follow changes to their data. Filtering out dimensions (rows) occurs in two steps: 1) filtered rows fade out, then the remaining rows rearrange themselves into their new positions (e.g. clustering order). Adding rows back in occurs in two steps: the current rows rearrange themselves into their new positions, then the new rows fade into view.
 
 .. _interactive_dendrogram:
 
