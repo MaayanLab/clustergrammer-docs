@@ -1,7 +1,7 @@
 .. _matrix_format_io:
 
 Matrix Formats and Input/Output
-------------------------------
+-------------------------------
 Clustergrammer takes as input either:
 
 - a tab-separated matrix file

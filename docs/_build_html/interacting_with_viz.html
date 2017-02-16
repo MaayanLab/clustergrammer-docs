@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
         <link rel="next" title="Biology-Specific Features" href="biology_specific_features.html"/>
         <link rel="prev" title="Clustergrammer Jupyter Widget" href="clustergrammer_widget.html"/> 
@@ -95,8 +92,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#sidebar-interactions">Sidebar Interactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#row-and-column-reordering">Row and Column Reordering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interactive-dimensionality-reduction">Interactive Dimensionality Reduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#dendrogram">Dendrogram</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#categories">Categories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-dendrogram">Interactive Dendrogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-categories">Interactive Categories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cropping">Cropping</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-data-from-the-visualization">Downloading Data from the Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#taking-a-snapshot">Taking a Snapshot</a></li>
@@ -150,7 +147,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/interacting_with_viz.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/interacting_with_viz.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -169,7 +166,7 @@
 <p>Heatmaps are powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. <a class="reference external" href="https://lvdmaaten.github.io/tsne/">t-SNE</a>). For instance, columns can depict measurements (e.g. data-points) and rows can depict dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. in thousand-dimensional space). However, static heatmaps are of limited use for visualizing large datasets (e.g. for large matrices, visualization elements and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns.</p>
 </div>
 <div class="section" id="zooming-and-panning">
-<h2>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer allows users to zoom and pan into the heatmap by scrolling and dragging. This is useful for working with large datasets (where labels are not readable without zooming) and for zooming into regions of interest.</p>
 <p><strong>Zooming and Panning Behavior</strong></p>
 <p>Zooming occurs in two stages. First zooming/panning occurs in the direction that matrix cells have been more compressed (e.g. if there are more more rows than columns, then matrix cells will be compressed in the vertical direction and the cells will be wide). Once zooming has decompressed matrix cells (e.g. matrix cells height and width are the same) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction.</p>
@@ -184,7 +181,7 @@
 <p>See <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a> for information about adding callback functions to mouseover events and <a class="reference internal" href="biology_specific_features.html#hzome-gene-info"><span class="std std-ref">Mouseover Gene Name and Description</span></a> for biology specific mouseover behavior.</p>
 </div>
 <div class="section" id="sidebar-interactions">
-<span id="id1"></span><h2>Sidebar Interactions<a class="headerlink" href="#sidebar-interactions" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Sidebar Interactions<a class="headerlink" href="#sidebar-interactions" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer visualizations have a sidebar section that contain:</p>
 <ul class="simple">
 <li>optional about section (see <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>)</li>
@@ -203,7 +200,7 @@
 <li>hierarchical clustering order</li>
 <li>label order</li>
 </ul>
-<p>by using the reordering-buttons on the sidebar. This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see <a class="reference internal" href="#interactive-categories"><span class="std std-ref">Categories</span></a>). For small matrices reordering events are animated to help users visually track the effects of the transformation.</p>
+<p>by using the reordering-buttons on the sidebar. This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see <a class="reference internal" href="#interactive-categories"><span class="std std-ref">Interactive Categories</span></a>). For small matrices reordering events are animated to help users visually track the effects of the transformation.</p>
 </div>
 <div class="section" id="interactive-dimensionality-reduction">
 <span id="interactive-dim-reduction"></span><h2>Interactive Dimensionality Reduction<a class="headerlink" href="#interactive-dimensionality-reduction" title="Permalink to this headline">¶</a></h2>
@@ -215,8 +212,8 @@
 <p><strong>Visualizing Dimensionality Reduction</strong></p>
 <p>For small matrices dimensionality reduction is animated to help the user visualize the effects this transformation. Clustergrammer employs the concept of <a class="reference external" href="https://bost.ocks.org/mike/constancy/">object constancy</a> by using animations to help the user visually follow changes to their data. Filtering out dimensions (rows) occurs in two steps: 1) filtered rows fade out, then the remaining rows rearrange themselves into their new order (e.g. clustering order). Adding back in dimensions (rows) occurs in two steps: the current rows rearrange themselves into their new positions, then the new rows fade into view.</p>
 </div>
-<div class="section" id="dendrogram">
-<span id="interactive-dendrogram"></span><h2>Dendrogram<a class="headerlink" href="#dendrogram" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interactive-dendrogram">
+<span id="id3"></span><h2>Interactive Dendrogram<a class="headerlink" href="#interactive-dendrogram" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrams typically have <a class="reference external" href="https://en.wikipedia.org/wiki/Dendrogram">dendrogram trees</a> (for both rows and columns) to depict the hierarchy of row and column clusters produced by <a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_clustering">hierarchical clustering</a>. The height of the branches in the dendrogram depict how different clusters are from each other. <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> calculates hierarchical clustering using <a class="reference external" href="https://www.scipy.org/">SciPy</a>&#8216;s <a class="reference external" href="https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html">hierarchy</a> clustering functions (with the default linkage type set to average, see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/calc_clust.py">calc_clust.py</a>) and saves ten slices of the dendrogram taken evenly across the tree.</p>
 <p><strong>Visualizing Dendrogram Clusters</strong></p>
 <p>Rather than visualize the dendrogram as a large branching structure which takes up a lot of space and is difficult to interact with, Clustergrammer uses a more compact and easy to interact with visual representation: only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids). Different slices of the dendrogram can be toggled using the dendrogram-sliders (blue circles that move along a gray triangle). Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively.</p>
@@ -230,8 +227,8 @@
 <p><strong>Dendrogrm Cropping</strong></p>
 <p>Each dendrogram cluster has a small triangular crop button above it that allows users to crop the matrix to the rows or columns in this cluster. Clicking on the dendrogram crop button filters out the rows or columns that not in the cluster and resizes the visualization to show the remaining data. For small matrices, this transformation is animated. Dendrogram cropping can be useful for focusing in on a cluster of interest and when used in combination with <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to import enrichment analysis results into the visualization (as row categories) from <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a> for a specific cluster of genes (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 </div>
-<div class="section" id="categories">
-<span id="interactive-categories"></span><h2>Categories<a class="headerlink" href="#categories" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interactive-categories">
+<span id="id4"></span><h2>Interactive Categories<a class="headerlink" href="#interactive-categories" title="Permalink to this headline">¶</a></h2>
 <p>Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, our columns may represent cell lines and our categories may represent the tissues of these cell lines. Overlaying categories on our heatmap can help us understand the relationship between our prior knowledge and our data. For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that our prior knowledge agrees with clustering identified in a data-driven manner. Similarly we can explore how categories are distributed when the matrix is <a class="reference internal" href="#row-col-reordering"><span class="std std-ref">reordered</span></a>. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information on how to encode categories in your data.</p>
 <p><strong>Interacting with Categories</strong></p>
 <p>Row or column categories are represented by an extra column or row, respectively, of colored cells underneath row or column labels. Categories can be of type string or value (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>): each string-type category has a different color while each value-type category has a different opacity. The categories also have titles positioned adjacent to the categories. Mousing over a category will highlight this category and dim the other categories to facilitate visualization of a specific category. Double-clicking a category title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories.</p>
@@ -239,7 +236,7 @@
 <p>Row categories can be updated using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>, which can be used by developers to add dynamic categories. This feature is used by <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to visualize enrichment analysis results (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 </div>
 <div class="section" id="cropping">
-<span id="id2"></span><h2>Cropping<a class="headerlink" href="#cropping" title="Permalink to this headline">¶</a></h2>
+<span id="id5"></span><h2>Cropping<a class="headerlink" href="#cropping" title="Permalink to this headline">¶</a></h2>
 <p><em>brush cropping</em></p>
 </div>
 <div class="section" id="downloading-data-from-the-visualization">

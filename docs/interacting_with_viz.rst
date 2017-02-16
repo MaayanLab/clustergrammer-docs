@@ -10,6 +10,8 @@ Clustergrammer visualizes high-dimensional data as a hierarchically clustered ma
 
 Heatmaps are powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. `t-SNE`_). For instance, columns can depict measurements (e.g. data-points) and rows can depict dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. in thousand-dimensional space). However, static heatmaps are of limited use for visualizing large datasets (e.g. for large matrices, visualization elements and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns.
 
+.. _zooming_and_panning:
+
 Zooming and Panning
 ===================
 Clustergrammer allows users to zoom and pan into the heatmap by scrolling and dragging. This is useful for working with large datasets (where labels are not readable without zooming) and for zooming into regions of interest.
@@ -74,8 +76,8 @@ For small matrices dimensionality reduction is animated to help the user visuali
 
 .. _interactive_dendrogram:
 
-Dendrogram
-==========
+Interactive Dendrogram
+======================
 Clustergrams typically have `dendrogram trees`_ (for both rows and columns) to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_. The height of the branches in the dendrogram depict how different clusters are from each other. :ref:`clustergrammer_py` calculates hierarchical clustering using `SciPy`_'s hierarchy_ clustering functions (with the default linkage type set to average, see `calc_clust.py`_) and saves ten slices of the dendrogram taken evenly across the tree.
 
 **Visualizing Dendrogram Clusters**
@@ -97,8 +99,8 @@ Each dendrogram cluster has a small triangular crop button above it that allows 
 
 .. _interactive_categories:
 
-Categories
-==========
+Interactive Categories
+======================
 Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, our columns may represent cell lines and our categories may represent the tissues of these cell lines. Overlaying categories on our heatmap can help us understand the relationship between our prior knowledge and our data. For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that our prior knowledge agrees with clustering identified in a data-driven manner. Similarly we can explore how categories are distributed when the matrix is :ref:`reordered <row_col_reordering>`. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please see :ref:`matrix_format_io` for more information on how to encode categories in your data.
 
 **Interacting with Categories**
