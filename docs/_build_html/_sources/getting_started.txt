@@ -42,7 +42,7 @@ Press play or interact with the demo (see :ref:`interacting_with_viz` for more i
 
          <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe>
 
-Clustergrammer also has biology-specific features including:
+Clustergrammer also has biology-specific features for working with gene-level data including:
 
 - mouseover gene names and description look-up (using `Harmonizome`_)
 - enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using `Enrichr`_)

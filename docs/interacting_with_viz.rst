@@ -103,11 +103,13 @@ Each dendrogram cluster has a small triangular crop button (that points towards 
 
 Interactive Categories
 ======================
-Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, our columns may represent cell lines and our categories may represent the tissues of these cell lines. Overlaying categories on our heatmap can help us understand the relationship between our prior knowledge and our data. For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that our prior knowledge agrees with clustering identified in a data-driven manner. Similarly we can explore how categories are distributed when the matrix is :ref:`reordered <row_col_reordering>`. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please see :ref:`matrix_format_io` for more information on how to encode categories in your data.
+Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, columns may represent cell lines and our categories may represent the tissues of these cell lines. Overlaying categories on our heatmap can help us understand the relationship between prior knowledge and our data. For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that the prior knowledge agrees with clusters identified in a data-driven manner. Similarly, we can explore how categories are re-distributed when the matrix is :ref:`reordered <row_col_reordering>`. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please see :ref:`matrix_format_io` for more information on how to encode categories in your data.
+
+Row or column categories are represented by an extra column or row, respectively, of colored category-cells underneath the row or column labels. Categories can be of type string or value (see :ref:`matrix_format_io`): each string-type category has a different color while each value-type category ahas a different opacity. The categories also have titles positioned adjacent to the category-cells.
 
 **Interacting with Categories**
 
-Row or column categories are represented by an extra column or row, respectively, of colored cells underneath row or column labels. Categories can be of type string or value (see :ref:`matrix_format_io`): each string-type category has a different color while each value-type category has a different opacity. The categories also have titles positioned adjacent to the categories. Mousing over a category will highlight this category and dim the other categories to facilitate visualization of a specific category. Double-clicking a category title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories.
+Mousing over a category will show the category name in a tooltip and highlight the instances of this category (while also dimming the instances of the other categories) to facilitate visualization of a specific category. Double-clicking a category title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories.
 
 **Updating Categories**
 
@@ -117,12 +119,12 @@ Row categories can be updated using the :ref:`clustergrammer_js_api`, which can 
 
 Cropping
 ========
-*brush cropping*
+Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest specified by brushing (e.g. dragging a region of interest using the mouse). Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the :ref:`download` to export a small region of the matrix or in combination with :ref:`Enrichrgram <enrichrgram>` to perform enrichment analysis on a subset of clustered genes.
 
 .. _download:
 
-Downloading Data from the Visualization
-=======================================
+Download Icon
+=============
 Obtaining the underlying data from a visualization for re-use and re-analysis can be a tedious task. To facilitate this common task, Clustergrammer's sidebar has a download icon, shown below, that allows users to download the matrix of data in the visualization. The downloaded data reflects the current state of the matrix, e.g. filtering, cropping, and reordering will be reflected in the downloaded data.
 
   **<screenshot of download button in sidebar>**
@@ -131,7 +133,24 @@ Obtaining the underlying data from a visualization for re-use and re-analysis ca
 
 Taking a Snapshot
 =================
-*stateful snapshots of matrix*
+The snapshot icon in the sidebar allows users to take a SVG or PNG snapshot of their visualization. This snapshot will reflect the current state of the visualization (e.g. reordering, etc) as well as zooming and panning.
+
+.. _opacity:
+
+Opacity Slider
+==============
+The opacity slider in the sidebar allows users to toggle the overall opacity levels of the heatmap. Moving the slider to the left reduces the opacity, while moving to the right increases the opacity. This can be useful for working with 'dim' matrices that can occur as a result of outlier values.
+
+.. _search:
+
+Row Searching
+=============
+Users can search for rows in their matrix using the search box. Row search includes autocomplete and animated zooming into the matrix to display the row of interest.
+
+
+Expanding
+=========
+Users can hide the sidebar :ref:`sidebar_interactions` panel using the expand button to the top left of the matrix. Clicking the menu button, when expanded, returns the sidebar.
 
 .. _share_heatmap:
 
@@ -139,24 +158,14 @@ Sharing your Interactive Heatmap
 ================================
 Interactive heatmaps produced with the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` (when notebooks are rendered through `nbviewer`_) can easily be shared with collaborators by sharing the URL of the visualization on the web app or the notebook. Users can also click the share button on the sidebar (see :ref:`sidebar_interactions`) sidebar to get this shareable URL.
 
-.. _opacity:
-
-Opacity Slider
-==============
-*useful for dealing with outlier values*
-
-.. _search:
-
-Row Searching
-=============
-*useful for working with large datasets, animated*
-
-Expanding
-=========
-*when displaying in constrained spaces*
-
 Biology Specific Interactions
 =============================
+Clustergrammer has biology specific features for working with gene-level data including:
+
+- mouseover gene names and description look-up (using `Harmonizome`_)
+- enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using `Enrichr`_)
+
+See :ref:`biology_specific_features` for more information.
 
 
 .. _`Eisen et al., 1998`: http://www.pnas.org/content/95/25/14863.full
@@ -170,3 +179,4 @@ Biology Specific Interactions
 .. _`hierarchy`: https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html
 .. _`calc_clust.py`: https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/calc_clust.py
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
+.. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
