@@ -4,7 +4,7 @@ Clustergrammer-PY
 -----------------
 |pypi-version|
 
-Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the JSON for the front-end Clustergrammer.js visualization library. Clustergrammer-PY is compatible with Python 2 and 3.
+Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the :ref:`visualization_json` for the front-end Clustergrammer.js visualization library. Clustergrammer-PY is compatible with Python 2 and 3.
 
 Dependencies
 ============
@@ -48,7 +48,7 @@ The file ``mult_view.json`` will be loaded by the front-end and used to build th
 
 Clustergrammer-PY API
 =====================
-Clustergrammer-PY generates a Network object, which is used to load a matrix (e.g. from a Pandas DataFrame), normalize/filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.
+Clustergrammer-PY generates a Network object (see `Network class definition`_), which is used to load a matrix (e.g. from a Pandas `DataFrame`_), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.
 
 .. _clustergrammer_py_dev:
 
@@ -65,6 +65,8 @@ Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the
 .. _`Pandas`: http://pandas.pydata.org/
 .. _`Numpy`: http://www.numpy.org/
 .. _`SciPy`: https://www.scipy.org/
+.. _`Network class definition`: https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/__init__.py
+.. _`DataFrame`: http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
 
 .. |pypi-version| image:: https://img.shields.io/pypi/v/clustergrammer.svg
     :alt: version

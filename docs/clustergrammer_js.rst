@@ -39,7 +39,7 @@ This workflow shows how to make a visualization using a JSON produced by Cluster
 
   var cgm = Clustergrammer(args);
 
-The id of the container where the visualization will be made is passed as ``root`` (this root container must be made by the user). The visualization JSON contains the information necessary to make the visualization and is passed as ``network_data``. See the Clustergrammer.js API for additional arguments that can be passed to Clustergrammer.js.
+The ``id`` of the container where the visualization will be made is passed as ``root`` (this root container must be made by the user). The :ref:`visualization_json` contains the information necessary to make the visualization and is passed as ``network_data``. See the :ref:`clustergrammer_js_api` for additional arguments that can be passed to Clustergrammer.js.
 
 .. _example_pages:
 
@@ -55,14 +55,14 @@ Clustergrammer-JS API
 =====================
 Clustergrammer-JS' API allows users to pass options to the front-end visualization, such as optional callback functions.
 
-.. _clustergrammer_json:
+.. _visualization_json:
 
-Clustergrammer-JSON
-===================
-The visualization JSON format required for Clustergrammer.js is described here:
+Visualization-JSON
+==================
+The visualization-JSON format required for Clustergrammer.js is described here:
 
 
-Users can also generate the visualization JSON using their own scripts as long as they adhere to the above format.
+Users can also generate the visualization-JSON using their own scripts as long as they adhere to the above format.
 
 .. _clustergrammer_js_dev:
 
