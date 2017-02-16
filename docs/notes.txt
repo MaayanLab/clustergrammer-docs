@@ -4,7 +4,7 @@ sphinx-autobuild . _build_html
 
 run spell check
 ---------------
-sphinx-build -b spelling -d build/doctrees  . build/spelling
+sphinx-build -b spelling -d build/doctrees . build/spelling
 
 add words to dictionary
 -----------------------

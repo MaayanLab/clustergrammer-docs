@@ -22,7 +22,7 @@ The simplest tab-separated file format is shown here:
   Row-B	3.0	0.0	8.0
   Row-C	0.2	0.1	2.5
 
-The first row gives the column names and starts with a blank tab. All other rows start with the row name followed by the row data. Row and column titles can be added by prefixing each row or colum name with ``'Title: '`` (not shown in this example). See `example_tsv.txt`_ for an example of this matrix format.
+The first row gives the column names and starts with a blank tab. All other rows start with the row name followed by the row data. Row and column titles can be added by prefixing each row or column name with ``'Title: '`` (not shown in this example). See `example_tsv.txt`_ for an example of this matrix format.
 
 Simple Matrix-Category Format
 =============================

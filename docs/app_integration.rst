@@ -10,7 +10,7 @@ The enrichment analysis tool, `Enrichr`_, uses the :ref:`clustergrammer_web`'s A
 
 GEN3VA
 ======
-The gene signature analysis and visualization tool, `GEN3VA`_, uses Clustergrammer's core libraries, :ref:`clustergrammer_js` and :ref:`clustergrammer_py`, to dynamcally visualize collections of gene expression signatures collected by users from `GEO`_ as interactive heatmaps. GEN3VA also uses Clustergrammer to visualize enrichment analysis results (obtained from `Enrichr`_) and perturbations that reverse or mimic gene expression signatures (obtained from `L1000CDS2`_)
+The gene signature analysis and visualization tool, `GEN3VA`_, uses Clustergrammer's core libraries, :ref:`clustergrammer_js` and :ref:`clustergrammer_py`, to dynamically visualize collections of gene expression signatures collected by users from `GEO`_ as interactive heatmaps. GEN3VA also uses Clustergrammer to visualize enrichment analysis results (obtained from `Enrichr`_) and perturbations that reverse or mimic gene expression signatures (obtained from `L1000CDS2`_)
 
 L1000CDS2
 =========
