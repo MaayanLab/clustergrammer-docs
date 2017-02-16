@@ -10,6 +10,16 @@ Clustergrammer visualizes high-dimensional data as a hierarchically clustered ma
 
 Heatmaps are powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. `t-SNE`_). For instance, columns can depict data-points (e.g. measured entities) and rows can depict data-dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. in thousand-dimensional space). However, static heatmaps are of limited use for visualizing large datasets (e.g. for large matrices, visualization elements and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns.
 
+.. _interactive_demo:
+
+Interactive Demo
+================
+Press play to take a quick tour of some of Clustergrammer's interactive features or interact with the demo to explore for yourself (read below for more information):
+
+.. raw:: html
+
+         <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
+
 .. _zooming_and_panning:
 
 Zooming and Panning
