@@ -81,7 +81,7 @@ Clustergrams typically have `dendrogram trees`_ (for both rows and columns) to d
 
 **Visualizing Dendrogram Clusters**
 
-Rather than visualize the dendrogram as a large branching structure which takes up a lot of space and is difficult to interact with, Clustergrammer uses a more compact and easy to interact with visual representation: only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids). Different slices of the dendrogram can be toggled using the dendrogram-sliders. Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively.
+Rather than visualize the dendrogram as a large branching structure which takes up a lot of space and is difficult to interact with, Clustergrammer uses a more compact and easy to interact with visual representation: only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids). Different slices of the dendrogram can be toggled using the dendrogram-sliders (blue circles that move along a gray triangle). Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively.
 
   **<screenshot of dendrogram clusters>**
 
@@ -94,17 +94,22 @@ Mousing over a dendrogram cluster (gray trapezoid) highlights the current group 
 
 **Dendrogrm Cropping**
 
-Each dendrogram cluster has a small triangular crop button above it that allows users to crop the matrix to the rows or columns in this cluster. Clicking on the dendrogram crop button filters out the rows or columns not in the cluster and resizes the visualization to only show the rows or columns in the current cluster. For small matrices, this transformation is animated. Dendrogram cropping can be useful for focusing in on a cluster of interest and when used in combination with the :ref:`Enrichrgram <enrichrgram>`
+Each dendrogram cluster has a small triangular crop button above it that allows users to crop the matrix to the rows or columns in this cluster. Clicking on the dendrogram crop button filters out the rows or columns that not in the cluster and resizes the visualization to show the remaining data. For small matrices, this transformation is animated. Dendrogram cropping can be useful for focusing in on a cluster of interest and when used in combination with :ref:`Enrichrgram <enrichrgram>` to import enrichment analysis results into the visualization (as row categories) from `Enrichr`_ for a specific cluster of genes (see :ref:`biology_specific_features` for more information).
 
 .. _interactive_categories:
 
 Categories
 ==========
+Prior knowledge about our system can be represented as row and column categories in a heatmap. For instance, our columns may represent cell lines and our categories may represent the tissues of these cell lines.
+
+
 *Explain why categories are useful*
+
+*category types: string value*
+
 
 *mouseover highlighting, reordering, dendrogram breakdown*
 
-*category types: string value*
 
 *category updating API*
 
