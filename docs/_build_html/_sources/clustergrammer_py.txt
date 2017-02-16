@@ -55,6 +55,10 @@ Clustergrammer-PY generates a Network object (see `Network class definition`_), 
 
 When a matrix is loaded into an instance of ``Network`` (e.g. ``net``) it is stored in the data, ``dat``, attribute. Normalization and filtering will modify the ``dat`` representation of the matrix. When the matrix is clustered (by calling :ref:`make_clust`)
 
+.. automodule:: clustergrammer
+
+.. autoclass:: Network
+    :members:
 
 
 
