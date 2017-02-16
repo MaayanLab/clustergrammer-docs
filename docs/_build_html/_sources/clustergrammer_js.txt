@@ -59,15 +59,16 @@ Clustergrammer-JS' API allows users to pass options to the front-end visualizati
 
 Clustergrammer-JSON
 ===================
-The JSON format required for Clustergrammer.js is described here:
+The visualization JSON format required for Clustergrammer.js is described here:
+
+
+Users can also generate the visualization JSON using their own scripts as long as they adhere to the above format.
 
 .. _clustergrammer_js_dev:
 
 Clustergrammer-JS Development
 =============================
-Clustergrammer-JS' source code can be found in the `clustergrammer`_ GihHub repo. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.
-
-Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in `src`_.
+Clustergrammer-JS' source code can be found in the `clustergrammer`_ GihHub repo. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in the `src`_ directory.
 
 Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to raise an issue.
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Clustergrammer App Integrations &mdash; Clustergrammer 1.0.0 documentation</title>
+  <title>App Integration Examples &mdash; Clustergrammer 1.0.0 documentation</title>
   
 
   
@@ -92,7 +92,13 @@
 <li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Clustergrammer for Web-development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer App Integrations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">App Integration Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#enrichr">Enrichr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gen3va">GEN3VA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#l1000cds2">L1000CDS2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#harmonizome">Harmonizome</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
@@ -125,7 +131,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Clustergrammer App Integrations</li>
+    <li>App Integration Examples</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -139,16 +145,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="clustergrammer-app-integrations">
-<span id="app-integration"></span><h1>Clustergrammer App Integrations<a class="headerlink" href="#clustergrammer-app-integrations" title="Permalink to this headline">¶</a></h1>
-<p>Clustergrammer can be integrated into other web applications and is being utilized to visualize data for the following Ma&#8217;ayan lab web applications:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a></li>
-<li><a class="reference external" href="http://amp.pharm.mssm.edu/gen3va/">GEN3VA</a></li>
-<li><a class="reference external" href="http://amp.pharm.mssm.edu/l1000cds2/">L1000CDS2</a></li>
-<li><a class="reference external" href="http://amp.pharm.mssm.edu/g2e/">GEO2Enrichr</a></li>
-<li><a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a></li>
-</ul>
+  <div class="section" id="app-integration-examples">
+<span id="app-integration"></span><h1>App Integration Examples<a class="headerlink" href="#app-integration-examples" title="Permalink to this headline">¶</a></h1>
+<p>Clustergrammer can be integrated into other web applications and is being utilized to visualize data for the following <a class="reference external" href="http://labs.icahn.mssm.edu/maayanlab/">Ma&#8217;ayan lab</a> web applications:</p>
+<div class="section" id="enrichr">
+<h2>Enrichr<a class="headerlink" href="#enrichr" title="Permalink to this headline">¶</a></h2>
+<p>The enrichment analysis tool, <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>, uses the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a>&#8216;s API to produce dynamic heatmaps of enriched terms as columns and user lists as rows. This helps users understand the relationships between their input genes and the returned enriched terms.</p>
+</div>
+<div class="section" id="gen3va">
+<h2>GEN3VA<a class="headerlink" href="#gen3va" title="Permalink to this headline">¶</a></h2>
+<p>The gene signature analysis and visualization tool, <a class="reference external" href="http://amp.pharm.mssm.edu/gen3va/">GEN3VA</a>, uses Clustergrammer&#8217;s core libraries, <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> and <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>, to dynamcally visualize collections of gene expression signatures collected by users from <a class="reference external" href="https://www.ncbi.nlm.nih.gov/geo/">GEO</a> as interactive heatmaps. GEN3VA also uses Clustergrammer to visualize enrichment analysis results (obtained from <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>) and perturbations that reverse or mimic gene expression signatures (obtained from <a class="reference external" href="http://amp.pharm.mssm.edu/l1000cds2/">L1000CDS2</a>)</p>
+</div>
+<div class="section" id="l1000cds2">
+<h2>L1000CDS2<a class="headerlink" href="#l1000cds2" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://amp.pharm.mssm.edu/l1000cds2/">L1000CDS2</a> uses the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a>&#8216;s API to produce interactive heatmaps of perturbagen gene signatures that mimic or reverse an input gene signature. This can be useful for users that are interested in the specific genes that are differentially regulated by the identified perturbagens.</p>
+</div>
+<div class="section" id="harmonizome">
+<h2>Harmonizome<a class="headerlink" href="#harmonizome" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a> uses <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a>&#8216;s API to generate visualize of curated biological datasets as heatmaps and adjacency matrices (to depict networks). The Harmonizome also uses the Clustergrammer to visualize the amount of biological information that is available for different families of genes in the <a class="reference external" href="http://amp.pharm.mssm.edu/harmonogram/">Harmonogram</a></p>
+</div>
 </div>
 
 

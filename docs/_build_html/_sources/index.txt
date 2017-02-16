@@ -27,6 +27,7 @@ Clustergrammer was built to visualize biological data but is applicable for visu
 - `Cancer Cell Line Encyclopedia Gene Expression Data`_
 - `Zika Virus RNA-seq Data Visualization`_
 - `Single Cell RNA-seq Data Visualization`_
+- `Kinase Substrate Similarity Network`_
 - `Iris flower dataset`_
 - `MNIST Handwritten Digit Dataset`_
 
@@ -71,3 +72,4 @@ Contents:
 .. _`Iris flower dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
 .. _`MNIST Handwritten Digit Dataset`: https://maayanlab.github.io/MNIST_heatmaps/
 .. _`Single Cell RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb
+.. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
