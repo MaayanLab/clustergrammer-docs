@@ -39,12 +39,13 @@ Clustergrammer visualizations have a sidebar section that contains:
 
 - optional about section (see :ref:`clustergrammer_js_api`)
 - icon buttons: share_, snapshot_, download_, cropping_
-- row and column reordering buttons
-- row search box
-- opacity slider
-- row-filter-sliders
+- row and column reordering_ buttons
+- row search_ box
+- opacity_ slider
+- row filter_ sliders
 
 .. _row_col_reordering:
+.. _reordering:
 
 Row and Column Reordering
 =========================
@@ -57,6 +58,7 @@ Clustergrammer allows users to order rows and columns based on:
 by using the reordering-buttons on the sidebar. This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see :ref:`interactive_categories`). For small matrices reordering events are animated to help users visually track the effects of the transformation.
 
 .. _interactive_dim_reduction:
+.. _filter:
 
 Interactive Dimensionality Reduction
 ====================================
@@ -74,18 +76,25 @@ For small matrices dimensionality reduction is animated to help the user visuali
 
 .. _interactive_dendrogram:
 
-Interactive Dendrogram
-======================
-*explain what a dendrogram is*
+Dendrogram
+==========
+Clustergrams typically have `dendrogram trees`_ (for both rows and columns) to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_. The height of the branches in the dendrogram depict how different clusters are from each other. :ref:`clustergrammer_py` calculates hierarchical clustering using `SciPy`_'s hierarchy_ clustering functions (with the default linkage type set to average, see `calc_clust.py`_) and saves ten slices of the dendrogram taken evenly across the tree.
 
-*explain how a user can interact with the dendrogram*
+**Dendrogram Clusters**
+
+Rather than visualize the dendrogram as a large branching structure which takes up a lot of space and is difficult to interact with, Clustergrammer uses a more compact and easy to interact with visual representation: only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids). Different slices of the dendrogram can be toggled using the dendrogram-sliders. Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively.
+
+**Interacting with Dendrogram Clusters**
+
+
+**Dendrogrm Cropping**
 
 *explain how a user can crop using the dendrogram*
 
 .. _interactive_categories:
 
-Interactive Categories
-======================
+Categories
+==========
 *Explain why categories are useful*
 
 *mouseover highlighting, reordering, dendrogram breakdown*
@@ -110,8 +119,8 @@ Obtaining the underlying data from a visualization for re-use and re-analysis ca
 
 .. _snapshot:
 
-Taking a Snapshot of the Visualization
-======================================
+Taking a Snapshot
+=================
 *stateful snapshots of matrix*
 
 .. _share_heatmap:
@@ -121,9 +130,13 @@ Sharing your Interactive Heatmap
 ================================
 Interactive heatmaps produced with the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` (when notebooks are rendered through `nbviewer`_) can easily be shared with collaborators by sharing the URL of the visualization on the web app or the notebook. Users can also click the share button on the sidebar (see :ref:`sidebar_interactions`) sidebar to get this shareable URL.
 
+.. _opacity:
+
 Changing the Opacity
 ====================
 *useful for dealing with outlier values*
+
+.. _search:
 
 Row Searching
 =============
@@ -140,7 +153,10 @@ Biology Specific Interactions
 .. _`Eisen et al., 1998`: http://www.pnas.org/content/95/25/14863.full
 .. _`dendrogram trees`: https://en.wikipedia.org/wiki/Dendrogram
 .. _`t-SNE`: https://lvdmaaten.github.io/tsne/
-.. _`hierarchical clustering`: https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html
+.. _`hierarchical clustering`: https://en.wikipedia.org/wiki/Hierarchical_clustering
 .. _`PCA`: https://en.wikipedia.org/wiki/Principal_component_analysis
 .. _`object constancy`: https://bost.ocks.org/mike/constancy/
 .. _`nbviewer`: http://nbviewer.jupyter.org/
+.. _`SciPy`: https://www.scipy.org/
+.. _`hierarchy`: https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html
+.. _`calc_clust.py`: https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/calc_clust.py

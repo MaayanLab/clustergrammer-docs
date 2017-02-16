@@ -9,9 +9,9 @@ Clustergrammer-PY is the back-end Python library that is used to hierarchically 
 Dependencies
 ============
 
-- Numpy
-- Pandas
-- SciPy
+- `Numpy`_
+- `SciPy`_
+- `Pandas`_
 
 Installation
 ============
@@ -62,6 +62,9 @@ Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the
 .. _`package index`: https://pypi.python.org/pypi?:action=display&name=clustergrammer
 .. _`clustergrammer-py`: https://github.com/MaayanLab/clustergrammer-py
 .. _`issues`: https://github.com/MaayanLab/clustergrammer-py/issues
+.. _`Pandas`: http://pandas.pydata.org/
+.. _`Numpy`: http://www.numpy.org/
+.. _`SciPy`: https://www.scipy.org/
 
 .. |pypi-version| image:: https://img.shields.io/pypi/v/clustergrammer.svg
     :alt: version
