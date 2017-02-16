@@ -141,8 +141,8 @@ Obtaining the underlying data from a visualization for re-use and re-analysis ca
 
 .. _snapshot:
 
-Taking a Snapshot
-=================
+Snapshot Icon
+=============
 The snapshot icon in the sidebar allows users to take a SVG or PNG snapshot of their visualization. This snapshot will reflect the current state of the visualization (e.g. reordering, etc) as well as zooming and panning.
 
 .. _opacity:

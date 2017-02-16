@@ -33,7 +33,7 @@ Clustergrammer produces highly interactive visualizations that enable intuitive 
 - :ref:`interactive_dendrogram`
 - :ref:`interactive_dim_reduction` (e.g. filter rows based on variance)a
 - :ref:`interactive_categories`
-- :ref:`cropping`
+- :ref:`crop`
 - :ref:`search`
 
 Press play or interact with the demo (see :ref:`interacting_with_viz` for more information):
