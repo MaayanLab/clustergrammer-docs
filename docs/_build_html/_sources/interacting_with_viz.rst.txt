@@ -12,15 +12,15 @@ Heatmaps are powerful visualizations that enable users to directly visualize hig
 
 Zooming and Panning
 ===================
-Clustergrammer allows users to zoom and pan by scrolling and dragging. This is useful for working with large datasets (where labels are not readable without zooming) and for zooming into regions of interest of your data.
+Clustergrammer allows users to zoom and pan into the heatmap by scrolling and dragging. This is useful for working with large datasets (where labels are not readable without zooming) and for zooming into regions of interest.
 
-**Zooming Panning Behavior**
+**Zooming and Panning Behavior**
 
-Zooming occurs in two stages. First zooming/panning occurs in the direction that matrix cells have been more compressed (e.g. if there are more more rows than columns, then matrix cells will be compressed in the vertical direction and will be wide). Once zooming has decompressed matrix cells (e.g. matrix cells are now squares) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction.
+Zooming occurs in two stages. First zooming/panning occurs in the direction that matrix cells have been more compressed (e.g. if there are more more rows than columns, then matrix cells will be compressed in the vertical direction and the cells will be wide). Once zooming has decompressed matrix cells (e.g. matrix cells height and width are the same) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal direction.
 
-**Large Matrix Behavior**
+**Large Matrix Zooming and Panning Behavior**
 
-Clustergrammer is capable of visualizing matrices with ~500,000 to ~1,000,000 matrix cells, but is optimized to visualize matrices with more rows than columns. Clustergrammer uses row-downsampling to improve visualization performance with large matrices. If a user visualizes a matrix with a large number of rows (e.g. >1000-2000) such that each matrix cell is less than 1 pixel tall, then Clustergrammer will perform downsampling. When zoomed out, the user will see a downsampled version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix cells are > 1 pixels tall). Clustergrammer will also not display row labels until their font size is above ~5 pixels and they are readable. Clustergrammer will also hide row/column labels while zooming into large matrices to improve performance.
+Clustergrammer is capable of visualizing matrices with ~500,000 to ~750,000 matrix cells, but is optimized to visualize matrices with more rows than columns. Clustergrammer uses row-downsampling to improve visualization performance for large matrices. If a user visualizes a matrix with a large number of rows (e.g. >1000-2000) such that each matrix cell is less than 1 pixel tall, then Clustergrammer will perform row downsampling. When zoomed out, the user will see a downsampled (e.g. coarse grained) version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix cells are > 1 pixels tall). Clustergrammer will also only display row labels when theeir font size is at a readable level (above ~5 pixels). Clustergrammer will also hide row/column labels while zooming into large matrices to improve performance.
 
 
 Mouseover Interactions
