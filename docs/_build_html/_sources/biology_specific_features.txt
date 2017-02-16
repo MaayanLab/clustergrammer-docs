@@ -16,7 +16,13 @@ Enrichment Analysis
 ===================
 The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis a popular method to identify biological information specific to a list of genes - e.g. a biologist may use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their measured set of up-regulated genes and thereby form hypotheses about potential up-stream regulators in their system.
 
+**Export to Enrichr**
+
 When a user visualizes a matrix with genes as rows, Clustergrammer automatically enables integration with the enrichment analysis tool `Enrichr`_. Users can export their genes of interest to Enrichr using the interactive dendrogram or import enrichment results from Enrichr using the Enrichr tool on the top left.
+
+.. _enrichrgram:
+
+**Enrichrgram**
 
 The JavaScript file `Enrichrgram.js`_ provides this functionality using `Enrichr's RESTful API`_ to generate enrichment results from a list of input genes. `Enrichrgram.js`_ works with the :ref:`clustergrammer_js` API to depict enriched terms and their associated genes as row categories by adding/removing row categories. This general behavior of adding/removing row categories can be extended by developers for other use cases.
 

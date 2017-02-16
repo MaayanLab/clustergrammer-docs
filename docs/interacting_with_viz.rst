@@ -35,14 +35,14 @@ See :ref:`clustergrammer_js_api` for information about adding callback functions
 
 Sidebar Interactions
 ====================
-Clustergrammer visualizations have a sidebar section that contains:
+Clustergrammer visualizations have a sidebar section that contain:
 
 - optional about section (see :ref:`clustergrammer_js_api`)
-- icon buttons: share_, snapshot_, download_, cropping_
+- icon buttons: :ref:`share <share_heatmap>`, snapshot_, download_, cropping_
 - row and column reordering_ buttons
-- row search_ box
-- opacity_ slider
-- row filter_ sliders
+- :ref:`Row Search Box <search>`
+- :ref:`Opacity Slider<opacity>`
+- :ref:`Row Filter Sliders <interactive_dim_reduction>`
 
 .. _row_col_reordering:
 .. _reordering:
@@ -58,7 +58,6 @@ Clustergrammer allows users to order rows and columns based on:
 by using the reordering-buttons on the sidebar. This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see :ref:`interactive_categories`). For small matrices reordering events are animated to help users visually track the effects of the transformation.
 
 .. _interactive_dim_reduction:
-.. _filter:
 
 Interactive Dimensionality Reduction
 ====================================
@@ -80,16 +79,22 @@ Dendrogram
 ==========
 Clustergrams typically have `dendrogram trees`_ (for both rows and columns) to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_. The height of the branches in the dendrogram depict how different clusters are from each other. :ref:`clustergrammer_py` calculates hierarchical clustering using `SciPy`_'s hierarchy_ clustering functions (with the default linkage type set to average, see `calc_clust.py`_) and saves ten slices of the dendrogram taken evenly across the tree.
 
-**Dendrogram Clusters**
+**Visualizing Dendrogram Clusters**
 
 Rather than visualize the dendrogram as a large branching structure which takes up a lot of space and is difficult to interact with, Clustergrammer uses a more compact and easy to interact with visual representation: only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids). Different slices of the dendrogram can be toggled using the dendrogram-sliders. Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively.
 
+  **<screenshot of dendrogram clusters>**
+
 **Interacting with Dendrogram Clusters**
 
+Mousing over a dendrogram cluster (gray trapezoid) highlights the current group of rows or columns (by adding a shadows over the rows or columns not in the cluster) and brings up a tooltip with cluster information. If the rows or columns have categories, this tooltip will show a breakdown of the rows and columns into their categories, which can be useful for understanding how prior knowledge compares to clusters identified in a data-driven manner (e.g. we can ask, do columns with the same category cluster together based on the data). Clicking a dendrogram cluster brings up this same information in a pop-up window and also allows users to export the names of the rows or columns in the cluster. When a user is visualizing biological data with, where rows are official gene symbols, users have the option to export the gene list from the cluster to the enrichment analysis tool, `Enrichr`_ (see :ref:`biology_specific_features` for more information).
+
+  **<screenshot of dendrogram cluster hover over>**
+  **<screenshot of dendrogram cluster pop-up>**
 
 **Dendrogrm Cropping**
 
-*explain how a user can crop using the dendrogram*
+Each dendrogram cluster has a small triangular crop button above it that allows users to crop the matrix to the rows or columns in this cluster. Clicking on the dendrogram crop button filters out the rows or columns not in the cluster and resizes the visualization to only show the rows or columns in the current cluster. For small matrices, this transformation is animated. Dendrogram cropping can be useful for focusing in on a cluster of interest and when used in combination with the :ref:`Enrichrgram <enrichrgram>`
 
 .. _interactive_categories:
 
@@ -124,7 +129,6 @@ Taking a Snapshot
 *stateful snapshots of matrix*
 
 .. _share_heatmap:
-.. _share:
 
 Sharing your Interactive Heatmap
 ================================
@@ -132,8 +136,8 @@ Interactive heatmaps produced with the :ref:`clustergrammer_web` and the :ref:`c
 
 .. _opacity:
 
-Changing the Opacity
-====================
+Opacity Slider
+==============
 *useful for dealing with outlier values*
 
 .. _search:
@@ -160,3 +164,4 @@ Biology Specific Interactions
 .. _`SciPy`: https://www.scipy.org/
 .. _`hierarchy`: https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html
 .. _`calc_clust.py`: https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/calc_clust.py
+.. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
