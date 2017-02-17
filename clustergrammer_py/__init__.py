@@ -72,7 +72,7 @@ class Network(object):
     '''
     .. _make_clust:
 
-    The main function performs hierarchical clustering, optionally generates fitlered views (e.g. row filterd views), and generates the :`visualization_json`.
+    The main function performs hierarchical clustering, optionally generates filtered views (e.g. row filtered views), and generates the :`visualization_json`.
     '''
     from . import initialize_net
     from . import make_clust_fun
@@ -182,7 +182,7 @@ class Network(object):
 
   def filter_N_top(self, inst_rc, N_top, rank_type='sum'):
     '''
-    Filter the matrix rows or columnss based on sum/variance, and only keep the top
+    Filter the matrix rows or columns based on sum/variance, and only keep the top
     N.
     '''
     from . import run_filter

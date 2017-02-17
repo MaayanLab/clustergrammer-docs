@@ -48,3 +48,6 @@ outlier
 dat
 num
 zscore
+qn
+NaN
+un

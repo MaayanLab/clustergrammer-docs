@@ -56,9 +56,9 @@ Clustergrammer-JS API
 
 .. js:class:: Clustergrammer(args)
 
-  The Clusterrammer JavaScript object takes the ``args`` object and produces a visualization on the page.
+  The Clustergrammer JavaScript object takes the ``args`` object and produces a visualization on the page.
 
-  This ``args`` object has two requried arguments, ``network_data`` and ``root``:
+  This ``args`` object has two required arguments, ``network_data`` and ``root``:
 
     .. js:attribute:: args.network_data
 
@@ -90,7 +90,7 @@ Clustergrammer-JS API
 
     .. js:attribute:: args.matrix_update_callback
 
-      Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/unfiltering, cropping, etc.
+      Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/un-filtering, cropping, etc.
 
     .. js:attribute:: args.sidebar_width:
 
