@@ -17,7 +17,7 @@ Users can obtain a permanent link to their visualization by manually uploading t
 
 Adding Clustergrammer to a Page
 ===============================
-The Clustergrammer-JS library can be used to generate an interactive visualization in your webpage. Simply include the ``clustergrammer.js`` script in your page and load the pre-calculated :ref:`Clustergrammer-JSON <clustergrammer_json>` to generate a visualization.
+The Clustergrammer-JS library can be used to generate an interactive visualization in your webpage. Simply include the ``clustergrammer.js`` script in your page and load the pre-calculated :ref:`visualization-JSON <visualization_json>` to generate a visualization.
 
 
 Clustergrammer can be used to generate interactive visualizations for your own web application by: using the Clustergrammer.js library on your site, or embedding a visualization provided by the Clustergrammer web app.

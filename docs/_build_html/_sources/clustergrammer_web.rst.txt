@@ -53,12 +53,13 @@ and receive a permanent link to their visualization. Below is an example in Pyth
 
 Clustergrammer-Web Development
 ==============================
-Clustergrammer-Web is a `dockerized`_ web application built using the Python library `Flask`_. Clustergrammer-Web uses the :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries and the source code can be found in the `clustergrammer-web`_ GitHub repo.
+Clustergrammer-Web is a `dockerized`_ web application built using the Python library `Flask`_ and `MongoDB`_ database. Clustergrammer-Web uses the :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries and the source code can be found in the `clustergrammer-web`_ GitHub repo.
 
 
 .. _`Flask`: http://flask.pocoo.org/
 .. _`dockerized`: https://docs.docker.com/
 .. _`clustergrammer-web`: https://github.com/MaayanLab/clustergrammer-web/
+.. _`MongoDB`: https://www.mongodb.com/
 
 .. |github-version| image:: https://img.shields.io/github/release/MaayanLab/clustergrammer-web.svg
     :alt: version

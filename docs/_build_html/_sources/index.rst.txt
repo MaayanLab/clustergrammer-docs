@@ -16,9 +16,9 @@ The easiest ways to use Clustergrammer to produce an interactive and shareable h
 - upload a tab-separated matrix file using the Clustergrammer web app `homepage`_
 - or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share using `nbviewer`_
 
-The :ref:`clustergrammer_web` is the quickest way for a user to generate an interactive and shareable visualization (see `example visualization`_). For more technical users that want to produce the visualization as part of a workflow, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebooks and shared through Jupyter's `nbviewer`_ (see `example notebook`_). Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
+The :ref:`clustergrammer_web` is the quickest way for a user to generate an interactive and shareable visualization (see `example visualization`_). For more technical users who want to produce the visualization as part of a workflow, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebooks and shared through Jupyter's `nbviewer`_ (see `example notebook`_). Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
 
-Please read the :doc:`getting_started` guide for more detailed information on using Clustergrammer.
+Please read the :doc:`getting_started` guide for more information.
 
 Use Cases
 =========
@@ -26,6 +26,8 @@ Clustergrammer was built to visualize biological data but is applicable for visu
 
 - `Cancer Cell Line Encyclopedia Gene Expression Data`_
 - `Zika Virus RNA-seq Data Visualization`_
+- `Single Cell RNA-seq Data Visualization`_
+- `Kinase Substrate Similarity Network`_
 - `Iris flower dataset`_
 - `MNIST Handwritten Digit Dataset`_
 
@@ -53,6 +55,7 @@ Contents:
    building_webpage
    clustergrammer_js
    clustergrammer_py
+   clustergrammer_py_api
    app_integration
    developing_with_clustergrammer
    license
@@ -69,3 +72,5 @@ Contents:
 .. _`Zika Virus RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb
 .. _`Iris flower dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
 .. _`MNIST Handwritten Digit Dataset`: https://maayanlab.github.io/MNIST_heatmaps/
+.. _`Single Cell RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb
+.. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/

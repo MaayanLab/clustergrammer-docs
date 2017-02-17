@@ -28,27 +28,26 @@ Interacting with Clustergrammer
 ===============================
 Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data including:
 
-- zooming/panning
-- row and column reordering (e.g. reorder based on sum)
-- interactive dendrogram
-- dimensionality reduction (e.g. filter rows based on variance)a
-- interactive row/column categories
-- cropping
+- :ref:`zooming_and_panning`
+- :ref:`row_col_reordering` (e.g. reorder based on sum)
+- :ref:`interactive_dendrogram`
+- :ref:`interactive_dim_reduction` (e.g. filter rows based on variance)a
+- :ref:`interactive_categories`
+- :ref:`crop`
+- :ref:`search`
 
-Press play or interact with the demo:
+Press play or interact with the demo (see :ref:`interacting_with_viz` for more information):
 
 .. raw:: html
 
          <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe>
 
-For more information please see the :ref:`interacting_with_viz` section.
+Clustergrammer also has biology-specific features for working with gene-level data including:
 
-Clustergrammer also has biology-specific features including:
+- mouseover gene names and description look-up (using `Harmonizome`_)
+- enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using `Enrichr`_)
 
-- mouseover gene (row) names to show the full name and description of a gene (through `Harmonizome`_)
-- find biological information (e.g. up-stream transcription factors) specific to your gene list using enrichment analysis through `Enrichr`_
-
-For more information on Clustergrammer's biology specific features please see the :ref:`biology_specific_features` section.
+See :ref:`biology_specific_features` for more information.
 
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
