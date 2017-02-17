@@ -55,7 +55,6 @@ Contents:
    building_webpage
    clustergrammer_js
    clustergrammer_py
-   clustergrammer_py_api
    app_integration
    developing_with_clustergrammer
    license
