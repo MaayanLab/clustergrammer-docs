@@ -193,17 +193,13 @@
 </div>
 <div class="section" id="clustergrammer-js-api">
 <span id="id4"></span><h2>Clustergrammer-JS API<a class="headerlink" href="#clustergrammer-js-api" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-JS&#8217; API allows users to pass options to the front-end visualization, such as optional callback functions.</p>
 <dl class="class">
 <dt id="Clustergrammer">
 <em class="property">class </em><code class="descname">Clustergrammer</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#Clustergrammer" title="Permalink to this definition">¶</a></dt>
 <dd><p>The Clusterrammer JavaScript object takes the <code class="docutils literal"><span class="pre">args</span></code> object and produces a visualization on the page.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Args:</th><td class="field-body"><p class="first">This object contains</p>
-<dl class="attribute">
+<p>This <code class="docutils literal"><span class="pre">args</span></code> object has two requried arguments, <code class="docutils literal"><span class="pre">network_data</span></code> and <code class="docutils literal"><span class="pre">root</span></code>:</p>
+<blockquote>
+<div><dl class="attribute">
 <dt id="args.network_data">
 <code class="descclassname">args.</code><code class="descname">network_data</code><a class="headerlink" href="#args.network_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>This required attribute is where the visualization JSON should be passed as a JavaScript object.</p>
@@ -218,20 +214,53 @@
 <dl class="attribute">
 <dt id="args.about">
 <code class="descclassname">args.</code><code class="descname">about</code><a class="headerlink" href="#args.about" title="Permalink to this definition">¶</a></dt>
-<dd><p>This argument is a string (which can include HTML) that will produce a small about section at the top of the sidebar. This can be used to provide a quick description about the data or visualization.</p>
+<dd><p>This attribute is a string (which can include HTML) that will produce a small about section at the top of the sidebar. This can be used to provide a quick description about the data or visualization.</p>
 </dd></dl>
 
-<dl class="last attribute">
+<dl class="attribute">
 <dt id="args.row_tip_callback">
 <code class="descclassname">args.</code><code class="descname">row_tip_callback</code><a class="headerlink" href="#args.row_tip_callback" title="Permalink to this definition">¶</a></dt>
-<dd><p>This</p>
+<dd><p>Users can pass a callback function that will run when mousing over row labels.</p>
 </dd></dl>
 
-</td>
-</tr>
-</tbody>
-</table>
-<p>These functions can be run after the visualization is built to update the visualization.</p>
+<dl class="attribute">
+<dt id="args.col_tip_callback">
+<code class="descclassname">args.</code><code class="descname">col_tip_callback</code><a class="headerlink" href="#args.col_tip_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Users can pass a callback function that will run when mousing over col labels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="args.tile_tip_callback">
+<code class="descclassname">args.</code><code class="descname">tile_tip_callback</code><a class="headerlink" href="#args.tile_tip_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Users can pass a callback function that will run when mousing over a matrix-cell (e.g. matrix tile).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="args.dendro_callback">
+<code class="descclassname">args.</code><code class="descname">dendro_callback</code><a class="headerlink" href="#args.dendro_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Users can pass a callback function that will run when mousing over a dendrogram cluster (e.g. gray trapezoid)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="args.matrix_update_callback">
+<code class="descclassname">args.</code><code class="descname">matrix_update_callback</code><a class="headerlink" href="#args.matrix_update_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/unfiltering, cropping, etc.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="args.sidebar_width:">
+<code class="descclassname">args.</code><code class="descname">sidebar_width:</code><a class="headerlink" href="#args.sidebar_width:" title="Permalink to this definition">¶</a></dt>
+<dd><p>Users can modify the width of the sidebar by specifying the width of the sidebar in pixels as a number.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="args.ini_view">
+<code class="descclassname">args.</code><code class="descname">ini_view</code><a class="headerlink" href="#args.ini_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Users can initialize the &#8216;view&#8217; of their matrix, e.g. a initialize the matrix at a particular row filtering level.</p>
+</dd></dl>
+
+</div></blockquote>
+<p>Clustergrammer&#8217;s attributes and functions are listed below:</p>
 <dl class="function">
 <dt id="update_cats">
 <code class="descname">update_cats</code><span class="sig-paren">(</span><em>row_data</em><span class="sig-paren">)</span><a class="headerlink" href="#update_cats" title="Permalink to this definition">¶</a></dt>
@@ -242,6 +271,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first last simple">
 <li><strong>row_data</strong> &#8211; The row category data that will be used to ...</li>
+<li><strong>resize_viz</strong> &#8211; Call this function to resize the visualization to fit in its resized container (if the user has resized the container).</li>
 </ul>
 </td>
 </tr>
