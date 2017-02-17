@@ -3,7 +3,7 @@ class Network(object):
   '''
   version 1.2.1
 
-  Updating documentation
+  Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the :ref:`visualization_json` for :ref:`clustergrammer_js`.
 
   Networks have two states:
 
@@ -58,18 +58,21 @@ class Network(object):
 
   def load_data_file_to_net(self, filename):
     '''
-    load my .dat format (saved as json) for a network to a netowrk
+    load my .dat format (saved as json) for a network to a network
     '''
 
     from . import load_data
     inst_dat = self.load_json_to_dict(filename)
     load_data.load_data_to_net(self, inst_dat)
 
+
   def make_clust(self, dist_type='cosine', run_clustering=True,
                  dendro=True, views=['N_row_sum', 'N_row_var'],
                  linkage_type='average', sim_mat=False, filter_sim=0.1,
                  calc_cat_pval=False, run_enrichr=None):
     '''
+    .. _make_clust:
+
     The main function run by the user to make their clustergram.
     views is later referred to as requested_views.
     '''
@@ -108,7 +111,7 @@ class Network(object):
 
   def load_df(self, df):
     '''
-    Upload pandas datafraeme
+    Upload pandas DataFrame
     '''
     from copy import deepcopy
 
@@ -121,7 +124,7 @@ class Network(object):
 
   def export_df(self):
     '''
-    export dataframe from network
+    export DataFrame from network
     '''
     from . import data_formats
     df_dict = data_formats.dat_to_df(self)
@@ -129,14 +132,14 @@ class Network(object):
 
   def df_to_dat(self, df):
     '''
-    Convert from pandas dataframe to clustergrammers dat format (will be deprecated)
+    Convert from pandas DataFrame to Clustergrammer's dat format (will be deprecated)
     '''
     from . import data_formats
     data_formats.df_to_dat(self, df)
 
   def dat_to_df(self):
     '''
-    convert from clusergrammers dat format to pandas dataframe
+    convert from Clustergrammer's dat format to pandas DataFrame
     '''
     from . import data_formats
     return data_formats.dat_to_df(self)

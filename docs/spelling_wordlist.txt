@@ -45,3 +45,6 @@ perturbagen
 perturbagens
 Harmonizome
 outlier
+dat
+num
+zscore
