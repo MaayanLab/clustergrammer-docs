@@ -55,6 +55,23 @@ Clustergrammer-JS API
 =====================
 Clustergrammer-JS' API allows users to pass options to the front-end visualization, such as optional callback functions.
 
+
+.. js:class:: Clustergrammer(args)
+
+  The Clusterrammer JavaScript object.
+
+  :args: The visualization JSON as well as optional arguments will be passed here.
+
+  Clustergrammer functions:
+
+  .. js:function:: update_cats(row_data)
+
+    Update the visualization row categories.
+
+    :param row_data: The row category data that will be used to ...
+
+
+
 .. _visualization_json:
 
 Visualization-JSON
