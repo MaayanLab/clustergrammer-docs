@@ -53,7 +53,64 @@ The page `multiple_clust.html`_ and corresponding script `load_multiple_clusterg
 
 Clustergrammer-JS API
 =====================
-Clustergrammer-JS' API allows users to pass options to the front-end visualization, such as optional callback functions.
+
+.. js:class:: Clustergrammer(args)
+
+  The Clusterrammer JavaScript object takes the ``args`` object and produces a visualization on the page.
+
+  This ``args`` object has two requried arguments, ``network_data`` and ``root``:
+
+    .. js:attribute:: args.network_data
+
+      This required attribute is where the visualization JSON should be passed as a JavaScript object.
+
+    .. js:attribute:: args.root
+
+      This required attribute is the ``id`` (passed as a string) of the container where Clustergrammer will be built. Each Clustergrammer visualization in a page should be passed a unique ``id``.
+
+    .. js:attribute:: args.about
+
+      This attribute is a string (which can include HTML) that will produce a small about section at the top of the sidebar. This can be used to provide a quick description about the data or visualization.
+
+    .. js:attribute:: args.row_tip_callback
+
+      Users can pass a callback function that will run when mousing over row labels.
+
+    .. js:attribute:: args.col_tip_callback
+
+      Users can pass a callback function that will run when mousing over col labels.
+
+    .. js:attribute:: args.tile_tip_callback
+
+      Users can pass a callback function that will run when mousing over a matrix-cell (e.g. matrix tile).
+
+    .. js:attribute:: args.dendro_callback
+
+      Users can pass a callback function that will run when mousing over a dendrogram cluster (e.g. gray trapezoid)
+
+    .. js:attribute:: args.matrix_update_callback
+
+      Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/unfiltering, cropping, etc.
+
+    .. js:attribute:: args.sidebar_width:
+
+      Users can modify the width of the sidebar by specifying the width of the sidebar in pixels as a number.
+
+    .. js:attribute:: args.ini_view
+
+      Users can initialize the 'view' of their matrix, e.g. a initialize the matrix at a particular row filtering level.
+
+  Clustergrammer's attributes and functions are listed below:
+
+  .. js:function:: update_cats(row_data)
+
+    Update the visualization row categories.
+
+    :param row_data: The row category data that will be used to ...
+
+    :param resize_viz: Call this function to resize the visualization to fit in its resized container (if the user has resized the container).
+
+
 
 .. _visualization_json:
 

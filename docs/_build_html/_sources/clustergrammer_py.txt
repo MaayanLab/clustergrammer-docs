@@ -53,13 +53,12 @@ Clustergrammer-PY API
 =====================
 Clustergrammer-PY generates a Network object (see `Network class definition`_), which is used to load a matrix (e.g. from a Pandas `DataFrame`_), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.
 
-When a matrix is loaded into an instance of ``Network`` (e.g. ``net``) it is stored in the data, ``dat``, attribute. Normalization and filtering will modify the ``dat`` representation of the matrix. When the matrix is clustered (by calling the ``make_clust`` function)
+When a matrix is loaded into an instance of ``Network`` (e.g. ``net``) it is stored in the data, ``dat``, attribute. Normalization and filtering will modify the ``dat`` representation of the matrix. When the matrix is clustered (by calling :ref:`make_clust`)
 
 .. automodule:: clustergrammer_py
 
 .. autoclass:: Network
     :members:
-
 
 
 .. _clustergrammer_py_dev:
