@@ -197,29 +197,41 @@
 <dl class="class">
 <dt id="Clustergrammer">
 <em class="property">class </em><code class="descname">Clustergrammer</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#Clustergrammer" title="Permalink to this definition">¶</a></dt>
-<dd><p>The Clusterrammer JavaScript object.</p>
+<dd><p>The Clusterrammer JavaScript object takes the <code class="docutils literal"><span class="pre">args</span></code> object and produces a visualization on the page.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Args:</th><td class="field-body"><p class="first">The visualization JSON as well as optional arguments will be passed here.</p>
+<tr class="field-odd field"><th class="field-name">Args:</th><td class="field-body"><p class="first">This object contains</p>
 <dl class="attribute">
 <dt id="args.network_data">
 <code class="descclassname">args.</code><code class="descname">network_data</code><a class="headerlink" href="#args.network_data" title="Permalink to this definition">¶</a></dt>
-<dd><p>This is where the visualization JSON should be passed.</p>
+<dd><p>This required attribute is where the visualization JSON should be passed as a JavaScript object.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="args.root">
+<code class="descclassname">args.</code><code class="descname">root</code><a class="headerlink" href="#args.root" title="Permalink to this definition">¶</a></dt>
+<dd><p>This required attribute is the <code class="docutils literal"><span class="pre">id</span></code> (passed as a string) of the container where Clustergrammer will be built. Each Clustergrammer visualization in a page should be passed a unique <code class="docutils literal"><span class="pre">id</span></code>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="args.about">
+<code class="descclassname">args.</code><code class="descname">about</code><a class="headerlink" href="#args.about" title="Permalink to this definition">¶</a></dt>
+<dd><p>This argument is a string (which can include HTML) that will produce a small about section at the top of the sidebar. This can be used to provide a quick description about the data or visualization.</p>
 </dd></dl>
 
 <dl class="last attribute">
-<dt id="args.root">
-<code class="descclassname">args.</code><code class="descname">root</code><a class="headerlink" href="#args.root" title="Permalink to this definition">¶</a></dt>
-<dd><p>This required attribute is the <code class="docutils literal"><span class="pre">id</span></code> of the container where Clustergrammer will be built. Each Clustergrammer visualization in a page should be passed a unique <code class="docutils literal"><span class="pre">id</span></code>.</p>
+<dt id="args.row_tip_callback">
+<code class="descclassname">args.</code><code class="descname">row_tip_callback</code><a class="headerlink" href="#args.row_tip_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>This</p>
 </dd></dl>
 
 </td>
 </tr>
 </tbody>
 </table>
-<p>Clustergrammer functions:</p>
+<p>These functions can be run after the visualization is built to update the visualization.</p>
 <dl class="function">
 <dt id="update_cats">
 <code class="descname">update_cats</code><span class="sig-paren">(</span><em>row_data</em><span class="sig-paren">)</span><a class="headerlink" href="#update_cats" title="Permalink to this definition">¶</a></dt>

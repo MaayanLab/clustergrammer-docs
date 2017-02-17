@@ -58,23 +58,27 @@ Clustergrammer-JS' API allows users to pass options to the front-end visualizati
 
 .. js:class:: Clustergrammer(args)
 
-  The Clusterrammer JavaScript object.
+  The Clusterrammer JavaScript object takes the ``args`` object and produces a visualization on the page.
 
-  :args: The visualization JSON as well as optional arguments will be passed here.
+  :args: This object contains
 
     .. js:attribute:: args.network_data
 
-      This is where the visualization JSON should be passed.
+      This required attribute is where the visualization JSON should be passed as a JavaScript object.
 
     .. js:attribute:: args.root
 
-      This required attribute is the ``id`` of the container where Clustergrammer will be built. Each Clustergrammer visualization in a page should be passed a unique ``id``.
+      This required attribute is the ``id`` (passed as a string) of the container where Clustergrammer will be built. Each Clustergrammer visualization in a page should be passed a unique ``id``.
 
-    .. :attribute:: args.about
+    .. js:attribute:: args.about
 
-      This op
+      This argument is a string (which can include HTML) that will produce a small about section at the top of the sidebar. This can be used to provide a quick description about the data or visualization.
 
-  Clustergrammer functions:
+    .. js:attribute:: args.row_tip_callback
+
+      This
+
+  These functions can be run after the visualization is built to update the visualization.
 
   .. js:function:: update_cats(row_data)
 
