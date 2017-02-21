@@ -7,6 +7,13 @@ Clustergrammer Jupyter Widget
 
 Clustergrammer can be used within a Jupyter notebook as an interactive HTML widget and is compatible with Python 2 and 3. Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame.
 
+.. figure:: _static/jupyter_widget_nbviewer.png
+  :width: 900px
+  :align: center
+  :alt: Jupyter Widget NBViewer
+  :target: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
+
+  Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see `Running_clustergrammer_widget.ipynb`_ example).
 
 Dependencies
 ============
