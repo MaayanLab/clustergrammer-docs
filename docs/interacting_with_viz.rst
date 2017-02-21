@@ -181,13 +181,25 @@ Download Icon
 =============
 Obtaining the underlying data from a visualization for re-use and re-analysis can be a tedious task. To facilitate this common task, Clustergrammer's sidebar has a download icon, shown below, that allows users to download the matrix of data in the visualization. The downloaded data reflects the current state of the matrix, e.g. filtering, cropping, and reordering will be reflected in the downloaded data.
 
-  **<screenshot of download button in sidebar>**
+.. figure:: _static/download_matrix.png
+  :width: 175px
+  :align: center
+  :alt: Download Icon
+
+  Click the download icon in the sidebar to download a tab-separated file of the matrix in its current state.
 
 .. _snapshot:
 
 Snapshot Icon
 =============
 The snapshot icon in the sidebar allows users to take a SVG or PNG snapshot of their visualization. This snapshot will reflect the current state of the visualization (e.g. reordering, etc) as well as zooming and panning.
+
+.. figure:: _static/snapshot.png
+  :width: 175px
+  :align: center
+  :alt: Snapshot
+
+  Click the snapshot icon in the sidebar to take a SVG or PNG snapshot of the matrix in its curent state (including reordering, etc).
 
 .. _opacity:
 
@@ -201,6 +213,12 @@ Row Searching
 =============
 Users can search for rows in their matrix using the search box. Row search includes autocomplete and animated zooming into the matrix to display the row of interest.
 
+.. figure:: _static/row_search.png
+  :width: 200px
+  :align: center
+  :alt: Search
+
+  Users can search for rows using the search box in the sidebar. When a row is found the matrix will zoom into the found row.
 
 Expanding
 =========
@@ -211,6 +229,13 @@ Users can hide the sidebar :ref:`sidebar_interactions` panel using the expand bu
 Sharing your Interactive Heatmap
 ================================
 Interactive heatmaps produced with the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` (when notebooks are rendered through `nbviewer`_) can easily be shared with collaborators by sharing the URL of the visualization on the web app or the notebook. Users can also click the share button on the sidebar (see :ref:`sidebar_interactions`) sidebar to get this shareable URL.
+
+.. figure:: _static/share.png
+  :width: 175px
+  :align: center
+  :alt: Share
+
+  Interactive heatmaps can be shared by sharing the current URL, which can be obtained from the share icon in the sidebar.
 
 Biology Specific Interactions
 =============================
