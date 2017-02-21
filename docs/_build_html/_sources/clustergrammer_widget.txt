@@ -57,7 +57,31 @@ This example shows how to visualize a matrix of gene expression data saved as a 
   # make interactive widget
   clustergrammer_widget(network=net.widget())
 
-Clustergrammer-Widget can also be thought of as a general purpose `Pandas`_ DataFrame viewer
+Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas Dataframe, ``df``, by loading it into the same ``net`` object from above:
+::
+
+  # load DataFrame
+  net.load_df(df)
+
+  # cluster using default parameters
+  net.make_clust()
+
+  # make interactive widget
+  clustergrammer_widget(network=net.widget())
+
+The ``net`` object can also be used to filter and normalize your data before visualizing:
+::
+
+  # Z-score normalize columns
+  net.normalize(axis='col', norm_type='zscore', keep_orig=True)
+
+  # filter for the top 200 rows based on their absolute value sum
+  net.filter_N_top('row', 200, 'sum')
+
+  # make interactive widget
+  clustergrammer_widget(network=net.widget())
+
+See the :ref:`clustergrammer_py_api` for more information about :ref:`clustergrammer_py`'s API.
 
 .. _clustergrammer_widget_dev:
 

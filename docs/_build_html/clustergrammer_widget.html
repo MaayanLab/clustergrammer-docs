@@ -191,7 +191,29 @@
 <span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>Clustergrammer-Widget can also be thought of as a general purpose <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame viewer</p>
+<p>Clustergrammer-Widget can also be used as a general purpose <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame viewer. Below is an example of how to visualize a Pandas Dataframe, <code class="docutils literal"><span class="pre">df</span></code>, by loading it into the same <code class="docutils literal"><span class="pre">net</span></code> object from above:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># load DataFrame</span>
+<span class="n">net</span><span class="o">.</span><span class="n">load_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="c1"># cluster using default parameters</span>
+<span class="n">net</span><span class="o">.</span><span class="n">make_clust</span><span class="p">()</span>
+
+<span class="c1"># make interactive widget</span>
+<span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">net</span></code> object can also be used to filter and normalize your data before visualizing:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Z-score normalize columns</span>
+<span class="n">net</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;col&#39;</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="s1">&#39;zscore&#39;</span><span class="p">,</span> <span class="n">keep_orig</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># filter for the top 200 rows based on their absolute value sum</span>
+<span class="n">net</span><span class="o">.</span><span class="n">filter_N_top</span><span class="p">(</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">)</span>
+
+<span class="c1"># make interactive widget</span>
+<span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>See the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a> for more information about <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>&#8216;s API.</p>
 </div>
 <div class="section" id="clustergrammer-widget-development">
 <span id="clustergrammer-widget-dev"></span><h2>Clustergrammer-Widget Development<a class="headerlink" href="#clustergrammer-widget-development" title="Permalink to this headline">¶</a></h2>
