@@ -112,6 +112,10 @@ Clustergrammer-JS API
 
     :param row_data: Row category data.
 
+  .. js:function:: reset_cats()
+
+    Reset the row categories to their original state.
+
   .. js:function:: resize_viz:
 
     Call this function to resize the visualization to fit in its resized container (if the user has resized the container).
@@ -128,6 +132,31 @@ Clustergrammer-JS API
 
     :param inst_state: The value of the row filter, e.g. 500
 
+  .. js:function:: filter_viz_using_names(names)
+
+    Update the visualization to show the row and column names specified in the names object.
+
+    :param names: Object with ``row`` and ``col`` attributes that specify the row and column names that will be visible after updating.
+
+  .. js:function:: filter_viz_using_names(nodes)
+
+    Update the visualization to show the row and column names specified in the nodes object.
+
+    :param names: Object with ``row`` and ``col`` attributes that specify the row and column nodes that will be visible after updating.
+
+  .. js:function:: zoom(pan_x, pan_y, zoom)
+
+    Zoom and pan into the visualization.
+
+    :param pan_x: Panning in the `x` direction
+
+    :param pan_y: Panning in the `y` direction
+
+    :param zoom: The zoom level applied to the visualization.
+
+  .. js:function:: export_matrix()
+
+    Save the current matrix (e.g. after cropping) as a tab-separated-file.
 
 
 .. _visualization_json:

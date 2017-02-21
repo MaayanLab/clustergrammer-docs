@@ -285,6 +285,12 @@
 </dd></dl>
 
 <dl class="function">
+<dt id="reset_cats">
+<code class="descname">reset_cats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reset_cats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the row categories to their original state.</p>
+</dd></dl>
+
+<dl class="function">
 <dt id="resize_viz:">
 <code class="descname">resize_viz:</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#resize_viz:" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call this function to resize the visualization to fit in its resized container (if the user has resized the container).</p>
@@ -312,6 +318,65 @@
 </tr>
 </tbody>
 </table>
+</dd></dl>
+
+<dl class="function">
+<dt id="filter_viz_using_names">
+<code class="descname">filter_viz_using_names</code><span class="sig-paren">(</span><em>names</em><span class="sig-paren">)</span><a class="headerlink" href="#filter_viz_using_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the visualization to show the row and column names specified in the names object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first last simple">
+<li><strong>names</strong> &#8211; Object with <code class="docutils literal"><span class="pre">row</span></code> and <code class="docutils literal"><span class="pre">col</span></code> attributes that specify the row and column names that will be visible after updating.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<code class="descname">filter_viz_using_names</code><span class="sig-paren">(</span><em>nodes</em><span class="sig-paren">)</span></dt>
+<dd><p>Update the visualization to show the row and column names specified in the nodes object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first last simple">
+<li><strong>names</strong> &#8211; Object with <code class="docutils literal"><span class="pre">row</span></code> and <code class="docutils literal"><span class="pre">col</span></code> attributes that specify the row and column nodes that will be visible after updating.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zoom">
+<code class="descname">zoom</code><span class="sig-paren">(</span><em>pan_x</em>, <em>pan_y</em>, <em>zoom</em><span class="sig-paren">)</span><a class="headerlink" href="#zoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Zoom and pan into the visualization.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pan_x</strong> &#8211; Panning in the <cite>x</cite> direction</li>
+<li><strong>pan_y</strong> &#8211; Panning in the <cite>y</cite> direction</li>
+<li><strong>zoom</strong> &#8211; The zoom level applied to the visualization.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="export_matrix">
+<code class="descname">export_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#export_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the current matrix (e.g. after cropping) as a tab-separated-file.</p>
 </dd></dl>
 
 </dd></dl>
