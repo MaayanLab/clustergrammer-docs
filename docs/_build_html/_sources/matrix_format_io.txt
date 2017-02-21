@@ -28,8 +28,12 @@ Simple Matrix-Category Format
 =============================
 Row and column categories can be included in your data in two ways. The first, simple matrix-category format, is shown below:
 
-.. image:: _static/cat_tsv.png
+.. figure:: _static/cat_tsv.png
 	:width: 700px
+	:align: center
+	:alt: Simple Matrix-Category Format
+
+	A matrix with row and column categories in 'simple' format.
 
 This simple format allows users to encode column categories as a extra rows underneath column labels and row categories as an extra columns next to row labels. The above screenshot of an Excel spreadsheet shows a single row category being added as an additional column of strings (e.g. ``Type: Interesting``) and a single column category being added as an additional row of strings (e.g. ``Gender: Male``). Up to 15 categories can be added in a similar manner. Titles for row or column names or categories can be added by prefixing each string with ``'Title: '`` (note the space after the colon). For example the title of the column names is ``Cell Line`` and the title of the row categories is ``Gender``. See `rc_two_cats.txt`_ for an example of this matrix format. Titles, if given, will be shown as labels above row/column names or adjacent to row/column categories.
 

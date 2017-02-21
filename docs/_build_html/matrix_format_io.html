@@ -32,7 +32,7 @@
   
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
         <link rel="next" title="Clustergrammer for Web-development" href="building_webpage.html"/>
-        <link rel="prev" title="Case Studies" href="case_studies.html"/> 
+        <link rel="prev" title="Case Studies and Examples" href="case_studies.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -87,7 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer Jupyter Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Matrix Formats and Input/Output</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#simple-matrix-format">Simple Matrix Format</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#simple-matrix-category-format">Simple Matrix-Category Format</a></li>
@@ -170,7 +170,10 @@
 <div class="section" id="simple-matrix-category-format">
 <h2>Simple Matrix-Category Format<a class="headerlink" href="#simple-matrix-category-format" title="Permalink to this headline">¶</a></h2>
 <p>Row and column categories can be included in your data in two ways. The first, simple matrix-category format, is shown below:</p>
-<a class="reference internal image-reference" href="_images/cat_tsv.png"><img alt="_images/cat_tsv.png" src="_images/cat_tsv.png" style="width: 700px;" /></a>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/cat_tsv.png"><img alt="Simple Matrix-Category Format" src="_images/cat_tsv.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">A matrix with row and column categories in &#8216;simple&#8217; format.</span></p>
+</div>
 <p>This simple format allows users to encode column categories as a extra rows underneath column labels and row categories as an extra columns next to row labels. The above screenshot of an Excel spreadsheet shows a single row category being added as an additional column of strings (e.g. <code class="docutils literal"><span class="pre">Type:</span> <span class="pre">Interesting</span></code>) and a single column category being added as an additional row of strings (e.g. <code class="docutils literal"><span class="pre">Gender:</span> <span class="pre">Male</span></code>). Up to 15 categories can be added in a similar manner. Titles for row or column names or categories can be added by prefixing each string with <code class="docutils literal"><span class="pre">'Title:</span> <span class="pre">'</span></code> (note the space after the colon). For example the title of the column names is <code class="docutils literal"><span class="pre">Cell</span> <span class="pre">Line</span></code> and the title of the row categories is <code class="docutils literal"><span class="pre">Gender</span></code>. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/txt/rc_two_cats.txt">rc_two_cats.txt</a> for an example of this matrix format. Titles, if given, will be shown as labels above row/column names or adjacent to row/column categories.</p>
 </div>
 <div class="section" id="tuple-matrix-category-format">
@@ -233,7 +236,7 @@
         <a href="building_webpage.html" class="btn btn-neutral float-right" title="Clustergrammer for Web-development" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="case_studies.html" class="btn btn-neutral" title="Case Studies" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="case_studies.html" class="btn btn-neutral" title="Case Studies and Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
