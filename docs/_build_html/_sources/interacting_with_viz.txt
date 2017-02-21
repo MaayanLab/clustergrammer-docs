@@ -113,7 +113,7 @@ Rather than visualize the dendrogram as a large branching structure which takes 
 .. figure:: _static/dendrogram_and_slider.png
   :width: 275px
   :align: center
-  :alt: Interactive Dendrogra
+  :alt: Visualizing Dendrogram
 
   A subset of the column dendrogram along with the dendrogram slider is shown above. The slider (blue circle and gray triangle) can be used to adjust dendrogram cluster sizes -- move up for larger clusters and down for smaller clusters. Each dendrogram cluster has a crop button (gray triangle) above it that can be used to filter the heatmap to only show this cluster.
 
@@ -121,8 +121,12 @@ Rather than visualize the dendrogram as a large branching structure which takes 
 
 Dendrogram clusters are depicted as gray trapezoids, which are easy for a user to interact with. Mousing over a dendrogram cluster (gray trapezoid) highlights the current group of rows or columns (by adding a shadows over the rows or columns not in the cluster) and brings up a tooltip with cluster information. If the rows or columns have categories, this tooltip will show a breakdown of the rows and columns into their categories, which can be useful for understanding how prior knowledge compares to clusters identified in a data-driven manner (e.g. we can ask, do columns with the same category cluster together based on the data). Clicking a dendrogram cluster brings up the same information in a pop-up window and also allows users to export the names of the rows or columns in the cluster. When a user is visualizing biological data with, where rows are official gene symbols, users have the option to export the gene list from the cluster to the enrichment analysis tool, `Enrichr`_ (see :ref:`biology_specific_features` for more information).
 
-  **<screenshot of dendrogram cluster hover over>**
-  **<screenshot of dendrogram cluster pop-up>**
+.. figure:: _static/dendrogram_interaction.png
+  :width: 900px
+  :align: center
+  :alt: Interactive Dendrogram
+
+  Mousing over a dendrogram group will highlight the selected cluster and bring up information (e.g. categories) about the cluster.
 
 **Dendrogrm Cropping**
 
@@ -136,9 +140,23 @@ Prior knowledge about our system can be represented as row and column categories
 
 Row or column categories are represented by an extra column or row, respectively, of colored category-cells underneath the row or column labels. Categories can be of type string or value (see :ref:`matrix_format_io`): each string-type category has a different color while each value-type category ahas a different opacity. The categories also have titles positioned adjacent to the category-cells.
 
+.. figure:: _static/categories.png
+  :width: 400px
+  :align: center
+  :alt: Categories
+
+  A subset of column categories are shown above. In this example columns have two categories, Category and Gender, which are depicted as colored cells under the column labels
+
 **Interacting with Categories**
 
 Mousing over a category will show the category name in a tooltip and highlight the instances of this category (while also dimming the instances of the other categories) to facilitate visualization of a specific category. Double-clicking a category title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories.
+
+.. figure:: _static/category_interaction.png
+  :width: 900px
+  :align: center
+  :alt: Interacting with Categories
+
+  Mousing over a category brings up a tooltip with the category name and highlights instances of thie category. Shown above is an example of mousing over a column category.
 
 **Updating Categories**
 
@@ -149,6 +167,13 @@ Row categories can be updated using the :ref:`clustergrammer_js_api`, which can 
 Cropping
 ========
 Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest specified by brushing (e.g. dragging a region of interest using the mouse). Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the :ref:`download` to export a small region of the matrix or in combination with :ref:`Enrichrgram <enrichrgram>` to perform enrichment analysis on a subset of clustered genes.
+
+.. figure:: _static/brush_crop.png
+  :width: 900px
+  :align: center
+  :alt: Brush Crop
+
+  The above example shows the result of brush cropping into a section of the heatmap. To brush crop, click the crop button (the active red icon in the sidebar on the left panel) and drag/brush your cursor over your area of interest. To undo cropping, click the undo button (circular arrow) on the right panel.
 
 .. _download:
 
