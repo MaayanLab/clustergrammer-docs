@@ -102,14 +102,61 @@ Clustergrammer-JS API
 
   Clustergrammer's attributes and functions are listed below:
 
+  .. js:attribute:: params
+
+    The Clustergrammer parameters object, which contains all the parameters necessary to generate the visualization.
+
   .. js:function:: update_cats(row_data)
 
     Update the visualization row categories.
 
-    :param row_data: The row category data that will be used to ...
+    :param row_data: Row category data.
 
-    :param resize_viz: Call this function to resize the visualization to fit in its resized container (if the user has resized the container).
+  .. js:function:: reset_cats()
 
+    Reset the row categories to their original state.
+
+  .. js:function:: resize_viz:
+
+    Call this function to resize the visualization to fit in its resized container (if the user has resized the container).
+
+  .. js:function:: d3_tip_custom
+
+    Generate a D3 tooltip for SVG elements.
+
+  .. js:function:: update_view(filter_type, inst_state)
+
+    Update the heatmap with a specified row filter 'view'.
+
+    :param filter_type: The available filter types sum or variance: e.g. N_row_sum, N_row_var
+
+    :param inst_state: The value of the row filter, e.g. 500
+
+  .. js:function:: filter_viz_using_names(names)
+
+    Update the visualization to show the row and column names specified in the names object.
+
+    :param names: Object with ``row`` and ``col`` attributes that specify the row and column names that will be visible after updating.
+
+  .. js:function:: filter_viz_using_names(nodes)
+
+    Update the visualization to show the row and column names specified in the nodes object.
+
+    :param names: Object with ``row`` and ``col`` attributes that specify the row and column nodes that will be visible after updating.
+
+  .. js:function:: zoom(pan_x, pan_y, zoom)
+
+    Zoom and pan into the visualization.
+
+    :param pan_x: Panning in the `x` direction
+
+    :param pan_y: Panning in the `y` direction
+
+    :param zoom: The zoom level applied to the visualization.
+
+  .. js:function:: export_matrix()
+
+    Save the current matrix (e.g. after cropping) as a tab-separated-file.
 
 
 .. _visualization_json:

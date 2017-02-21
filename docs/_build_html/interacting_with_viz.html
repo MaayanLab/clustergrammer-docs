@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
         <link rel="next" title="Biology-Specific Features" href="biology_specific_features.html"/>
         <link rel="prev" title="Clustergrammer Jupyter Widget" href="clustergrammer_widget.html"/> 
@@ -109,7 +106,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Clustergrammer for Web-development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
@@ -151,7 +148,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/interacting_with_viz.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/interacting_with_viz.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -163,11 +160,11 @@
             
   <div class="section" id="interacting-with-the-visualization">
 <span id="interacting-with-viz"></span><h1>Interacting with the Visualization<a class="headerlink" href="#interacting-with-the-visualization" title="Permalink to this headline">¶</a></h1>
-<p>Data visualizations benefit enormously from user interaction that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are built using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library and are consistent across the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>. This section will cover the types of interactions that are available to the user.</p>
+<p>Data visualizations benefit enormously from user interactions that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are built using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library and are consistent across the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>. This section will cover the types of interactions that are available to the user.</p>
 <div class="section" id="introduction-to-clustergrams-heatmaps">
 <h2>Introduction to Clustergrams/Heatmaps<a class="headerlink" href="#introduction-to-clustergrams-heatmaps" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row/column labels, which is commonly referred to as a heatmap or clustergram (this documentation uses the terms &#8216;heatmap&#8217; and &#8216;clustergram&#8217; interchangeably; see <a class="reference external" href="http://www.pnas.org/content/95/25/14863.full">Eisen et al., 1998</a> for an early example using biological data). Clustergrams also typically use <a class="reference external" href="https://en.wikipedia.org/wiki/Dendrogram">dendrogram trees</a> to depict the hierarchy of row and column clusters produced by <a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_clustering">hierarchical clustering</a>.</p>
-<p>Heatmaps are powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. <a class="reference external" href="https://lvdmaaten.github.io/tsne/">t-SNE</a>). For instance, columns can depict data-points (e.g. measured entities) and rows can depict data-dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. in thousand-dimensional space). However, static heatmaps are of limited use for visualizing large datasets (e.g. for large matrices, visualization elements and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns.</p>
+<p>Heatmaps are powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. <a class="reference external" href="https://lvdmaaten.github.io/tsne/">t-SNE</a>). For instance, columns can depict data-points (e.g. measured entities) and rows can depict data-dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. in thousand-dimensional space). However, static heatmaps are of limited use for visualizing large datasets (e.g. for large matrices, visualization elements and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns. We built Clustergrammer, in part, to address these issues.</p>
 </div>
 <div class="section" id="interactive-demo">
 <span id="id1"></span><h2>Interactive Demo<a class="headerlink" href="#interactive-demo" title="Permalink to this headline">¶</a></h2>
