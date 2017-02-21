@@ -56,9 +56,9 @@ Clustergrammer-JS API
 
 .. js:class:: Clustergrammer(args)
 
-  The Clusterrammer JavaScript object takes the ``args`` object and produces a visualization on the page.
+  The Clustergrammer JavaScript object takes the ``args`` object and produces a visualization on the page.
 
-  This ``args`` object has two requried arguments, ``network_data`` and ``root``:
+  This ``args`` object has two required arguments, ``network_data`` and ``root``:
 
     .. js:attribute:: args.network_data
 
@@ -90,7 +90,7 @@ Clustergrammer-JS API
 
     .. js:attribute:: args.matrix_update_callback
 
-      Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/unfiltering, cropping, etc.
+      Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/un-filtering, cropping, etc.
 
     .. js:attribute:: args.sidebar_width:
 
@@ -102,13 +102,31 @@ Clustergrammer-JS API
 
   Clustergrammer's attributes and functions are listed below:
 
+  .. js:attribute:: params
+
+    The Clustergrammer parameters object, which contains all the parameters necessary to generate the visualization.
+
   .. js:function:: update_cats(row_data)
 
     Update the visualization row categories.
 
-    :param row_data: The row category data that will be used to ...
+    :param row_data: Row category data.
 
-    :param resize_viz: Call this function to resize the visualization to fit in its resized container (if the user has resized the container).
+  .. js:function:: resize_viz:
+
+    Call this function to resize the visualization to fit in its resized container (if the user has resized the container).
+
+  .. js:function:: d3_tip_custom
+
+    Generate a D3 tooltip for SVG elements.
+
+  .. js:function:: update_view(filter_type, inst_state)
+
+    Update the heatmap with a specified row filter 'view'.
+
+    :param filter_type: The available filter types sum or variance: e.g. N_row_sum, N_row_var
+
+    :param inst_state: The value of the row filter, e.g. 500
 
 
 

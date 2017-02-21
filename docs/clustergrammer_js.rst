@@ -102,13 +102,31 @@ Clustergrammer-JS API
 
   Clustergrammer's attributes and functions are listed below:
 
+  .. js:attribute:: params
+
+    The Clustergrammer parameters object, which contains all the parameters necessary to generate the visualization.
+
   .. js:function:: update_cats(row_data)
 
     Update the visualization row categories.
 
-    :param row_data: The row category data that will be used to ...
+    :param row_data: Row category data.
 
-    :param resize_viz: Call this function to resize the visualization to fit in its resized container (if the user has resized the container).
+  .. js:function:: resize_viz:
+
+    Call this function to resize the visualization to fit in its resized container (if the user has resized the container).
+
+  .. js:function:: d3_tip_custom
+
+    Generate a D3 tooltip for SVG elements.
+
+  .. js:function:: update_view(filter_type, inst_state)
+
+    Update the heatmap with a specified row filter 'view'.
+
+    :param filter_type: The available filter types sum or variance: e.g. N_row_sum, N_row_var
+
+    :param inst_state: The value of the row filter, e.g. 500
 
 
 

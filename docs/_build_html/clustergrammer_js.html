@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
         <link rel="next" title="Clustergrammer-PY" href="clustergrammer_py.html"/>
         <link rel="prev" title="Clustergrammer for Web-development" href="building_webpage.html"/> 
@@ -138,7 +141,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/clustergrammer_js.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/clustergrammer_js.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -258,6 +261,12 @@
 
 </div></blockquote>
 <p>Clustergrammer&#8217;s attributes and functions are listed below:</p>
+<dl class="attribute">
+<dt id="params">
+<code class="descname">params</code><a class="headerlink" href="#params" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Clustergrammer parameters object, which contains all the parameters necessary to generate the visualization.</p>
+</dd></dl>
+
 <dl class="function">
 <dt id="update_cats">
 <code class="descname">update_cats</code><span class="sig-paren">(</span><em>row_data</em><span class="sig-paren">)</span><a class="headerlink" href="#update_cats" title="Permalink to this definition">¶</a></dt>
@@ -267,8 +276,37 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first last simple">
-<li><strong>row_data</strong> &#8211; The row category data that will be used to ...</li>
-<li><strong>resize_viz</strong> &#8211; Call this function to resize the visualization to fit in its resized container (if the user has resized the container).</li>
+<li><strong>row_data</strong> &#8211; Row category data.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="resize_viz:">
+<code class="descname">resize_viz:</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#resize_viz:" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call this function to resize the visualization to fit in its resized container (if the user has resized the container).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="d3_tip_custom">
+<code class="descname">d3_tip_custom</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#d3_tip_custom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a D3 tooltip for SVG elements.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="update_view">
+<code class="descname">update_view</code><span class="sig-paren">(</span><em>filter_type</em>, <em>inst_state</em><span class="sig-paren">)</span><a class="headerlink" href="#update_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the heatmap with a specified row filter &#8216;view&#8217;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arguments:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filter_type</strong> &#8211; The available filter types sum or variance: e.g. N_row_sum, N_row_var</li>
+<li><strong>inst_state</strong> &#8211; The value of the row filter, e.g. 500</li>
 </ul>
 </td>
 </tr>
