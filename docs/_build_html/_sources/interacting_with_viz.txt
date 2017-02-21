@@ -42,7 +42,7 @@ Mousing over elements in the heatmap (e.g. row names) brings up additional infor
 .. figure:: _static/mouseover.png
   :width: 300px
   :align: center
-  :alt: Simple Matrix-Category Format
+  :alt: Mouseover Interactions
 
   Mousing over visualization elements (e.g. matrix cell) brings up additional information as a tooltip.
 
@@ -54,14 +54,19 @@ Sidebar Interactions
 ====================
 Clustergrammer visualizations have a sidebar section that contain the following interactive components:
 
-- icon-buttons: :ref:`share <share_heatmap>`, snapshot_, download_, crop_
+- Icon-buttons: :ref:`share <share_heatmap>`, snapshot_, download_, crop_
 - :ref:`Row and Column Reordering Buttons <row_col_reordering>`
 - :ref:`Row Search Box <search>`
 - :ref:`Opacity Slider<opacity>`
 - :ref:`Row Filter Sliders <interactive_dim_reduction>`
 - optional about section (see :ref:`clustergrammer_js_api`)
 
-The sidebar can be hidden by clicking the expand button at the top left of the heatmap and restored by clicking the menu button.
+.. figure:: _static/sidebar_expand_button.png
+  :width: 500px
+  :align: center
+  :alt: Sidebar Interactions
+
+  The sidebar contains an optional about section and interaction elements (e.g. reordering buttons) and can be hidden by clicking the gray expand buutton (and restored by clicking the menu button).
 
 .. _row_col_reordering:
 
@@ -81,11 +86,15 @@ Interactive Dimensionality Reduction
 ====================================
 Dimensionality reduction is a useful data analysis technique (e.g. `PCA`_ , `t-SNE`_) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds to thousands of dimensions) down to a number that can be easily be visualized (e.g. two or three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.
 
-**Row Filter Sliders**
 
 Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this transformation on clustering. Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar and choose to show the top 500, 250, 100, 50, 20, and 10 rows. This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low absolute value sum) and determining the effect of these dimensions on clustering. Clustered views of the filtered matrices are pre-calculated by :ref:`clustergrammer_py`.
 
-  **<screenshot of sidebar filters and maybe before after fiiltering>**
+.. figure:: _static/row_filter.png
+  :width: 900px
+  :align: center
+  :alt: Interactive Dimensionality Reduction
+
+  The row fitler sliders in the sidebar can be used to perform interactive dimensionality reduction. Here we are filtering for the top 10 rows based on sum.
 
 **Visualizing Dimensionality Reduction**
 
@@ -101,7 +110,12 @@ Clustergrams typically have `dendrogram trees`_ (for both rows and columns) to d
 
 Rather than visualize the dendrogram as a large branching structure which takes up a lot of space in the visualization and is difficult to interact with, Clustergrammer uses a more compact and easy to interact with visual representation. Only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids, see below). Different slices of the dendrogram can be toggled using the dendrogram-sliders (blue circles that move along a gray triangle). Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively. This allows users to identify clusters identified at different scales.
 
-  **<screenshot of dendrogram clusters>**
+.. figure:: _static/dendrogram_and_slider.png
+  :width: 275px
+  :align: center
+  :alt: Interactive Dendrogra
+
+  A subset of the column dendrogram along with the dendrogram slider is shown above. The slider (blue circle and gray triangle) can be used to adjust dendrogram cluster sizes -- move up for larger clusters and down for smaller clusters. Each dendrogram cluster has a crop button (gray triangle) above it that can be used to filter the heatmap to only show this cluster.
 
 **Interacting with Dendrogram Clusters**
 

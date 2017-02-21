@@ -182,7 +182,7 @@
 <h2>Mouseover Interactions<a class="headerlink" href="#mouseover-interactions" title="Permalink to this headline">¶</a></h2>
 <p>Mousing over elements in the heatmap (e.g. row names) brings up additional information using tooltips. For instance, mousing over matrix-cells brings up a tooltip with the row name, column name, and value of the matrix-cell (see below).</p>
 <div class="figure align-center" id="id6">
-<a class="reference internal image-reference" href="_images/mouseover.png"><img alt="Simple Matrix-Category Format" src="_images/mouseover.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/mouseover.png"><img alt="Mouseover Interactions" src="_images/mouseover.png" style="width: 300px;" /></a>
 <p class="caption"><span class="caption-text">Mousing over visualization elements (e.g. matrix cell) brings up additional information as a tooltip.</span></p>
 </div>
 <p>See <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a> for information about adding callback functions to mouseover events and <a class="reference internal" href="biology_specific_features.html#hzome-gene-info"><span class="std std-ref">Mouseover Gene Name and Description</span></a> for biology specific mouseover behavior.</p>
@@ -191,14 +191,17 @@
 <span id="id3"></span><h2>Sidebar Interactions<a class="headerlink" href="#sidebar-interactions" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer visualizations have a sidebar section that contain the following interactive components:</p>
 <ul class="simple">
-<li>icon-buttons: <a class="reference internal" href="#share-heatmap"><span class="std std-ref">share</span></a>, <a class="reference internal" href="#snapshot">snapshot</a>, <a class="reference internal" href="#download">download</a>, <a class="reference internal" href="#crop">crop</a></li>
+<li>Icon-buttons: <a class="reference internal" href="#share-heatmap"><span class="std std-ref">share</span></a>, <a class="reference internal" href="#snapshot">snapshot</a>, <a class="reference internal" href="#download">download</a>, <a class="reference internal" href="#crop">crop</a></li>
 <li><a class="reference internal" href="#row-col-reordering"><span class="std std-ref">Row and Column Reordering Buttons</span></a></li>
 <li><a class="reference internal" href="#search"><span class="std std-ref">Row Search Box</span></a></li>
 <li><a class="reference internal" href="#opacity"><span class="std std-ref">Opacity Slider</span></a></li>
 <li><a class="reference internal" href="#interactive-dim-reduction"><span class="std std-ref">Row Filter Sliders</span></a></li>
 <li>optional about section (see <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>)</li>
 </ul>
-<p>The sidebar can be hidden by clicking the expand button at the top left of the heatmap and restored by clicking the menu button.</p>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/sidebar_expand_button.png"><img alt="Sidebar Interactions" src="_images/sidebar_expand_button.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">The sidebar contains an optional about section and interaction elements (e.g. reordering buttons) and can be hidden by clicking the gray expand buutton (and restored by clicking the menu button).</span></p>
+</div>
 </div>
 <div class="section" id="row-and-column-reordering">
 <span id="row-col-reordering"></span><h2>Row and Column Reordering<a class="headerlink" href="#row-and-column-reordering" title="Permalink to this headline">¶</a></h2>
@@ -213,10 +216,11 @@
 <div class="section" id="interactive-dimensionality-reduction">
 <span id="interactive-dim-reduction"></span><h2>Interactive Dimensionality Reduction<a class="headerlink" href="#interactive-dimensionality-reduction" title="Permalink to this headline">¶</a></h2>
 <p>Dimensionality reduction is a useful data analysis technique (e.g. <a class="reference external" href="https://en.wikipedia.org/wiki/Principal_component_analysis">PCA</a> , <a class="reference external" href="https://lvdmaaten.github.io/tsne/">t-SNE</a>) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds to thousands of dimensions) down to a number that can be easily be visualized (e.g. two or three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.</p>
-<p><strong>Row Filter Sliders</strong></p>
 <p>Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this transformation on clustering. Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar and choose to show the top 500, 250, 100, 50, 20, and 10 rows. This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low absolute value sum) and determining the effect of these dimensions on clustering. Clustered views of the filtered matrices are pre-calculated by <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>.</p>
-<blockquote>
-<div><strong>&lt;screenshot of sidebar filters and maybe before after fiiltering&gt;</strong></div></blockquote>
+<div class="figure align-center" id="id8">
+<a class="reference internal image-reference" href="_images/row_filter.png"><img alt="Interactive Dimensionality Reduction" src="_images/row_filter.png" style="width: 900px;" /></a>
+<p class="caption"><span class="caption-text">The row fitler sliders in the sidebar can be used to perform interactive dimensionality reduction. Here we are filtering for the top 10 rows based on sum.</span></p>
+</div>
 <p><strong>Visualizing Dimensionality Reduction</strong></p>
 <p>For small matrices dimensionality reduction is animated to help the user visualize the effects this transformation. Clustergrammer employs the concept of <a class="reference external" href="https://bost.ocks.org/mike/constancy/">object constancy</a> by using animations to help the user visually follow changes to their data. Filtering out dimensions (rows) occurs in two steps: 1) filtered rows fade out, then the remaining rows rearrange themselves into their new positions (e.g. clustering order). Adding rows back in occurs in two steps: the current rows rearrange themselves into their new positions, then the new rows fade into view.</p>
 </div>
@@ -225,8 +229,10 @@
 <p>Clustergrams typically have <a class="reference external" href="https://en.wikipedia.org/wiki/Dendrogram">dendrogram trees</a> (for both rows and columns) to depict the hierarchy of row and column clusters produced by <a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_clustering">hierarchical clustering</a>. The height of the branches in the dendrogram depict the distance between clusters. <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> calculates hierarchical clustering using <a class="reference external" href="https://www.scipy.org/">SciPy</a>&#8216;s <a class="reference external" href="https://docs.scipy.org/doc/scipy-0.18.1/reference/cluster.hierarchy.html">hierarchy</a> clustering functions (with the default linkage type set to average, see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/calc_clust.py">calc_clust.py</a>) and saves ten slices of the dendrogram taken evenly across the tree.</p>
 <p><strong>Visualizing Dendrogram Clusters</strong></p>
 <p>Rather than visualize the dendrogram as a large branching structure which takes up a lot of space in the visualization and is difficult to interact with, Clustergrammer uses a more compact and easy to interact with visual representation. Only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids, see below). Different slices of the dendrogram can be toggled using the dendrogram-sliders (blue circles that move along a gray triangle). Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively. This allows users to identify clusters identified at different scales.</p>
-<blockquote>
-<div><strong>&lt;screenshot of dendrogram clusters&gt;</strong></div></blockquote>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="_images/dendrogram_and_slider.png"><img alt="Interactive Dendrogra" src="_images/dendrogram_and_slider.png" style="width: 275px;" /></a>
+<p class="caption"><span class="caption-text">A subset of the column dendrogram along with the dendrogram slider is shown above. The slider (blue circle and gray triangle) can be used to adjust dendrogram cluster sizes &#8211; move up for larger clusters and down for smaller clusters. Each dendrogram cluster has a crop button (gray triangle) above it that can be used to filter the heatmap to only show this cluster.</span></p>
+</div>
 <p><strong>Interacting with Dendrogram Clusters</strong></p>
 <p>Dendrogram clusters are depicted as gray trapezoids, which are easy for a user to interact with. Mousing over a dendrogram cluster (gray trapezoid) highlights the current group of rows or columns (by adding a shadows over the rows or columns not in the cluster) and brings up a tooltip with cluster information. If the rows or columns have categories, this tooltip will show a breakdown of the rows and columns into their categories, which can be useful for understanding how prior knowledge compares to clusters identified in a data-driven manner (e.g. we can ask, do columns with the same category cluster together based on the data). Clicking a dendrogram cluster brings up the same information in a pop-up window and also allows users to export the names of the rows or columns in the cluster. When a user is visualizing biological data with, where rows are official gene symbols, users have the option to export the gene list from the cluster to the enrichment analysis tool, <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a> (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 <blockquote>
