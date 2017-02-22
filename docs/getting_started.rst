@@ -25,7 +25,7 @@ Users can easily generate an interactive and shareable heatmap visualization usi
 
   Users can upload their data using the web app `homepage`_. Simply choose your file and upload to be redirected to your permanent and shareable visualization.
 
-Once you upload your data, the :ref:`clustergrammer_web` clusters your data and produces three views: a heatmap of your input matrix, a similarity matrix of your columns, and a similarity matrix of your rows. See screenshots below and `example visualization`_ for an example results page.
+Once you upload your data, the :ref:`clustergrammer_web` clusters your data and produces three views: a heatmap of your input matrix, a similarity matrix of your columns, and a similarity matrix of your rows. See the screenshots below and the `example visualization`_ for an example results page.
 
 **Heatmap View**
 
