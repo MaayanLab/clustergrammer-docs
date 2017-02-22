@@ -148,8 +148,8 @@
   <div class="section" id="clustergrammer-jupyter-widget">
 <span id="clustergrammer-widget"></span><h1>Clustergrammer Jupyter Widget<a class="headerlink" href="#clustergrammer-jupyter-widget" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://pypi.python.org/pypi?:action=display&amp;name=clustergrammer_widget"><img alt="pypi-version" src="https://img.shields.io/pypi/v/clustergrammer_widget.svg" /></a>
-<a class="reference external" href="https://www.npmjs.com/package/clustergrammer_widget"><img alt="npm-version" src="https://img.shields.io/npm/v/clustergrammer_widget.svg" /></a></p>
-<p>Clustergrammer can be used within a <a class="reference external" href="http://jupyter.org/">Jupyter</a> notebook as an interactive HTML widget (is compatible with Python 2 and 3) and shared with collaborators using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>. Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information).</p>
+<a class="reference external" href="https://www.npmjs.com/package/clustergrammer_widgt"><img alt="npm-version" src="https://img.shields.io/npm/v/clustergrammer_widget.svg" /></a></p>
+<p>Clustergrammer can be used within a <a class="reference external" href="http://jupyter.org/">Jupyter</a> notebook as an interactive HTML widget, Clustergrammer-Widget, and shared with collaborators using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>. Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information).</p>
 <div class="figure align-center" id="id3">
 <a class="reference external image-reference" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb"><img alt="Jupyter Widget NBViewer" src="_images/jupyter_widget_nbviewer.png" style="width: 900px;" /></a>
 <p class="caption"><span class="caption-text">Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> example).</span></p>
@@ -162,6 +162,7 @@
 <li><a class="reference external" href="http://pandas.pydata.org/">Pandas</a></li>
 <li><a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a></li>
 </ul>
+<p>Clustergrammer-Widget works with Python 2 and 3.</p>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
@@ -171,12 +172,12 @@
 <span class="n">jupyter</span> <span class="n">nbextension</span> <span class="n">enable</span> <span class="o">--</span><span class="n">py</span> <span class="o">--</span><span class="n">sys</span><span class="o">-</span><span class="n">prefix</span> <span class="n">clustergrammer_widget</span>
 </pre></div>
 </div>
-<p>To enable rendering interactive widgets on <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a> you must have <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later installed and use the &#8220;Save Notebook with Widgets&#8221; action in the Widgets menu in the Jupyter notebook. For more information, see ipywidgets documentation on <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/embedding.html?highlight=save#rendering-interactive-widgets-on-nbviewer">Rendering Interactive Widgets on nbviewer</a></p>
+<p>To enable rendering interactive widgets on <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a> you must have <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later installed and use the &#8220;Save Notebook with Widgets&#8221; action in the Widgets menu in the Jupyter notebook (for more information, see ipywidgets documentation on <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/embedding.html?highlight=save#rendering-interactive-widgets-on-nbviewer">Rendering Interactive Widgets on nbviewer</a>).</p>
 </div>
 <div class="section" id="clustergrammer-widget-workflow-example">
 <span id="clustergrammer-widget-workflow"></span><h2>Clustergrammer-Widget Workflow Example<a class="headerlink" href="#clustergrammer-widget-workflow-example" title="Permalink to this headline">¶</a></h2>
-<p>The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> (which is rendered using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>) shows how to visualize a matrix from a file and <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame. The following code snippits are from the notebook.</p>
-<p>This example shows how to visualize a matrix of gene expression data saved as a tab-separated file:</p>
+<p>The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> (which is rendered using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>) shows how to visualize a matrix from a file and a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame. The following examples are taken from this notebook.</p>
+<p>Visualizing a matrix of gene expression data from a tab-separated file:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># import clustergrammer_widgets and initialize network object</span>
 <span class="kn">from</span> <span class="nn">clustergrammer_widget</span> <span class="k">import</span> <span class="o">*</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
@@ -191,7 +192,7 @@
 <span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>Clustergrammer-Widget can also be used as a general purpose <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame viewer. Below is an example of how to visualize a Pandas Dataframe, <code class="docutils literal"><span class="pre">df</span></code>, by loading it into the same <code class="docutils literal"><span class="pre">net</span></code> object from above:</p>
+<p>Clustergrammer-Widget can also be used as a general purpose <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> D/ataFrame viewer. Below is an example of how to visualize a Pandas Dataframe, <code class="docutils literal"><span class="pre">df</span></code>, by loading it into the same <code class="docutils literal"><span class="pre">net</span></code> object from above:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># load DataFrame</span>
 <span class="n">net</span><span class="o">.</span><span class="n">load_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
@@ -202,7 +203,7 @@
 <span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">net</span></code> object can also be used to filter and normalize your data before visualizing:</p>
+<p>The <code class="docutils literal"><span class="pre">net</span></code> object can also be used to filter and normalize your data before visualizing. The example below performs Z-score normalization on the columns and filter to keep the top 200 rows based on their absolute value sum:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Z-score normalize columns</span>
 <span class="n">net</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;col&#39;</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="s1">&#39;zscore&#39;</span><span class="p">,</span> <span class="n">keep_orig</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
@@ -213,7 +214,7 @@
 <span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>See the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a> for more information about <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>&#8216;s API.</p>
+<p>For more information about the <code class="docutils literal"><span class="pre">Network</span></code> object see the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>.</p>
 </div>
 <div class="section" id="clustergrammer-widget-development">
 <span id="clustergrammer-widget-dev"></span><h2>Clustergrammer-Widget Development<a class="headerlink" href="#clustergrammer-widget-development" title="Permalink to this headline">¶</a></h2>
