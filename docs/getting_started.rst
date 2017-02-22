@@ -1,20 +1,18 @@
 Getting Started
 ---------------
 
-Introduction
-============
 Clustergrammer is a web-based tool for visualizing high-dimensional data as interactive and shareable hierarchically clustered heatmaps. Clustergrammer can be used in three main ways:
 
 #. :ref:`clustergrammer_web`
 #. :ref:`clustergrammer_widget`
 #. :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries
 
-This section will provide instructions on how to quickly generate a visualization from a matrix of data using the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` as well as instructions on how to interact with the visualization. For developers interested in building their own web page using Clustergrammer, please see the :ref:`building_web_page` section.
+This section will provide instructions on how to quickly visualize your data using the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget` as well as instructions on how to interact with the visualization. For developers interested in building their own web page using Clustergrammer, please see the :ref:`building_web_page` section.
 
 .. _getting_started_web_app:
 
-Clustergrammer-Web
-==================
+Clustergrammer Web-App
+======================
 Users can easily generate an interactive and shareable heatmap visualization using the :ref:`clustergrammer_web`. Simply upload a tab-separated matrix file at the `homepage`_ (see screenshot below) to be redirected to a permanent and shareable visualization of your data.
 
 .. figure:: _static/clustergrammer_web_upload.png
@@ -47,15 +45,16 @@ Once you upload your data, the :ref:`clustergrammer_web` clusters your data and 
 
   Clustergrammer produces similarity matrices of rows and columns to provide additional perspectives on a user's data. Above is an example column similarity matrix.
 
-See :ref:`interacting_with_viz` for more information.
+Users can share their interactive visualizations using the permanent link. See :ref:`interacting_with_viz` for more information.
 
 .. _getting_started_widget:
 
 Clustergrammer-Widget
 =====================
-The :ref:`clustergrammer_widget` enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context and analysis within the notebook's narrative (see :ref:`clustergrammer_widget_examples`). The :ref:`clustergrammer_widget` can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The :ref:`clustergrammer_widget` enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). The :ref:`clustergrammer_widget` can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
 
-To use the :ref:`clustergrammer_widget` users need to install: `Python`_, `Jupyter`_ notebook, widget dependencies (see :ref:`clustergrammer_widget_dependencies`), and `ipywidgets`_ version >6.0.0 (to save the notebook with widgets). The ``clustergrammer_widget`` can be installed (with pip) and enabled using the following commands:
+
+To use the :ref:`clustergrammer_widget` users need to install: `Python`_, `Jupyter`_ notebook, the widget dependencies (see :ref:`clustergrammer_widget_dependencies`), and `ipywidgets`_ version >6.0.0 (to save the notebook with widgets). The ``clustergrammer_widget`` can be installed (with pip) and enabled using the following commands:
 ::
 
   pip install clustergrammer_widget
@@ -86,7 +85,7 @@ See the screenshot below for an example widget visualization:
 
   Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see `Running_clustergrammer_widget.ipynb`_ example).
 
-For more information about using the widget (e.g. loading data from a Pandas DataFrame and sharing using `nbviewer`_) see :ref:`clustergrammer_widget`.
+Users can download and reproduce the example notebook, `Running_clustergrammer_widget.ipynb`_, by cloning it's `GitHub repo`_. For more information about using the widget (e.g. loading data from a Pandas DataFrame and sharing using `nbviewer`_) see :ref:`clustergrammer_widget`.
 
 Interacting with Clustergrammer
 ===============================
@@ -122,3 +121,4 @@ Clustergrammer also has :ref:`biology_specific_features` for working with gene-l
 .. _`Python`: https://www.python.org/
 .. _`ipywidgets`: http://ipywidgets.readthedocs.io/en/latest/
 .. _`Running_clustergrammer_widget.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
+.. _`GitHub repo`: https://github.com/MaayanLab/clustergrammer-widget
