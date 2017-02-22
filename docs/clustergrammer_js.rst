@@ -7,9 +7,10 @@ Clustergrammer-JS
 
 Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in `SVG`_ using the visualization library `D3.js`_
 
+.. _clustergrammer_js_dependencies:
 
-Dependencies
-============
+Clustergrammer-JS Dependencies
+==============================
 
 - `D3.js`_
 - `JQuery`_
@@ -45,9 +46,7 @@ The ``id`` of the container where the visualization will be made is passed as ``
 
 Example Pages
 =============
-The `clustergrammer`_ contains several example pages demonstrating how to make a webpage with a Clustergrammer heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization.
-
-The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
+The `clustergrammer`_ contains several example pages demonstrating how to make a webpage with a Clustergrammer heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
 
 .. _clustergrammer_js_api:
 

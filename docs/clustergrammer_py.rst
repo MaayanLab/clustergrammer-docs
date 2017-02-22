@@ -6,8 +6,10 @@ Clustergrammer-PY
 
 Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the :ref:`visualization_json` for the front-end :ref:`clustergrammer_js` visualization library. Clustergrammer-PY is compatible with Python 2 and 3.
 
-Dependencies
-============
+.. _clustergrammer_py_dependencies:
+
+Clustergrammer-PY Dependencies
+==============================
 
 - `Numpy`_
 - `SciPy`_
