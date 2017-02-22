@@ -4,20 +4,20 @@ Clustergrammer Web App
 ----------------------
 |github-version|
 
-The Clustergrammer web application, Clustergrammer-Web, enables users to easily generate interactive and shareable heatmap visualizations by uploading their matrix as a tab-separated file.
+The Clustergrammer web application, Clustergrammer-Web, enables users to easily generate interactive and shareable heatmap visualizations by uploading their data as a tab-separated file.
 
 .. _clustergrammer_web_upload:
 
 Uploading Data using the Homepage
 =================================
 
-.. figure:: _static/clustergrammer_web.png
+.. figure:: _static/clustergrammer_web_upload.png
   :width: 900px
   :align: center
   :alt: Clustergrammer Web
   :target: http://amp.pharm.mssm.edu/clustergrammer/
 
-  Users can easily generate an interactive and shareable heatmap visualization using the `Clustergrammer Web App`_. Simply upload a tab-separated matrix file in the homepage to be directed to a permanent and shareable visualization of your data.
+  Users can easily generate an interactive and shareable heatmap visualization using the `Clustergrammer Web App`_. Simply upload a tab-separated matrix file in the homepage to be redirected to a permanent and shareable visualization of your data.
 
 
 .. _clustergrammer_web_viz:
@@ -29,6 +29,8 @@ Uploading a matrix to Clustergrammer-Web will redirect the user to a new permane
 #. clustered heatmap view of their matrix
 #. clustered similarity matrix of the columns in their original matrix
 #. clustered similarity matrix of the rows in their original matrix
+
+See `example visualization`_ for an example Clustergrammer visualization page.
 
 .. _clustergrammer_web_api:
 
@@ -67,6 +69,7 @@ Clustergrammer-Web is a `dockerized`_ web application built using the Python lib
 .. _`dockerized`: https://docs.docker.com/
 .. _`clustergrammer-web`: https://github.com/MaayanLab/clustergrammer-web/
 .. _`MongoDB`: https://www.mongodb.com/
+.. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 
 .. |github-version| image:: https://img.shields.io/github/release/MaayanLab/clustergrammer-web.svg
     :alt: version

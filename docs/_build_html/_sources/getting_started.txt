@@ -15,7 +15,17 @@ This section will provide instructions on how to quickly generate a visualizatio
 
 Clustergrammer-Web
 ==================
-Instructions for using the web application...
+Users can easily generate an interactive and shareable heatmap visualization using the :ref:`clustergrammer_web`. Simply upload a tab-separated matrix file at the `homepage`_ (see screenshot below) to be redirected to a permanent and shareable visualization of your data.
+
+.. figure:: _static/clustergrammer_web_upload.png
+  :width: 550px
+  :align: center
+  :alt: Clustergrammer Web
+  :target: http://amp.pharm.mssm.edu/clustergrammer/
+
+  Users can upload their data using the web app `homepage`_. Simply choose your file and upload to be redirected to your permanent and shareable visualization.
+
+Clustergrammer produces a heatmap of your input matrix, a similarity matrix of your columns, and a similarity matrix of your rows. See `example visualization`_ for an example result and :ref:`interacting_with_viz` for detailed information on interacting with the visualization.
 
 .. _getting_started_widget:
 
@@ -36,18 +46,19 @@ Clustergrammer produces highly interactive visualizations that enable intuitive 
 - :ref:`crop`
 - :ref:`search`
 
-Press play or interact with the demo (see :ref:`interacting_with_viz` for more information):
+Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features and see :ref:`interacting_with_viz` for more information:
 
 .. raw:: html
 
-         <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe>
+   <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe>
 
-Clustergrammer also has biology-specific features for working with gene-level data including:
+Clustergrammer also has :ref:`biology_specific_features` for working with gene-level data including:
 
 - mouseover gene names and description look-up (using `Harmonizome`_)
 - enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using `Enrichr`_)
 
-See :ref:`biology_specific_features` for more information.
 
+.. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
+.. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer/

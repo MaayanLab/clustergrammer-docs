@@ -95,7 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Clustergrammer for Web-development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Web-Development with Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="app_integration.html">App Integration Examples</a></li>
@@ -155,11 +155,16 @@
 <li><a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a></li>
 <li><a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> and <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> libraries</li>
 </ol>
-<p>This section will provide instructions on how to quickly generate a visualization from a matrix of data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> as well as instructions on how to interact with the visualization. For developers interested in building their own web page using Clustergrammer, please see the <a class="reference internal" href="building_webpage.html#building-web-page"><span class="std std-ref">Clustergrammer for Web-development</span></a> section.</p>
+<p>This section will provide instructions on how to quickly generate a visualization from a matrix of data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> as well as instructions on how to interact with the visualization. For developers interested in building their own web page using Clustergrammer, please see the <a class="reference internal" href="building_webpage.html#building-web-page"><span class="std std-ref">Web-Development with Clustergrammer</span></a> section.</p>
 </div>
 <div class="section" id="clustergrammer-web">
 <span id="getting-started-web-app"></span><h2>Clustergrammer-Web<a class="headerlink" href="#clustergrammer-web" title="Permalink to this headline">¶</a></h2>
-<p>Instructions for using the web application...</p>
+<p>Users can easily generate an interactive and shareable heatmap visualization using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a>. Simply upload a tab-separated matrix file at the <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">homepage</a> (see screenshot below) to be redirected to a permanent and shareable visualization of your data.</p>
+<div class="figure align-center" id="id1">
+<a class="reference external image-reference" href="http://amp.pharm.mssm.edu/clustergrammer/"><img alt="Clustergrammer Web" src="_images/clustergrammer_web_upload.png" style="width: 550px;" /></a>
+<p class="caption"><span class="caption-text">Users can upload their data using the web app <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">homepage</a>. Simply choose your file and upload to be redirected to your permanent and shareable visualization.</span></p>
+</div>
+<p>Clustergrammer produces a heatmap of your input matrix, a similarity matrix of your columns, and a similarity matrix of your rows. See <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt">example visualization</a> for an example result and <a class="reference internal" href="interacting_with_viz.html#interacting-with-viz"><span class="std std-ref">Interacting with the Visualization</span></a> for detailed information on interacting with the visualization.</p>
 </div>
 <div class="section" id="clustergrammer-widget">
 <span id="getting-started-widget"></span><h2>Clustergrammer-Widget<a class="headerlink" href="#clustergrammer-widget" title="Permalink to this headline">¶</a></h2>
@@ -178,13 +183,12 @@
 <li><a class="reference internal" href="interacting_with_viz.html#crop"><span class="std std-ref">Cropping</span></a></li>
 <li><a class="reference internal" href="interacting_with_viz.html#search"><span class="std std-ref">Row Searching</span></a></li>
 </ul>
-<p>Press play or interact with the demo (see <a class="reference internal" href="interacting_with_viz.html#interacting-with-viz"><span class="std std-ref">Interacting with the Visualization</span></a> for more information):</p>
-<iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe><p>Clustergrammer also has biology-specific features for working with gene-level data including:</p>
+<p>Press play or interact with the gene-expression demo below to see some of Clustergrammer&#8217;s interactive features and see <a class="reference internal" href="interacting_with_viz.html#interacting-with-viz"><span class="std std-ref">Interacting with the Visualization</span></a> for more information:</p>
+<iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:15px;'></iframe><p>Clustergrammer also has <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for working with gene-level data including:</p>
 <ul class="simple">
 <li>mouseover gene names and description look-up (using <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>)</li>
 <li>enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>)</li>
 </ul>
-<p>See <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information.</p>
 </div>
 </div>
 
