@@ -23,7 +23,7 @@ Clustergrammer was used to visualize two widely used labeled machine learning da
 - `Iris flower dataset`_
 - `MNIST Handwritten Digit Dataset`_
 
-These examples demonstrate the generatlity of heatmap visualizations and enable users to interactively explore familiar datasets.
+These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar datasets.
 
 .. _`CCLE Explorer`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb

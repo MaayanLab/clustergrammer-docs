@@ -210,11 +210,11 @@ There are three required properties for the Visualization-JSON: ``row_nodes``, `
 
 **Nodes**
 
-``row_nodes`` and ``col_nodes`` objects are required to have three properties: ``name``, ``clust``, ``rank``. ``name`` specifies the name given to the row or column. ``clust`` and ``rank`` give the ordering of the row or column in the clustergram. Two optional properties are ``group`` and ``value``. ``group`` is an array that contains group-membership of hte row/column at different dendrogram distance cutoffs and is necessary for displaying a dendrogram. If nodes have the ``value`` property, then semi-transparent bars will be made behind the labels to represent this value.
+``row_nodes`` and ``col_nodes`` objects are required to have three properties: ``name``, ``clust``, ``rank``. ``name`` specifies the name given to the row or column. ``clust`` and ``rank`` give the ordering of the row or column in the clustergram. Two optional properties are ``group`` and ``value``. ``group`` is an array that contains group-membership of the row/column at different dendrogram distance cutoffs and is necessary for displaying a dendrogram. If nodes have the ``value`` property, then semi-transparent bars will be made behind the labels to represent this value.
 
 **Links**
 
-``links`` have three properties: ``source``, ``target``, and ``value``. ``source`` and ``target`` give the integer value of the row and column of the matrix-cell in teh visualization. ``value`` specifies the opacity and color of the matrix-cell, where positive/netgative values results in red/blue matrix-cells in the visualization. The optional properties ``value_up`` and ``value_dn`` allow the use to have a split matrix-cell that has an up-triangle and down-triangle.
+``links`` have three properties: ``source``, ``target``, and ``value``. ``source`` and ``target`` give the integer value of the row and column of the matrix-cell in the visualization. ``value`` specifies the opacity and color of the matrix-cell, where positive/negative values results in red/blue matrix-cells in the visualization. The optional properties ``value_up`` and ``value_dn`` allow the use to have a split matrix-cell that has an up-triangle and down-triangle.
 
 
 Users can also generate the visualization-JSON using their own scripts as long as they adhere to the above format.
