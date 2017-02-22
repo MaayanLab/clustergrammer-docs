@@ -71,7 +71,7 @@ Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame 
   # make interactive widget
   clustergrammer_widget(network=net.widget())
 
-Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook. The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversable). The example below performs Z-score normalization on the columns and filters to keep the top 200 rows based on their absolute value sum:
+Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook. The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns and filters to keep the top 200 rows based on their absolute value sum:
 ::
 
   # Z-score normalize columns
