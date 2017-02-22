@@ -4,12 +4,12 @@ Clustergrammer Web App
 ----------------------
 |github-version|
 
-The Clustergrammer web application, Clustergrammer-Web, enables users to easily generate interactive and shareable heatmap visualizations by uploading their data as a tab-separated file.
+The `Web-App`_ enables users to easily generate interactive and shareable heatmap visualizations by uploading their data as a tab-separated file.
 
 .. _clustergrammer_web_upload:
 
-Uploading Data using the Homepage
-=================================
+Uploading Data using the Web-App Homepage
+=========================================
 
 .. figure:: _static/clustergrammer_web_upload.png
   :width: 900px
@@ -17,20 +17,20 @@ Uploading Data using the Homepage
   :alt: Clustergrammer Web
   :target: http://amp.pharm.mssm.edu/clustergrammer/
 
-  Users can easily generate an interactive and shareable heatmap visualization using the `Clustergrammer Web App`_. Simply upload a tab-separated matrix file in the homepage to be redirected to a permanent and shareable visualization of your data.
+  Users can easily generate an interactive and shareable heatmap visualization using the `Web-App`_. Simply upload a tab-separated matrix file in the homepage to be redirected to a permanent and shareable visualization of your data.
 
 
 .. _clustergrammer_web_viz:
 
 Clustergrammer-Web Visualization
 ================================
-Uploading a matrix to Clustergrammer-Web will redirect the user to a new permanent and shareable page with three views of their data:
+Uploading a matrix to the `Web-App`_ will redirect the user to a new permanent and shareable page with three views of their data:
 
 #. clustered heatmap view of their matrix
 #. clustered similarity matrix of the columns in their original matrix
 #. clustered similarity matrix of the rows in their original matrix
 
-See the screenshots below and the `example visualization`_ for an example Clustergrammer visualization page.
+See the screenshots below and the `example visualization`_ for an example `Web-App`_ visualization page.
 
 **Heatmap View**
 
@@ -40,7 +40,7 @@ See the screenshots below and the `example visualization`_ for an example Cluste
   :alt: Web application heatmap
   :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 
-  Above is an example clustergram visualization produced by the :ref:`clustergrammer_web`. Clustergrammer produces three views of your data and the clustered heatmap view is shown above.
+  Above is an example clustergram visualization produced by the `Web-App`_. Clustergrammer produces three views of your data and the clustered heatmap view is shown above.
 
 **Similarity Matrix View**
 
@@ -50,9 +50,9 @@ See the screenshots below and the `example visualization`_ for an example Cluste
   :alt: Web application sim-mat
   :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 
-  Clustergrammer produces similarity matrices of rows and columns to provide additional perspectives on a user's data. Above is an example column similarity matrix.
+  The `Web-App`_ produces similarity matrices of rows and columns to provide additional perspectives on a user's data. Above is an example column similarity matrix.
 
-Users can view the heatmap/similarity-matrices in full screen by clicking the blue link under the visualizations. All visualizations are permanent and shareable, which enables collaboration. See :ref:`interacting_with_viz` for more information.
+Users can view the heatmap/similarity-matrices in full screen by clicking the blue link under the visualizations. All visualizations are permanent and shareable, which enables sharing with collaborators. See :ref:`interacting_with_viz` for more information.
 
 .. _clustergrammer_web_api:
 
@@ -86,7 +86,7 @@ Clustergrammer-Web Development
 Clustergrammer-Web is a `dockerized`_ web application built using the Python library `Flask`_ and `MongoDB`_ database. Clustergrammer-Web uses the :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries and the source code can be found in the `clustergrammer-web`_ GitHub repo.
 
 
-.. _`Clustergrammer-Web App`: http://amp.pharm.mssm.edu/clustergrammer/
+.. _`Web-App`: http://amp.pharm.mssm.edu/clustergrammer/
 .. _`Flask`: http://flask.pocoo.org/
 .. _`dockerized`: https://docs.docker.com/
 .. _`clustergrammer-web`: https://github.com/MaayanLab/clustergrammer-web/

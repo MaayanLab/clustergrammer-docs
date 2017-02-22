@@ -5,7 +5,7 @@ Clustergrammer Jupyter Widget
 |pypi-version|
 |npm-version|
 
-Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Jupyter Widget enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information). See screenshot below for an example visualization:
 
 .. figure:: _static/jupyter_widget_nbviewer.png
   :width: 900px
@@ -36,7 +36,6 @@ Clustergrammer-Widget can be installed (with pip) and enabled using the followin
   jupyter nbextension enable --py --sys-prefix widgetsnbextension
   jupyter nbextension enable --py --sys-prefix clustergrammer_widget
 
-To enable rendering interactive widgets on `nbviewer`_ you must have `ipywidgets version 6`_  or later installed and use the "Save Notebook with Widgets" action in the Widgets menu in the Jupyter notebook (for more information, see ipywidgets documentation on `Rendering Interactive Widgets on nbviewer`_).
 
 .. _clustergrammer_widget_workflow:
 
@@ -87,6 +86,18 @@ The ``net`` object can also be used to filter and normalize your data before vis
 For more information about the ``Network`` object see the :ref:`clustergrammer_py_api`.
 
 .. _clustergrammer_widget_examples:
+
+
+Sharing with nbviewer
+=====================
+To enable rendering interactive widgets on `nbviewer`_ you must have `ipywidgets version 6`_  or later installed and use the "Save Notebook with Widgets" action in the Widgets menu in the Jupyter notebook (see ipywidgets `Rendering Interactive Widgets on nbviewer`_ documentation and screenshot below):
+
+.. figure:: _static/jupyter_save_widgets.png
+  :width: 500px
+  :align: center
+  :alt: Save Jupyter Widget
+
+  Users can save notebooks with interactive HTML widgets using the "Save Notebook with Widgets" action in the Jupyter Notebook Widgets menu as shown here. `ipywidgets version 6`_  or later must be installed in order to enable this feature.
 
 Jupyter Notebook Examples
 =========================
