@@ -15,6 +15,7 @@ Uploading Data through the Homepage
   :width: 900px
   :align: center
   :alt: Clustergrammer Web
+  :target: http://amp.pharm.mssm.edu/clustergrammer/
 
   Users can easily generate an interactive and shareable heatmap visualization using the `Clustergrammer Web App`_. Simply upload a tab-separated matrix file in the homepage to be directed to a permanent and shareable visualization of your data.
 

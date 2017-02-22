@@ -6,9 +6,15 @@ Clustergrammer can be integrated into web applications to dynamically produce in
 
 Enrichr
 =======
-The enrichment analysis tool, `Enrichr`_, uses the :ref:`clustergrammer_web`'s API to produce dynamic heatmaps of enriched terms as columns and user lists as rows. This helps users understand the relationships between their input genes and the returned enriched terms.
+The enrichment analysis tool, `Enrichr`_, uses the :ref:`clustergrammer_web`'s API to produce dynamic heatmaps of enriched terms as columns and user input genes as rows. This helps users understand the relationships between their input genes and the returned enriched terms.
 
-  **<screenshot>**
+.. figure:: _static/enrichr_screenshot_logo.png
+  :width: 600px
+  :align: center
+  :alt: Enirchr Clustergram
+  :target: http://amp.pharm.mssm.edu/Enrichr/
+
+  `Enrichr`_ uses :ref:`clustergrammer_web`'s API to produce interactive heatmaps of enriched terms as columns and user input genes as rows.
 
 GEN3VA
 ======
