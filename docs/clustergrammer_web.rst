@@ -8,8 +8,8 @@ The Clustergrammer web application, Clustergrammer-Web, enables users to easily 
 
 .. _clustergrammer_web_upload:
 
-Uploading Data through the Homepage
-====================================
+Uploading Data using the Homepage
+=================================
 
 .. figure:: _static/clustergrammer_web.png
   :width: 900px
