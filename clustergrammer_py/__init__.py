@@ -8,8 +8,7 @@ class Network(object):
   Networks have two states:
 
     1. the data state, where they are stored as a matrix and nodes
-    2. the viz state where they are stored as viz.links, viz.row_nodes, and
-  viz.col_nodes.
+    2. the viz state where they are stored as viz.links, viz.row_nodes, and viz.col_nodes.
 
   The goal is to start in a data-state and produce a viz-state of
   the network that will be used as input to clustergram.js.

@@ -19,6 +19,7 @@ pre
 resizable
 nbviewer
 screenshot
+screenshots
 snippits
 numpy
 scipy
@@ -31,7 +32,6 @@ apps
 resizable
 clustergrams
 nbviewer
-screenshot
 snippits
 numpy
 Heatmap
