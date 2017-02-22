@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
         <link rel="next" title="Biology-Specific Features" href="biology_specific_features.html"/>
         <link rel="prev" title="Clustergrammer Jupyter Widget" href="clustergrammer_widget.html"/> 
@@ -148,7 +151,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/interacting_with_viz.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/interacting_with_viz.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -240,7 +243,7 @@
 <p class="caption"><span class="caption-text">Mousing over a dendrogram group will highlight the selected cluster and bring up information (e.g. categories) about the cluster.</span></p>
 </div>
 <p><strong>Dendrogrm Cropping</strong></p>
-<p>Each dendrogram cluster has a small triangular crop button (that points towards the cluster) above it that allows users to crop the matrix to only show the rows or columns in this cluster. Clicking on a dendrogram crop button filters out the rows or columns that not in the cluster, resizes the visualization to show the remaining data, and reverses the orientation of the crop button to point outwards. Clicking on the outward facing crop button undoes the cropping and restores the full matrix. For small matrices, this transformation is animated. Dendrogram cropping can be useful for focusing in on a cluster of interest and when used in combination with <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to import enrichment analysis results into the visualization (as row categories) from <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a> for a specific cluster of genes (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
+<p>Each dendrogram cluster has a small triangular crop button (that points towards the cluster) above it that allows users to crop the matrix to only show the rows or columns in this cluster. Clicking on a dendrogram crop button filters out the rows or columns that not in the cluster, resizes the visualization to show the remaining data, and reverses the orientation of the crop button to point outwards. Clicking on the outward facing crop button undoes the cropping and restores the full matrix. For small matrices, this transformation is animated. Dendrogram cropping can be useful for focusing in on a cluster of interest and when used in combination with <span class="xref std std-ref">Enrichrgram</span> to import enrichment analysis results into the visualization (as row categories) from <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a> for a specific cluster of genes (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 </div>
 <div class="section" id="interactive-categories">
 <span id="id5"></span><h2>Interactive Categories<a class="headerlink" href="#interactive-categories" title="Permalink to this headline">¶</a></h2>
@@ -257,11 +260,11 @@
 <p class="caption"><span class="caption-text">Mousing over a category brings up a tooltip with the category name and highlights instances of thie category. Shown above is an example of mousing over a column category.</span></p>
 </div>
 <p><strong>Updating Categories</strong></p>
-<p>Row categories can be updated using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>, which can be used by developers to add dynamic categories. This feature is used by <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to visualize enrichment analysis results (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
+<p>Row categories can be updated using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>, which can be used by developers to add dynamic categories. This feature is used by <span class="xref std std-ref">Enrichrgram</span> to visualize enrichment analysis results (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 </div>
 <div class="section" id="cropping">
 <span id="crop"></span><h2>Cropping<a class="headerlink" href="#cropping" title="Permalink to this headline">¶</a></h2>
-<p>Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest specified by brushing (e.g. dragging a region of interest using the mouse). Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the <a class="reference internal" href="#download"><span class="std std-ref">Download Icon</span></a> to export a small region of the matrix or in combination with <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to perform enrichment analysis on a subset of clustered genes.</p>
+<p>Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest specified by brushing (e.g. dragging a region of interest using the mouse). Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the <a class="reference internal" href="#download"><span class="std std-ref">Download Icon</span></a> to export a small region of the matrix or in combination with <span class="xref std std-ref">Enrichrgram</span> to perform enrichment analysis on a subset of clustered genes.</p>
 <div class="figure align-center" id="id13">
 <a class="reference internal image-reference" href="_images/brush_crop.png"><img alt="Brush Crop" src="_images/brush_crop.png" style="width: 900px;" /></a>
 <p class="caption"><span class="caption-text">The above example shows the result of brush cropping into a section of the heatmap. To brush crop, click the crop button (the active red icon in the sidebar on the left panel) and drag/brush your cursor over your area of interest. To undo cropping, click the undo button (circular arrow) on the right panel.</span></p>
