@@ -25,7 +25,29 @@ Users can easily generate an interactive and shareable heatmap visualization usi
 
   Users can upload their data using the web app `homepage`_. Simply choose your file and upload to be redirected to your permanent and shareable visualization.
 
-Clustergrammer produces a heatmap of your input matrix, a similarity matrix of your columns, and a similarity matrix of your rows. See `example visualization`_ for an example result and :ref:`interacting_with_viz` for detailed information on interacting with the visualization.
+Once you upload your data, the :ref:`clustergrammer_web` clusters your data and produces three views: a heatmap of your input matrix, a similarity matrix of your columns, and a similarity matrix of your rows. See screenshots below and `example visualization`_ for an example results page.
+
+**Heatmap View**
+
+.. figure:: _static/web_app_heatmap.png
+  :width: 800px
+  :align: center
+  :alt: Web application heatmap
+  :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
+
+  Above is an example clustergram visualization produced by the :ref:`clustergrammer_web`. Clustergrammer produces three views of your data and the clustered heatmap view is shown above.
+
+**Similarity Matrix View**
+
+.. figure:: _static/web_app_sim_mat.png
+  :width: 800px
+  :align: center
+  :alt: Web application sim-mat
+  :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
+
+  Clustergrammer produces similarity matrices of rows and columns to provide additional perspectives on a user's data. Above is an example column similarity matrix.
+
+See :ref:`interacting_with_viz` for more information.
 
 .. _getting_started_widget:
 
