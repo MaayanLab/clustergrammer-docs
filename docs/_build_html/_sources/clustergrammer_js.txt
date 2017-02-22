@@ -162,7 +162,59 @@ Clustergrammer-JS API
 
 Visualization-JSON
 ==================
-The visualization-JSON format required for Clustergrammer.js is described here:
+The visualization-JSON is calculated by :ref:`clustergrammer_py` and encodes everything needed for the front-end Clustergrammer-JS to produce the visualization. The visualization-JSON format is described here (see `clustergrammer_example.json`_ for an example file). An overview of the format is shown below (note that the group arrays are not shown):
+::
+
+  {
+    "row_nodes":[
+       {
+        "name": "ATF7",
+        "clust": 67,
+        "rank": 66,
+        "rankvar": 10,
+        "group": []
+      }
+    ],
+    "col_nodes":[
+      {
+        "name": "Col-0",
+        "clust": 4,
+        "rank": 10,
+        "rankvar": 120,
+        "group": []
+      }
+    ],
+    "links":[
+      {
+        "source": 0,
+        "target": 0,
+        "value": 0.023
+      }
+    ]
+  }
+
+Optional 'views' of the matrix (e.g. row-filtered views) are encoded into the ``views`` attribute at the base level of the object. These views are used to store filtered version of the matrix. Only the row and column names are stored in these views since all views share the same matrix cells. The view attributes are stored in the view object (e.g. ``N_row_sum``):
+::
+
+  "views":[
+    {
+      "N_row_sum": "all",
+      "dist": "cos",
+      "nodes":{
+        "row_nodes": [],
+        "col_nodes": []
+      }
+    }
+
+There are three required properties for the Visualization-JSON: ``row_nodes``, ``col_nodes``, and ``links``. Each of these properties is an array of objects and these objects are discussed below
+
+**Nodes**
+
+``row_nodes`` and ``col_nodes`` objects are required to have three properties: ``name``, ``clust``, ``rank``. ``name`` specifies the name given to the row or column. ``clust`` and ``rank`` give the ordering of the row or column in the clustergram. Two optional properties are ``group`` and ``value``. ``group`` is an array that contains group-membership of hte row/column at different dendrogram distance cutoffs and is necessary for displaying a dendrogram. If nodes have the ``value`` property, then semi-transparent bars will be made behind the labels to represent this value.
+
+**Links**
+
+``links`` have three properties: ``source``, ``target``, and ``value``. ``source`` and ``target`` give the integer value of the row and column of the matrix-cell in teh visualization. ``value`` specifies the opacity and color of the matrix-cell, where positive/netgative values results in red/blue matrix-cells in the visualization. The optional properties ``value_up`` and ``value_dn`` allow the use to have a split matrix-cell that has an up-triangle and down-triangle.
 
 
 Users can also generate the visualization-JSON using their own scripts as long as they adhere to the above format.
@@ -188,6 +240,8 @@ Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the
 .. _`Webpack Module Bundler`: https://webpack.github.io/
 .. _`src`: https://github.com/MaayanLab/clustergrammer/tree/master/src
 .. _`issues`: https://github.com/MaayanLab/clustergrammer/issues
+
+.. _`clustergrammer_example.json`: https://github.com/MaayanLab/clustergrammer-json/blob/master/clustergrammer_example.json
 
 .. |npm-version| image:: https://img.shields.io/npm/v/clustergrammer.svg
     :alt: version

@@ -24,9 +24,9 @@ The simplest tab-separated file format is shown here:
 
 The first row gives the column names and starts with a blank tab. All other rows start with the row name followed by the row data. Row and column titles can be added by prefixing each row or column name with ``'Title: '`` (not shown in this example). See `example_tsv.txt`_ for an example of this matrix format.
 
-Simple Matrix-Category Format
+Simple-Category Matrix Format
 =============================
-Row and column categories can be included in your data in two ways. The first, simple matrix-category format, is shown below:
+Row and column categories can be included in two ways. The first, simple-category format, is shown below:
 
 .. figure:: _static/cat_tsv.png
 	:width: 700px
@@ -35,9 +35,9 @@ Row and column categories can be included in your data in two ways. The first, s
 
 	A matrix with row and column categories in 'simple' format.
 
-This simple format allows users to encode column categories as a extra rows underneath column labels and row categories as an extra columns next to row labels. The above screenshot of an Excel spreadsheet shows a single row category being added as an additional column of strings (e.g. ``Type: Interesting``) and a single column category being added as an additional row of strings (e.g. ``Gender: Male``). Up to 15 categories can be added in a similar manner. Titles for row or column names or categories can be added by prefixing each string with ``'Title: '`` (note the space after the colon). For example the title of the column names is ``Cell Line`` and the title of the row categories is ``Gender``. See `rc_two_cats.txt`_ for an example of this matrix format. Titles, if given, will be shown as labels above row/column names or adjacent to row/column categories.
+This simple-category format allows users to encode column categories as a extra rows underneath column labels and row categories as an extra columns next to row labels. The above screenshot of an Excel spreadsheet shows a single row category being added as an additional column of strings (e.g. ``Type: Interesting``) and a single column category being added as an additional row of strings (e.g. ``Gender: Male``). Up to 15 categories can be added in a similar manner. Titles for row or column names or categories can be added by prefixing each string with ``'Title: '`` (note the space after the colon). For example the title of the column names is ``Cell Line`` and the title of the row categories is ``Gender``. See `rc_two_cats.txt`_ for an example of this matrix format. Titles, if given, will be shown as labels above row/column names or adjacent to row/column categories.
 
-Tuple Matrix-Category Format
+Tuple-Category Matrix Format
 ============================
 Row/column names and categories can also be encoded as Python `tuples`_ as shown below:
 
@@ -48,13 +48,13 @@ Row/column names and categories can also be encoded as Python `tuples`_ as shown
 	('Gene: TP53','Type: Not Interesting')	8.3	4.098	-12.2
 	('Gene: IRAK','Type: Not Interesting')	7.23	3.01	0.88
 
-This format is easier to work with in Python and can be imported/exported into Pandas DataFrames and as tab-separated files. Note that titles have been added to row/column names and categories as discussed above. See `tuple_cats.txt`_ for an example of this matrix format.
+This tuple-category format is easier to work with in Python and can be imported/exported into Pandas DataFrames and as tab-separated files. Note that titles have been added to row/column names and categories as discussed above. See `tuple_cats.txt`_ for an example of this matrix format.
 
 Category Types: String and Value
 ================================
-Row and column categories can be of type: string or value. If categories are given as strings (e.g. containing letters and not only numbers) then categories will be depicted using different colors. If categories are of type value (e.g. all categories contain no letters and only numbers) then value-categories will be depicted using color and opacity (gray for positive and orange for negative).
+Row and column categories can be of type: string or value. If categories are given as strings (e.g. containing letters) then categories will be depicted using colors. If categories are of type value (e.g. all categories contain only numbers) then value-categories will be depicted using color and opacity (gray for positive and orange for negative).
 
-Value-based categories can be useful for adding data to your visualization (e.g. dosage value) that you would like to compare to your other dimensions, but would not like to influence your clustering. Value-based and String-based categories can also be used to reorder your matrix by double-clicking their labels (see :ref:`interactive_categories`).
+Value-based categories can be useful for adding data to your visualization (e.g. drug-dosage value) that you would like to compare to your other dimensions, but would not like to influence your clustering. Value-based and String-based categories can also be used to reorder your matrix by double-clicking their labels (see :ref:`interactive_categories`).
 
 Matrix File Examples
 ====================

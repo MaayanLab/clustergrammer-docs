@@ -380,7 +380,53 @@
 </div>
 <div class="section" id="visualization-json">
 <span id="id6"></span><h2>Visualization-JSON<a class="headerlink" href="#visualization-json" title="Permalink to this headline">¶</a></h2>
-<p>The visualization-JSON format required for Clustergrammer.js is described here:</p>
+<p>The visualization-JSON is calculated by <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> and encodes everything needed for the front-end Clustergrammer-JS to produce the visualization. The visualization-JSON format is described here (see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-json/blob/master/clustergrammer_example.json">clustergrammer_example.json</a> for an example file). An overview of the format is shown below (note that the group arrays are not shown):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;row_nodes&quot;</span><span class="p">:[</span>
+     <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ATF7&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;clust&quot;</span><span class="p">:</span> <span class="mi">67</span><span class="p">,</span>
+      <span class="s2">&quot;rank&quot;</span><span class="p">:</span> <span class="mi">66</span><span class="p">,</span>
+      <span class="s2">&quot;rankvar&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+      <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">[]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;col_nodes&quot;</span><span class="p">:[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Col-0&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;clust&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+      <span class="s2">&quot;rank&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+      <span class="s2">&quot;rankvar&quot;</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+      <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">[]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;links&quot;</span><span class="p">:[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">0.023</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Optional &#8216;views&#8217; of the matrix (e.g. row-filtered views) are encoded into the <code class="docutils literal"><span class="pre">views</span></code> attribute at the base level of the object. These views are used to store filtered version of the matrix. Only the row and column names are stored in these views since all views share the same matrix cells. The view attributes are stored in the view object (e.g. <code class="docutils literal"><span class="pre">N_row_sum</span></code>):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;views&quot;</span><span class="p">:[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;N_row_sum&quot;</span><span class="p">:</span> <span class="s2">&quot;all&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;dist&quot;</span><span class="p">:</span> <span class="s2">&quot;cos&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;nodes&quot;</span><span class="p">:{</span>
+      <span class="s2">&quot;row_nodes&quot;</span><span class="p">:</span> <span class="p">[],</span>
+      <span class="s2">&quot;col_nodes&quot;</span><span class="p">:</span> <span class="p">[]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+<p>There are three required properties for the Visualization-JSON: <code class="docutils literal"><span class="pre">row_nodes</span></code>, <code class="docutils literal"><span class="pre">col_nodes</span></code>, and <code class="docutils literal"><span class="pre">links</span></code>. Each of these properties is an array of objects and these objects are discussed below</p>
+<p><strong>Nodes</strong></p>
+<p><code class="docutils literal"><span class="pre">row_nodes</span></code> and <code class="docutils literal"><span class="pre">col_nodes</span></code> objects are required to have three properties: <code class="docutils literal"><span class="pre">name</span></code>, <code class="docutils literal"><span class="pre">clust</span></code>, <code class="docutils literal"><span class="pre">rank</span></code>. <code class="docutils literal"><span class="pre">name</span></code> specifies the name given to the row or column. <code class="docutils literal"><span class="pre">clust</span></code> and <code class="docutils literal"><span class="pre">rank</span></code> give the ordering of the row or column in the clustergram. Two optional properties are <code class="docutils literal"><span class="pre">group</span></code> and <code class="docutils literal"><span class="pre">value</span></code>. <code class="docutils literal"><span class="pre">group</span></code> is an array that contains group-membership of hte row/column at different dendrogram distance cutoffs and is necessary for displaying a dendrogram. If nodes have the <code class="docutils literal"><span class="pre">value</span></code> property, then semi-transparent bars will be made behind the labels to represent this value.</p>
+<p><strong>Links</strong></p>
+<p><code class="docutils literal"><span class="pre">links</span></code> have three properties: <code class="docutils literal"><span class="pre">source</span></code>, <code class="docutils literal"><span class="pre">target</span></code>, and <code class="docutils literal"><span class="pre">value</span></code>. <code class="docutils literal"><span class="pre">source</span></code> and <code class="docutils literal"><span class="pre">target</span></code> give the integer value of the row and column of the matrix-cell in teh visualization. <code class="docutils literal"><span class="pre">value</span></code> specifies the opacity and color of the matrix-cell, where positive/netgative values results in red/blue matrix-cells in the visualization. The optional properties <code class="docutils literal"><span class="pre">value_up</span></code> and <code class="docutils literal"><span class="pre">value_dn</span></code> allow the use to have a split matrix-cell that has an up-triangle and down-triangle.</p>
 <p>Users can also generate the visualization-JSON using their own scripts as long as they adhere to the above format.</p>
 </div>
 <div class="section" id="clustergrammer-js-development">
