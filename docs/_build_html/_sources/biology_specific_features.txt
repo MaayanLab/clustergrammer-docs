@@ -10,6 +10,13 @@ Mouseover Gene Name and Description
 ===================================
 The human genome consists of over 20,000 genes and modern high-throughput measurements are capable of making measurements across the entire genome (e.g. genome-wide expression studies). Human genes have official gene symbols (e.g. EGFR) that are frequently used to label genes in these datasets. Since no biologist can be knowledgeable about every gene in the genome a common and repetitive task for biologists is looking up the names and descriptions of genes (given as official gene symbols) in a dataset or visualization. To streamline this, Clustergrammer automatically gives the full name and description of a gene (provided by data aggregated through the `Harmonizome`_) as a tooltip when a user mouses over a gene label. This simple feature speeds up analysis of large gene-level datasets.
 
+.. figure:: _static/gene_info.png
+  :width: 700px
+  :align: center
+  :alt: Gene Info
+
+  Mousing over a gene name row brings up the full gene name and description (provided by data aggregated through the `Harmonizome`_).
+
 The JavaScript file `hzome_functions.js`_ provides this functionality by utilizing `Harmonizome's RESTful API`_ to obtain gene names and descriptions on mouseover events. `hzome_functions.js`_ is passed to :ref:`clustergrammer_js` as a callback function. See `load_clustergram.js`_ for an example use case. This method of enhancing :ref:`clustergrammer_js`'s behavior can be extended by developers for other use cases.
 
 Enrichment Analysis
@@ -20,11 +27,25 @@ The field of biology has amassed an enormous amount of information about the gen
 
 When a user visualizes a matrix with genes as rows, Clustergrammer automatically enables integration with the enrichment analysis tool `Enrichr`_. Users can export their genes of interest to Enrichr using the interactive dendrogram or import enrichment results from Enrichr using the Enrichr tool on the top left.
 
-.. _enrichrgram:
+.. figure:: _static/send_to_Enrichr_modal.png
+  :width: 600px
+  :align: center
+  :alt: Send to Enrichr Modal
+
+  Clicking a row dendrogram cluster opens a modal with cluster information, row names, and a 'Send genes to Enrichr' link that allows users to export their gene list (e.g. cluster of row-genes) to Enrichr.
 
 **Enrichrgram**
 
 The JavaScript file `Enrichrgram.js`_ provides this functionality using `Enrichr's RESTful API`_ to generate enrichment results from a list of input genes. `Enrichrgram.js`_ works with the :ref:`clustergrammer_js` API to depict enriched terms and their associated genes as row categories by adding/removing row categories. This general behavior of adding/removing row categories can be extended by developers for other use cases.
+
+.. figure:: _static/enrichrgram_results.png
+  :width: 900px
+  :align: center
+  :alt: Enrichrgram Menu
+
+  Users can perform enrichment analysis to identify biological information specific to their genes of interest (e.g. a cluster of gene-rows). Users can select from several enrichment libraries available from Enrichr or export their data to Enrichr. If a user peforms enrichment analysis within Clustergrammer, the top 10 enriched terms will be shown as rows categories and the P-values for the enriched terms will be shown as red bars behind the row category titles.
+
+.. _enrichrgram:
 
 .. _`Enrichrgram.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js
 .. _`hzome_functions.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js

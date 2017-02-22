@@ -6,7 +6,7 @@ Clustergrammer was built to visualize biological data but is generally applicabl
 
 Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================
-The Cancer Cell Line Encyclopedia (`CCLE`_) is a publically available project that characterized (e.g. genetic characterization) over one thousand cancer cell lines. We used Clustergrammer to re-analyze and visualize CCLE's gene expression data in the `CCLE Explorer`_. The CCLE Explorer allows users to explore the CCLE by tissue type and visualize the most commonly differentially expressed genes for each tissue type as an interactive heatmap.
+The Cancer Cell Line Encyclopedia (`CCLE`_) is a publicly available project that characterized (e.g. genetic characterization) over one thousand cancer cell lines. We used Clustergrammer to re-analyze and visualize CCLE's gene expression data in the `CCLE Explorer`_. The CCLE Explorer allows users to explore the CCLE by tissue type and visualize the most commonly differentially expressed genes for each tissue type as an interactive heatmap.
 
 Zika Virus RNA-seq Data Visualization
 =====================================

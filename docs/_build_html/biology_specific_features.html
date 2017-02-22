@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="Clustergrammer 1.0.0 documentation" href="index.html"/>
-        <link rel="next" title="Case Studies" href="case_studies.html"/>
+        <link rel="next" title="Case Studies and Examples" href="case_studies.html"/>
         <link rel="prev" title="Interacting with the Visualization" href="interacting_with_viz.html"/> 
 
   
@@ -91,7 +91,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#enrichment-analysis">Enrichment Analysis</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Clustergrammer for Web-development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
@@ -149,6 +149,10 @@
 <div class="section" id="mouseover-gene-name-and-description">
 <span id="hzome-gene-info"></span><h2>Mouseover Gene Name and Description<a class="headerlink" href="#mouseover-gene-name-and-description" title="Permalink to this headline">¶</a></h2>
 <p>The human genome consists of over 20,000 genes and modern high-throughput measurements are capable of making measurements across the entire genome (e.g. genome-wide expression studies). Human genes have official gene symbols (e.g. EGFR) that are frequently used to label genes in these datasets. Since no biologist can be knowledgeable about every gene in the genome a common and repetitive task for biologists is looking up the names and descriptions of genes (given as official gene symbols) in a dataset or visualization. To streamline this, Clustergrammer automatically gives the full name and description of a gene (provided by data aggregated through the <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>) as a tooltip when a user mouses over a gene label. This simple feature speeds up analysis of large gene-level datasets.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/gene_info.png"><img alt="Gene Info" src="_images/gene_info.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Mousing over a gene name row brings up the full gene name and description (provided by data aggregated through the <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>).</span></p>
+</div>
 <p>The JavaScript file <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js">hzome_functions.js</a> provides this functionality by utilizing <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/documentation">Harmonizome&#8217;s RESTful API</a> to obtain gene names and descriptions on mouseover events. <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js">hzome_functions.js</a> is passed to <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> as a callback function. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> for an example use case. This method of enhancing <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>&#8216;s behavior can be extended by developers for other use cases.</p>
 </div>
 <div class="section" id="enrichment-analysis">
@@ -156,8 +160,16 @@
 <p>The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis a popular method to identify biological information specific to a list of genes - e.g. a biologist may use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their measured set of up-regulated genes and thereby form hypotheses about potential up-stream regulators in their system.</p>
 <p><strong>Export to Enrichr</strong></p>
 <p>When a user visualizes a matrix with genes as rows, Clustergrammer automatically enables integration with the enrichment analysis tool <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>. Users can export their genes of interest to Enrichr using the interactive dendrogram or import enrichment results from Enrichr using the Enrichr tool on the top left.</p>
-<p id="enrichrgram"><strong>Enrichrgram</strong></p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/send_to_Enrichr_modal.png"><img alt="Send to Enrichr Modal" src="_images/send_to_Enrichr_modal.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Clicking a row dendrogram cluster opens a modal with cluster information, row names, and a &#8216;Send genes to Enrichr&#8217; link that allows users to export their gene list (e.g. cluster of row-genes) to Enrichr.</span></p>
+</div>
+<p><strong>Enrichrgram</strong></p>
 <p>The JavaScript file <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js">Enrichrgram.js</a> provides this functionality using <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/help#api">Enrichr&#8217;s RESTful API</a> to generate enrichment results from a list of input genes. <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js">Enrichrgram.js</a> works with the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> API to depict enriched terms and their associated genes as row categories by adding/removing row categories. This general behavior of adding/removing row categories can be extended by developers for other use cases.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/enrichrgram_results.png"><img alt="Enrichrgram Menu" src="_images/enrichrgram_results.png" style="width: 900px;" /></a>
+<p class="caption"><span class="caption-text">Users can perform enrichment analysis to identify biological information specific to their genes of interest (e.g. a cluster of gene-rows). Users can select from several enrichment libraries available from Enrichr or export their data to Enrichr. If a user peforms enrichment analysis within Clustergrammer, the top 10 enriched terms will be shown as rows categories and the P-values for the enriched terms will be shown as red bars behind the row category titles.</span></p>
+</div>
 </div>
 </div>
 
@@ -168,7 +180,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="case_studies.html" class="btn btn-neutral float-right" title="Case Studies" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="case_studies.html" class="btn btn-neutral float-right" title="Case Studies and Examples" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="interacting_with_viz.html" class="btn btn-neutral" title="Interacting with the Visualization" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

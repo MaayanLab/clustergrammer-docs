@@ -59,7 +59,7 @@ Visualizing a matrix of gene expression data from a tab-separated file:
   # make interactive widget
   clustergrammer_widget(network=net.widget())
 
-Clustergrammer-Widget can also be used as a general purpose `Pandas`_ D/ataFrame viewer. Below is an example of how to visualize a Pandas Dataframe, ``df``, by loading it into the same ``net`` object from above:
+Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the same ``net`` object from above:
 ::
 
   # load DataFrame
