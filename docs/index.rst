@@ -27,8 +27,8 @@ Use Cases
 Clustergrammer was built to visualize biological data but is applicable for visualizing high-dimensional data in general. Below are links to several example use cases (see :ref:`case_studies` for more information):
 
 - `Cancer Cell Line Encyclopedia Gene Expression Data`_
-- `Zika Virus RNA-seq Data Visualization`_
 - `Single Cell RNA-seq Data Visualization`_
+- `Zika Virus RNA-seq Data Visualization`_
 - `Kinase Substrate Similarity Network`_
 - `Iris flower dataset`_
 - `MNIST Handwritten Digit Dataset`_
