@@ -53,8 +53,40 @@ See :ref:`interacting_with_viz` for more information.
 
 Clustergrammer-Widget
 =====================
-Here is a link to a notebook with an example interactive widget hosted on nbviewer:
-`Interactive Widget <http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb>`_
+The :ref:`clustergrammer_widget` enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context and analysis within the notebook's narrative (see :ref:`clustergrammer_widget_examples`). The :ref:`clustergrammer_widget` can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+
+To use the :ref:`clustergrammer_widget` users need to install: `Python`_, `Jupyter`_ notebook, widget dependencies (see :ref:`clustergrammer_widget_dependencies`), and `ipywidgets`_ version >6.0.0 (to save the notebook with widgets). The ``clustergrammer_widget`` can be installed (with pip) and enabled using the following commands:
+::
+
+  pip install clustergrammer_widget
+  jupyter nbextension enable --py --sys-prefix widgetsnbextension
+  jupyter nbextension enable --py --sys-prefix clustergrammer_widget
+
+With the ``clustergrammer_widget`` installed and enabled users can visualize their data (from a file) using the following Python commands:
+::
+
+  # import clustergrammer_widgets and initialize network object
+  from clustergrammer_widget import *
+  net = Network()
+
+  # load matrix file and cluster using default parameters
+  net.load_file('rc_two_cats.txt')
+  net.make_clust()
+
+  # make interactive widget
+  clustergrammer_widget(network=net.widget())
+
+See the screenshot below for an example widget visualization:
+
+.. figure:: _static/jupyter_widget_nbviewer.png
+  :width: 900px
+  :align: center
+  :alt: Jupyter Widget NBViewer
+  :target: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
+
+  Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see `Running_clustergrammer_widget.ipynb`_ example).
+
+For more information about using the widget (e.g. loading data from a Pandas DataFrame and sharing using `nbviewer`_) see :ref:`clustergrammer_widget`.
 
 Interacting with Clustergrammer
 ===============================
@@ -84,3 +116,9 @@ Clustergrammer also has :ref:`biology_specific_features` for working with gene-l
 .. _`Enrichr`: http://amp.pharm.mssm.edu/Enrichr/
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
 .. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer/
+.. _`Jupyter`: http://jupyter.org/
+.. _`nbviewer`: http://nbviewer.jupyter.org/
+.. _`Pandas`: http://pandas.pydata.org/
+.. _`Python`: https://www.python.org/
+.. _`ipywidgets`: http://ipywidgets.readthedocs.io/en/latest/
+.. _`Running_clustergrammer_widget.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb

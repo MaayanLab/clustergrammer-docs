@@ -5,7 +5,7 @@ Clustergrammer Jupyter Widget
 |pypi-version|
 |npm-version|
 
-Clustergrammer can be used within a `Jupyter`_ notebook as an interactive HTML widget, Clustergrammer-Widget, and shared with collaborators using `nbviewer`_. Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+The Clustergrammer Jupyter Widget enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context and analysis within the notebook's narrative (see :ref:`clustergrammer_widget_examples`). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
 
 .. figure:: _static/jupyter_widget_nbviewer.png
   :width: 900px
@@ -15,8 +15,10 @@ Clustergrammer can be used within a `Jupyter`_ notebook as an interactive HTML w
 
   Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see `Running_clustergrammer_widget.ipynb`_ example).
 
-Dependencies
-============
+.. _clustergrammer_widget_dependencies:
+
+Jupyter Widget Dependencies
+===========================
 
 - `Numpy`_
 - `SciPy`_
@@ -28,7 +30,6 @@ Clustergrammer-Widget works with Python 2 and 3.
 Installation
 ============
 Clustergrammer-Widget can be installed (with pip) and enabled using the following commands:
-
 ::
 
   pip install clustergrammer_widget
@@ -84,6 +85,13 @@ The ``net`` object can also be used to filter and normalize your data before vis
   clustergrammer_widget(network=net.widget())
 
 For more information about the ``Network`` object see the :ref:`clustergrammer_py_api`.
+
+.. _clustergrammer_widget_examples:
+
+Jupyter Notebook Examples
+=========================
+Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the examples Jupyter notebooks below for examples:
+
 
 .. _clustergrammer_widget_dev:
 
