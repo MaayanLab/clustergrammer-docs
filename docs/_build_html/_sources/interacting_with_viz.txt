@@ -117,6 +117,7 @@ Rather than visualize the dendrogram as a large branching structure which takes 
 
   A subset of the column dendrogram along with the dendrogram slider is shown above. The slider (blue circle and gray triangle) can be used to adjust dendrogram cluster sizes -- move up for larger clusters and down for smaller clusters. Each dendrogram cluster has a crop button (gray triangle) above it that can be used to filter the heatmap to only show this cluster.
 
+
 **Interacting with Dendrogram Clusters**
 
 Dendrogram clusters are depicted as gray trapezoids, which are easy for a user to interact with. Mousing over a dendrogram cluster (gray trapezoid) highlights the current group of rows or columns (by adding a shadows over the rows or columns not in the cluster) and brings up a tooltip with cluster information. If the rows or columns have categories, this tooltip will show a breakdown of the rows and columns into their categories, which can be useful for understanding how prior knowledge compares to clusters identified in a data-driven manner (e.g. we can ask, do columns with the same category cluster together based on the data). Clicking a dendrogram cluster brings up the same information in a pop-up window and also allows users to export the names of the rows or columns in the cluster. When a user is visualizing biological data with, where rows are official gene symbols, users have the option to export the gene list from the cluster to the enrichment analysis tool, `Enrichr`_ (see :ref:`biology_specific_features` for more information).
@@ -160,13 +161,13 @@ Mousing over a category will show the category name in a tooltip and highlight t
 
 **Updating Categories**
 
-Row categories can be updated using the :ref:`clustergrammer_js_api`, which can be used by developers to add dynamic categories. This feature is used by :ref:`Enrichrgram <enrichrgram>` to visualize enrichment analysis results (see :ref:`biology_specific_features` for more information).
+Row categories can be updated using the :ref:`clustergrammer_js_api`, which can be used by developers to add dynamic categories. This feature is used by enrichrgram to visualize enrichment analysis results (see :ref:`biology_specific_features` for more information).
 
 .. _crop:
 
 Cropping
 ========
-Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest specified by brushing (e.g. dragging a region of interest using the mouse). Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the :ref:`download` to export a small region of the matrix or in combination with :ref:`Enrichrgram <enrichrgram>` to perform enrichment analysis on a subset of clustered genes.
+Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest specified by brushing (e.g. dragging a region of interest using the mouse). Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the :ref:`download` to export a small region of the matrix or in combination with enrichrgram to perform enrichment analysis on a subset of clustered genes.
 
 .. figure:: _static/brush_crop.png
   :width: 900px

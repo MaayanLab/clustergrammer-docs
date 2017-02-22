@@ -19,6 +19,7 @@ The human genome consists of over 20,000 genes and modern high-throughput measur
 
 The JavaScript file `hzome_functions.js`_ provides this functionality by utilizing `Harmonizome's RESTful API`_ to obtain gene names and descriptions on mouseover events. `hzome_functions.js`_ is passed to :ref:`clustergrammer_js` as a callback function. See `load_clustergram.js`_ for an example use case. This method of enhancing :ref:`clustergrammer_js`'s behavior can be extended by developers for other use cases.
 
+
 Enrichment Analysis
 ===================
 The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis a popular method to identify biological information specific to a list of genes - e.g. a biologist may use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their measured set of up-regulated genes and thereby form hypotheses about potential up-stream regulators in their system.
@@ -34,6 +35,8 @@ When a user visualizes a matrix with genes as rows, Clustergrammer automatically
 
   Clicking a row dendrogram cluster opens a modal with cluster information, row names, and a 'Send genes to Enrichr' link that allows users to export their gene list (e.g. cluster of row-genes) to Enrichr.
 
+.. _enrichrgram:
+
 **Enrichrgram**
 
 The JavaScript file `Enrichrgram.js`_ provides this functionality using `Enrichr's RESTful API`_ to generate enrichment results from a list of input genes. `Enrichrgram.js`_ works with the :ref:`clustergrammer_js` API to depict enriched terms and their associated genes as row categories by adding/removing row categories. This general behavior of adding/removing row categories can be extended by developers for other use cases.
@@ -44,8 +47,6 @@ The JavaScript file `Enrichrgram.js`_ provides this functionality using `Enrichr
   :alt: Enrichrgram Menu
 
   Users can perform enrichment analysis to identify biological information specific to their genes of interest (e.g. a cluster of gene-rows). Users can select from several enrichment libraries available from Enrichr or export their data to Enrichr. If a user peforms enrichment analysis within Clustergrammer, the top 10 enriched terms will be shown as rows categories and the P-values for the enriched terms will be shown as red bars behind the row category titles.
-
-.. _enrichrgram:
 
 .. _`Enrichrgram.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js
 .. _`hzome_functions.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js

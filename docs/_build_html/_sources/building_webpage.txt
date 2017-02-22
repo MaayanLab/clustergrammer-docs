@@ -1,7 +1,7 @@
 .. _building_web_page:
 
-Clustergrammer for Web-development
-----------------------------------
+Web Development with Clustergrammer
+-----------------------------------
 Clustergrammer can be used by developers to add interactive heatmap visualizations to their web pages and web applications (see :ref:`app_integration`).
 
 Embedding Clustergrammer

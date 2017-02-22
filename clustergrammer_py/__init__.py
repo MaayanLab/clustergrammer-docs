@@ -70,8 +70,6 @@ class Network(object):
                  linkage_type='average', sim_mat=False, filter_sim=0.1,
                  calc_cat_pval=False, run_enrichr=None):
     '''
-    .. _make_clust:
-
     The main function performs hierarchical clustering, optionally generates filtered views (e.g. row filtered views), and generates the :`visualization_json`.
     '''
     from . import initialize_net

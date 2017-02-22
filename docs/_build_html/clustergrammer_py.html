@@ -89,7 +89,7 @@
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Clustergrammer for Web-development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Web Development with Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer-PY</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
@@ -191,7 +191,7 @@
 <div class="section" id="clustergrammer-py-api">
 <span id="id2"></span><h2>Clustergrammer-PY API<a class="headerlink" href="#clustergrammer-py-api" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer-PY generates a Network object (see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/__init__.py">Network class definition</a>), which is used to load a matrix (e.g. from a Pandas <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html">DataFrame</a>), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.</p>
-<p>When a matrix is loaded into an instance of <code class="docutils literal"><span class="pre">Network</span></code> (e.g. <code class="docutils literal"><span class="pre">net</span></code>) it is stored in the data, <code class="docutils literal"><span class="pre">dat</span></code>, attribute. Normalization and filtering will modify the <code class="docutils literal"><span class="pre">dat</span></code> representation of the matrix. When the matrix is clustered (by calling <span class="xref std std-ref">make_clust</span>)</p>
+<p>When a matrix is loaded into an instance of <code class="docutils literal"><span class="pre">Network</span></code> (e.g. <code class="docutils literal"><span class="pre">net</span></code>) it is stored in the data, <code class="docutils literal"><span class="pre">dat</span></code>, attribute. Normalization and filtering will modify the <code class="docutils literal"><span class="pre">dat</span></code> representation of the matrix. When the matrix is clustered (by calling <code class="docutils literal"><span class="pre">make_clust</span></code>)</p>
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
@@ -298,7 +298,7 @@ be possible to load data without having to read from a file.</p>
 <dl class="method">
 <dt id="clustergrammer_py.Network.make_clust">
 <code class="descname">make_clust</code><span class="sig-paren">(</span><em>dist_type='cosine', run_clustering=True, dendro=True, views=['N_row_sum', 'N_row_var'], linkage_type='average', sim_mat=False, filter_sim=0.1, calc_cat_pval=False, run_enrichr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.make_clust" title="Permalink to this definition">¶</a></dt>
-<dd><p id="make-clust">The main function performs hierarchical clustering, optionally generates filtered views (e.g. row filtered views), and generates the :<cite>visualization_json</cite>.</p>
+<dd><p>The main function performs hierarchical clustering, optionally generates filtered views (e.g. row filtered views), and generates the :<cite>visualization_json</cite>.</p>
 </dd></dl>
 
 <dl class="method">
