@@ -26,28 +26,44 @@ or the source code can be obtained from the `GitHub repo`_.
 
 .. _clustergrammer_py_workflow:
 
-Python Workflow Example
-=======================
-This workflow shows how to cluster a matrix of data from a file or DataFrame (see :ref:`matrix_format_io`) and generate a :ref:`visualization_json` (for use by :ref:`clustergrammer_js`):
+Python Workflow Examples
+========================
+This workflow shows how to cluster a matrix of data from a file (see :ref:`matrix_format_io`) and generate a :ref:`visualization_json` (for use by :ref:`clustergrammer_js`):
 ::
 
   # make network object and load file
   from clustergrammer import Network
   net = Network()
-
-  # load matrix from file
   net.load_file('your_matrix.txt')
-
-  # or load matrix from DataFrame
-  net.load_df(df)
 
   # calculate clustering using default parameters
   net.make_clust()
 
-  # save visualization JSON to file
+  # save visualization JSON to file for use by front-end
   net.write_json_to_file('viz', 'mult_view.json')
 
 The file ``mult_view.json`` will be loaded by the front-end and used to build the interactive visualization. See `make_clustergrammer.py`_ for an additional example.
+
+Clustergrammer can also load data from a Pandas DataFrame and perform normalization and filtering. In this example we will load data from a DataFrame, normalize the rows, and filter the columns:
+::
+
+  # make network object and load DataFrame, df
+  net = Network()
+  net.load_df(df)
+
+  # Z-score normalize the rows
+  net.normalize(axis='row', norm_type='zscore', keep_orig=True)
+
+  # filter for the top 100 columns based on their absolute value sum
+  net.filter_N_top('col', 100, 'sum')
+
+  # cluster using default parameters
+  net.make_clust()
+
+  # save visualization JSON to file for use by front-end
+  net.write_json_to_file('viz', 'mult_view.json')
+
+Note that filtering done on the ``Network`` object before clustering is permanent, unlike the filtering done within ``make_clust`` which can be toggled on and off in the front-end visualization. The ``keep_orig`` parameter in the ``normalize`` function allows us to show the un-normalized when a user mouses over a matrix-cell in the visualization. See the :ref:`clustergrammer_py_api` documentation below for more information.
 
 .. _clustergrammer_py_api:
 
@@ -55,7 +71,9 @@ Clustergrammer-PY API
 =====================
 Clustergrammer-PY generates a Network object (see `Network class definition`_), which is used to load a matrix (e.g. from a Pandas `DataFrame`_), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.
 
-When a matrix is loaded into an instance of ``Network`` (e.g. ``net``) it is stored in the data, ``dat``, attribute. Normalization and filtering will modify the ``dat`` representation of the matrix. When the matrix is clustered (by calling ``make_clust``)
+When a matrix is loaded into an instance of ``Network`` (e.g. ``net.load_file('your_file.txt')``) it is stored in the data, ``dat``, attribute. Normalization and filtering will permanently modify the ``dat`` representation of the matrix. When the matrix is clustered (by calling ``make_clust``) this produces the :ref:`visualization_json`, which is stored in the ``viz`` attribute. This JSON can then be exported as a string using ``net.export_net_json('viz')`` or saved to a file using ``net.write_json_to_file('viz', filename)``.
+
+The function ``make_clust`` calculates hierarchical clustering of your data and hierarchical clustering of successive-row-filtered versions of your data. These alternate filtered-views are stored as ``views`` within the :ref:`visualization_json`.
 
 .. automodule:: clustergrammer_py
 

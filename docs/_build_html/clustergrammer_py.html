@@ -94,7 +94,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer-PY</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-py-dependencies">Clustergrammer-PY Dependencies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#python-workflow-example">Python Workflow Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-workflow-examples">Python Workflow Examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-py-api">Clustergrammer-PY API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-py-development">Clustergrammer-PY Development</a></li>
 </ul>
@@ -166,32 +166,47 @@
 </div>
 <p>or the source code can be obtained from the <a class="reference external" href="http://github.com/MaayanLab/clustergrammer-py">GitHub repo</a>.</p>
 </div>
-<div class="section" id="python-workflow-example">
-<span id="clustergrammer-py-workflow"></span><h2>Python Workflow Example<a class="headerlink" href="#python-workflow-example" title="Permalink to this headline">¶</a></h2>
-<p>This workflow shows how to cluster a matrix of data from a file or DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>) and generate a <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> (for use by <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>):</p>
+<div class="section" id="python-workflow-examples">
+<span id="clustergrammer-py-workflow"></span><h2>Python Workflow Examples<a class="headerlink" href="#python-workflow-examples" title="Permalink to this headline">¶</a></h2>
+<p>This workflow shows how to cluster a matrix of data from a file (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>) and generate a <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> (for use by <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># make network object and load file</span>
 <span class="kn">from</span> <span class="nn">clustergrammer</span> <span class="k">import</span> <span class="n">Network</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
-
-<span class="c1"># load matrix from file</span>
 <span class="n">net</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s1">&#39;your_matrix.txt&#39;</span><span class="p">)</span>
-
-<span class="c1"># or load matrix from DataFrame</span>
-<span class="n">net</span><span class="o">.</span><span class="n">load_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
 <span class="c1"># calculate clustering using default parameters</span>
 <span class="n">net</span><span class="o">.</span><span class="n">make_clust</span><span class="p">()</span>
 
-<span class="c1"># save visualization JSON to file</span>
+<span class="c1"># save visualization JSON to file for use by front-end</span>
 <span class="n">net</span><span class="o">.</span><span class="n">write_json_to_file</span><span class="p">(</span><span class="s1">&#39;viz&#39;</span><span class="p">,</span> <span class="s1">&#39;mult_view.json&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The file <code class="docutils literal"><span class="pre">mult_view.json</span></code> will be loaded by the front-end and used to build the interactive visualization. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/make_clustergrammer.py">make_clustergrammer.py</a> for an additional example.</p>
+<p>Clustergrammer can also load data from a Pandas DataFrame and perform normalization and filtering. In this example we will load data from a DataFrame, normalize the rows, and filter the columns:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># make network object and load DataFrame, df</span>
+<span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
+<span class="n">net</span><span class="o">.</span><span class="n">load_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="c1"># Z-score normalize the rows</span>
+<span class="n">net</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="s1">&#39;zscore&#39;</span><span class="p">,</span> <span class="n">keep_orig</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># filter for the top 100 columns based on their absolute value sum</span>
+<span class="n">net</span><span class="o">.</span><span class="n">filter_N_top</span><span class="p">(</span><span class="s1">&#39;col&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">)</span>
+
+<span class="c1"># cluster using default parameters</span>
+<span class="n">net</span><span class="o">.</span><span class="n">make_clust</span><span class="p">()</span>
+
+<span class="c1"># save visualization JSON to file for use by front-end</span>
+<span class="n">net</span><span class="o">.</span><span class="n">write_json_to_file</span><span class="p">(</span><span class="s1">&#39;viz&#39;</span><span class="p">,</span> <span class="s1">&#39;mult_view.json&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Note that filtering done on the <code class="docutils literal"><span class="pre">Network</span></code> object before clustering is permanent, unlike the filtering done within <code class="docutils literal"><span class="pre">make_clust</span></code> which can be toggled on and off in the front-end visualization. The <code class="docutils literal"><span class="pre">keep_orig</span></code> parameter in the <code class="docutils literal"><span class="pre">normalize</span></code> function allows us to show the un-normalized when a user mouses over a matrix-cell in the visualization. See the <a class="reference internal" href="#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a> documentation below for more information.</p>
 </div>
 <div class="section" id="clustergrammer-py-api">
 <span id="id3"></span><h2>Clustergrammer-PY API<a class="headerlink" href="#clustergrammer-py-api" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer-PY generates a Network object (see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/__init__.py">Network class definition</a>), which is used to load a matrix (e.g. from a Pandas <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html">DataFrame</a>), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.</p>
-<p>When a matrix is loaded into an instance of <code class="docutils literal"><span class="pre">Network</span></code> (e.g. <code class="docutils literal"><span class="pre">net</span></code>) it is stored in the data, <code class="docutils literal"><span class="pre">dat</span></code>, attribute. Normalization and filtering will modify the <code class="docutils literal"><span class="pre">dat</span></code> representation of the matrix. When the matrix is clustered (by calling <code class="docutils literal"><span class="pre">make_clust</span></code>)</p>
+<p>When a matrix is loaded into an instance of <code class="docutils literal"><span class="pre">Network</span></code> (e.g. <code class="docutils literal"><span class="pre">net.load_file('your_file.txt')</span></code>) it is stored in the data, <code class="docutils literal"><span class="pre">dat</span></code>, attribute. Normalization and filtering will permanently modify the <code class="docutils literal"><span class="pre">dat</span></code> representation of the matrix. When the matrix is clustered (by calling <code class="docutils literal"><span class="pre">make_clust</span></code>) this produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a>, which is stored in the <code class="docutils literal"><span class="pre">viz</span></code> attribute. This JSON can then be exported as a string using <code class="docutils literal"><span class="pre">net.export_net_json('viz')</span></code> or saved to a file using <code class="docutils literal"><span class="pre">net.write_json_to_file('viz',</span> <span class="pre">filename)</span></code>.</p>
+<p>The function <code class="docutils literal"><span class="pre">make_clust</span></code> calculates hierarchical clustering of your data and hierarchical clustering of successive-row-filtered versions of your data. These alternate filtered-views are stored as <code class="docutils literal"><span class="pre">views</span></code> within the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a>.</p>
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>

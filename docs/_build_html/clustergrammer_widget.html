@@ -178,7 +178,7 @@
 <div class="section" id="clustergrammer-widget-workflow-example">
 <span id="clustergrammer-widget-workflow"></span><h2>Clustergrammer-Widget Workflow Example<a class="headerlink" href="#clustergrammer-widget-workflow-example" title="Permalink to this headline">¶</a></h2>
 <p>The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> (which is rendered using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>) shows how to visualize a matrix from a file and a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame. The following examples are taken from this notebook.</p>
-<p>Visualizing a matrix of gene expression data from a tab-separated file:</p>
+<p>Here we are visualizing a matrix of data from a file (e.g. <code class="docutils literal"><span class="pre">rc_two_cats.txt</span></code>). We start by making an instance of the <code class="docutils literal"><span class="pre">Network</span></code> object, <code class="docutils literal"><span class="pre">net</span></code>, which is used to load and cluster the data. Then we pass the data to <code class="docutils literal"><span class="pre">clustergrammer_widget</span></code> to generate the visualization (for more information about the <code class="docutils literal"><span class="pre">Network</span></code> class, see <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># import clustergrammer_widgets and initialize network object</span>
 <span class="kn">from</span> <span class="nn">clustergrammer_widget</span> <span class="k">import</span> <span class="o">*</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
@@ -204,7 +204,7 @@
 <span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">net</span></code> object can also be used to filter and normalize your data before visualizing. The example below performs Z-score normalization on the columns and filter to keep the top 200 rows based on their absolute value sum:</p>
+<p>Loading new data into <code class="docutils literal"><span class="pre">net</span></code> clears out the old data, which allows <code class="docutils literal"><span class="pre">net</span></code> to be easily reused within the same notebook. The <code class="docutils literal"><span class="pre">net</span></code> object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversable). The example below performs Z-score normalization on the columns and filters to keep the top 200 rows based on their absolute value sum:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Z-score normalize columns</span>
 <span class="n">net</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;col&#39;</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="s1">&#39;zscore&#39;</span><span class="p">,</span> <span class="n">keep_orig</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
@@ -215,7 +215,7 @@
 <span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>For more information about the <code class="docutils literal"><span class="pre">Network</span></code> object see the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>.</p>
+<p>In the examples above, we clustered our matrix using the default parameters. For more information about the <code class="docutils literal"><span class="pre">Network</span></code> object and additional options see the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>.</p>
 </div>
 <div class="section" id="sharing-with-nbviewer">
 <span id="clustergrammer-widget-examples"></span><h2>Sharing with nbviewer<a class="headerlink" href="#sharing-with-nbviewer" title="Permalink to this headline">¶</a></h2>

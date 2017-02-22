@@ -43,7 +43,7 @@ Clustergrammer-Widget Workflow Example
 ======================================
 The Jupyter notebook `Running_clustergrammer_widget.ipynb`_ (which is rendered using `nbviewer`_) shows how to visualize a matrix from a file and a `Pandas`_ DataFrame. The following examples are taken from this notebook.
 
-Visualizing a matrix of gene expression data from a tab-separated file:
+Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``). We start by making an instance of the ``Network`` object, ``net``, which is used to load and cluster the data. Then we pass the data to ``clustergrammer_widget`` to generate the visualization (for more information about the ``Network`` class, see :ref:`clustergrammer_py_api`):
 ::
 
   # import clustergrammer_widgets and initialize network object
@@ -71,7 +71,7 @@ Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame 
   # make interactive widget
   clustergrammer_widget(network=net.widget())
 
-The ``net`` object can also be used to filter and normalize your data before visualizing. The example below performs Z-score normalization on the columns and filter to keep the top 200 rows based on their absolute value sum:
+Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook. The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversable). The example below performs Z-score normalization on the columns and filters to keep the top 200 rows based on their absolute value sum:
 ::
 
   # Z-score normalize columns
@@ -83,7 +83,7 @@ The ``net`` object can also be used to filter and normalize your data before vis
   # make interactive widget
   clustergrammer_widget(network=net.widget())
 
-For more information about the ``Network`` object see the :ref:`clustergrammer_py_api`.
+In the examples above, we clustered our matrix using the default parameters. For more information about the ``Network`` object and additional options see the :ref:`clustergrammer_py_api`.
 
 .. _clustergrammer_widget_examples:
 
