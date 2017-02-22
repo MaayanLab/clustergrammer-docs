@@ -103,6 +103,10 @@ Jupyter Notebook Examples
 =========================
 Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the examples Jupyter notebooks below for examples:
 
+- `Running_clustergrammer_widget.ipynb`_
+- `DataFrame_Example.ipynb`_
+- `Single Cell RNA-seq Visualization.ipynb`_
+- `Iris Dataset.ipynb`_
 
 .. _clustergrammer_widget_dev:
 
@@ -120,6 +124,13 @@ Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the
 .. _`nbviewer`: http://nbviewer.jupyter.org/
 .. _`Rendering Interactive Widgets on nbviewer`: http://ipywidgets.readthedocs.io/en/latest/embedding.html?highlight=save#rendering-interactive-widgets-on-nbviewer
 .. _`Running_clustergrammer_widget.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
+
+.. _`DataFrame_Example.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/DataFrame_Example.ipynb
+
+.. _`Single Cell RNA-seq Visualization.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb
+
+.. _`Iris Dataset.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
+
 .. _`Pandas`: http://pandas.pydata.org/
 .. _`Numpy`: http://www.numpy.org/
 .. _`SciPy`: https://www.scipy.org/
