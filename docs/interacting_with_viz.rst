@@ -24,7 +24,7 @@ Press play to take a quick tour of some of Clustergrammer's interactive features
 
 Zooming and Panning
 ===================
-Clustergrammer allows users to zoom and pan into their heatmap by scrolling and dragging. This is useful for working with large datasets, where labels are not readable without zooming, and for closely investigating regions of interest.
+Clustergrammer allows users to zoom and pan into their heatmap by scrolling and dragging. Double-clicking the visualization resets zooming and panning. This is useful for working with large datasets, where labels are not readable without zooming, and for closely investigating regions of interest.
 
 **Zooming and Panning Behavior**
 
