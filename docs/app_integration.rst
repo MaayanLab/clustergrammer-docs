@@ -42,7 +42,7 @@ L1000CDS2
 
 Harmonizome
 ===========
-The `Harmonizome`_ uses :ref:`clustergrammer_web`'s API to generate visualize of curated biological datasets as heatmaps and adjacency matrices (to depict networks). The Harmonizome also uses the Clustergrammer to visualize the amount of biological information that is available for different families of genes in the `Harmonogram`_
+The `Harmonizome`_ uses :ref:`clustergrammer_web`'s API to generate visualizations of curated biological datasets as heatmaps and adjacency matrices (e.g. to depict networks). The Harmonizome also uses the Clustergrammer to visualize the amount of biological information that is available for different families of genes in the `Harmonogram`_
 
 .. figure:: _static/hzome_sim_mat.png
   :width: 800px
@@ -58,6 +58,5 @@ The `Harmonizome`_ uses :ref:`clustergrammer_web`'s API to generate visualize of
 .. _`GEO2Enrichr`: http://amp.pharm.mssm.edu/g2e/
 .. _`Harmonizome`: http://amp.pharm.mssm.edu/Harmonizome/
 .. _`GEO`: https://www.ncbi.nlm.nih.gov/geo/
-.. _`L1000CDS2': http://amp.pharm.mssm.edu/l1000cds2/#/index
 .. _`Harmonogram`: http://amp.pharm.mssm.edu/harmonogram/
 .. _`Ma'ayan lab`: http://labs.icahn.mssm.edu/maayanlab/

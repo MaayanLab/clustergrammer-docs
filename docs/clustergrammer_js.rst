@@ -23,7 +23,7 @@ Clustergrammer.js can be installed using node package manager (`npm package`_) w
 
   npm install clustergrammer
 
-or the source code and library, ``clustergrammer.js``, can be obtained from the `clustergrammer`_ GitHub repo.
+or the source code and library, ``clustergrammer.js``, can be obtained from the `Clustergrammer GitHub repo`_.
 
 .. _javascript_workflow_example:
 
@@ -46,7 +46,7 @@ The ``id`` of the container where the visualization will be made is passed as ``
 
 Example Pages
 =============
-The `clustergrammer`_ contains several example pages demonstrating how to make a webpage with a Clustergrammer heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
+The `Clustergrammer GitHub repo`_ contains several example pages demonstrating how to make a webpage with a Clustergrammer heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
 
 .. _clustergrammer_js_api:
 
@@ -223,12 +223,12 @@ Users can also generate the visualization-JSON using their own scripts as long a
 
 Clustergrammer-JS Development
 =============================
-Clustergrammer-JS' source code can be found in the `clustergrammer`_ GihHub repo. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in the `src`_ directory.
+Clustergrammer-JS' source code can be found in the `Clustergrammer GitHub repo`_. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in the `src`_ directory.
 
 Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to raise an issue.
 
 .. _`SVG`: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
-.. _`clustergrammer`: https://github.com/MaayanLab/clustergrammer
+.. _`Clustergrammer GitHub repo`: https://github.com/MaayanLab/clustergrammer
 .. _`npm package`: https://www.npmjs.com/package/clustergrammer
 .. _`index.html`: https://github.com/MaayanLab/clustergrammer/blob/master/index.html
 .. _`load_clustergram.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js
