@@ -21,3 +21,5 @@ Figure captions should be left-justified
 Add more comments to code snippits, e.g. why are you using arguments, which arguments are required and which are optional?
 
 It would be nice to be able to pause the interactive-demo or allow greater control over the display.
+  misspelled shareable in demo, 'can be use' -> 'can be used', 'For more information, please view the Help documentation.'
+
