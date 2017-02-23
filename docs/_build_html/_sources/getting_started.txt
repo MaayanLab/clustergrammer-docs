@@ -3,7 +3,7 @@ Getting Started
 
 Clustergrammer is a web-based tool for visualizing high-dimensional data as interactive and shareable hierarchically clustered heatmaps. Clustergrammer can be used in three main ways:
 
-#. :ref:`clustergrammer_web`
+#. :ref:`clustergrammer_web` (`http://amp.pharm.mssm.edu/clustergrammer/`_)
 #. :ref:`clustergrammer_widget`
 #. :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries
 
@@ -122,3 +122,4 @@ Clustergrammer also has :ref:`biology_specific_features` for working with gene-l
 .. _`ipywidgets`: http://ipywidgets.readthedocs.io/en/latest/
 .. _`Running_clustergrammer_widget.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
 .. _`GitHub repo`: https://github.com/MaayanLab/clustergrammer-widget
+.. _`http://amp.pharm.mssm.edu/clustergrammer/`: http://amp.pharm.mssm.edu/clustergrammer/

@@ -4,7 +4,7 @@ Clustergrammer Web App
 ----------------------
 |github-version|
 
-The `Web-App`_ enables users to easily generate interactive and shareable heatmap visualizations by uploading their data as a tab-separated file.
+The `Web-App`_ (`http://amp.pharm.mssm.edu/clustergrammer/`_) enables users to easily generate interactive and shareable heatmap visualizations by uploading their data as a tab-separated file.
 
 .. _clustergrammer_web_upload:
 
@@ -92,6 +92,7 @@ Clustergrammer-Web is a `dockerized`_ web application built using the Python lib
 .. _`clustergrammer-web`: https://github.com/MaayanLab/clustergrammer-web/
 .. _`MongoDB`: https://www.mongodb.com/
 .. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
+.. _`http://amp.pharm.mssm.edu/clustergrammer/`: http://amp.pharm.mssm.edu/clustergrammer/
 
 .. |github-version| image:: https://img.shields.io/github/release/MaayanLab/clustergrammer-web.svg
     :alt: version
