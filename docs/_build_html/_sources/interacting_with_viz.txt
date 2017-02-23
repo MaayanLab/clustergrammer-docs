@@ -150,7 +150,7 @@ Row or column categories are represented by an extra column or row, respectively
 
 **Interacting with Categories**
 
-Mousing over a category will show the category name in a tooltip and highlight the instances of this category (while also dimming the instances of the other categories) to facilitate visualization of a specific category (see screenshot below). Double-clicking a category-title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories.
+Mousing over a category will show the category name in a tooltip and highlight the instances of this category (while also dimming the instances of the other categories) to facilitate visualization of a specific category (see screenshot below). Double-clicking a category-title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories. Users can filter a visualization to only show rows or columns of a particular category by clicking on category while holding down the shift key (and undo this filtering by doing the same).
 
 .. figure:: _static/category_interaction.png
   :width: 900px
