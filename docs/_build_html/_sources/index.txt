@@ -32,6 +32,7 @@ Clustergrammer was built to visualize biological data but is applicable for visu
 - `Kinase Substrate Similarity Network`_
 - `Iris flower dataset`_
 - `MNIST Handwritten Digit Dataset`_
+- `USDA Nutrient Dataset`_
 
 .. _contact:
 
@@ -68,6 +69,8 @@ Contents:
 .. _`Jupyter`: http://jupyter.org/
 .. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 .. _`example notebook`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
+
+.. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
 
 .. _`Cancer Cell Line Encyclopedia Gene Expression Data`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`Zika Virus RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb

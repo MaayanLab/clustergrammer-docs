@@ -16,12 +16,13 @@ Single Cell RNA-seq Data Visualization
 ======================================
 Clustergrammer was used to visualize published single-cell gene expression data: `Single Cell RNA-seq Data Visualization`_ (`Olsson et al.`_). The visualization was produced using an excel file provided alongside the figures.
 
-Machine Learning Datasets
-=========================
-Clustergrammer was used to visualize two widely used labeled machine learning datasets:
+Machine Learning and Miscellaneous Datasets
+===========================================
+Clustergrammer was used to visualize several widely used machine learning datasets and other miscellaneous datasets:
 
 - `Iris flower dataset`_
 - `MNIST Handwritten Digit Dataset`_
+- `USDA Nutrient Dataset`_
 
 These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar datasets.
 
@@ -33,3 +34,5 @@ These examples demonstrate the generality of heatmap visualizations and enable u
 .. _`CCLE`: https://portals.broadinstitute.org/ccle/home
 .. _`Wang et al.`: https://f1000research.com/articles/5-1574/v1
 .. _`Olsson et al.`: http://www.nature.com/nature/journal/v537/n7622/full/nature19348.html
+
+.. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
