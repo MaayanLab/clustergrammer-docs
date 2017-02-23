@@ -85,7 +85,7 @@ See the screenshot below for an example widget visualization:
 
   Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see `Running_clustergrammer_widget.ipynb`_ example).
 
-Users can download and reproduce the example notebook, `Running_clustergrammer_widget.ipynb`_, by cloning it's `GitHub repo`_. For more information about using the widget (e.g. loading data from a Pandas DataFrame and sharing using `nbviewer`_) see :ref:`clustergrammer_widget`.
+Users can download and reproduce the example notebook, `Running_clustergrammer_widget.ipynb`_, by cloning its `GitHub repo`_. For more information about using the widget (e.g. loading data from a Pandas DataFrame and sharing using `nbviewer`_) see :ref:`clustergrammer_widget`.
 
 Interacting with Clustergrammer
 ===============================

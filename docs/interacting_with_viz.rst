@@ -28,11 +28,11 @@ Clustergrammer allows users to zoom and pan into their heatmap by scrolling and 
 
 **Zooming and Panning Behavior**
 
-In general, zooming and panning occur in two stages. First zooming/panning occurs in the direction that matrix-cells have been more compressed (e.g. if there are more more rows than columns, then matrix-cells will be compressed in the vertical direction and the matrix-cells will be wide). Once zooming has decompressed matrix-cells (e.g. matrix-cells height and width are the same) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix-cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal directions. For symmetrical matrices, e.g. adjacency matrices, matrix-cells always have equal width and height and zooming/panning always occurs in both directions.
+In general, zooming and panning occur in two stages. First zooming/panning occurs in the direction in which matrix-cells have been more compressed (e.g. if there are more rows than columns, then matrix-cells will be compressed in the vertical direction and the matrix-cells will be wide). Once zooming has decompressed matrix-cells (e.g. matrix-cells height and width are the same) then zooming/panning occurs in both directions. For instance, when visualizing a matrix with many more columns than rows zooming/panning will occur in the horizontal direction first until matrix-cells have equal width and height, then zooming/panning will be allowed in the vertical and horizontal directions. For symmetrical matrices, e.g. adjacency matrices, matrix-cells always have equal width and height and zooming/panning always occurs in both directions.
 
 **Large Matrix Zooming and Panning Behavior**
 
-Clustergrammer is capable of visualizing matrices with up to ~500,000 to ~750,000 matrix-cells, but is optimized to visualize matrices with more rows than columns. Clustergrammer uses row-downsampling to improve visualization performance for large matrices. If a user visualizes a matrix with a large number of rows (e.g. >1000-2000 rows) such that each matrix-cell is less than 1 pixel tall, then Clustergrammer will perform row downsampling. When zoomed out, the user will see a downsampled (e.g. coarse grained) version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix-cells are > 1 pixel tall). Clustergrammer will only display row labels when their font size is at a readable level (above ~5 pixels). Clustergrammer will also hide row/column labels while zooming into large matrices to improve zooming performance.
+Clustergrammer is capable of visualizing matrices with up to ~500,000 to ~750,000 matrix-cells, but is optimized to visualize matrices with more rows than columns -- this has been done to accommodate datasets with many dimensions (rows) and few measurements (columns) that are common in biology. Clustergrammer uses row-downsampling to improve visualization performance for large matrices. If a user visualizes a matrix with a large number of rows (e.g. >1000-2000 rows) such that each matrix-cell is less than 1 pixel tall, then Clustergrammer will perform row downsampling. When zoomed out, the user will see a downsampled (e.g. coarse grained) version of their data. Zooming into the matrix will bring up successively less downsampled views until the original data is shown (e.g. when the original matrix-cells are >1 pixel tall). Clustergrammer will only display row labels when their font size is at a readable level (above ~5 pixels). Clustergrammer will also hide row/column labels while zooming into large matrices to improve zooming performance.
 
 
 Mouseover Interactions
@@ -54,8 +54,8 @@ Sidebar Interactions
 ====================
 Clustergrammer visualizations have a sidebar section that contains the following interactive components:
 
-- optional about section (see :ref:`clustergrammer_js_api`)
-- Icon-buttons: :ref:`share <share_heatmap>`, snapshot_, download_, crop_
+- Optional About section (see :ref:`clustergrammer_js_api`)
+- Icon buttons: :ref:`share <share_heatmap>`, snapshot_, download_, crop_
 - :ref:`Row and Column Reordering Buttons <row_col_reordering>`
 - :ref:`Row Search Box <search>`
 - :ref:`Opacity Slider<opacity>`
@@ -66,7 +66,7 @@ Clustergrammer visualizations have a sidebar section that contains the following
   :align: center
   :alt: Sidebar Interactions
 
-  The sidebar contains an optional about section and interaction elements (e.g. reordering buttons) and can be hidden by clicking the gray expand buutton (and restored by clicking the menu button).
+  The sidebar contains an optional About section and interaction elements (e.g. reordering buttons) and can be hidden by clicking the gray Expand buutton (and restored by clicking the Menu button).
 
 .. _row_col_reordering:
 
@@ -87,14 +87,14 @@ Interactive Dimensionality Reduction
 Dimensionality reduction is a useful data analysis technique (e.g. `PCA`_ , `t-SNE`_) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds to thousands of dimensions) down to a number that can be easily be visualized (e.g. two or three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.
 
 
-Clustergrammer enables users to interactively perform dimensionality reduction, by filtering rows based on sum or variance, and instantaneously observe the effects of this transformation on clustering. Users can filter for the top rows based on sum or variance using the row-filter-sliders in the sidebar and choose to show the top 500, 250, 100, 50, 20, and 10 rows. This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low absolute value sum) and determining the effect of these dimensions on clustering. For instance, we may see that columns cluster in broadly the same manner when we filter out rows with low variance. Clustered views of the filtered matrices are pre-calculated by :ref:`clustergrammer_py`.
+Clustergrammer enables users to interactively perform dimensionality reduction, by filtering rows based on sum or variance, and instantaneously observe the effects of this transformation on clustering. Users can filter for the top rows based on sum or variance using the row-filter sliders in the sidebar and choose to show the top 500, 250, 100, 50, 20, and 10 rows. This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low absolute value sum) and determining the effect of these dimensions on clustering. For instance, we may see that columns cluster in broadly the same manner when we filter out rows with low variance. Clustered views of the filtered matrices are pre-calculated by :ref:`clustergrammer_py`.
 
 .. figure:: _static/row_filter.png
   :width: 900px
   :align: center
   :alt: Interactive Dimensionality Reduction
 
-  The row fitler sliders in the sidebar can be used to perform interactive dimensionality reduction. Here we are filtering for the top 10 rows based on sum.
+  The row filter sliders in the sidebar can be used to perform interactive dimensionality reduction. Here we are filtering for the top 10 rows based on sum.
 
 **Visualizing Dimensionality Reduction**
 
@@ -104,18 +104,18 @@ For small matrices dimensionality reduction is animated to help the user visuali
 
 Interactive Dendrogram
 ======================
-Clustergrams typically have `dendrogram trees`_ (for both rows and columns) to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_. The height of the branches in the dendrogram depict the distance between clusters. :ref:`clustergrammer_py` calculates hierarchical clustering using `SciPy`_'s hierarchy_ clustering functions (with the default linkage type set to average, see `calc_clust.py`_) and saves ten slices of the dendrogram taken evenly across the height of the tree.
+Clustergrams typically have `dendrogram trees`_ (for both rows and columns) to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_. The height of the branches in the dendrogram depict the distance between clusters. :ref:`clustergrammer_py` calculates hierarchical clustering using `SciPy`_'s hierarchy_ clustering functions (with the default linkage type set to average, see `calc_clust.py`_) and saves ten slices of the dendrogram sampled evenly across the height of the tree.
 
 **Visualizing Dendrogram Clusters**
 
-Rather than visualize the dendrogram as a large branching tree, which uses a lot of visualization-space and is difficult to interact with, Clustergrammer uses a more compact and easy to interact with visual representation. Only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids, see below). Different slices of the dendrogram can be toggled using the dendrogram-sliders (blue circles that move along a gray triangle). Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively. This allows users to identify clusters at different scales.
+Rather than visualize the dendrogram as a large branching tree, which uses a lot of visualization-space and is difficult to interact with, Clustergrammer uses a visualization that is more compact and easier to interact with. Only a single slice of the dendrogram tree is visualized at a time as a set of non-overlapping adjacent clusters (gray trapezoids, see below). Different slices of the dendrogram can be toggled using the dendrogram-sliders (blue circles that move along a gray triangle). Moving the slider up or down shows slices taken higher or lower in the dendrogram tree, and thereby larger or smaller clusters respectively. This allows users to identify clusters at different scales.
 
 .. figure:: _static/dendrogram_and_slider.png
   :width: 275px
   :align: center
   :alt: Visualizing Dendrogram
 
-  A subset of the column dendrogram along with the dendrogram slider is shown above. The slider (blue circle and gray triangle) can be used to adjust dendrogram cluster sizes -- move up for larger clusters and down for smaller clusters. Each dendrogram cluster has a crop button (gray triangle) above it that can be used to filter the heatmap to only show this cluster.
+  A subset of the column dendrogram along with the dendrogram slider is shown above. The slider (blue circle and gray triangle) can be used to adjust dendrogram cluster sizes -- move up for larger clusters and down for smaller clusters. Each dendrogram cluster has a Crop button (gray triangle) above it that can be used to filter the heatmap to show only this cluster.
 
 
 **Interacting with Dendrogram Clusters**
