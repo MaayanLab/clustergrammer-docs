@@ -13,7 +13,7 @@ Using Clustergrammer
 
 The easiest ways to use Clustergrammer to produce an interactive visualization of your data are:
 
-- upload a tab-separated matrix file using the Clustergrammer web app `homepage`_
+- upload a tab-separated matrix file using the Clustergrammer web app: `https://amp.pharm.mssm.edu/clustergrammer/`_
 - or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share using `nbviewer`_
 
 The :ref:`clustergrammer_web` is the quickest way to generate an interactive and shareable visualization (see `example visualization`_ and :ref:`getting started Web-app<getting_started_web_app>`). For users that want to visualize their data within a notebook workflow, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebooks and shared through Jupyter's `nbviewer`_ (see `example notebook`_ and :ref:`getting started Widget <getting_started_widget>`).
@@ -61,7 +61,7 @@ Contents:
    developing_with_clustergrammer
    license
 
-.. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer/
+.. _`https://amp.pharm.mssm.edu/clustergrammer/`: https://amp.pharm.mssm.edu/clustergrammer/
 .. _`D3.js`: https://d3js.org/
 .. _`Python`: https://www.python.org/
 .. _`nbviewer`: http://nbviewer.jupyter.org/
