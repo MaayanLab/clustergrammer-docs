@@ -6,7 +6,7 @@ Clustergrammer is a web-based tool for visualizing high-dimensional data (e.g. a
 
 .. raw:: html
 
-         <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
+         <iframe id='iframe_preview' src="https://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
 
 Using Clustergrammer
 ====================

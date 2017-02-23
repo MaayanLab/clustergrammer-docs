@@ -18,7 +18,7 @@ Press play to take a quick tour of some of Clustergrammer's interactive features
 
 .. raw:: html
 
-         <iframe id='iframe_preview' src="http://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
+         <iframe id='iframe_preview' src="https://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
 
 .. _zooming_and_panning:
 
