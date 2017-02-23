@@ -102,7 +102,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#row-searching">Row Searching</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#expanding">Expanding</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sharing-your-interactive-heatmap">Sharing your Interactive Heatmap</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#biology-specific-interactions">Biology Specific Interactions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biology-specific-interactions">Biology-Specific Interactions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
@@ -234,7 +234,7 @@
 <p class="caption"><span class="caption-text">A subset of the column dendrogram along with the dendrogram slider is shown above. The slider (blue circle and gray triangle) can be used to adjust dendrogram cluster sizes &#8211; move up for larger clusters and down for smaller clusters. Each dendrogram cluster has a Crop button (gray triangle) above it that can be used to filter the heatmap to show only this cluster.</span></p>
 </div>
 <p><strong>Interacting with Dendrogram Clusters</strong></p>
-<p>Dendrogram clusters are depicted as gray trapezoids, which are easy for a user to interact with (e.g. click). Mousing over a dendrogram cluster (gray trapezoid) highlights the current group of rows or columns (by adding a shadows over the rows or columns not in the cluster) and brings up a tooltip with cluster information (see screenshot below). If the rows or columns have categories, this tooltip will show a breakdown of the rows and columns into their categories, which can be useful for understanding how prior knowledge compares to clusters identified in a data-driven manner (e.g. we can ask, do columns with the same category cluster together based on the data). Clicking a dendrogram cluster brings up the same information in a pop-up window and also allows users to export the names of the rows or columns in the cluster. When a user visualizes biological gene-level data (with genes given as rows), users have the option to export their clustered genes to the enrichment analysis tool, <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a> (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
+<p>Dendrogram clusters are depicted as gray trapezoids, which are easy for a user to interact with (e.g. click). Mousing over a dendrogram cluster (gray trapezoid) highlights the current group of rows or columns (by adding a shadows over the rows or columns not in the cluster) and brings up a tooltip with cluster information (see screenshot below). If the rows or columns have categories, this tooltip will show a breakdown of the rows and columns into their categories, which can be useful for understanding how prior knowledge compares to clusters identified in a data-driven manner (e.g. we can ask whether columns with the same category cluster together based on the data). Clicking a dendrogram cluster brings up the same information in a pop-up window and also allows users to export the names of the rows or columns in the cluster. When a user visualizes biological gene-level data (with genes specified as rows), users have the option to export their clustered genes to the enrichment analysis tool, <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a> (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 <div class="figure align-center" id="id11">
 <a class="reference internal image-reference" href="_images/dendrogram_interaction.png"><img alt="Interactive Dendrogram" src="_images/dendrogram_interaction.png" style="width: 900px;" /></a>
 <p class="caption"><span class="caption-text">Mousing over a dendrogram group will highlight the selected cluster and bring up information (e.g. categories) about the cluster.</span></p>
@@ -245,71 +245,71 @@
 <div class="section" id="interactive-categories">
 <span id="id5"></span><h2>Interactive Categories<a class="headerlink" href="#interactive-categories" title="Permalink to this headline">¶</a></h2>
 <p>Prior knowledge about our system can be represented as categories in a heatmap. For instance, columns may represent cell lines and our categories may represent their tissue. Overlaying categories on our heatmap can help us understand the relationship between prior knowledge and the structures we find in our data (e.g. clusters). For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that the prior knowledge agrees with clusters identified in a data-driven manner. Similarly, we can explore how categories are re-distributed when the matrix is <a class="reference internal" href="#row-col-reordering"><span class="std std-ref">reordered</span></a>. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information on how to encode categories into your data.</p>
-<p>Row or column categories are represented by an extra column or row, respectively, of colored category-cells underneath the row or column labels (see screenshot below). Categories can be of type string or value (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>): each string-type category has a different color while each value-type category ahas a different opacity. The categories also have titles positioned adjacent to the category-cells.</p>
+<p>Row or column categories are represented by an extra column or row, respectively, of colored category-cells underneath the row or column labels (see screenshot below). Categories can be of type <em>string</em> or <em>value</em> (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>): each <em>string</em>-type category has a different color, while each value-type category ahas a different opacity. The categories also have titles positioned adjacent to the category-cells.</p>
 <div class="figure align-center" id="id12">
 <a class="reference internal image-reference" href="_images/categories.png"><img alt="Categories" src="_images/categories.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">A subset of column categories are shown above. In this example columns have two categories, &#8216;Category&#8217; and &#8216;Gender&#8217;, which are depicted as colored cells under the column labels</span></p>
+<p class="caption"><span class="caption-text">A subset of column categories is shown above. In this example columns have two categories, &#8216;Category&#8217; and &#8216;Gender&#8217;, which are depicted as colored cells under the column labels</span></p>
 </div>
 <p><strong>Interacting with Categories</strong></p>
 <p>Mousing over a category will show the category name in a tooltip and highlight the instances of this category (while also dimming the instances of the other categories) to facilitate visualization of a specific category (see screenshot below). Double-clicking a category-title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories. Users can filter a visualization to only show rows or columns of a particular category by clicking on category while holding down the shift key (and undo this filtering by doing the same).</p>
 <div class="figure align-center" id="id13">
 <a class="reference internal image-reference" href="_images/category_interaction.png"><img alt="Interacting with Categories" src="_images/category_interaction.png" style="width: 900px;" /></a>
-<p class="caption"><span class="caption-text">Mousing over a category brings up a tooltip with the category name and highlights instances of thie category. Shown above is an example of mousing over a column category.</span></p>
+<p class="caption"><span class="caption-text">Mousing over a category brings up a tooltip with the category name and highlights instances of the category. Shown above is an example of mousing over a column category.</span></p>
 </div>
 <p><strong>Updating Categories</strong></p>
 <p>Row categories can be updated using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a>, which can be used by developers to add dynamic categories. This feature is used by <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to visualize enrichment analysis results (see <a class="reference internal" href="biology_specific_features.html#biology-specific-features"><span class="std std-ref">Biology-Specific Features</span></a> for more information).</p>
 </div>
 <div class="section" id="cropping">
 <span id="crop"></span><h2>Cropping<a class="headerlink" href="#cropping" title="Permalink to this headline">¶</a></h2>
-<p>Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest (see screenshot below). To crop, click the crop icon and then drag the cursor to define your region of interest. Once you stop dragging the matrix will crop to show only your selected region of interest. Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the <a class="reference internal" href="#download"><span class="std std-ref">Download Icon</span></a> to export a small region of the matrix or in combination with <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to perform enrichment analysis on a subset of clustered genes.</p>
+<p>Users can employ the Brush-Cropping icon in the sidebar to crop the matrix to a region of interest (see screenshot below). To Crop, click the crop icon and then drag the cursor to define your region of interest. Once you stop dragging, the matrix will crop to show only your selected region of interest. Cropping can be undone by clicking the Undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the <a class="reference internal" href="#download"><span class="std std-ref">Download Icon</span></a> to export a small region of the matrix or in combination with <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to perform enrichment analysis on a subset of clustered genes.</p>
 <div class="figure align-center" id="id14">
 <a class="reference internal image-reference" href="_images/brush_crop.png"><img alt="Brush Crop" src="_images/brush_crop.png" style="width: 900px;" /></a>
-<p class="caption"><span class="caption-text">The above example shows the result of brush-cropping into a section of the heatmap. To brush crop, click the crop button (the active red icon in the sidebar on the left panel) and drag/brush your cursor over your area of interest. To undo cropping, click the undo button (circular arrow) on the right panel.</span></p>
+<p class="caption"><span class="caption-text">The above example shows the result of brush-cropping into a section of the heatmap. To brush-crop, click the Crop button (the active red icon in the sidebar on the left panel) and drag/brush your cursor over your area of interest. To undo cropping, click the Undo button (circular arrow) on the right panel.</span></p>
 </div>
 </div>
 <div class="section" id="download-icon">
 <span id="download"></span><h2>Download Icon<a class="headerlink" href="#download-icon" title="Permalink to this headline">¶</a></h2>
-<p>Obtaining the underlying data from a visualization for re-use and re-analysis can be a tedious task. To facilitate this common task, Clustergrammer&#8217;s sidebar has a download icon, shown below, that allows users to download the matrix of data in the visualization. The downloaded data reflects the current state of the matrix, e.g. filtering, cropping, and reordering will be reflected in the downloaded data.</p>
+<p>Obtaining the underlying data from a visualization for re-use and re-analysis can be a tedious task. To facilitate this common task, Clustergrammer&#8217;s sidebar has a download icon, shown below, that allows users to download the matrix of data in the visualization. The downloaded data reflects the current state of the matrix; e.g. filtering, cropping, and reordering will be reflected in the downloaded data.</p>
 <div class="figure align-center" id="id15">
 <a class="reference internal image-reference" href="_images/download_matrix.png"><img alt="Download Icon" src="_images/download_matrix.png" style="width: 175px;" /></a>
-<p class="caption"><span class="caption-text">Click the download icon in the sidebar to download a tab-separated file of the matrix in its current state.</span></p>
+<p class="caption"><span class="caption-text">Click the Download icon in the sidebar to download a tab-separated file of the matrix in its current state.</span></p>
 </div>
 </div>
 <div class="section" id="snapshot-icon">
 <span id="snapshot"></span><h2>Snapshot Icon<a class="headerlink" href="#snapshot-icon" title="Permalink to this headline">¶</a></h2>
-<p>The snapshot icon in the sidebar allows users to take a SVG or PNG snapshot of their visualization. This snapshot will reflect the current state of the visualization (e.g. reordering, etc) as well as zooming and panning.</p>
+<p>The Snapshot icon in the sidebar allows users to take a SVG or PNG snapshot of their visualization. This snapshot will reflect the current state of the visualization (e.g. reordering, etc) as well as zooming and panning.</p>
 <div class="figure align-center" id="id16">
 <a class="reference internal image-reference" href="_images/snapshot.png"><img alt="Snapshot" src="_images/snapshot.png" style="width: 175px;" /></a>
-<p class="caption"><span class="caption-text">Click the snapshot icon in the sidebar to take a SVG or PNG snapshot of the matrix in its curent state (including reordering, etc).</span></p>
+<p class="caption"><span class="caption-text">Click the Snapshot icon in the sidebar to take a SVG or PNG snapshot of the matrix in its current state (including reordering, etc).</span></p>
 </div>
 </div>
 <div class="section" id="opacity-slider">
 <span id="opacity"></span><h2>Opacity Slider<a class="headerlink" href="#opacity-slider" title="Permalink to this headline">¶</a></h2>
-<p>The opacity slider in the sidebar allows users to toggle the overall opacity levels of the heatmap. Moving the slider to the left reduces the opacity, while moving to the right increases the opacity. This can be useful for working with &#8216;dim&#8217; matrices that can occur as a result of outlier values.</p>
+<p>The Opacity slider in the sidebar allows users to toggle the overall opacity levels of the heatmap. Moving the slider to the left reduces the opacity, while moving to the right increases the opacity. This can be useful for working with &#8216;dim&#8217; matrices that can occur as a result of outlier values.</p>
 </div>
 <div class="section" id="row-searching">
 <span id="search"></span><h2>Row Searching<a class="headerlink" href="#row-searching" title="Permalink to this headline">¶</a></h2>
 <p>Users can search for rows in their matrix using the search box. Row search includes autocomplete and animated zooming into the matrix to display the row of interest.</p>
 <div class="figure align-center" id="id17">
 <a class="reference internal image-reference" href="_images/row_search.png"><img alt="Search" src="_images/row_search.png" style="width: 200px;" /></a>
-<p class="caption"><span class="caption-text">Users can search for rows using the search box in the sidebar. When a row is found the matrix will zoom into the found row.</span></p>
+<p class="caption"><span class="caption-text">Users can search for rows using the search box in the sidebar. When a row is found, the matrix will zoom into the found row.</span></p>
 </div>
 </div>
 <div class="section" id="expanding">
 <span id="id6"></span><h2>Expanding<a class="headerlink" href="#expanding" title="Permalink to this headline">¶</a></h2>
-<p>Users can hide the sidebar <a class="reference internal" href="#sidebar-interactions"><span class="std std-ref">Sidebar Interactions</span></a> panel using the expand button to the top left of the matrix. Clicking the menu button, when expanded, returns the sidebar.</p>
+<p>Users can hide the sidebar <a class="reference internal" href="#sidebar-interactions"><span class="std std-ref">Sidebar Interactions</span></a> panel using the Expand button at the top left of the matrix. Clicking the Menu button, when expanded, returns the sidebar.</p>
 </div>
 <div class="section" id="sharing-your-interactive-heatmap">
 <span id="share-heatmap"></span><h2>Sharing your Interactive Heatmap<a class="headerlink" href="#sharing-your-interactive-heatmap" title="Permalink to this headline">¶</a></h2>
 <p>Interactive heatmaps produced with the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> (when notebooks are rendered through <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>) can easily be shared with collaborators by sharing the URL of the visualization on the web app or the notebook. Users can also click the share button on the sidebar (see <a class="reference internal" href="#sidebar-interactions"><span class="std std-ref">Sidebar Interactions</span></a>) sidebar to get this shareable URL.</p>
 <div class="figure align-center" id="id18">
 <a class="reference internal image-reference" href="_images/share.png"><img alt="Share" src="_images/share.png" style="width: 175px;" /></a>
-<p class="caption"><span class="caption-text">Interactive heatmaps can be shared by sharing the current URL, which can be obtained from the share icon in the sidebar.</span></p>
+<p class="caption"><span class="caption-text">Interactive heatmaps can be shared using the current URL, which can be obtained from the Share icon in the sidebar.</span></p>
 </div>
 </div>
 <div class="section" id="biology-specific-interactions">
-<h2>Biology Specific Interactions<a class="headerlink" href="#biology-specific-interactions" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer has biology specific features for working with gene-level data including:</p>
+<h2>Biology-Specific Interactions<a class="headerlink" href="#biology-specific-interactions" title="Permalink to this headline">¶</a></h2>
+<p>Clustergrammer has biology-specific features for working with gene-level data including:</p>
 <ul class="simple">
 <li>mouseover gene names and description look-up (using <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>)</li>
 <li>enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>)</li>

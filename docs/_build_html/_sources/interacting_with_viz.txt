@@ -120,7 +120,7 @@ Rather than visualize the dendrogram as a large branching tree, which uses a lot
 
 **Interacting with Dendrogram Clusters**
 
-Dendrogram clusters are depicted as gray trapezoids, which are easy for a user to interact with (e.g. click). Mousing over a dendrogram cluster (gray trapezoid) highlights the current group of rows or columns (by adding a shadows over the rows or columns not in the cluster) and brings up a tooltip with cluster information (see screenshot below). If the rows or columns have categories, this tooltip will show a breakdown of the rows and columns into their categories, which can be useful for understanding how prior knowledge compares to clusters identified in a data-driven manner (e.g. we can ask, do columns with the same category cluster together based on the data). Clicking a dendrogram cluster brings up the same information in a pop-up window and also allows users to export the names of the rows or columns in the cluster. When a user visualizes biological gene-level data (with genes given as rows), users have the option to export their clustered genes to the enrichment analysis tool, `Enrichr`_ (see :ref:`biology_specific_features` for more information).
+Dendrogram clusters are depicted as gray trapezoids, which are easy for a user to interact with (e.g. click). Mousing over a dendrogram cluster (gray trapezoid) highlights the current group of rows or columns (by adding a shadows over the rows or columns not in the cluster) and brings up a tooltip with cluster information (see screenshot below). If the rows or columns have categories, this tooltip will show a breakdown of the rows and columns into their categories, which can be useful for understanding how prior knowledge compares to clusters identified in a data-driven manner (e.g. we can ask whether columns with the same category cluster together based on the data). Clicking a dendrogram cluster brings up the same information in a pop-up window and also allows users to export the names of the rows or columns in the cluster. When a user visualizes biological gene-level data (with genes specified as rows), users have the option to export their clustered genes to the enrichment analysis tool, `Enrichr`_ (see :ref:`biology_specific_features` for more information).
 
 .. figure:: _static/dendrogram_interaction.png
   :width: 900px
@@ -139,14 +139,14 @@ Interactive Categories
 ======================
 Prior knowledge about our system can be represented as categories in a heatmap. For instance, columns may represent cell lines and our categories may represent their tissue. Overlaying categories on our heatmap can help us understand the relationship between prior knowledge and the structures we find in our data (e.g. clusters). For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that the prior knowledge agrees with clusters identified in a data-driven manner. Similarly, we can explore how categories are re-distributed when the matrix is :ref:`reordered <row_col_reordering>`. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please see :ref:`matrix_format_io` for more information on how to encode categories into your data.
 
-Row or column categories are represented by an extra column or row, respectively, of colored category-cells underneath the row or column labels (see screenshot below). Categories can be of type string or value (see :ref:`matrix_format_io`): each string-type category has a different color while each value-type category ahas a different opacity. The categories also have titles positioned adjacent to the category-cells.
+Row or column categories are represented by an extra column or row, respectively, of colored category-cells underneath the row or column labels (see screenshot below). Categories can be of type *string* or *value* (see :ref:`matrix_format_io`): each *string*-type category has a different color, while each value-type category ahas a different opacity. The categories also have titles positioned adjacent to the category-cells.
 
 .. figure:: _static/categories.png
   :width: 400px
   :align: center
   :alt: Categories
 
-  A subset of column categories are shown above. In this example columns have two categories, 'Category' and 'Gender', which are depicted as colored cells under the column labels
+  A subset of column categories is shown above. In this example columns have two categories, 'Category' and 'Gender', which are depicted as colored cells under the column labels
 
 **Interacting with Categories**
 
@@ -157,7 +157,7 @@ Mousing over a category will show the category name in a tooltip and highlight t
   :align: center
   :alt: Interacting with Categories
 
-  Mousing over a category brings up a tooltip with the category name and highlights instances of thie category. Shown above is an example of mousing over a column category.
+  Mousing over a category brings up a tooltip with the category name and highlights instances of the category. Shown above is an example of mousing over a column category.
 
 **Updating Categories**
 
@@ -167,46 +167,46 @@ Row categories can be updated using the :ref:`clustergrammer_js_api`, which can 
 
 Cropping
 ========
-Users can use the brush-cropping icon in the sidebar to crop the matrix to a region of interest (see screenshot below). To crop, click the crop icon and then drag the cursor to define your region of interest. Once you stop dragging the matrix will crop to show only your selected region of interest. Cropping can be undone by clicking the undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the :ref:`download` to export a small region of the matrix or in combination with :ref:`Enrichrgram <enrichrgram>` to perform enrichment analysis on a subset of clustered genes.
+Users can employ the Brush-Cropping icon in the sidebar to crop the matrix to a region of interest (see screenshot below). To Crop, click the crop icon and then drag the cursor to define your region of interest. Once you stop dragging, the matrix will crop to show only your selected region of interest. Cropping can be undone by clicking the Undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the :ref:`download` to export a small region of the matrix or in combination with :ref:`Enrichrgram <enrichrgram>` to perform enrichment analysis on a subset of clustered genes.
 
 .. figure:: _static/brush_crop.png
   :width: 900px
   :align: center
   :alt: Brush Crop
 
-  The above example shows the result of brush-cropping into a section of the heatmap. To brush crop, click the crop button (the active red icon in the sidebar on the left panel) and drag/brush your cursor over your area of interest. To undo cropping, click the undo button (circular arrow) on the right panel.
+  The above example shows the result of brush-cropping into a section of the heatmap. To brush-crop, click the Crop button (the active red icon in the sidebar on the left panel) and drag/brush your cursor over your area of interest. To undo cropping, click the Undo button (circular arrow) on the right panel.
 
 .. _download:
 
 Download Icon
 =============
-Obtaining the underlying data from a visualization for re-use and re-analysis can be a tedious task. To facilitate this common task, Clustergrammer's sidebar has a download icon, shown below, that allows users to download the matrix of data in the visualization. The downloaded data reflects the current state of the matrix, e.g. filtering, cropping, and reordering will be reflected in the downloaded data.
+Obtaining the underlying data from a visualization for re-use and re-analysis can be a tedious task. To facilitate this common task, Clustergrammer's sidebar has a download icon, shown below, that allows users to download the matrix of data in the visualization. The downloaded data reflects the current state of the matrix; e.g. filtering, cropping, and reordering will be reflected in the downloaded data.
 
 .. figure:: _static/download_matrix.png
   :width: 175px
   :align: center
   :alt: Download Icon
 
-  Click the download icon in the sidebar to download a tab-separated file of the matrix in its current state.
+  Click the Download icon in the sidebar to download a tab-separated file of the matrix in its current state.
 
 .. _snapshot:
 
 Snapshot Icon
 =============
-The snapshot icon in the sidebar allows users to take a SVG or PNG snapshot of their visualization. This snapshot will reflect the current state of the visualization (e.g. reordering, etc) as well as zooming and panning.
+The Snapshot icon in the sidebar allows users to take a SVG or PNG snapshot of their visualization. This snapshot will reflect the current state of the visualization (e.g. reordering, etc) as well as zooming and panning.
 
 .. figure:: _static/snapshot.png
   :width: 175px
   :align: center
   :alt: Snapshot
 
-  Click the snapshot icon in the sidebar to take a SVG or PNG snapshot of the matrix in its curent state (including reordering, etc).
+  Click the Snapshot icon in the sidebar to take a SVG or PNG snapshot of the matrix in its current state (including reordering, etc).
 
 .. _opacity:
 
 Opacity Slider
 ==============
-The opacity slider in the sidebar allows users to toggle the overall opacity levels of the heatmap. Moving the slider to the left reduces the opacity, while moving to the right increases the opacity. This can be useful for working with 'dim' matrices that can occur as a result of outlier values.
+The Opacity slider in the sidebar allows users to toggle the overall opacity levels of the heatmap. Moving the slider to the left reduces the opacity, while moving to the right increases the opacity. This can be useful for working with 'dim' matrices that can occur as a result of outlier values.
 
 .. _search:
 
@@ -219,13 +219,13 @@ Users can search for rows in their matrix using the search box. Row search inclu
   :align: center
   :alt: Search
 
-  Users can search for rows using the search box in the sidebar. When a row is found the matrix will zoom into the found row.
+  Users can search for rows using the search box in the sidebar. When a row is found, the matrix will zoom into the found row.
 
 .. _expanding:
 
 Expanding
 =========
-Users can hide the sidebar :ref:`sidebar_interactions` panel using the expand button to the top left of the matrix. Clicking the menu button, when expanded, returns the sidebar.
+Users can hide the sidebar :ref:`sidebar_interactions` panel using the Expand button at the top left of the matrix. Clicking the Menu button, when expanded, returns the sidebar.
 
 .. _share_heatmap:
 
@@ -238,11 +238,11 @@ Interactive heatmaps produced with the :ref:`clustergrammer_web` and the :ref:`c
   :align: center
   :alt: Share
 
-  Interactive heatmaps can be shared by sharing the current URL, which can be obtained from the share icon in the sidebar.
+  Interactive heatmaps can be shared using the current URL, which can be obtained from the Share icon in the sidebar.
 
-Biology Specific Interactions
+Biology-Specific Interactions
 =============================
-Clustergrammer has biology specific features for working with gene-level data including:
+Clustergrammer has biology-specific features for working with gene-level data including:
 
 - mouseover gene names and description look-up (using `Harmonizome`_)
 - enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using `Enrichr`_)
