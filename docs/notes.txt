@@ -9,3 +9,15 @@ sphinx-build -b spelling -d build/doctrees . build/spelling
 add words to dictionary
 -----------------------
 edit spelling_wordlist.txt
+
+
+Kathleen Suggestions
+--------------------
+
+Returning from a hyperlink does not put the user in their original position. See if this can be fixed or maybe open links in new tabs/windows.
+
+Figure captions should be left-justified
+
+Add more comments to code snippits, e.g. why are you using arguments, which arguments are required and which are optional?
+
+It would be nice to be able to pause the interactive-demo or allow greater control over the display.
