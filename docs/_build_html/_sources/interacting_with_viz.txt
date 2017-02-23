@@ -24,7 +24,7 @@ Press play to take a quick tour of some of Clustergrammer's interactive features
 
 Zooming and Panning
 ===================
-Clustergrammer allows users to zoom and pan into their heatmap by scrolling and dragging. Double-clicking the visualization resets zooming and panning. This is useful for working with large datasets, where labels are not readable without zooming, and for closely investigating regions of interest.
+Clustergrammer allows users to zoom and pan into their heatmap by scrolling and dragging. Double-clicking the visualization resets zooming and panning. This is useful for working with large datasets, where labels are not readable without zooming, and for closely investigating regions of interest. Users can also increase the size of the visualization using the expand button to hide the sidebar, see :ref:`expanding` and, when in full-screen mode by adjusting the size of thier window (see :ref:`clustergrammer_web_viz` for information about full-screen mode with the :ref:`clustergrammer_web`).
 
 **Zooming and Panning Behavior**
 
@@ -220,6 +220,8 @@ Users can search for rows in their matrix using the search box. Row search inclu
   :alt: Search
 
   Users can search for rows using the search box in the sidebar. When a row is found the matrix will zoom into the found row.
+
+.. _expanding:
 
 Expanding
 =========
