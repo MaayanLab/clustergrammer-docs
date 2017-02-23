@@ -94,7 +94,7 @@ Clustergrammer produces highly interactive visualizations that enable intuitive 
 - :ref:`zooming_and_panning`
 - :ref:`row_col_reordering` (e.g. reorder based on sum)
 - :ref:`interactive_dendrogram`
-- :ref:`interactive_dim_reduction` (e.g. filter rows based on variance)a
+- :ref:`interactive_dim_reduction` (e.g. filter rows based on variance)
 - :ref:`interactive_categories`
 - :ref:`crop`
 - :ref:`search`
