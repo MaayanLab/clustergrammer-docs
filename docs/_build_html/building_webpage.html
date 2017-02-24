@@ -148,27 +148,27 @@
 <p>Clustergrammer can be used by developers to add interactive heatmap visualizations to their web pages and web applications (see <a class="reference internal" href="app_integration.html#app-integration"><span class="std std-ref">App Integration Examples</span></a>).</p>
 <div class="section" id="embedding-clustergrammer">
 <h2>Embedding Clustergrammer<a class="headerlink" href="#embedding-clustergrammer" title="Permalink to this headline">¶</a></h2>
-<p>The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame - see below:</p>
+<p>The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame; see below:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">iframe</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;iframe_preview&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt&quot;</span> <span class="n">frameborder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Users can obtain a permanent link to their visualization by manually uploading their data  using the upload section of Clustergrammer-Web&#8217;s <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer">homepage</a> and copying the URL to the full-screen version of their visualization. Alternatively users can programmatically upload their data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web-api"><span class="std std-ref">Clustergrammer-Web API</span></a> and receive their permanent links through the API.</p>
+<p>Users can obtain a permanent link to their visualization by manually uploading their data  using the Upload section of Clustergrammer-Web&#8217;s <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer">homepage</a> and copying the URL to the full-screen version of their visualization. Alternatively users can programmatically upload their data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web-api"><span class="std std-ref">Clustergrammer-Web API</span></a> and obtain their permanent links through the API.</p>
 </div>
 <div class="section" id="adding-clustergrammer-to-a-page">
 <h2>Adding Clustergrammer to a Page<a class="headerlink" href="#adding-clustergrammer-to-a-page" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library can be used to generate an interactive visualization in your webpage. Simply include the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> script in your page and load the pre-calculated <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">visualization-JSON</span></a> to generate a visualization. Alternatively, <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> can also be included as a node module.</p>
 <p>Clustergrammer can be used to generate interactive visualizations for your own web application by: using the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library on your site, or embedding a visualization provided by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a>.</p>
-<p>The easiest way to generate a visualize of your own data on a webpage is to:</p>
+<p>The easiest way to generate a visualization of your own data on a webpage is to:</p>
 <ol class="arabic simple">
 <li>Follow the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-workflow"><span class="std std-ref">Python Workflow Examples</span></a> to cluster your matrix and generate the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a></li>
 <li>Then use the <a class="reference internal" href="clustergrammer_js.html#example-pages"><span class="std std-ref">Example Pages</span></a> as templates to build a site with your visualization</li>
 </ol>
 <p>These examples require Clustergrammer&#8217;s JavaScript and Python libraries:</p>
 <ol class="arabic simple">
-<li>the front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> JavaScript library makes the interactive visualization</li>
-<li>the back-end <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> Python library clusters a matrix of data and makes the JSON for the front-end</li>
+<li>the front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> JavaScript library generates the interactive visualization</li>
+<li>the back-end <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> Python library clusters a matrix of data and makes the JSON for the front end</li>
 </ol>
-<p>These libraries can be installed npm, <code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>, and pip, <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">clustergrammer</span></code>, respectively.</p>
+<p>The following libraries can be installed using: npm (<code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>) and pip (<code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">clustergrammer</span></code>), respectively.</p>
 </div>
 </div>
 

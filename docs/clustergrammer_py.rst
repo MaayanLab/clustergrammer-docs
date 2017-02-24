@@ -20,7 +20,7 @@ Installation
 Clustergrammer-PY can be installed using pip (`package index`_) with the following:
 ::
 
-  pip install clustergrammer
+  pip install --upgrade clustergrammer
 
 or the source code can be obtained from the `GitHub repo`_.
 

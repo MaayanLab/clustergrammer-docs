@@ -33,7 +33,7 @@ To use the :ref:`clustergrammer_widget` users need to install: `Python`_, `Jupyt
 
 ::
 
-  pip install clustergrammer_widget
+  pip install --upgrade clustergrammer_widget
   jupyter nbextension enable --py --sys-prefix widgetsnbextension
   jupyter nbextension enable --py --sys-prefix clustergrammer_widget
 
