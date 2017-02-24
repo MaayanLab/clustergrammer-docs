@@ -13,7 +13,7 @@ This section will provide instructions on how to quickly visualize your data usi
 
 Clustergrammer Web-App
 ======================
-Users can easily generate an interactive and shareable heatmap visualization using the :ref:`clustergrammer_web`. Simply upload a tab-separated matrix file at the `homepage`_ (see screenshot below) to be redirected to a permanent and shareable visualization of your data.
+Users can easily generate an interactive and shareable heatmap visualization using the :ref:`clustergrammer_web`. Simply upload a tab-separated matrix file (see screenshot below) at the `homepage`_ to be redirected to a permanent and shareable visualization of your data.
 
 .. figure:: _static/clustergrammer_web_upload.png
   :width: 550px
@@ -33,7 +33,7 @@ Once you upload your data, the :ref:`clustergrammer_web` clusters your data and 
   :alt: Web application heatmap
   :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 
-  Above is an example clustergram visualization produced by the :ref:`clustergrammer_web`. Clustergrammer produces three views of your data and the clustered heatmap view is shown above.
+  Above is an example clustergram visualization produced by the :ref:`clustergrammer_web`. Clustergrammer produces three views of your data; the clustered heatmap view is shown above.
 
 **Similarity Matrix View**
 
@@ -43,7 +43,7 @@ Once you upload your data, the :ref:`clustergrammer_web` clusters your data and 
   :alt: Web application sim-mat
   :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 
-  Clustergrammer produces similarity matrices of rows and columns to provide additional perspectives on a user's data. Above is an example column similarity matrix.
+  Clustergrammer produces similarity matrices of rows and columns to provide additional perspectives on your data. Above is an example column similarity matrix.
 
 Users can share their interactive visualizations using the permanent link. See :ref:`interacting_with_viz` for more information.
 

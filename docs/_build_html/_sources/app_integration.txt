@@ -6,7 +6,7 @@ Clustergrammer can be integrated into web applications to dynamically produce in
 
 Enrichr
 =======
-The enrichment analysis tool, `Enrichr`_, uses Clustergrammer to produce dynamic heatmaps of enriched terms as columns and user input genes as rows. This helps users understand the relationships between their input genes and the returned enriched terms.
+The enrichment analysis tool, `Enrichr`_, uses Clustergrammer to produce dynamic heatmaps of enriched terms as columns and user input genes as rows. This helps users to understand the relationships between their input genes and the returned enriched terms.
 
 .. figure:: _static/enrichr_screenshot_logo.png
   :width: 550px
@@ -14,7 +14,7 @@ The enrichment analysis tool, `Enrichr`_, uses Clustergrammer to produce dynamic
   :alt: Enirchr Clustergram
   :target: http://amp.pharm.mssm.edu/Enrichr/
 
-  `Enrichr`_ uses :ref:`clustergrammer_web`'s API to produce interactive heatmaps of enriched terms as columns and user input genes as rows.
+  `Enrichr`_ uses the :ref:`clustergrammer_web` API to produce interactive heatmaps of enriched terms as columns and user-input genes as rows.
 
 GEN3VA
 ======
@@ -26,11 +26,11 @@ The gene signature analysis and visualization tool, `GEN3VA`_, uses Clustergramm
   :alt: GEN3VA Gene Expression
   :target: http://amp.pharm.mssm.edu/gen3va/report/approved/BioGPS_human
 
-  `GEN3VA`_ uses Clustergrammer's core libraries, :ref:`clustergrammer_js` and :ref:`clustergrammer_py`, to visualie gnee expression signatures and enrichment analysis results.
+  `GEN3VA`_ uses Clustergrammer's core libraries, :ref:`clustergrammer_js` and :ref:`clustergrammer_py`, to visualize gene expression signatures and enrichment analysis results.
 
 L1000CDS2
 =========
-`L1000CDS2`_ uses the :ref:`clustergrammer_web`'s API to produce interactive heatmaps of perturbagen gene signatures that mimic or reverse an input gene signature. This can be useful for users that are interested in the specific genes that are differentially regulated by the identified perturbagens.
+`L1000CDS2`_ uses the :ref:`clustergrammer_web` API to produce interactive heatmaps of perturbagen gene signatures that mimic or reverse an input gene signature. This can be useful for users who are interested in the specific genes that are differentially regulated by the identified perturbagens.
 
 .. figure:: _static/l1000cds2_screenshot.png
   :width: 800px
@@ -38,11 +38,11 @@ L1000CDS2
   :alt: L1000CDS2 Clustergram
   :target: http://amp.pharm.mssm.edu/clustergrammer/l1000cds2/55e0b68a5bf3665f1a726bfa
 
-  `L1000CDS2`_ uses Clustergrammer to produce interactive visualizations of input gene signatures and mimicking or reversing perturbation signatures. A users's input signature is shown as rows with gene-expression levels shown as row-bars (red/blue for up/down expression) and perturbations found to mimic/reverse their signature are shown as columns in the heatmap.
+  `L1000CDS2`_ uses Clustergrammer to produce interactive visualizations of input gene signatures and perturbation signatures that mimick or reverse the user's user-input signature. A users's input signature is shown as rows with gene-expression levels shown as row-bars (red/blue for up/down expression) and perturbations found to mimic/reverse their signature are shown as columns in the heatmap.
 
 Harmonizome
 ===========
-The `Harmonizome`_ uses :ref:`clustergrammer_web`'s API to generate visualizations of curated biological datasets as heatmaps and adjacency matrices (e.g. to depict networks). The Harmonizome also uses the Clustergrammer to visualize the amount of biological information that is available for different families of genes in the `Harmonogram`_
+The `Harmonizome`_ uses the :ref:`clustergrammer_web` API to generate visualizations of curated biological datasets as heatmaps and adjacency matrices (e.g. to depict networks). The Harmonizome also uses the Clustergrammer to visualize the amount of biological information that is available for different families of genes in the `Harmonogram`_
 
 .. figure:: _static/hzome_sim_mat.png
   :width: 800px
