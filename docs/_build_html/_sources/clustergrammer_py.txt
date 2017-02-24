@@ -4,7 +4,7 @@ Clustergrammer-PY
 -----------------
 |pypi-version|
 
-Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the :ref:`visualization_json` for the front-end :ref:`clustergrammer_js` visualization library. Clustergrammer-PY is compatible with Python 2 and 3.
+Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the :ref:`visualization_json` for the front end :ref:`clustergrammer_js` visualization library. Clustergrammer-PY is compatible with Python 2 and 3.
 
 .. _clustergrammer_py_dependencies:
 
@@ -44,7 +44,7 @@ This workflow shows how to cluster a matrix of data from a file (see :ref:`matri
 
 The file ``mult_view.json`` will be loaded by the front-end and used to build the interactive visualization. See `make_clustergrammer.py`_ for an additional example.
 
-Clustergrammer can also load data from a Pandas DataFrame and perform normalization and filtering. In this example we will load data from a DataFrame, normalize the rows, and filter the columns:
+Clustergrammer can also load data from a Pandas DataFrame and perform normalization and filtering. In this example, we will load data from a DataFrame, normalize the rows, and filter the columns:
 ::
 
   # make network object and load DataFrame, df
@@ -63,7 +63,7 @@ Clustergrammer can also load data from a Pandas DataFrame and perform normalizat
   # save visualization JSON to file for use by front-end
   net.write_json_to_file('viz', 'mult_view.json')
 
-Note that filtering done on the ``Network`` object before clustering is permanent, unlike the filtering done within ``make_clust`` which can be toggled on and off in the front-end visualization. The ``keep_orig`` parameter in the ``normalize`` function allows us to show the un-normalized when a user mouses over a matrix-cell in the visualization. See the :ref:`clustergrammer_py_api` documentation below for more information.
+Note that filtering done on the ``Network`` object before clustering is permanent, unlike the filtering done within ``make_clust`` which can be toggled on and off in the front-end visualization. The ``keep_orig`` parameter in the ``normalize`` function allows us to show un-normalized data a user mouses over a matrix-cell in the visualization. See the :ref:`clustergrammer_py_api` documentation below for more information.
 
 .. _clustergrammer_py_api:
 

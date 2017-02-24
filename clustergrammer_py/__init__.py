@@ -34,14 +34,14 @@ class Network(object):
 
   def load_stdin(self):
     '''
-    Load stdin tsv formatted string.
+    Load stdin tsv-formatted string.
     '''
     from . import load_data
     load_data.load_stdin(self)
 
   def load_tsv_to_net(self, file_buffer, filename=None):
     '''
-    This will load a tsv matrix file buffer, this is exposed so that it will
+    This will load a tsv matrix file buffer; this is exposed so that it will
     be possible to load data without having to read from a file.
     '''
     from . import load_data
@@ -56,7 +56,7 @@ class Network(object):
 
   def load_data_file_to_net(self, filename):
     '''
-    Load Clustergrammer's dat format (saved as json).
+    Load Clustergrammer's dat format (saved as JSON).
     '''
 
     from . import load_data
@@ -69,7 +69,7 @@ class Network(object):
                  linkage_type='average', sim_mat=False, filter_sim=0.1,
                  calc_cat_pval=False, run_enrichr=None):
     '''
-    The main function performs hierarchical clustering, optionally generates filtered views (e.g. row filtered views), and generates the :`visualization_json`.
+    The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :``visualization_json``.
     '''
     from . import initialize_net
     from . import make_clust_fun
@@ -148,7 +148,7 @@ class Network(object):
 
   def widget(self):
     '''
-    Export viz json, for use with clustergrammer_widget.
+    Export viz JSON, for use with clustergrammer_widget.
     '''
     from . import export_data
     return export_data.export_net_json(self, 'viz', 'no-indent')
@@ -222,8 +222,8 @@ class Network(object):
   def enrichr(self, req_type, gene_list=None, lib=None, list_id=None,
     max_terms=None):
     '''
-    Under development, get enrichment results from Enrichr and add them to
-    clustergram
+    Under development; get enrichment results from Enrichr and add them to
+    clustergram.
     '''
 
     from . import enrichr_functions as enr_fun
