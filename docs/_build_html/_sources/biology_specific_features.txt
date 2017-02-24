@@ -2,7 +2,7 @@
 
 Biology-Specific Features
 -------------------------
-Clustergrammer was built to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Clustergrammer has several biology-specific features that facilitate the analysis of gene-level biological data, such as: gene-expression data, proteomics-data, etc. To take advantage of these features, row names must be genes. See the `CCLE Explorer`_ for examples of gene-expression data. These optional biology-specific features are available in the :ref:`clustergrammer_web` as well as the :ref:`clustergrammer_widget` and will automatically activate if the row-names are genes.
+Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Clustergrammer has several biology-specific features that facilitate the analysis of gene-level biological data, such as: gene-expression data, proteomics-data, etc. To take advantage of these features, row names must be genes. See the `CCLE Explorer`_ for examples of gene-expression data. These optional biology-specific features are available in the :ref:`clustergrammer_web` as well as the :ref:`clustergrammer_widget` and will automatically activate if the row-names are genes.
 
 .. _hzome_gene_info:
 

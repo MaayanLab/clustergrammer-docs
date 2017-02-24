@@ -2,11 +2,11 @@
 
 Case Studies and Examples
 -------------------------
-Clustergrammer was built to visualize biological data but is generally applicable for visualizing high-dimensional data. Below are links to several example case studies and examples using Clustergrammer:
+Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Below are links to several example case studies and examples using Clustergrammer:
 
 Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================
-The Cancer Cell Line Encyclopedia (`CCLE`_) is a publicly available project that characterized (e.g. genetic characterization) over one thousand cancer cell lines. We used Clustergrammer to re-analyze and visualize CCLE's gene expression data in the `CCLE Explorer`_. The CCLE Explorer allows users to explore the CCLE by tissue type and visualize the most commonly differentially expressed genes for each tissue type as an interactive heatmap.
+The Cancer Cell Line Encyclopedia (`CCLE`_) is a publicly available project that has characterized (e.g. genetic characterization) over 1,000 cancer cell lines. We used Clustergrammer to re-analyze and visualize CCLE's gene expression data in the `CCLE Explorer`_. The CCLE Explorer allows users to explore the CCLE by tissue type and visualize the most commonly differentially expressed genes for each tissue type as an interactive heatmap.
 
 Zika Virus RNA-seq Data Visualization
 =====================================
@@ -14,7 +14,7 @@ Clustergrammer was used to visualize the results of an RNA-Seq data analysis pip
 
 Single-Cell RNA-seq Data Visualization
 ======================================
-Clustergrammer was used to visualize published single-cell gene expression data: `Single-Cell RNA-seq Data Visualization`_ (`Olsson et al.`_). The visualization was produced using an excel file provided alongside the figures.
+Clustergrammer was used to visualize published single-cell gene expression data: `Single-Cell RNA-seq Data Visualization`_ (`Olsson et al.`_). The visualization was produced using an Esxcel file provided alongside the figures.
 
 Machine Learning and Miscellaneous Datasets
 ===========================================
