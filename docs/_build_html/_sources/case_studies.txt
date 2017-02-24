@@ -14,7 +14,7 @@ Clustergrammer was used to visualize the results of an RNA-Seq data analysis pip
 
 Single-Cell RNA-seq Data Visualization
 ======================================
-Clustergrammer was used to visualize published single-cell gene expression data: `Single-Cell RNA-seq Data Visualization`_ (`Olsson et al.`_). The visualization was produced using an Esxcel file provided alongside the figures.
+Clustergrammer was used to visualize published single-cell gene expression data: `Single-Cell RNA-seq Data Visualization`_ (`Olsson et al.`_). The visualization was produced using an Excel file provided alongside the figures.
 
 Machine Learning and Miscellaneous Datasets
 ===========================================

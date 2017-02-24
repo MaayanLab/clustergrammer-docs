@@ -72,7 +72,7 @@ Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame 
   # make interactive widget
   clustergrammer_widget(network=net.widget())
 
-Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook. The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns and filters to keep the top 200 rows based on their absolute value sum:
+Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook. The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, and filters to keep the top 200 rows based on their absolute value sum:
 ::
 
   # Z-score normalize columns
@@ -84,7 +84,7 @@ Loading new data into ``net`` clears out the old data, which allows ``net`` to b
   # make interactive widget
   clustergrammer_widget(network=net.widget())
 
-In the examples above, we clustered our matrix using the default parameters. For more information about the ``Network`` object and additional options see the :ref:`clustergrammer_py_api`.
+In the examples above, we clustered our matrix using the default parameters. For more information about the ``Network`` object and additional options; see the :ref:`clustergrammer_py_api`.
 
 .. _clustergrammer_widget_examples:
 
@@ -102,7 +102,7 @@ To enable rendering interactive widgets on `nbviewer`_ you must have `ipywidgets
 
 Jupyter Notebook Examples
 =========================
-Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the examples Jupyter notebooks below for examples:
+Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebooks below for examples:
 
 - `Running_clustergrammer_widget.ipynb`_
 - `DataFrame_Example.ipynb`_

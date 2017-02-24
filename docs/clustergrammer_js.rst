@@ -217,7 +217,7 @@ There are three required properties for the Visualization-JSON: ``row_nodes``, `
 ``links`` have three properties: ``source``, ``target``, and ``value``. ``source`` and ``target`` give the integer value of the row and column of the matrix-cell in the visualization. ``value`` specifies the opacity and color of the matrix-cell, where positive/negative values results in red/blue matrix-cells in the visualization. The optional properties ``value_up`` and ``value_dn`` allow the user to have a split matrix-cell that has an up-triangle and a down-triangle.
 
 
-Users can also generate the visualization-JSON using their own scripts procided that they adhere to the above format.
+Users can also generate the visualization-JSON using their own scripts provided that they adhere to the above format.
 
 .. _clustergrammer_js_dev:
 

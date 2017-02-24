@@ -52,3 +52,5 @@ qn
 NaN
 un
 Zika
+Excel
+TSV

@@ -2,7 +2,7 @@
 
 Interacting with the Visualization
 ----------------------------------
-Data visualizations benefit enormously from user interactions that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are built using the :ref:`clustergrammer_js` library and are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. This section will overview heatmaps as a visualization tool and cover the types of interactions that are available to the user.
+Data visualization benefits enormously from user interaction -- particularly interactions that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are built using the :ref:`clustergrammer_js` library and are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. This section will overview heatmaps as a visualization tool and cover the types of interactions that are available to the user.
 
 Introduction to Clustergrams/Heatmaps
 =====================================
@@ -14,7 +14,7 @@ Heatmaps are powerful visualizations that enable users to directly visualize hig
 
 Interactive Demo
 ================
-Press play to take a quick tour of some of Clustergrammer's interactive features or interact with the demo to explore for yourself:
+Press play to take a quick tour of some of Clustergrammer's interactive features or interact with the demo below to explore for yourself:
 
 .. raw:: html
 
@@ -24,7 +24,7 @@ Press play to take a quick tour of some of Clustergrammer's interactive features
 
 Zooming and Panning
 ===================
-Clustergrammer allows users to zoom and pan into their heatmap by scrolling and dragging. Double-clicking the visualization resets zooming and panning. This is useful for working with large datasets, where labels are not readable without zooming, and for closely investigating regions of interest. Users can also increase the size of the visualization using the expand button to hide the sidebar, see :ref:`expanding` and, when in full-screen mode by adjusting the size of their window (see :ref:`clustergrammer_web_viz` for information about full-screen mode with the :ref:`clustergrammer_web`).
+Clustergrammer allows users to zoom into and pan across their heatmap by scrolling and dragging. Double-clicking the visualization resets zooming and panning. This is useful for working with large datasets, where labels are not readable without zooming, and for closely investigating regions of interest. Users can also increase the size of the visualization using the Expand button to hide the sidebar, see :ref:`expanding` and, when in full-screen mode by adjusting the size of their window (see :ref:`clustergrammer_web_viz` for information about full-screen mode with the :ref:`clustergrammer_web`).
 
 **Zooming and Panning Behavior**
 
