@@ -171,7 +171,7 @@
 </div>
 <div class="section" id="javascript-workflow-example">
 <span id="id3"></span><h2>JavaScript Workflow Example<a class="headerlink" href="#javascript-workflow-example" title="Permalink to this headline">¶</a></h2>
-<p>This workflow shows how to make a visualization using a JSON produced by Clustergrammer.py</p>
+<p>This workflow shows how to generate a visualization using the JSON produced by Clustergrammer.py</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">load</span> <span class="n">visualization</span> <span class="n">JSON</span> <span class="n">to</span> <span class="n">network_data</span>
 <span class="n">var</span> <span class="n">args</span> <span class="o">=</span> <span class="p">{</span>
   <span class="s1">&#39;root&#39;</span><span class="p">:</span> <span class="s1">&#39;#id_of_container&#39;</span><span class="p">,</span>
@@ -181,11 +181,11 @@
 <span class="n">var</span> <span class="n">cgm</span> <span class="o">=</span> <span class="n">Clustergrammer</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">id</span></code> of the container where the visualization will be made is passed as <code class="docutils literal"><span class="pre">root</span></code> (this root container must be made by the user). The <a class="reference internal" href="#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> contains the information necessary to make the visualization and is passed as <code class="docutils literal"><span class="pre">network_data</span></code>. See the <a class="reference internal" href="#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a> for additional arguments that can be passed to Clustergrammer.js.</p>
+<p>The <code class="docutils literal"><span class="pre">id</span></code> of the container where the visualization will be made is passed as <code class="docutils literal"><span class="pre">root</span></code> (this root container must be made by the user). The <a class="reference internal" href="#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> contains the information necessary to generate the visualization and is passed as <code class="docutils literal"><span class="pre">network_data</span></code>. See the <a class="reference internal" href="#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a> for additional arguments that can be passed to Clustergrammer.js.</p>
 </div>
 <div class="section" id="example-pages">
 <span id="id4"></span><h2>Example Pages<a class="headerlink" href="#example-pages" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer GitHub repo</a> contains several example pages demonstrating how to make a webpage with a Clustergrammer heatmap. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/index.html">index.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> show how to make a full-screen resizable visualization. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/multiple_clustergrams.html">multiple_clust.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_multiple_clustergrams.js">load_multiple_clustergrams.js</a> show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.</p>
+<p>The <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer GitHub repo</a> contains several example pages demonstrating how to build a webpage with a Clustergrammer heatmap. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/index.html">index.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> show how to make a full-screen resizable visualization. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/multiple_clustergrams.html">multiple_clust.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_multiple_clustergrams.js">load_multiple_clustergrams.js</a> show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.</p>
 </div>
 <div class="section" id="clustergrammer-js-api">
 <span id="id5"></span><h2>Clustergrammer-JS API<a class="headerlink" href="#clustergrammer-js-api" title="Permalink to this headline">¶</a></h2>
@@ -210,7 +210,7 @@
 <dl class="attribute">
 <dt id="args.about">
 <code class="descclassname">args.</code><code class="descname">about</code><a class="headerlink" href="#args.about" title="Permalink to this definition">¶</a></dt>
-<dd><p>This attribute is a string (which can include HTML) that will produce a small about section at the top of the sidebar. This can be used to provide a quick description about the data or visualization.</p>
+<dd><p>This attribute is a string (which can include HTML) that will produce a small About section at the top of the sidebar. This can be used to provide a quick description about the data or visualization.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -222,7 +222,7 @@
 <dl class="attribute">
 <dt id="args.col_tip_callback">
 <code class="descclassname">args.</code><code class="descname">col_tip_callback</code><a class="headerlink" href="#args.col_tip_callback" title="Permalink to this definition">¶</a></dt>
-<dd><p>Users can pass a callback function that will run when mousing over col labels.</p>
+<dd><p>Users can pass a callback function that will run when mousing over column labels.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -252,7 +252,7 @@
 <dl class="attribute">
 <dt id="args.ini_view">
 <code class="descclassname">args.</code><code class="descname">ini_view</code><a class="headerlink" href="#args.ini_view" title="Permalink to this definition">¶</a></dt>
-<dd><p>Users can initialize the &#8216;view&#8217; of their matrix, e.g. a initialize the matrix at a particular row filtering level.</p>
+<dd><p>Users can initialize the &#8216;view&#8217; of their matrix, e.g. initialize the matrix at a particular row filtering level.</p>
 </dd></dl>
 
 </div></blockquote>
@@ -319,7 +319,7 @@
 <dl class="function">
 <dt id="filter_viz_using_names">
 <code class="descname">filter_viz_using_names</code><span class="sig-paren">(</span><em>names</em><span class="sig-paren">)</span><a class="headerlink" href="#filter_viz_using_names" title="Permalink to this definition">¶</a></dt>
-<dd><p>Update the visualization to show the row and column names specified in the names object.</p>
+<dd><p>Update the visualization to show the row and column names specified in the <code class="docutils literal"><span class="pre">names</span></code> object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -336,7 +336,7 @@
 <dl class="function">
 <dt>
 <code class="descname">filter_viz_using_names</code><span class="sig-paren">(</span><em>nodes</em><span class="sig-paren">)</span></dt>
-<dd><p>Update the visualization to show the row and column names specified in the nodes object.</p>
+<dd><p>Update the visualization to show the row and column names specified in the <code class="docutils literal"><span class="pre">nodes</span></code> object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -372,7 +372,7 @@
 <dl class="function">
 <dt id="export_matrix">
 <code class="descname">export_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#export_matrix" title="Permalink to this definition">¶</a></dt>
-<dd><p>Save the current matrix (e.g. after cropping) as a tab-separated-file.</p>
+<dd><p>Save the current matrix (e.g. after cropping) as a tab-separated file.</p>
 </dd></dl>
 
 </dd></dl>
@@ -410,7 +410,7 @@
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>Optional &#8216;views&#8217; of the matrix (e.g. row-filtered views) are encoded into the <code class="docutils literal"><span class="pre">views</span></code> attribute at the base level of the object. These views are used to store filtered version of the matrix. Only the row and column names are stored in these views since all views share the same matrix cells. The view attributes are stored in the view object (e.g. <code class="docutils literal"><span class="pre">N_row_sum</span></code>):</p>
+<p>Optional &#8216;views&#8217; of the matrix (e.g. row-filtered views) are encoded into the <code class="docutils literal"><span class="pre">views</span></code> attribute at the base level of the object. These views are used to store a filtered version of the matrix. Only the row and column names are stored in these views since all views share the same matrix cells. The view attributes are stored in the view object (e.g. <code class="docutils literal"><span class="pre">N_row_sum</span></code>):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;views&quot;</span><span class="p">:[</span>
   <span class="p">{</span>
     <span class="s2">&quot;N_row_sum&quot;</span><span class="p">:</span> <span class="s2">&quot;all&quot;</span><span class="p">,</span>
@@ -422,17 +422,17 @@
   <span class="p">}</span>
 </pre></div>
 </div>
-<p>There are three required properties for the Visualization-JSON: <code class="docutils literal"><span class="pre">row_nodes</span></code>, <code class="docutils literal"><span class="pre">col_nodes</span></code>, and <code class="docutils literal"><span class="pre">links</span></code>. Each of these properties is an array of objects and these objects are discussed below</p>
+<p>There are three required properties for the Visualization-JSON: <code class="docutils literal"><span class="pre">row_nodes</span></code>, <code class="docutils literal"><span class="pre">col_nodes</span></code>, and <code class="docutils literal"><span class="pre">links</span></code>. Each of these properties is an array of objects and these objects are discussed below.</p>
 <p><strong>Nodes</strong></p>
-<p><code class="docutils literal"><span class="pre">row_nodes</span></code> and <code class="docutils literal"><span class="pre">col_nodes</span></code> objects are required to have three properties: <code class="docutils literal"><span class="pre">name</span></code>, <code class="docutils literal"><span class="pre">clust</span></code>, <code class="docutils literal"><span class="pre">rank</span></code>. <code class="docutils literal"><span class="pre">name</span></code> specifies the name given to the row or column. <code class="docutils literal"><span class="pre">clust</span></code> and <code class="docutils literal"><span class="pre">rank</span></code> give the ordering of the row or column in the clustergram. Two optional properties are <code class="docutils literal"><span class="pre">group</span></code> and <code class="docutils literal"><span class="pre">value</span></code>. <code class="docutils literal"><span class="pre">group</span></code> is an array that contains group-membership of the row/column at different dendrogram distance cutoffs and is necessary for displaying a dendrogram. If nodes have the <code class="docutils literal"><span class="pre">value</span></code> property, then semi-transparent bars will be made behind the labels to represent this value.</p>
+<p><code class="docutils literal"><span class="pre">row_nodes</span></code> and <code class="docutils literal"><span class="pre">col_nodes</span></code> objects are required to have three properties: <code class="docutils literal"><span class="pre">name</span></code>, <code class="docutils literal"><span class="pre">clust</span></code>, <code class="docutils literal"><span class="pre">rank</span></code>. <code class="docutils literal"><span class="pre">name</span></code> specifies the name given to the row or column. <code class="docutils literal"><span class="pre">clust</span></code> and <code class="docutils literal"><span class="pre">rank</span></code> give the ordering of the row or column in the clustergram. Two optional properties are <code class="docutils literal"><span class="pre">group</span></code> and <code class="docutils literal"><span class="pre">value</span></code>. <code class="docutils literal"><span class="pre">group</span></code> is an array that contains group-membership of the row/column at different dendrogram distance cutoffs and is necessary for displaying a dendrogram. If nodes have the <code class="docutils literal"><span class="pre">value</span></code> property, then semi-transparent bars will be displayed behind the labels to represent this value.</p>
 <p><strong>Links</strong></p>
-<p><code class="docutils literal"><span class="pre">links</span></code> have three properties: <code class="docutils literal"><span class="pre">source</span></code>, <code class="docutils literal"><span class="pre">target</span></code>, and <code class="docutils literal"><span class="pre">value</span></code>. <code class="docutils literal"><span class="pre">source</span></code> and <code class="docutils literal"><span class="pre">target</span></code> give the integer value of the row and column of the matrix-cell in the visualization. <code class="docutils literal"><span class="pre">value</span></code> specifies the opacity and color of the matrix-cell, where positive/negative values results in red/blue matrix-cells in the visualization. The optional properties <code class="docutils literal"><span class="pre">value_up</span></code> and <code class="docutils literal"><span class="pre">value_dn</span></code> allow the use to have a split matrix-cell that has an up-triangle and down-triangle.</p>
-<p>Users can also generate the visualization-JSON using their own scripts as long as they adhere to the above format.</p>
+<p><code class="docutils literal"><span class="pre">links</span></code> have three properties: <code class="docutils literal"><span class="pre">source</span></code>, <code class="docutils literal"><span class="pre">target</span></code>, and <code class="docutils literal"><span class="pre">value</span></code>. <code class="docutils literal"><span class="pre">source</span></code> and <code class="docutils literal"><span class="pre">target</span></code> give the integer value of the row and column of the matrix-cell in the visualization. <code class="docutils literal"><span class="pre">value</span></code> specifies the opacity and color of the matrix-cell, where positive/negative values results in red/blue matrix-cells in the visualization. The optional properties <code class="docutils literal"><span class="pre">value_up</span></code> and <code class="docutils literal"><span class="pre">value_dn</span></code> allow the user to have a split matrix-cell that has an up-triangle and a down-triangle.</p>
+<p>Users can also generate the visualization-JSON using their own scripts procided that they adhere to the above format.</p>
 </div>
 <div class="section" id="clustergrammer-js-development">
 <span id="clustergrammer-js-dev"></span><h2>Clustergrammer-JS Development<a class="headerlink" href="#clustergrammer-js-development" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-JS&#8217; source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer GitHub repo</a>. The Clustergrammer-JS library is utilized by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>. Clustergrammer-JS is built with <a class="reference external" href="https://webpack.github.io/">Webpack Module Bundler</a> from the source files in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/tree/master/src">src</a> directory.</p>
-<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez or Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/issues">issues</a> feature to raise an issue.</p>
+<p>The Clustergrammer-JS source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer GitHub repo</a>. The Clustergrammer-JS library is utilized by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>. Clustergrammer-JS is built with <a class="reference external" href="https://webpack.github.io/">Webpack Module Bundler</a> from the source files in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/tree/master/src">src</a> directory.</p>
+<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez or Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/issues">issues</a> feature to report an issue.</p>
 </div>
 </div>
 

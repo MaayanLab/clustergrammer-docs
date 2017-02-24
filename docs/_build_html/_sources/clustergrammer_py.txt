@@ -87,7 +87,7 @@ Clustergrammer-PY Development
 =============================
 Clustergrammer-PY's source code can be found in the `clustergrammer-py`_ GitHub repo. The Clustergrammer-PY library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`.
 
-Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to raise an issue.
+Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
 
 .. _`GitHub repo`: http://github.com/MaayanLab/clustergrammer-py
 .. _`package index`: https://pypi.python.org/pypi?:action=display&name=clustergrammer
