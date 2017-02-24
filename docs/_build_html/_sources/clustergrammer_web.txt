@@ -13,7 +13,7 @@ Uploading Data using the Web App Homepage
 
 .. figure:: _static/clustergrammer_web_upload.png
   :width: 900px
-  :align: center
+  :align: left
   :alt: Clustergrammer Web
   :target: http://amp.pharm.mssm.edu/clustergrammer/
 
@@ -36,7 +36,7 @@ See the screenshots below and the `example visualization`_ for an example `Web A
 
 .. figure:: _static/web_app_heatmap.png
   :width: 800px
-  :align: center
+  :align: left
   :alt: Web application heatmap
   :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 
@@ -46,7 +46,7 @@ See the screenshots below and the `example visualization`_ for an example `Web A
 
 .. figure:: _static/web_app_sim_mat.png
   :width: 800px
-  :align: center
+  :align: left
   :alt: Web application sim-mat
   :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 

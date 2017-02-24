@@ -41,7 +41,7 @@ Mousing over elements in the heatmap (e.g. row names) brings up additional infor
 
 .. figure:: _static/mouseover.png
   :width: 300px
-  :align: center
+  :align: left
   :alt: Mouseover Interactions
 
   Mousing over visualization elements (e.g. matrix cell) brings up additional information as a tooltip.
@@ -63,7 +63,7 @@ Clustergrammer visualizations have a sidebar section that contains the following
 
 .. figure:: _static/sidebar_expand_button.png
   :width: 500px
-  :align: center
+  :align: left
   :alt: Sidebar Interactions
 
   The sidebar contains an optional About section and interaction elements (e.g. reordering buttons) and can be hidden by clicking the gray Expand buutton (and restored by clicking the Menu button).
@@ -91,7 +91,7 @@ Clustergrammer enables users to interactively perform dimensionality reduction, 
 
 .. figure:: _static/row_filter.png
   :width: 900px
-  :align: center
+  :align: left
   :alt: Interactive Dimensionality Reduction
 
   The row filter sliders in the sidebar can be used to perform interactive dimensionality reduction. Here we are filtering for the top 10 rows based on sum.
@@ -112,7 +112,7 @@ Rather than visualize the dendrogram as a large branching tree, which uses a lot
 
 .. figure:: _static/dendrogram_and_slider.png
   :width: 275px
-  :align: center
+  :align: left
   :alt: Visualizing Dendrogram
 
   A subset of the column dendrogram along with the dendrogram slider is shown above. The slider (blue circle and gray triangle) can be used to adjust dendrogram cluster sizes -- move up for larger clusters and down for smaller clusters. Each dendrogram cluster has a Crop button (gray triangle) above it that can be used to filter the heatmap to show only this cluster.
@@ -124,7 +124,7 @@ Dendrogram clusters are depicted as gray trapezoids, which are easy for a user t
 
 .. figure:: _static/dendrogram_interaction.png
   :width: 900px
-  :align: center
+  :align: left
   :alt: Interactive Dendrogram
 
   Mousing over a dendrogram group will highlight the selected cluster and bring up information (e.g. categories) about the cluster.
@@ -143,7 +143,7 @@ Row or column categories are represented by an extra column or row, respectively
 
 .. figure:: _static/categories.png
   :width: 400px
-  :align: center
+  :align: left
   :alt: Categories
 
   A subset of column categories is shown above. In this example columns have two categories, 'Category' and 'Gender', which are depicted as colored cells under the column labels
@@ -154,7 +154,7 @@ Mousing over a category will show the category name in a tooltip and highlight t
 
 .. figure:: _static/category_interaction.png
   :width: 900px
-  :align: center
+  :align: left
   :alt: Interacting with Categories
 
   Mousing over a category brings up a tooltip with the category name and highlights instances of the category. Shown above is an example of mousing over a column category.
@@ -171,7 +171,7 @@ Users can employ the Brush-Cropping icon in the sidebar to crop the matrix to a 
 
 .. figure:: _static/brush_crop.png
   :width: 900px
-  :align: center
+  :align: left
   :alt: Brush Crop
 
   The above example shows the result of brush-cropping into a section of the heatmap. To brush-crop, click the Crop button (the active red icon in the sidebar on the left panel) and drag/brush your cursor over your area of interest. To undo cropping, click the Undo button (circular arrow) on the right panel.
@@ -184,7 +184,7 @@ Obtaining the underlying data from a visualization for re-use and re-analysis ca
 
 .. figure:: _static/download_matrix.png
   :width: 175px
-  :align: center
+  :align: left
   :alt: Download Icon
 
   Click the Download icon in the sidebar to download a tab-separated file of the matrix in its current state.
@@ -197,7 +197,7 @@ The Snapshot icon in the sidebar allows users to take a SVG or PNG snapshot of t
 
 .. figure:: _static/snapshot.png
   :width: 175px
-  :align: center
+  :align: left
   :alt: Snapshot
 
   Click the Snapshot icon in the sidebar to take a SVG or PNG snapshot of the matrix in its current state (including reordering, etc).
@@ -216,7 +216,7 @@ Users can search for rows in their matrix using the search box. Row search inclu
 
 .. figure:: _static/row_search.png
   :width: 200px
-  :align: center
+  :align: left
   :alt: Search
 
   Users can search for rows using the search box in the sidebar. When a row is found, the matrix will zoom into the found row.
@@ -235,7 +235,7 @@ Interactive heatmaps produced with the :ref:`clustergrammer_web` and the :ref:`c
 
 .. figure:: _static/share.png
   :width: 175px
-  :align: center
+  :align: left
   :alt: Share
 
   Interactive heatmaps can be shared using the current URL, which can be obtained from the Share icon in the sidebar.

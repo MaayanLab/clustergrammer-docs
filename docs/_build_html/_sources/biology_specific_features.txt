@@ -12,7 +12,7 @@ The human genome consists of over 20,000 genes and modern high-throughput measur
 
 .. figure:: _static/gene_info.png
   :width: 700px
-  :align: center
+  :align: left
   :alt: Gene Info
 
   Mousing over a gene name row brings up the full gene name and description (provided by data aggregated through the `Harmonizome`_).
@@ -30,7 +30,7 @@ When a user visualizes a matrix with genes as rows, Clustergrammer automatically
 
 .. figure:: _static/send_to_Enrichr_modal.png
   :width: 600px
-  :align: center
+  :align: left
   :alt: Send to Enrichr Modal
 
   Clicking a row dendrogram cluster opens a modal window with cluster information, row names, and a 'Send genes to Enrichr' link that allows users to export their gene list (e.g. cluster of row-genes) to Enrichr.
@@ -44,7 +44,7 @@ Users can also import biological information about their genes directly into the
 
 .. figure:: _static/enrichrgram_results.png
   :width: 900px
-  :align: center
+  :align: left
   :alt: Enrichrgram Menu
 
   Users can perform enrichment analysis to find biological information specific to their genes (e.g. a cluster of genes). Users can select from several enrichment libraries, and the top 10 enriched terms will be shown as rows categories. The combined scores for the enriched terms will be shown as red bars behind the row category titles.

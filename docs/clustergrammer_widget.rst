@@ -9,7 +9,7 @@ Jupyter notebooks are ideal for generating reproducible workflows and analysis. 
 
 .. figure:: _static/jupyter_widget_nbviewer.png
   :width: 900px
-  :align: center
+  :align: left
   :alt: Jupyter Widget NBViewer
   :target: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
 
@@ -95,7 +95,7 @@ To enable rendering interactive widgets on `nbviewer`_ you must have `ipywidgets
 
 .. figure:: _static/jupyter_save_widgets.png
   :width: 500px
-  :align: center
+  :align: left
   :alt: Save Jupyter Widget
 
   Users can save notebooks with interactive HTML widgets using the "Save Notebook with Widgets" action in the Jupyter Notebook Widgets menu as shown here. `ipywidgets version 6`_  or later must be installed in order to enable this feature.

@@ -17,7 +17,7 @@ Users can easily generate an interactive and shareable heatmap visualization usi
 
 .. figure:: _static/clustergrammer_web_upload.png
   :width: 550px
-  :align: center
+  :align: left
   :alt: Clustergrammer Web
   :target: http://amp.pharm.mssm.edu/clustergrammer/
 
@@ -29,7 +29,7 @@ Once you upload your data, the :ref:`clustergrammer_web` clusters your data and 
 
 .. figure:: _static/web_app_heatmap.png
   :width: 800px
-  :align: center
+  :align: left
   :alt: Web application heatmap
   :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 
@@ -39,7 +39,7 @@ Once you upload your data, the :ref:`clustergrammer_web` clusters your data and 
 
 .. figure:: _static/web_app_sim_mat.png
   :width: 800px
-  :align: center
+  :align: left
   :alt: Web application sim-mat
   :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 
@@ -79,7 +79,7 @@ See the screenshot below for an example widget visualization:
 
 .. figure:: _static/jupyter_widget_nbviewer.png
   :width: 900px
-  :align: center
+  :align: left
   :alt: Jupyter Widget NBViewer
   :target: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
 

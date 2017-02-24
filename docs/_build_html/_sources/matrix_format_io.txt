@@ -30,7 +30,7 @@ Row and column categories can be included in two ways. The first, simple-categor
 
 .. figure:: _static/cat_tsv.png
 	:width: 700px
-	:align: center
+	:align: left
 	:alt: Simple Matrix-Category Format
 
 	A matrix with row and column categories in 'simple' format.

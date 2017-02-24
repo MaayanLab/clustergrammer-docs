@@ -10,7 +10,7 @@ The enrichment analysis tool, `Enrichr`_, uses Clustergrammer to produce dynamic
 
 .. figure:: _static/enrichr_screenshot_logo.png
   :width: 550px
-  :align: center
+  :align: left
   :alt: Enirchr Clustergram
   :target: http://amp.pharm.mssm.edu/Enrichr/
 
@@ -22,7 +22,7 @@ The gene signature analysis and visualization tool, `GEN3VA`_, uses Clustergramm
 
 .. figure:: _static/gen3va_gene_exp.png
   :width: 800px
-  :align: center
+  :align: left
   :alt: GEN3VA Gene Expression
   :target: http://amp.pharm.mssm.edu/gen3va/report/approved/BioGPS_human
 
@@ -34,7 +34,7 @@ L1000CDS2
 
 .. figure:: _static/l1000cds2_screenshot.png
   :width: 800px
-  :align: center
+  :align: left
   :alt: L1000CDS2 Clustergram
   :target: http://amp.pharm.mssm.edu/clustergrammer/l1000cds2/55e0b68a5bf3665f1a726bfa
 
@@ -46,7 +46,7 @@ The `Harmonizome`_ uses the :ref:`clustergrammer_web` API to generate visualizat
 
 .. figure:: _static/hzome_sim_mat.png
   :width: 800px
-  :align: center
+  :align: left
   :alt: Harmonizome Similarity Heatmap
   :target: http://amp.pharm.mssm.edu/Harmonizome/visualize/heat_map/attribute_similarity
 
