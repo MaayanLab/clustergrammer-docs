@@ -97,7 +97,7 @@ Clustergrammer produces highly interactive visualizations that enable intuitive 
 - :ref:`interactive_dim_reduction` (e.g. filter rows based on variance)
 - :ref:`interactive_categories`
 - :ref:`crop`
-- :ref:`search`
+- :ref:`row_search`
 
 Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features and see :ref:`interacting_with_viz` for more information:
 
