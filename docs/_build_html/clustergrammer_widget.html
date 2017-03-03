@@ -92,7 +92,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-widget-workflow-example">Clustergrammer-Widget Workflow Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sharing-with-nbviewer">Sharing with nbviewer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#jupyter-notebook-examples">Jupyter Notebook Examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-widget-development">Clustergrammer-Widget Development</a></li>
 </ul>
 </li>
@@ -154,7 +153,14 @@
 <span id="clustergrammer-widget"></span><h1>Clustergrammer Jupyter Widget<a class="headerlink" href="#clustergrammer-jupyter-widget" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://pypi.python.org/pypi?:action=display&amp;name=clustergrammer_widget"><img alt="pypi-version" src="https://img.shields.io/pypi/v/clustergrammer_widget.svg" /></a>
 <a class="reference external" href="https://www.npmjs.com/package/clustergrammer_widgt"><img alt="npm-version" src="https://img.shields.io/npm/v/clustergrammer_widget.svg" /></a></p>
-<p>Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer&#8217;s interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see <a class="reference internal" href="#clustergrammer-widget-examples"><span class="std std-ref">Sharing with nbviewer</span></a>). The Clustergrammer Widget enables users to easily produce interactive visualizations within a <a class="reference external" href="http://jupyter.org/">Jupyter</a> notebook that can be shared with collaborators (using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information). See screenshot below for an example visualization:</p>
+<p>Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer&#8217;s interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see <a class="reference internal" href="#clustergrammer-widget-examples"><span class="std std-ref">Sharing with nbviewer</span></a>). The Clustergrammer Widget enables users to easily produce interactive visualizations within a <a class="reference external" href="http://jupyter.org/">Jupyter</a> notebook that can be shared with collaborators (using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information).</p>
+<p>Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a></li>
+<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/DataFrame_Example.ipynb">DataFrame_Example.ipynb</a></li>
+<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb">Single Cell RNA-seq Visualization.ipynb</a></li>
+<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb">Iris Dataset.ipynb</a></li>
+</ul>
 <div class="figure align-left" id="id3">
 <a class="reference external image-reference" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb"><img alt="Jupyter Widget NBViewer" src="_images/jupyter_widget_nbviewer.png" style="width: 900px;" /></a>
 <p class="caption"><span class="caption-text">Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> example).</span></p>
@@ -227,16 +233,6 @@
 <a class="reference internal image-reference" href="_images/jupyter_save_widgets.png"><img alt="Save Jupyter Widget" src="_images/jupyter_save_widgets.png" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-text">Users can save notebooks with interactive HTML widgets using the &#8220;Save Notebook with Widgets&#8221; action in the Jupyter Notebook Widgets menu as shown here. <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later must be installed in order to enable this feature.</span></p>
 </div>
-</div>
-<div class="section" id="jupyter-notebook-examples">
-<h2>Jupyter Notebook Examples<a class="headerlink" href="#jupyter-notebook-examples" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebooks below for examples:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/DataFrame_Example.ipynb">DataFrame_Example.ipynb</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb">Single Cell RNA-seq Visualization.ipynb</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb">Iris Dataset.ipynb</a></li>
-</ul>
 </div>
 <div class="section" id="clustergrammer-widget-development">
 <span id="clustergrammer-widget-dev"></span><h2>Clustergrammer-Widget Development<a class="headerlink" href="#clustergrammer-widget-development" title="Permalink to this headline">¶</a></h2>

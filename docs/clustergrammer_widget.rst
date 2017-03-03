@@ -5,7 +5,14 @@ Clustergrammer Jupyter Widget
 |pypi-version|
 |npm-version|
 
-Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information). See screenshot below for an example visualization:
+Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+
+Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below:
+
+- `Running_clustergrammer_widget.ipynb`_
+- `DataFrame_Example.ipynb`_
+- `Single Cell RNA-seq Visualization.ipynb`_
+- `Iris Dataset.ipynb`_
 
 .. figure:: _static/jupyter_widget_nbviewer.png
   :width: 900px
@@ -100,14 +107,6 @@ To enable rendering interactive widgets on `nbviewer`_ you must have `ipywidgets
 
   Users can save notebooks with interactive HTML widgets using the "Save Notebook with Widgets" action in the Jupyter Notebook Widgets menu as shown here. `ipywidgets version 6`_  or later must be installed in order to enable this feature.
 
-Jupyter Notebook Examples
-=========================
-Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebooks below for examples:
-
-- `Running_clustergrammer_widget.ipynb`_
-- `DataFrame_Example.ipynb`_
-- `Single Cell RNA-seq Visualization.ipynb`_
-- `Iris Dataset.ipynb`_
 
 .. _clustergrammer_widget_dev:
 
