@@ -208,7 +208,7 @@ Opacity Slider
 ==============
 The Opacity slider in the sidebar allows users to toggle the overall opacity levels of the heatmap. Moving the slider to the left reduces the opacity, while moving to the right increases the opacity. This can be useful for working with 'dim' matrices that can occur as a result of outlier values.
 
-.. _search:
+.. _row_search:
 
 Row Searching
 =============

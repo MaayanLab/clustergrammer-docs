@@ -17,7 +17,7 @@ Users can obtain a permanent link to their visualization by manually uploading t
 
 Adding Clustergrammer to a Page
 ===============================
-The :ref:`clustergrammer_js` library can be used to generate an interactive visualization in your webpage. Simply include the :ref:`clustergrammer_js` script in your page and load the pre-calculated :ref:`visualization-JSON <visualization_json>` to generate a visualization. Alternatively, :ref:`clustergrammer_js` can also be included as a node module.
+The :ref:`clustergrammer_js` library can be used to generate an interactive visualization in your webpage. Simply include the :ref:`clustergrammer_js` script in your page and load the pre-calculated :ref:`visualization-JSON <visualization_json>` to generate a visualization. Alternatively, :ref:`clustergrammer_js` can also be included as a node module (see `Clustergrammer-Widget source code`_ for an example with Webpack), or can be used with `RequireJS`_ (see `Clustergrammer RequireJS example`_).
 
 
 Clustergrammer can be used to generate interactive visualizations for your own web application by: using the :ref:`clustergrammer_js` library on your site, or embedding a visualization provided by the :ref:`clustergrammer_web`.
@@ -36,3 +36,6 @@ These examples require Clustergrammer's JavaScript and Python libraries:
 The following libraries can be installed using: npm (``npm install Clustergrammer``) and pip (``pip install --upgrade clustergrammer``), respectively.
 
 .. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer
+.. _`Clustergrammer-Widget source code`: https://github.com/MaayanLab/clustergrammer-widget
+.. _`RequireJS`: http://requirejs.org/
+.. _`Clustergrammer RequireJS example`: https://github.com/MaayanLab/clustergrammer_requirejs

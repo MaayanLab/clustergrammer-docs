@@ -26,7 +26,7 @@ Use Cases
 =========
 Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Below are links to several example use cases (see :ref:`case_studies` for more information):
 
-- `Cancer Cell Line Encyclopedia Gene Expression Data`_
+- `Cancer Cell Line Encyclopedia Gene Expression Data`_ (and the `CCLE Jupyter Notebook`_)
 - `Single-Cell RNA-seq Data Visualization`_
 - `Zika Virus RNA-seq Data Visualization`_
 - `Kinase Substrate Similarity Network`_
@@ -71,6 +71,8 @@ Contents:
 .. _`example notebook`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
 
 .. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
+
+.. _`CCLE Jupyter Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Tissue_Specific_Viz.ipynb
 
 .. _`Cancer Cell Line Encyclopedia Gene Expression Data`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`Zika Virus RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb

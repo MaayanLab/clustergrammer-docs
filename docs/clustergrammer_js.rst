@@ -184,6 +184,11 @@ The visualization-JSON is calculated by :ref:`clustergrammer_py` and encodes eve
         "group": []
       }
     ],
+    "mat":[
+      [1, 2],
+      [3, 4],
+      [5, 6]
+    ],
     "links":[
       {
         "source": 0,
@@ -206,15 +211,19 @@ Optional 'views' of the matrix (e.g. row-filtered views) are encoded into the ``
       }
     }
 
-There are three required properties for the Visualization-JSON: ``row_nodes``, ``col_nodes``, and ``links``. Each of these properties is an array of objects and these objects are discussed below.
+There are three required properties for the Visualization-JSON: ``row_nodes``, ``col_nodes``, and ``mat`` (``links`` can be used in place of ``mat`` and will continue to be supported, but the default format will use ``mat``). Each of these properties is an array of objects and these objects are discussed below.
 
 **Nodes**
 
 ``row_nodes`` and ``col_nodes`` objects are required to have three properties: ``name``, ``clust``, ``rank``. ``name`` specifies the name given to the row or column. ``clust`` and ``rank`` give the ordering of the row or column in the clustergram. Two optional properties are ``group`` and ``value``. ``group`` is an array that contains group-membership of the row/column at different dendrogram distance cutoffs and is necessary for displaying a dendrogram. If nodes have the ``value`` property, then semi-transparent bars will be displayed behind the labels to represent this value.
 
+**Mat**
+
+``mat`` is an JavaScript array that stores the matrix data. The ``source`` and ``target`` of each value (row and column) are inferred from the position of the data in the two-dimensional array.
+
 **Links**
 
-``links`` have three properties: ``source``, ``target``, and ``value``. ``source`` and ``target`` give the integer value of the row and column of the matrix-cell in the visualization. ``value`` specifies the opacity and color of the matrix-cell, where positive/negative values results in red/blue matrix-cells in the visualization. The optional properties ``value_up`` and ``value_dn`` allow the user to have a split matrix-cell that has an up-triangle and a down-triangle.
+Note: ``mat`` will be used by default instead of ``links``, but both formats will be supported (``mat`` is usually a more compact format). ``links`` have three properties: ``source``, ``target``, and ``value``. ``source`` and ``target`` give the integer value of the row and column of the matrix-cell in the visualization. ``value`` specifies the opacity and color of the matrix-cell, where positive/negative values results in red/blue matrix-cells in the visualization. The optional properties ``value_up`` and ``value_dn`` allow the user to have a split matrix-cell that has an up-triangle and a down-triangle.
 
 
 Users can also generate the visualization-JSON using their own scripts provided that they adhere to the above format.
