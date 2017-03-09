@@ -14,6 +14,7 @@ Clustergrammer-PY Dependencies
 - `Numpy`_
 - `SciPy`_
 - `Pandas`_
+- `scikit-learn`_
 
 Installation
 ============
@@ -99,6 +100,7 @@ Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the
 .. _`Network class definition`: https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/__init__.py
 .. _`DataFrame`: http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
 .. _`make_clustergrammer.py`: https://github.com/MaayanLab/clustergrammer-py/blob/master/make_clustergrammer.py
+.. _`scikit-learn`: http://scikit-learn.org/stable/
 
 .. |pypi-version| image:: https://img.shields.io/pypi/v/clustergrammer.svg
     :alt: version
