@@ -1,6 +1,6 @@
 class Network(object):
   '''
-  version 1.4.0
+  version 1.4.1
 
   Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the :ref:`visualization_json` for :ref:`clustergrammer_js`.
 
@@ -178,6 +178,14 @@ class Network(object):
       num_occur)
 
     self.df_to_dat(inst_df)
+
+  def clip(self, lower=None, upper=None):
+    '''
+    Trim values at input thresholds using pandas function
+    '''
+    df = self.export_df()
+    df = df.clip(lower=lower, upper=upper)
+    self.load_df(df)
 
   def normalize(self, df=None, norm_type='zscore', axis='row', keep_orig=False):
     '''
