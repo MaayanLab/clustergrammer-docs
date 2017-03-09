@@ -210,7 +210,7 @@
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.2.2</p>
+<dd><p>version 1.4.0</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -231,6 +231,12 @@ the network that will be used as input to clustergram.js.</p>
 <dt id="clustergrammer_py.Network.df_to_dat">
 <code class="descname">df_to_dat</code><span class="sig-paren">(</span><em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.df_to_dat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load Pandas DataFrame (will be deprecated).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="clustergrammer_py.Network.downsample">
+<code class="descname">downsample</code><span class="sig-paren">(</span><em>df=None</em>, <em>ds_type='kmeans'</em>, <em>axis='row'</em>, <em>num_samples=100</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.downsample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Downsample the matrix rows or columns (currently supporting kmeans only). Users can optionally pass in a DataFrame to be downsampled (and this will be incorporated into the network object).</p>
 </dd></dl>
 
 <dl class="method">
@@ -318,7 +324,7 @@ be possible to load data without having to read from a file.</p>
 <dl class="method">
 <dt id="clustergrammer_py.Network.normalize">
 <code class="descname">normalize</code><span class="sig-paren">(</span><em>df=None</em>, <em>norm_type='zscore'</em>, <em>axis='row'</em>, <em>keep_orig=False</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.normalize" title="Permalink to this definition">¶</a></dt>
-<dd><p>Normalize the matrix rows or columns using Z-score (zscore) or Quantile Normalization (qn).</p>
+<dd><p>Normalize the matrix rows or columns using Z-score (zscore) or Quantile Normalization (qn). Users can optionally pass in a DataFrame to be normalized (and this will be incorporated into the Network object).</p>
 </dd></dl>
 
 <dl class="method">
