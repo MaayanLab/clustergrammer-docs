@@ -24,7 +24,7 @@ Please read the :doc:`getting_started` guide for more information.
 
 Use Cases
 =========
-Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Below are links to several example use cases (see :ref:`case_studies` for more information):
+Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Below are links to several example use cases (see :ref:`case_studies` for more information).
 
 - `Cancer Cell Line Encyclopedia Gene Expression Data`_ (and the `CCLE Jupyter Notebook`_)
 - `Single-Cell RNA-seq Data Visualization`_
