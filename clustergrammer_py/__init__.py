@@ -1,6 +1,6 @@
 class Network(object):
   '''
-  version 1.5.0
+  version 1.5.1
 
   Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the :ref:`visualization_json` for :ref:`clustergrammer_js`.
 
