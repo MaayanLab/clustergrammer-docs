@@ -211,7 +211,7 @@
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.4.1</p>
+<dd><p>version 1.5.0</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -270,6 +270,12 @@ clustergram.</p>
 <code class="descname">filter_N_top</code><span class="sig-paren">(</span><em>inst_rc</em>, <em>N_top</em>, <em>rank_type='sum'</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.filter_N_top" title="Permalink to this definition">¶</a></dt>
 <dd><p>Filter the matrix rows or columns based on sum/variance, and only keep the top
 N.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="clustergrammer_py.Network.filter_cat">
+<code class="descname">filter_cat</code><span class="sig-paren">(</span><em>axis</em>, <em>cat_index</em>, <em>cat_name</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.filter_cat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the matrix based on their category. cat_index is the index of the category, the first category has index=1.</p>
 </dd></dl>
 
 <dl class="method">
