@@ -36,10 +36,13 @@ Clustergrammer was developed to visualize high-dimensional biological data (e.g.
 
 .. _contact:
 
-Contact
-=======
-Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) for support, comments, and suggestions.
+Funding and Contact
+===================
 
+Clustergrammer is being developed by the `Ma'ayan Lab`_ at the `Icahn School of Medicine at Mount Sinai`_ for the `BD2K-LINCS DCIC`_ and the `KMC-IDG`_.
+
+
+Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) for support, comments, and suggestions.
 
 
 Contents:
@@ -80,3 +83,8 @@ Contents:
 .. _`MNIST Handwritten Digit Dataset`: https://maayanlab.github.io/MNIST_heatmaps/
 .. _`Single-Cell RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb
 .. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
+
+.. _`Ma'ayan Lab`: http://labs.icahn.mssm.edu/maayanlab/
+.. _`Icahn School of Medicine at Mount Sinai`: http://icahn.mssm.edu/
+.. _`BD2K-LINCS DCIC`: http://lincs-dcic.org/
+.. _`KMC-IDG`: http://commonfund.nih.gov/idg/overview
