@@ -214,7 +214,7 @@
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.5.1</p>
+<dd><p>version 1.6.1</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -239,7 +239,7 @@ the network that will be used as input to clustergram.js.</p>
 
 <dl class="method">
 <dt id="clustergrammer_py.Network.df_to_dat">
-<code class="descname">df_to_dat</code><span class="sig-paren">(</span><em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.df_to_dat" title="Permalink to this definition">¶</a></dt>
+<code class="descname">df_to_dat</code><span class="sig-paren">(</span><em>df</em>, <em>define_cat_colors=False</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.df_to_dat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load Pandas DataFrame (will be deprecated).</p>
 </dd></dl>
 
@@ -350,6 +350,12 @@ be possible to load data without having to read from a file.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="clustergrammer_py.Network.random_sample">
+<code class="descname">random_sample</code><span class="sig-paren">(</span><em>num_samples</em>, <em>df=None</em>, <em>replace=False</em>, <em>weights=None</em>, <em>random_state=100</em>, <em>axis='row'</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.random_sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return random sample of matrix.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="clustergrammer_py.Network.reset">
 <code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.reset" title="Permalink to this definition">¶</a></dt>
 <dd><p>This re-initializes the Network object.</p>
@@ -385,7 +391,7 @@ be possible to load data without having to read from a file.</p>
 <div class="section" id="clustergrammer-py-development">
 <span id="clustergrammer-py-dev"></span><h2>Clustergrammer-PY Development<a class="headerlink" href="#clustergrammer-py-development" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer-PY&#8217;s source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py">clustergrammer-py</a> GitHub repo. The Clustergrammer-PY library is utilized by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>.</p>
-<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez or Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/issues">issues</a> feature to report an issue.</p>
+<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Funding and Contact</span></a> Nicolas Fernandez or Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/issues">issues</a> feature to report an issue.</p>
 </div>
 </div>
 
