@@ -1,6 +1,6 @@
 class Network(object):
   '''
-  version 1.6.1
+  version 1.7.1
 
   Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the :ref:`visualization_json` for :ref:`clustergrammer_js`.
 
@@ -222,7 +222,7 @@ class Network(object):
     Downsample the matrix rows or columns (currently supporting kmeans only). Users can optionally pass in a DataFrame to be downsampled (and this will be incorporated into the network object).
     '''
 
-    downsample_fun.main(self, df, ds_type, axis, num_samples)
+    return downsample_fun.main(self, df, ds_type, axis, num_samples)
 
   def random_sample(self, num_samples, df=None, replace=False, weights=None, random_state=100, axis='row'):
     '''
@@ -242,6 +242,13 @@ class Network(object):
 
     self.load_df(df)
 
+  def dendro_cats(self, axis, dendro_level):
+    '''
+    Generate categories from dendrogram groups/clusters. The dendrogram has 11
+    levels to choose from 0 -> 10. Dendro_level can be given as an integer or
+    string.
+    '''
+    categories.dendro_cats(self, axis, dendro_level)
 
   def Iframe_web_app(self, filename=None, width=1000, height=800):
 

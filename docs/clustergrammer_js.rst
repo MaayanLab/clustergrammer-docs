@@ -67,6 +67,51 @@ Clustergrammer-JS API
 
       This required attribute is the ``id`` (passed as a string) of the container where Clustergrammer will be built. Each Clustergrammer visualization in a page should be passed a unique ``id``.
 
+    .. js:attribute:: args.row_label, args.col_label
+
+      Pass strings that will be used as 'super-labels' for rows and columns.
+
+    .. js:attribute:: args.row_label_scale, args.col_label_scale.
+
+      Scaling factor to increase/decrease the size of the rows and column labels.
+
+    .. js:attribute:: args.super_label_scale
+
+      Scaling factor to increase/decrease the size of the row/column 'super-labels'.
+
+    .. js:attribute:: args.opacity_scale
+
+      Name of the scaling function, e.g. `linear`, `log`, used to map matrix cell values to cell opacity. The default is `linear`.
+
+    .. js:attribute:: args.input_domain
+
+      The `input_domain` defines the maximum absolute value of matrix cells that are mapped to the maximum opacity of 1. The default `input_domain` is defined using the maximum absolute value of the matrix. Lowering the `input_domain` value increases the opacity of the overall visualization by setting a cutoff.
+
+    .. js:attribute:: args.do_zoom
+
+      This boolean value turns on or off zooming. The default is `true`.
+
+    .. js:attribute:: args.tile_colors
+
+      Set the positive and negative colors in the heatmap using an array with color names or hexcode, e.g. ``['#ED9124','#1C86EE']``. The default is `red` and `blue` for positive and negative, respectively.
+
+    .. js:attribute:: args.row_order, args.col_order
+
+      Set the initial ordering for rows and columns. The default is `clust` and the options are:
+
+        * `alpha`: order based on names
+        * `clust`: order based on clustering
+        * `rank`: order based on sum
+        * `rank_var`: order based on variance
+
+    .. js:attribute:: args.ini_view
+
+      Load clustergram using an initial filtered `view`.
+
+    .. :js:attribute:: args.max_allow_fs
+
+      This sets th emaximum allowed font-size. The default is set to 16px.
+
     .. js:attribute:: args.about
 
       This attribute is a string (which can include HTML) that will produce a small About section at the top of the sidebar. This can be used to provide a quick description about the data or visualization.
@@ -90,6 +135,10 @@ Clustergrammer-JS API
     .. js:attribute:: args.matrix_update_callback
 
       Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/un-filtering, cropping, etc.
+
+    .. js:attribute:: args.ini_expand
+
+      Initialize the visualization in 'expanded' mode where the sidebar is not visible. The sidebar can be shown by clicking the menu button on the top left of the visualization.
 
     .. js:attribute:: args.sidebar_width:
 

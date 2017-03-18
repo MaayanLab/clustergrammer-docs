@@ -214,7 +214,7 @@
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.6.1</p>
+<dd><p>version 1.7.1</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -235,6 +235,14 @@ the network that will be used as input to clustergram.js.</p>
 <dt id="clustergrammer_py.Network.dat_to_df">
 <code class="descname">dat_to_df</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.dat_to_df" title="Permalink to this definition">¶</a></dt>
 <dd><p>Export Pandas DataFrams (will be deprecated).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="clustergrammer_py.Network.dendro_cats">
+<code class="descname">dendro_cats</code><span class="sig-paren">(</span><em>axis</em>, <em>dendro_level</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.dendro_cats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate categories from dendrogram groups/clusters. The dendrogram has 11
+levels to choose from 0 -&gt; 10. Dendro_level can be given as an integer or
+string.</p>
 </dd></dl>
 
 <dl class="method">
