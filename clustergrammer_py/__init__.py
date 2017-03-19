@@ -1,6 +1,6 @@
 class Network(object):
   '''
-  version 1.7.1
+  version 1.8.0
 
   Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the :ref:`visualization_json` for :ref:`clustergrammer_js`.
 
@@ -145,11 +145,11 @@ class Network(object):
     '''
     return export_data.export_net_json(self, net_type, indent)
 
-  def widget(self):
+  def widget(self, which_viz='viz'):
     '''
     Export viz JSON, for use with clustergrammer_widget.
     '''
-    return export_data.export_net_json(self, 'viz', 'no-indent')
+    return export_data.export_net_json(self, which_viz, 'no-indent')
 
   def write_json_to_file(self, net_type, filename, indent='no-indent'):
     '''
@@ -223,6 +223,8 @@ class Network(object):
     '''
 
     return downsample_fun.main(self, df, ds_type, axis, num_samples)
+
+
 
   def random_sample(self, num_samples, df=None, replace=False, weights=None, random_state=100, axis='row'):
     '''
