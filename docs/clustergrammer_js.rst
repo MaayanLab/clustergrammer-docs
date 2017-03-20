@@ -15,6 +15,7 @@ Clustergrammer-JS Dependencies
 - `D3.js`_
 - `JQuery`_
 - `Underscore`_
+- `Bootstrap`_
 
 Installation
 ============
@@ -295,6 +296,7 @@ Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the
 .. _`D3.js`: https://d3js.org/
 .. _`JQuery`: https://jquery.com/
 .. _`Underscore`: http://underscorejs.org/
+.. _`Bootstrap`: http://getbootstrap.com/
 .. _`Webpack Module Bundler`: https://webpack.github.io/
 .. _`src`: https://github.com/MaayanLab/clustergrammer/tree/master/src
 .. _`issues`: https://github.com/MaayanLab/clustergrammer/issues
