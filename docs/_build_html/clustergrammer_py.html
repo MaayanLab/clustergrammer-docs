@@ -211,7 +211,7 @@
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.9.0</p>
+<dd><p>version 1.10.0</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -222,6 +222,34 @@
 </div></blockquote>
 <p>The goal is to start in a data-state and produce a viz-state of
 the network that will be used as input to clustergram.js.</p>
+<dl class="method">
+<dt id="clustergrammer_py.Network.add_cats">
+<code class="descname">add_cats</code><span class="sig-paren">(</span><em>axis</em>, <em>cat_data</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.add_cats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add categories to rows or columns using cat_data array of objects. Each object in cat_data is a dictionary with one key (category title) and value (rows/column names) that have this category. Categories will be added onto the existing categories and will be added in the order of the objects in the array.</p>
+<p>Example <code class="docutils literal"><span class="pre">cat_data</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;First Category&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cats&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;true&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;ROS1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;AAK1&quot;</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Second Category&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cats&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;something&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;PDK4&quot;</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
 <dl class="method">
 <dt id="clustergrammer_py.Network.clip">
 <code class="descname">clip</code><span class="sig-paren">(</span><em>lower=None</em>, <em>upper=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.clip" title="Permalink to this definition">¶</a></dt>
