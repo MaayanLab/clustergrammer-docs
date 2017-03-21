@@ -211,7 +211,7 @@
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.8.0</p>
+<dd><p>version 1.9.0</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -284,6 +284,12 @@ N.</p>
 <dt id="clustergrammer_py.Network.filter_cat">
 <code class="descname">filter_cat</code><span class="sig-paren">(</span><em>axis</em>, <em>cat_index</em>, <em>cat_name</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.filter_cat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Filter the matrix based on their category. cat_index is the index of the category, the first category has index=1.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="clustergrammer_py.Network.filter_names">
+<code class="descname">filter_names</code><span class="sig-paren">(</span><em>axis</em>, <em>names</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.filter_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the visualization using row/column names. The function takes, axis (&#8216;row&#8217;/&#8217;col&#8217;) and names, a list of strings.</p>
 </dd></dl>
 
 <dl class="method">

@@ -133,6 +133,10 @@ Clustergrammer-JS API
 
       Users can pass a callback function that will run when mousing over a dendrogram cluster (e.g. gray trapezoid)
 
+    .. js:attribute:: args.dendro_click_callback
+
+      Users can pass a callback function that will run when clicking a dendrogram cluster (e.g. gray trapezoid)
+
     .. js:attribute:: args.matrix_update_callback
 
       Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/un-filtering, cropping, etc.
@@ -148,6 +152,13 @@ Clustergrammer-JS API
     .. js:attribute:: args.ini_view
 
       Users can initialize the 'view' of their matrix, e.g. initialize the matrix at a particular row filtering level.
+
+    .. js:attribute:: args.make_modals
+
+      This boolean option gives users have the option to not make any Bootstrap modals (e.g. dendrogram group modals) and the default is ``true``.
+
+
+
 
   Clustergrammer's attributes and functions are listed below:
 
