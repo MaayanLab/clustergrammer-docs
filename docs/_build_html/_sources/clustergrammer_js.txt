@@ -198,7 +198,7 @@ Clustergrammer-JS API
 
     :param names: Object with ``row`` and ``col`` attributes that specify the row and column names that will be visible after updating.
 
-  .. js:function:: filter_viz_using_names(nodes)
+  .. js:function:: filter_viz_using_nodes(nodes)
 
     Update the visualization to show the row and column names specified in the ``nodes`` object.
 
