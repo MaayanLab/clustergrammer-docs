@@ -107,13 +107,13 @@ In the examples above, we clustered our matrix using the default parameters.
 
 **Two-way Widget Communication**
 
-In addition to sending information from the back end kernel to the front-end as shown above, widgets can also send information from the visualization to the back end kernel. Clustergrammer-Widget uses this feature to enable users to export their possibly modified visualization as a DataFrame. This can be use to select a cluster of interest, by :ref:`crop` or using the :ref:`interactive_dendrogram`, and pass this cluster to a new dataframe. Alternatively, this can be used to export the visualization as a DataFrame after performing enrichment analysis using :ref:`enrichrgram`. See the `df_widget` method below for an example:
+In addition to sending information from the back end kernel to the front-end as shown above, widgets can also send information from the visualization to the back end kernel. Clustergrammer-Widget uses this feature to enable users to export their possibly modified visualization as a DataFrame. This can be use to select a cluster of interest, by :ref:`crop` or using the :ref:`interactive_dendrogram`, and pass this cluster to a new dataframe. Alternatively, this can be used to export the visualization as a DataFrame after performing enrichment analysis using :ref:`Enrichrgram <enrichrgram>`. See the ``df_widget`` method below for an example:
 
 ::
 
-  # We can filter the visualization (e.g. dendrogram cropping) and export the modified
-  # matrix to the back end using the df_widget method
-  df_crop = net.df_widget()
+  # After modifying the visualization (e.g. dendrogram cropping) we can export the
+  # modified matrix to the back end using the df_widget method
+  df_new = net.df_widget()
 
 
 For more information about the ``Network`` object and additional options; see the :ref:`clustergrammer_py_api`.
