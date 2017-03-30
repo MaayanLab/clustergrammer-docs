@@ -1,2 +1,2 @@
 sphinxcontrib-spelling
-jupyter_sphinx.embed_widgets
+jupyter_sphinx
