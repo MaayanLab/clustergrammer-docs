@@ -42,7 +42,7 @@ sys.path.insert(0, os.path.abspath('../'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.spelling', 'sphinx.ext.autodoc']
+extensions = ['sphinxcontrib.spelling', 'sphinx.ext.autodoc', 'jupyter_sphinx.embed_widgets']
 
 spelling_word_list_filename='spelling_wordlist.txt'
 

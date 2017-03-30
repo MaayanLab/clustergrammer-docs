@@ -1,5 +1,6 @@
 .. _clustergrammer_widget:
 
+
 Clustergrammer Jupyter Widget
 -----------------------------
 |pypi-version|
@@ -52,7 +53,8 @@ Clustergrammer-Widget Workflow Example
 The Jupyter notebook `Running_clustergrammer_widget.ipynb`_ (which is rendered using `nbviewer`_) shows how to visualize a matrix from a file and a `Pandas`_ DataFrame. The following examples are taken from this notebook.
 
 Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``). We start by making an instance of the ``Network`` object, ``net``, which is used to load and cluster the data. Then we pass the data to ``clustergrammer_widget`` to generate the visualization (for more information about the ``Network`` class, see :ref:`clustergrammer_py_api`):
-::
+
+.. ipywidgets-display::
 
   # import classes and instantiate Network instance with the widget as an argument
   from clustergrammer_widget import *
@@ -106,6 +108,7 @@ To enable rendering interactive widgets on `nbviewer`_ you must have `ipywidgets
   :alt: Save Jupyter Widget
 
   Users can save notebooks with interactive HTML widgets using the "Save Notebook with Widgets" action in the Jupyter Notebook Widgets menu as shown here. `ipywidgets version 6`_  or later must be installed in order to enable this feature.
+
 
 
 .. _clustergrammer_widget_dev:
