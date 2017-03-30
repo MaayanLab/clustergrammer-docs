@@ -54,18 +54,18 @@ The Jupyter notebook `Running_clustergrammer_widget.ipynb`_ (which is rendered u
 Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``). We start by making an instance of the ``Network`` object, ``net``, which is used to load and cluster the data. Then we pass the data to ``clustergrammer_widget`` to generate the visualization (for more information about the ``Network`` class, see :ref:`clustergrammer_py_api`):
 ::
 
-  # import clustergrammer_widgets and initialize network object
+  # import classes and instantiate Network instance with the widget as an argument
   from clustergrammer_widget import *
-  net = Network()
+  net = Network(clustergrammer_widget)
 
   # load matrix file
   net.load_file('rc_two_cats.txt')
 
   # cluster using default parameters
-  net.make_clust()
+  net.cluster()
 
   # make interactive widget
-  clustergrammer_widget(network=net.widget())
+  net.widget()
 
 Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the same ``net`` object from above:
 ::
@@ -74,10 +74,10 @@ Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame 
   net.load_df(df)
 
   # cluster using default parameters
-  net.make_clust()
+  net.cluster()
 
   # make interactive widget
-  clustergrammer_widget(network=net.widget())
+  net.widget()
 
 Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook. The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, and filters to keep the top 200 rows based on their absolute value sum:
 ::
@@ -89,7 +89,7 @@ Loading new data into ``net`` clears out the old data, which allows ``net`` to b
   net.filter_N_top('row', 200, 'sum')
 
   # make interactive widget
-  clustergrammer_widget(network=net.widget())
+  net.widget()
 
 In the examples above, we clustered our matrix using the default parameters. For more information about the ``Network`` object and additional options; see the :ref:`clustergrammer_py_api`.
 

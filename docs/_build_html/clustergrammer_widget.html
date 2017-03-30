@@ -185,18 +185,18 @@
 <span id="clustergrammer-widget-workflow"></span><h2>Clustergrammer-Widget Workflow Example<a class="headerlink" href="#clustergrammer-widget-workflow-example" title="Permalink to this headline">¶</a></h2>
 <p>The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> (which is rendered using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>) shows how to visualize a matrix from a file and a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame. The following examples are taken from this notebook.</p>
 <p>Here we are visualizing a matrix of data from a file (e.g. <code class="docutils literal"><span class="pre">rc_two_cats.txt</span></code>). We start by making an instance of the <code class="docutils literal"><span class="pre">Network</span></code> object, <code class="docutils literal"><span class="pre">net</span></code>, which is used to load and cluster the data. Then we pass the data to <code class="docutils literal"><span class="pre">clustergrammer_widget</span></code> to generate the visualization (for more information about the <code class="docutils literal"><span class="pre">Network</span></code> class, see <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># import clustergrammer_widgets and initialize network object</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># import classes and instantiate Network instance with the widget as an argument</span>
 <span class="kn">from</span> <span class="nn">clustergrammer_widget</span> <span class="k">import</span> <span class="o">*</span>
-<span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
+<span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">(</span><span class="n">clustergrammer_widget</span><span class="p">)</span>
 
 <span class="c1"># load matrix file</span>
 <span class="n">net</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s1">&#39;rc_two_cats.txt&#39;</span><span class="p">)</span>
 
 <span class="c1"># cluster using default parameters</span>
-<span class="n">net</span><span class="o">.</span><span class="n">make_clust</span><span class="p">()</span>
+<span class="n">net</span><span class="o">.</span><span class="n">cluster</span><span class="p">()</span>
 
 <span class="c1"># make interactive widget</span>
-<span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
+<span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Clustergrammer-Widget can also be used as a general purpose <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, <code class="docutils literal"><span class="pre">df</span></code>, by loading it into the same <code class="docutils literal"><span class="pre">net</span></code> object from above:</p>
@@ -204,10 +204,10 @@
 <span class="n">net</span><span class="o">.</span><span class="n">load_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
 <span class="c1"># cluster using default parameters</span>
-<span class="n">net</span><span class="o">.</span><span class="n">make_clust</span><span class="p">()</span>
+<span class="n">net</span><span class="o">.</span><span class="n">cluster</span><span class="p">()</span>
 
 <span class="c1"># make interactive widget</span>
-<span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
+<span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Loading new data into <code class="docutils literal"><span class="pre">net</span></code> clears out the old data, which allows <code class="docutils literal"><span class="pre">net</span></code> to be easily reused within the same notebook. The <code class="docutils literal"><span class="pre">net</span></code> object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, and filters to keep the top 200 rows based on their absolute value sum:</p>
@@ -218,7 +218,7 @@
 <span class="n">net</span><span class="o">.</span><span class="n">filter_N_top</span><span class="p">(</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">)</span>
 
 <span class="c1"># make interactive widget</span>
-<span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
+<span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>In the examples above, we clustered our matrix using the default parameters. For more information about the <code class="docutils literal"><span class="pre">Network</span></code> object and additional options; see the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>.</p>
