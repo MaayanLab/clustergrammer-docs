@@ -210,8 +210,8 @@
 <p>The function <code class="docutils literal"><span class="pre">make_clust</span></code> calculates hierarchical clustering of your data and hierarchical clustering of successive-row-filtered versions of your data. These alternate filtered-views are stored as <code class="docutils literal"><span class="pre">views</span></code> within the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a>.</p>
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
-<em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.10.0</p>
+<em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><span class="sig-paren">(</span><em>widget=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
+<dd><p>version 1.12.0</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -257,6 +257,12 @@ the network that will be used as input to clustergram.js.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="clustergrammer_py.Network.cluster">
+<code class="descname">cluster</code><span class="sig-paren">(</span><em>dist_type='cosine', run_clustering=True, dendro=True, views=['N_row_sum', 'N_row_var'], linkage_type='average', sim_mat=False, filter_sim=0.1, calc_cat_pval=False, run_enrichr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :<code class="docutils literal"><span class="pre">visualization_json</span></code>.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="clustergrammer_py.Network.dat_to_df">
 <code class="descname">dat_to_df</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.dat_to_df" title="Permalink to this definition">¶</a></dt>
 <dd><p>Export Pandas DataFrams (will be deprecated).</p>
@@ -299,6 +305,13 @@ clustergram.</p>
 <dt id="clustergrammer_py.Network.export_net_json">
 <code class="descname">export_net_json</code><span class="sig-paren">(</span><em>net_type='viz'</em>, <em>indent='no-indent'</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.export_net_json" title="Permalink to this definition">¶</a></dt>
 <dd><p>Export dat or viz JSON.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="clustergrammer_py.Network.export_viz_to_widget">
+<code class="descname">export_viz_to_widget</code><span class="sig-paren">(</span><em>which_viz='viz'</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.export_viz_to_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export viz JSON, for use with clustergrammer_widget. Formerly method was
+named widget.</p>
 </dd></dl>
 
 <dl class="method">
@@ -352,6 +365,12 @@ threshold (in absolute value).</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="clustergrammer_py.Network.load_file_as_string">
+<code class="descname">load_file_as_string</code><span class="sig-paren">(</span><em>file_string</em>, <em>filename=''</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.load_file_as_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load file as a string.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="clustergrammer_py.Network.load_stdin">
 <code class="descname">load_stdin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.load_stdin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load stdin TSV-formatted string.</p>
@@ -373,7 +392,8 @@ be possible to load data without having to read from a file.</p>
 <dl class="method">
 <dt id="clustergrammer_py.Network.make_clust">
 <code class="descname">make_clust</code><span class="sig-paren">(</span><em>dist_type='cosine', run_clustering=True, dendro=True, views=['N_row_sum', 'N_row_var'], linkage_type='average', sim_mat=False, filter_sim=0.1, calc_cat_pval=False, run_enrichr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.make_clust" title="Permalink to this definition">¶</a></dt>
-<dd><p>The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :<code class="docutils literal"><span class="pre">visualization_json</span></code>.</p>
+<dd><p>... Will be deprecated, renaming method cluster ...
+The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :<code class="docutils literal"><span class="pre">visualization_json</span></code>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -409,7 +429,17 @@ be possible to load data without having to read from a file.</p>
 <dl class="method">
 <dt id="clustergrammer_py.Network.widget">
 <code class="descname">widget</code><span class="sig-paren">(</span><em>which_viz='viz'</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.widget" title="Permalink to this definition">¶</a></dt>
-<dd><p>Export viz JSON, for use with clustergrammer_widget.</p>
+<dd><p>Generate a widget visualization using the widget. The export_viz_to_widget
+method passes the visualization JSON to the instantiated widget, which is
+returned and visualized on the front-end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="clustergrammer_py.Network.widget_df">
+<code class="descname">widget_df</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.widget_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export a DataFrame from the front-end visualization. For instance, a user
+can filter to show only a single cluster using the dendrogram and then
+get a dataframe of this cluster using the widget_df method.</p>
 </dd></dl>
 
 <dl class="method">
