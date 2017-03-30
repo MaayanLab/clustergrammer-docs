@@ -52,7 +52,9 @@ Clustergrammer-Widget Workflow Example
 ======================================
 The Jupyter notebook `Running_clustergrammer_widget.ipynb`_ (which is rendered using `nbviewer`_) shows how to visualize a matrix from a file and a `Pandas`_ DataFrame. The following examples are taken from this notebook.
 
-Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``). We start by making an instance of the ``Network`` object, ``net``, which is used to load and cluster the data. Then we pass the data to ``clustergrammer_widget`` to generate the visualization (for more information about the ``Network`` class, see :ref:`clustergrammer_py_api`):
+Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``). We start by instantiating the ``Network`` object, ``net`` and passing the widget, `clustergrammer_widget` as an argument. The `net` object is used to load data, filter, normalize, cluster, and finally to visualize using the widget (for more information about the ``Network`` class, see :ref:`clustergrammer_py_api`).
+
+**Load Data from File**
 
 .. ipywidgets-display::
 
@@ -69,6 +71,8 @@ Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``).
   # make interactive widget
   net.widget()
 
+**General Purpose DataFrame Viewer**
+
 Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the same ``net`` object from above:
 ::
 
@@ -81,7 +85,11 @@ Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame 
   # make interactive widget
   net.widget()
 
-Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook. The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, and filters to keep the top 200 rows based on their absolute value sum:
+Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook.
+
+**Filtering, Downsampling, and Normalizing**
+
+The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, and filters to keep the top 200 rows based on their absolute value sum:
 ::
 
   # Z-score normalize columns
@@ -93,7 +101,22 @@ Loading new data into ``net`` clears out the old data, which allows ``net`` to b
   # make interactive widget
   net.widget()
 
-In the examples above, we clustered our matrix using the default parameters. For more information about the ``Network`` object and additional options; see the :ref:`clustergrammer_py_api`.
+In the examples above, we clustered our matrix using the default parameters.
+
+.. _two_way_communication:
+
+**Two-way Widget Communication**
+
+In addition to sending information from the back end kernel to the front-end as shown above, widgets can also send information from the visualization to the back end kernel. Clustergrammer-Widget uses this feature to enable users to export their possibly modified visualization as a DataFrame. This can be use to select a cluster of interest, by :ref:`crop` or using the :ref:`interactive_dendrogram`, and pass this cluster to a new dataframe. Alternatively, this can be used to export the visualization as a DataFrame after performing enrichment analysis using :ref:`enrichrgram`. See the `df_widget` method below for an example:
+
+::
+
+  # We can filter the visualization (e.g. dendrogram cropping) and export the modified
+  # matrix to the back end using the df_widget method
+  df_crop = net.df_widget()
+
+
+For more information about the ``Network`` object and additional options; see the :ref:`clustergrammer_py_api`.
 
 .. _clustergrammer_widget_examples:
 
