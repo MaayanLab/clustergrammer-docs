@@ -1,6 +1,6 @@
 class Network(object):
   '''
-  version 1.12.0
+  version 1.12.4
 
   Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the :ref:`visualization_json` for :ref:`clustergrammer_js`.
 
@@ -64,7 +64,7 @@ class Network(object):
   def cluster(self, dist_type='cosine', run_clustering=True,
                  dendro=True, views=['N_row_sum', 'N_row_var'],
                  linkage_type='average', sim_mat=False, filter_sim=0.1,
-                 calc_cat_pval=False, run_enrichr=None):
+                 calc_cat_pval=False, run_enrichr=None, enrichrgram=None):
     '''
     The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :``visualization_json``.
     '''
@@ -77,12 +77,13 @@ class Network(object):
                                    sim_mat=sim_mat,
                                    filter_sim=filter_sim,
                                    calc_cat_pval=calc_cat_pval,
-                                   run_enrichr=run_enrichr)
+                                   run_enrichr=run_enrichr,
+                                   enrichrgram=enrichrgram)
 
   def make_clust(self, dist_type='cosine', run_clustering=True,
                  dendro=True, views=['N_row_sum', 'N_row_var'],
                  linkage_type='average', sim_mat=False, filter_sim=0.1,
-                 calc_cat_pval=False, run_enrichr=None):
+                 calc_cat_pval=False, run_enrichr=None, enrichrgram=None):
     '''
     ... Will be deprecated, renaming method cluster ...
     The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :``visualization_json``.
@@ -97,7 +98,8 @@ class Network(object):
                                    sim_mat=sim_mat,
                                    filter_sim=filter_sim,
                                    calc_cat_pval=calc_cat_pval,
-                                   run_enrichr=run_enrichr)
+                                   run_enrichr=run_enrichr,
+                                   enrichrgram=enrichrgram)
 
   def produce_view(self, requested_view=None):
     '''
@@ -144,9 +146,6 @@ class Network(object):
     data_formats.df_to_dat(self, df, define_cat_colors)
 
   def set_cat_color(self, axis, cat_index, cat_name, inst_color):
-    '''
-    Set category colors that are persistent across re-loading of data.
-    '''
 
     if axis == 0:
       axis = 'row'
@@ -206,15 +205,21 @@ class Network(object):
     '''
 
     if hasattr(self, 'widget_instance') == True:
-      tmp_net = deepcopy(Network())
 
-      df_string = self.widget_instance.mat_string
+      if self.widget_instance.mat_string != '':
 
-      tmp_net.load_file_as_string(df_string)
+        tmp_net = deepcopy(Network())
 
-      df = tmp_net.export_df()
+        df_string = self.widget_instance.mat_string
 
-      return df
+        tmp_net.load_file_as_string(df_string)
+
+        df = tmp_net.export_df()
+
+        return df
+
+      else:
+        return self.export_df()
 
     else:
       if hasattr(self, 'widget_class') == True:
