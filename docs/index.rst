@@ -36,14 +36,13 @@ Clustergrammer was developed to visualize high-dimensional biological data (e.g.
 
 .. _contact:
 
-Funding and Contact
-===================
-
-Clustergrammer is being developed by the `Ma'ayan Lab`_ at the `Icahn School of Medicine at Mount Sinai`_ for the `BD2K-LINCS DCIC`_ and the `KMC-IDG`_.
-
-
+Contact
+=======
 Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) for support, comments, and suggestions.
 
+Funding
+=======
+Clustergrammer is being developed by the `Ma'ayan Lab`_ at the `Icahn School of Medicine at Mount Sinai`_ for the `BD2K-LINCS DCIC`_ and the `KMC-IDG`_.
 
 Contents:
 =========
