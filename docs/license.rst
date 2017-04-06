@@ -5,7 +5,7 @@ License
   :width: 350px
   :alt: Interacting with Categories
 
-Clustergrammer is being developed by the `Ma'ayan lab`_ at the `Icahn School of Medicine at Mount Sinai`_ for the `BD2K-LINCS DCIC`_ and the `KMC-IDG`_. Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) with any questions about the License.
+Clustergrammer is being developed by the `Ma'ayan lab`_ at the `Icahn School of Medicine at Mount Sinai`_ for the `BD2K-LINCS DCIC`_ and the `KMC-IDG`_. Please contact Nicolas Fernandez (nicolas.fernandez@mssm.edu) and Avi Ma'ayan (avi.maayan@mssm.edu) with any questions about the License.
 
 Clustergrammer's `license`_ and third-party licenses are in the `LICENSES`_ directory.
 

@@ -140,7 +140,7 @@ Clustergrammer-Widget Development
 =================================
 Clustergrammer-Widget's source code can be found in the `clustergrammer-widget`_ GitHub repo. Clustergrammer-Widget is built using the `ipywidgets`_ framework (using the `cookie cutter`_ template).
 
-Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
+Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
 
 .. _`ipywidgets version 6`: https://github.com/ipython/ipywidgets/releases
 .. _`ipywidgets`: http://ipywidgets.readthedocs.io/en/latest/

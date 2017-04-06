@@ -38,7 +38,7 @@ Clustergrammer was developed to visualize high-dimensional biological data (e.g.
 
 Contact
 =======
-Please contact Avi Ma'ayan (avi.maayan@mssm.edu) and Nicolas Fernandez (nicolas.fernandez@mssm.edu) for support, comments, and suggestions.
+Please contact Nicolas Fernandez (nicolas.fernandez@mssm.edu) and Avi Ma'ayan (avi.maayan@mssm.edu) for support, comments, and suggestions.
 
 Funding
 =======

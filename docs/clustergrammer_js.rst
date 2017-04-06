@@ -1,4 +1,4 @@
-.. _clustergrammer_js:
+. _clustergrammer_js:
 
 Clustergrammer-JS
 -----------------
@@ -295,7 +295,7 @@ Clustergrammer-JS Development
 =============================
 The Clustergrammer-JS source code can be found in the `Clustergrammer GitHub repo`_. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in the `src`_ directory.
 
-Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
+Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
 
 .. _`SVG`: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 .. _`Clustergrammer GitHub repo`: https://github.com/MaayanLab/clustergrammer
