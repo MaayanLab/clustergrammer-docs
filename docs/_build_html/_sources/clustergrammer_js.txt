@@ -1,4 +1,4 @@
-. _clustergrammer_js:
+.. _clustergrammer_js:
 
 Clustergrammer-JS
 -----------------

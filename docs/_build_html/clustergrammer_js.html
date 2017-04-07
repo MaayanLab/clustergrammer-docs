@@ -150,14 +150,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p>. _clustergrammer_js:</p>
-<div class="section" id="clustergrammer-js">
-<h1>Clustergrammer-JS<a class="headerlink" href="#clustergrammer-js" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="clustergrammer-js">
+<span id="id1"></span><h1>Clustergrammer-JS<a class="headerlink" href="#clustergrammer-js" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.npmjs.com/package/clustergrammer"><img alt="version" src="https://img.shields.io/npm/v/clustergrammer.svg" /></a>
 <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/LICENSES/LICENSE"><img alt="license" src="https://img.shields.io/npm/l/clustergrammer.svg" /></a></p>
 <p>Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in <a class="reference external" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> using the visualization library <a class="reference external" href="https://d3js.org/">D3.js</a></p>
 <div class="section" id="clustergrammer-js-dependencies">
-<span id="id1"></span><h2>Clustergrammer-JS Dependencies<a class="headerlink" href="#clustergrammer-js-dependencies" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Clustergrammer-JS Dependencies<a class="headerlink" href="#clustergrammer-js-dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://d3js.org/">D3.js</a></li>
 <li><a class="reference external" href="https://jquery.com/">JQuery</a></li>
@@ -174,7 +173,7 @@
 <p>or the source code and library, <code class="docutils literal"><span class="pre">clustergrammer.js</span></code>, can be obtained from the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer GitHub repo</a>.</p>
 </div>
 <div class="section" id="javascript-workflow-example">
-<span id="id2"></span><h2>JavaScript Workflow Example<a class="headerlink" href="#javascript-workflow-example" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>JavaScript Workflow Example<a class="headerlink" href="#javascript-workflow-example" title="Permalink to this headline">¶</a></h2>
 <p>This workflow shows how to generate a visualization using the JSON produced by Clustergrammer.py</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">load</span> <span class="n">visualization</span> <span class="n">JSON</span> <span class="n">to</span> <span class="n">network_data</span>
 <span class="n">var</span> <span class="n">args</span> <span class="o">=</span> <span class="p">{</span>
@@ -188,11 +187,11 @@
 <p>The <code class="docutils literal"><span class="pre">id</span></code> of the container where the visualization will be made is passed as <code class="docutils literal"><span class="pre">root</span></code> (this root container must be made by the user). The <a class="reference internal" href="#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> contains the information necessary to generate the visualization and is passed as <code class="docutils literal"><span class="pre">network_data</span></code>. See the <a class="reference internal" href="#clustergrammer-js-api"><span class="std std-ref">Clustergrammer-JS API</span></a> for additional arguments that can be passed to Clustergrammer.js.</p>
 </div>
 <div class="section" id="example-pages">
-<span id="id3"></span><h2>Example Pages<a class="headerlink" href="#example-pages" title="Permalink to this headline">¶</a></h2>
+<span id="id4"></span><h2>Example Pages<a class="headerlink" href="#example-pages" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference external" href="https://github.com/MaayanLab/clustergrammer">Clustergrammer GitHub repo</a> contains several example pages demonstrating how to build a webpage with a Clustergrammer heatmap. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/index.html">index.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> show how to make a full-screen resizable visualization. The page <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/multiple_clustergrams.html">multiple_clust.html</a> and corresponding script <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_multiple_clustergrams.js">load_multiple_clustergrams.js</a> show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.</p>
 </div>
 <div class="section" id="clustergrammer-js-api">
-<span id="id4"></span><h2>Clustergrammer-JS API<a class="headerlink" href="#clustergrammer-js-api" title="Permalink to this headline">¶</a></h2>
+<span id="id5"></span><h2>Clustergrammer-JS API<a class="headerlink" href="#clustergrammer-js-api" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="Clustergrammer">
 <em class="property">class </em><code class="descname">Clustergrammer</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#Clustergrammer" title="Permalink to this definition">¶</a></dt>
@@ -463,7 +462,7 @@
 
 </div>
 <div class="section" id="visualization-json">
-<span id="id5"></span><h2>Visualization-JSON<a class="headerlink" href="#visualization-json" title="Permalink to this headline">¶</a></h2>
+<span id="id6"></span><h2>Visualization-JSON<a class="headerlink" href="#visualization-json" title="Permalink to this headline">¶</a></h2>
 <p>The visualization-JSON is calculated by <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> and encodes everything needed for the front-end Clustergrammer-JS to produce the visualization. The visualization-JSON format is described here (see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-json/blob/master/clustergrammer_example.json">clustergrammer_example.json</a> for an example file). An overview of the format is shown below (note that the group arrays are not shown):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="s2">&quot;row_nodes&quot;</span><span class="p">:[</span>
