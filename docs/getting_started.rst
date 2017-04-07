@@ -3,7 +3,7 @@ Getting Started
 
 Clustergrammer is a web-based tool for visualizing high-dimensional data as interactive and shareable hierarchically clustered heatmaps. Clustergrammer can be used in three main ways:
 
-#. :ref:`clustergrammer_web` (`http://amp.pharm.mssm.edu/clustergrammer/`_)
+#. :ref:`clustergrammer_web` (`http://amp.pharm.mssm.edu/clustergrammer`_)
 #. :ref:`clustergrammer_widget`
 #. :ref:`clustergrammer_js` and :ref:`clustergrammer_py` libraries
 
@@ -13,7 +13,7 @@ This section will provide instructions on how to quickly visualize your data usi
 
 Clustergrammer Web-App
 ======================
-Users can easily generate an interactive and shareable heatmap visualization using the :ref:`clustergrammer_web`. Simply upload a tab-separated matrix file (see screenshot below) at the `homepage`_ to be redirected to a permanent and shareable visualization of your data.
+Users can easily generate an interactive and shareable heatmap visualization using the :ref:`clustergrammer_web` (see upload section screenshot below). Simply upload a tab-separated matrix file (see :ref:`matrix_format_io` for more information) at the `homepage`_ to be redirected to a permanent and shareable visualization of your data.
 
 .. figure:: _static/clustergrammer_web_upload.png
   :width: 550px
@@ -51,7 +51,7 @@ Users can share their interactive visualizations using the permanent link. See :
 
 Clustergrammer-Widget
 =====================
-Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The :ref:`clustergrammer_widget` enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). The :ref:`clustergrammer_widget` can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The :ref:`clustergrammer_widget` enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). The :ref:`clustergrammer_widget` can be used to visualize a matrix of data from a matrix file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
 
 Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below:
 
@@ -61,7 +61,7 @@ Clustergrammer has been applied to visualize and analyze a wide variety of biolo
 - `Iris Dataset.ipynb`_
 
 
-To use the :ref:`clustergrammer_widget` users need to install: `Python`_, `Jupyter`_ notebook, the widget dependencies (see :ref:`clustergrammer_widget_dependencies`), and `ipywidgets`_ version >6.0.0 (to save the notebook with widgets). Users can `install Anaconda`_, a Python distribution that includes the Jupyter notebook as well as other scientific computing libraries, to easily obtain the necessary dependencies (except ipywidgets version >6.0.0). The ``clustergrammer_widget`` can the be installed (with pip) and enabled using the following commands:
+To use the :ref:`clustergrammer_widget` users need to install: `Python`_, `Jupyter`_ notebook, the widget dependencies (see :ref:`clustergrammer_widget_dependencies`), and `ipywidgets`_ version >6.0.0 (required for saving notebook with widgets). Users can `install Anaconda`_, a Python distribution that includes the Jupyter notebook as well as other scientific computing libraries, to easily obtain the necessary dependencies (except ipywidgets version >6.0.0). Once these requirements have been met, ``clustergrammer_widget`` can then be installed (with pip) and enabled using the following commands:
 ::
 
   pip install --upgrade clustergrammer_widget
@@ -77,7 +77,7 @@ With the ``clustergrammer_widget`` installed and enabled users can visualize the
 
   # load matrix file and cluster using default parameters
   net.load_file('rc_two_cats.txt')
-  net.make_clust()
+  net.cluster()
 
   # make interactive widget
   clustergrammer_widget(network=net.widget())
@@ -128,7 +128,7 @@ Clustergrammer also has :ref:`biology_specific_features` for working with gene-l
 .. _`Python`: https://www.python.org/
 .. _`ipywidgets`: http://ipywidgets.readthedocs.io/en/latest/
 .. _`GitHub repo`: https://github.com/MaayanLab/clustergrammer-widget
-.. _`http://amp.pharm.mssm.edu/clustergrammer/`: http://amp.pharm.mssm.edu/clustergrammer/
+.. _`http://amp.pharm.mssm.edu/clustergrammer`: http://amp.pharm.mssm.edu/clustergrammer/
 .. _`install Anaconda`: https://www.continuum.io/downloads
 
 .. _`Running_clustergrammer_widget.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb

@@ -14,7 +14,7 @@ Using Clustergrammer
 The easiest ways to use Clustergrammer to produce an interactive visualization of your data are:
 
 - upload a tab-separated matrix file using the Clustergrammer web app: `https://amp.pharm.mssm.edu/clustergrammer/`_
-- or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share using `nbviewer`_
+- or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share using `nbviewer`_ (see `example notebook`_)
 
 The :ref:`clustergrammer_web` is the quickest way to generate an interactive and shareable visualization (see `example visualization`_ and :ref:`getting started Web-app<getting_started_web_app>`). For users who want to visualize their data within a notebook workflow, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebooks and shared through Jupyter's `nbviewer`_ (see `example notebook`_ and :ref:`getting started Widget <getting_started_widget>`).
 
@@ -87,3 +87,4 @@ Contents:
 .. _`Icahn School of Medicine at Mount Sinai`: http://icahn.mssm.edu/
 .. _`BD2K-LINCS DCIC`: http://lincs-dcic.org/
 .. _`KMC-IDG`: http://commonfund.nih.gov/idg/overview
+.. _`example notebook`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
