@@ -73,14 +73,14 @@ With the ``clustergrammer_widget`` installed and enabled users can visualize the
 
   # import clustergrammer_widgets and initialize network object
   from clustergrammer_widget import *
-  net = Network()
+  net = Network(clustergrammer_widget)
 
   # load matrix file and cluster using default parameters
   net.load_file('rc_two_cats.txt')
   net.cluster()
 
   # make interactive widget
-  clustergrammer_widget(network=net.widget())
+  net.widget()
 
 See the screenshot below for an example widget visualization:
 

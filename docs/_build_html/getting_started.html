@@ -194,14 +194,14 @@
 <p>With the <code class="docutils literal"><span class="pre">clustergrammer_widget</span></code> installed and enabled users can visualize their data (from a file) using the following Python commands:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># import clustergrammer_widgets and initialize network object</span>
 <span class="kn">from</span> <span class="nn">clustergrammer_widget</span> <span class="k">import</span> <span class="o">*</span>
-<span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
+<span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">(</span><span class="n">clustergrammer_widget</span><span class="p">)</span>
 
 <span class="c1"># load matrix file and cluster using default parameters</span>
 <span class="n">net</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s1">&#39;rc_two_cats.txt&#39;</span><span class="p">)</span>
 <span class="n">net</span><span class="o">.</span><span class="n">cluster</span><span class="p">()</span>
 
 <span class="c1"># make interactive widget</span>
-<span class="n">clustergrammer_widget</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">())</span>
+<span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>See the screenshot below for an example widget visualization:</p>
