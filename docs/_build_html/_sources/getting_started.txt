@@ -114,8 +114,8 @@ Press play or interact with the gene-expression demo below to see some of Cluste
 
 Clustergrammer also has :ref:`biology_specific_features` for working with gene-level data including:
 
-- mouseover gene names and description look-up (using `Harmonizome`_)
-- enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using `Enrichr`_)
+- Mouseover gene names and description look-up (using `Harmonizome`_)
+- Enrichment analysis to find biological information (e.g. up-stream transcription factors) specific to your set of genes (using `Enrichr`_)
 
 
 .. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
