@@ -213,7 +213,7 @@
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><span class="sig-paren">(</span><em>widget=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.12.4</p>
+<dd><p>version 1.13.3</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -291,10 +291,32 @@ string.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="clustergrammer_py.Network.enrichr">
-<code class="descname">enrichr</code><span class="sig-paren">(</span><em>req_type</em>, <em>gene_list=None</em>, <em>lib=None</em>, <em>list_id=None</em>, <em>max_terms=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.enrichr" title="Permalink to this definition">¶</a></dt>
-<dd><p>Under development; get enrichment results from Enrichr and add them to
-clustergram.</p>
+<dt id="clustergrammer_py.Network.enrichrgram">
+<code class="descname">enrichrgram</code><span class="sig-paren">(</span><em>lib</em>, <em>axis='row'</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.enrichrgram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add Enrichr gene enrichment results to your visualization (where your rows
+are genes). Run enrichrgram before clustering to incldue enrichment results
+as row categories. Enrichrgram can also be run on the front-end using the
+Enrichr logo at the top left.</p>
+<p>Set lib to the Enrichr library that you want to use for enrichment analysis.
+Libraries included:</p>
+<blockquote>
+<div><ul class="simple">
+<li>ChEA_2016</li>
+<li>KEA_2015</li>
+<li>ENCODE_TF_ChIP-seq_2015</li>
+<li>ENCODE_Histone_Modifications_2015</li>
+<li>Disease_Perturbations_from_GEO_up</li>
+<li>Disease_Perturbations_from_GEO_down</li>
+<li>GO_Molecular_Function_2015</li>
+<li>GO_Biological_Process_2015</li>
+<li>GO_Cellular_Component_2015</li>
+<li>Reactome_2016</li>
+<li>KEGG_2016</li>
+<li>MGI_Mammalian_Phenotype_Level_4</li>
+<li>LINCS_L1000_Chem_Pert_up</li>
+<li>LINCS_L1000_Chem_Pert_down</li>
+</ul>
+</div></blockquote>
 </dd></dl>
 
 <dl class="method">

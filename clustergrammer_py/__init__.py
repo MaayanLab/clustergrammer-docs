@@ -1,6 +1,6 @@
 class Network(object):
   '''
-  version 1.12.4
+  version 1.13.3
 
   Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the :ref:`visualization_json` for :ref:`clustergrammer_js`.
 
@@ -373,17 +373,39 @@ class Network(object):
 
     return link
 
-  def enrichr(self, req_type, gene_list=None, lib=None, list_id=None,
-    max_terms=None):
+  def enrichrgram(self, lib, axis='row'):
     '''
-    Under development; get enrichment results from Enrichr and add them to
-    clustergram.
-    '''
-    if req_type == 'post':
-      return enr_fun.post_request(gene_list)
+    Add Enrichr gene enrichment results to your visualization (where your rows
+    are genes). Run enrichrgram before clustering to incldue enrichment results
+    as row categories. Enrichrgram can also be run on the front-end using the
+    Enrichr logo at the top left.
 
-    if req_type == 'get':
-      return enr_fun.get_request(lib, list_id, max_terms)
+    Set lib to the Enrichr library that you want to use for enrichment analysis.
+    Libraries included:
+
+      * ChEA_2016
+      * KEA_2015
+      * ENCODE_TF_ChIP-seq_2015
+      * ENCODE_Histone_Modifications_2015
+      * Disease_Perturbations_from_GEO_up
+      * Disease_Perturbations_from_GEO_down
+      * GO_Molecular_Function_2015
+      * GO_Biological_Process_2015
+      * GO_Cellular_Component_2015
+      * Reactome_2016
+      * KEGG_2016
+      * MGI_Mammalian_Phenotype_Level_4
+      * LINCS_L1000_Chem_Pert_up
+      * LINCS_L1000_Chem_Pert_down
+
+    '''
+
+    df = self.export_df()
+    df, bar_info = enr_fun.add_enrichr_cats(df, axis, lib)
+    self.load_df(df)
+
+    self.dat['enrichrgram_lib'] = lib
+    self.dat['row_cat_bars'] = bar_info
 
   @staticmethod
   def load_gmt(filename):
