@@ -65,6 +65,18 @@ Clustergrammer was used to visualize several widely used machine learning Datase
 
 These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar Datasets.
 
+Large Network: Kinase Substrate Similarity Network
+==================================================
+.. figure:: _static/kinase_network_screenshot.png
+  :width: 450px
+  :align: left
+  :alt: Kinase Network Screenshot
+  :target: https://maayanlab.github.io/kinase_substrate_similarity_network/
+
+  Screenshot from the `Kinase Substrate Similarity Network`_ example that demonstrates Clustergrammer can be used to visualize a large network of kinases based on shared substrates.
+
+Clustergrammer can be used to visualize large networks without the formation of 'hairballs'. In the `Kinase Substrate Similarity Network`_ example we use Clustergrammer to visualize a network kinases based on shared substrate that includes 404 kinases and 163,216 links. Kinases are shown as rows and columns. For more information see the `Kinase Substrate Similarity Network`_.
+
 
 Zika Virus RNA-seq Data Visualization
 =====================================
@@ -75,7 +87,7 @@ Single-Cell RNA-seq Data Visualization
 Clustergrammer was used to visualize published single-cell gene expression data: `Single-Cell RNA-seq Data Visualization`_ (`Olsson et al.`_). The visualization was produced using an Excel file provided alongside the figures.
 
 
-
+.. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
 .. _`MNIST Data`: http://yann.lecun.com/exdb/mnist/
 .. _`Icahn School of Medicine Human Immune Monitoring Core`: http://icahn.mssm.edu/research/portal/resources/deans-cores/human-immune-monitoring-core
 .. _`Plasma_vs_PMA_Phosphrylation.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
