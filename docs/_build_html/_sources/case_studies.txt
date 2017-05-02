@@ -47,6 +47,25 @@ CyTOF Data: Single Cell Immune Response to PMA Treatment
 
 White blood cells are a key component of the immune system and kinase signaling is known to play an important role in immune cell function (see `Isakov and Altman 2013`_). Our collaborators at the `Icahn School of Medicine Human Immune Monitoring Core`_ used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 19 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See `Plasma_vs_PMA_Phosphrylation.ipynb`_ for more information.
 
+Machine Learning and Miscellaneous Datasets
+===========================================
+.. figure:: _static/MNIST_screenshot.png
+  :width: 450px
+  :align: left
+  :alt: MNIST Screenshot
+  :target: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb#Visualize-Downsampled-Version-of-MNIST
+
+  Screenshot from the `MNIST Notebook`_ that demonstrates how the :ref:`clustergrammer_widget` can be used to visualize the `MNIST Data`_. Downsampled handwritten digits (K-means downsampled from 70,0000 handwritten digits to 300 digit-clusters) are shown as columns with digit-type categories and pixels are shown as rows. For more information see the `MNIST Notebook`_.
+
+Clustergrammer was used to visualize several widely used machine learning Datasets and other miscellaneous Datasets:
+
+- `MNIST Handwritten Digit Dataset`_
+- `Iris Flower Dataset`_
+- `USDA Nutrient Dataset`_
+
+These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar Datasets.
+
+
 Zika Virus RNA-seq Data Visualization
 =====================================
 Clustergrammer was used to visualize the results of an RNA-Seq data analysis pipeline within a Jupyter notebook: `An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study`_ (`Wang et al.`_).
@@ -55,16 +74,9 @@ Single-Cell RNA-seq Data Visualization
 ======================================
 Clustergrammer was used to visualize published single-cell gene expression data: `Single-Cell RNA-seq Data Visualization`_ (`Olsson et al.`_). The visualization was produced using an Excel file provided alongside the figures.
 
-Machine Learning and Miscellaneous Datasets
-===========================================
-Clustergrammer was used to visualize several widely used machine learning Datasets and other miscellaneous Datasets:
 
-- `Iris Flower Dataset`_
-- `MNIST Handwritten Digit Dataset`_
-- `USDA Nutrient Dataset`_
 
-These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar Datasets.
-
+.. _`MNIST Data`: http://yann.lecun.com/exdb/mnist/
 .. _`Icahn School of Medicine Human Immune Monitoring Core`: http://icahn.mssm.edu/research/portal/resources/deans-cores/human-immune-monitoring-core
 .. _`Plasma_vs_PMA_Phosphrylation.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
 .. _`Isakov and Altman 2013`: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3831523/
@@ -74,6 +86,7 @@ These examples demonstrate the generality of heatmap visualizations and enable u
 .. _`CCLE Jupyter Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb
 .. _`An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb
 .. _`Iris Flower Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
+.. _`MNIST Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb
 .. _`MNIST Handwritten Digit Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb
 .. _`Single-Cell RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb
 .. _`CCLE`: https://portals.broadinstitute.org/ccle/home
