@@ -26,12 +26,13 @@ Use Cases
 =========
 Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Below are links to several example use cases (see :ref:`case_studies` for more information):
 
-- `Cancer Cell Line Encyclopedia Gene Expression Data`_ (and the `CCLE Jupyter Notebook`_)
-- `Single-Cell RNA-seq Data Visualization`_
-- `Zika Virus RNA-seq Data Visualization`_
+- `CCLE Explorer`_ (and the `CCLE Jupyter Notebook`_)
+- `Lung Cancer PTM and Gene Expression Regulation`_
+- `Single-Cell CyTOF Data`_
+
 - `Kinase Substrate Similarity Network`_
-- `Iris Flower Dataset`_
 - `MNIST Handwritten Digit Dataset`_
+- `Iris Flower Dataset`_
 - `USDA Nutrient Dataset`_
 
 .. _contact:
@@ -74,13 +75,13 @@ Contents:
 
 .. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
 
-.. _`CCLE Jupyter Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Tissue_Specific_Viz.ipynb
+.. _`CCLE Jupyter Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb
 
-.. _`Cancer Cell Line Encyclopedia Gene Expression Data`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
-.. _`Zika Virus RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb
+.. _`Single-Cell CyTOF Data`: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
+.. _`Lung Cancer PTM and Gene Expression Regulation`: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb
+.. _`CCLE Explorer`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`Iris Flower Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
 .. _`MNIST Handwritten Digit Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb
-.. _`Single-Cell RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb
 .. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
 
 .. _`Ma'ayan Lab`: http://labs.icahn.mssm.edu/maayanlab/
