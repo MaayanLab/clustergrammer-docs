@@ -8,6 +8,18 @@ Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================
 The Cancer Cell Line Encyclopedia (`CCLE`_) is a publicly available project that has characterized (e.g. genetic characterization) over 1,000 cancer cell lines. We used Clustergrammer to re-analyze and visualize CCLE's gene expression data in the `CCLE Explorer`_. The CCLE Explorer allows users to explore the CCLE by tissue type and visualize the most commonly differentially expressed genes for each tissue type as an interactive heatmap. The `CCLE Jupyter Notebook`_ generates an overview of the CCLE gene expression data, investigates specific tissues, and explains how to use :ref:`Enrichrgram <enrichrgram>` to understand the biological functions of differentially expressed genes.
 
+Lung Cancer Post-Translational Modification and Gene Expression Regulation
+==========================================================================
+Lung cancer is a complex disease that is known to be regulated at the post-translational modification (PTM) level, e.g. phosphorylation driven by kinases. Our collaborators at `Cell Signaling Technology Inc`_ used Tandem Mass Tag (TMT) mass spectrometry to measure differential phosphorylation, acetylation, and methylation in a panel of 42 lung cancer cell lines compared to non-cancerous lung tissue. Gene expression data from 37 of these lung cancer cell lines was also independently obtained from the publically available Cancer Cell Line Encyclopedia (`CCLE`_). In the Jupyter notebook `CST_Data_Viz.ipynb`_ we:
+
+- Visualize PTM data, gene expression data, and merged PTM-Expression data
+- Identify co-regulated clusters of PTMs/genes in distinct lung cancer cell line subtypes
+- Perform enrichment analysis to understand the biological processes involved in PTM/expression clusters
+
+CyTOF Data: Single Cell Immune Response to PMA Treatment
+========================================================
+White blood cells are a key component of the immune system and kinase signaling is known to play an imporant role in immune cell function (see `Isakov and Altman 2013`_).
+
 Zika Virus RNA-seq Data Visualization
 =====================================
 Clustergrammer was used to visualize the results of an RNA-Seq data analysis pipeline within a Jupyter notebook: `An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study`_ (`Wang et al.`_).
@@ -26,6 +38,9 @@ Clustergrammer was used to visualize several widely used machine learning Datase
 
 These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar Datasets.
 
+.. _`Isakov and Altman 2013`: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3831523/
+.. _`CST_Data_Viz.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb?flush_cache=true
+.. _`Cell Signaling Technology Inc`: https://www.cellsignal.com/
 .. _`CCLE Explorer`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`CCLE Jupyter Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb
 .. _`An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb

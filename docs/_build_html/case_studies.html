@@ -91,6 +91,8 @@
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Case Studies and Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#cancer-cell-line-encyclopedia-gene-expression-data">Cancer Cell Line Encyclopedia Gene Expression Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lung-cancer-post-translational-modification-and-gene-expression-regulation">Lung Cancer Post-Translational Modification and Gene Expression Regulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cytof-data-single-cell-immune-response-to-pma-treatment">CyTOF Data: Single Cell Immune Response to PMA Treatment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#zika-virus-rna-seq-data-visualization">Zika Virus RNA-seq Data Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#single-cell-rna-seq-data-visualization">Single-Cell RNA-seq Data Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#machine-learning-and-miscellaneous-datasets">Machine Learning and Miscellaneous Datasets</a></li>
@@ -153,6 +155,19 @@
 <div class="section" id="cancer-cell-line-encyclopedia-gene-expression-data">
 <h2>Cancer Cell Line Encyclopedia Gene Expression Data<a class="headerlink" href="#cancer-cell-line-encyclopedia-gene-expression-data" title="Permalink to this headline">¶</a></h2>
 <p>The Cancer Cell Line Encyclopedia (<a class="reference external" href="https://portals.broadinstitute.org/ccle/home">CCLE</a>) is a publicly available project that has characterized (e.g. genetic characterization) over 1,000 cancer cell lines. We used Clustergrammer to re-analyze and visualize CCLE&#8217;s gene expression data in the <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/CCLE/">CCLE Explorer</a>. The CCLE Explorer allows users to explore the CCLE by tissue type and visualize the most commonly differentially expressed genes for each tissue type as an interactive heatmap. The <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb">CCLE Jupyter Notebook</a> generates an overview of the CCLE gene expression data, investigates specific tissues, and explains how to use <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> to understand the biological functions of differentially expressed genes.</p>
+</div>
+<div class="section" id="lung-cancer-post-translational-modification-and-gene-expression-regulation">
+<h2>Lung Cancer Post-Translational Modification and Gene Expression Regulation<a class="headerlink" href="#lung-cancer-post-translational-modification-and-gene-expression-regulation" title="Permalink to this headline">¶</a></h2>
+<p>Lung cancer is a complex disease that is known to be regulated at the post-translational modification (PTM) level, e.g. phosphorylation driven by kinases. Our collaborators at <a class="reference external" href="https://www.cellsignal.com/">Cell Signaling Technology Inc</a> used Tandem Mass Tag (TMT) mass spectrometry to measure differential phosphorylation, acetylation, and methylation in a panel of 42 lung cancer cell lines compared to non-cancerous lung tissue. Gene expression data from 37 of these lung cancer cell lines was also independently obtained from the publically available Cancer Cell Line Encyclopedia (<a class="reference external" href="https://portals.broadinstitute.org/ccle/home">CCLE</a>). In the Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb?flush_cache=true">CST_Data_Viz.ipynb</a> we:</p>
+<ul class="simple">
+<li>Visualize PTM data, gene expression data, and merged PTM-Expression data</li>
+<li>Identify co-regulated clusters of PTMs/genes in distinct lung cancer cell line subtypes</li>
+<li>Perform enrichment analysis to understand the biological processes involved in PTM/expression clusters</li>
+</ul>
+</div>
+<div class="section" id="cytof-data-single-cell-immune-response-to-pma-treatment">
+<h2>CyTOF Data: Single Cell Immune Response to PMA Treatment<a class="headerlink" href="#cytof-data-single-cell-immune-response-to-pma-treatment" title="Permalink to this headline">¶</a></h2>
+<p>White blood cells are a key component of the immune system and kinase signaling is known to play an imporant role in immune cell function (see <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3831523/">Isakov and Altman 2013</a>).</p>
 </div>
 <div class="section" id="zika-virus-rna-seq-data-visualization">
 <h2>Zika Virus RNA-seq Data Visualization<a class="headerlink" href="#zika-virus-rna-seq-data-visualization" title="Permalink to this headline">¶</a></h2>
