@@ -6,6 +6,15 @@ Clustergrammer was developed to visualize high-dimensional biological data (e.g.
 
 Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================
+
+.. figure:: _static/CCLE_explorer.png
+  :width: 800px
+  :align: left
+  :alt: Mouseover Interactions
+  :target: https://maayanlab.github.io/CCLE_Clustergrammer/
+
+  Screenshot from the `CCLE Explorer`_ showing the tissue breakdown of the CCLE. Clicking on a tissue brings up an interactive heatmap with the top 250 most variable genes within a tissue. Also see the `CCLE Jupyter Notebook`_ for an example of how to explore the CCLE gene expression data in a Jupyter notebook.
+
 The Cancer Cell Line Encyclopedia (`CCLE`_) is a publicly available project that has characterized (e.g. genetic characterization) over 1,000 cancer cell lines. We used Clustergrammer to re-analyze and visualize CCLE's gene expression data in the `CCLE Explorer`_. The CCLE Explorer allows users to explore the CCLE by tissue type and visualize the most commonly differentially expressed genes for each tissue type as an interactive heatmap. The `CCLE Jupyter Notebook`_ generates an overview of the CCLE gene expression data, investigates specific tissues, and explains how to use :ref:`Enrichrgram <enrichrgram>` to understand the biological functions of differentially expressed genes.
 
 Lung Cancer Post-Translational Modification and Gene Expression Regulation
