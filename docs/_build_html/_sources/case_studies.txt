@@ -10,7 +10,7 @@ Cancer Cell Line Encyclopedia Gene Expression Data
 .. figure:: _static/CCLE_explorer.png
   :width: 800px
   :align: left
-  :alt: Mouseover Interactions
+  :alt: CCLE Explorer
   :target: https://maayanlab.github.io/CCLE_Clustergrammer/
 
   Screenshot from the `CCLE Explorer`_ showing the tissue breakdown of the CCLE. Clicking on a tissue brings up an interactive heatmap with the top 250 most variable genes within a tissue. Also see the `CCLE Jupyter Notebook`_ for an example of how to explore the CCLE gene expression data in a Jupyter notebook.
@@ -19,7 +19,16 @@ The Cancer Cell Line Encyclopedia (`CCLE`_) is a publicly available project that
 
 Lung Cancer Post-Translational Modification and Gene Expression Regulation
 ==========================================================================
-Lung cancer is a complex disease that is known to be regulated at the post-translational modification (PTM) level, e.g. phosphorylation driven by kinases. Our collaborators at `Cell Signaling Technology Inc`_ used Tandem Mass Tag (TMT) mass spectrometry to measure differential phosphorylation, acetylation, and methylation in a panel of 42 lung cancer cell lines compared to non-cancerous lung tissue. Gene expression data from 37 of these lung cancer cell lines was also independently obtained from the publically available Cancer Cell Line Encyclopedia (`CCLE`_). In the Jupyter notebook `CST_Data_Viz.ipynb`_ we:
+
+.. figure:: _static/CST_screenshot.png
+  :width: 450px
+  :align: left
+  :alt: CST Screenshot
+  :target: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb
+
+  Screenshot from the `CST_Data_Viz.ipynb`_ Jupyter notebook showing hierarchical clustering of differential phosphorylation, methylation, acetylation, and gene expression data across 37 lung cancer cell lines. See the interactive Jupyter notebook `CST_Data_Viz.ipynb`_ for more information.
+
+Lung cancer is a complex disease that is known to be regulated at the post-translational modification (PTM) level, e.g. phosphorylation driven by kinases. Our collaborators at `Cell Signaling Technology Inc`_ used Tandem Mass Tag (TMT) mass spectrometry to measure differential phosphorylation, acetylation, and methylation in a panel of 42 lung cancer cell lines compared to non-cancerous lung tissue. Gene expression data from 37 of these lung cancer cell lines was also independently obtained from the publicly available Cancer Cell Line Encyclopedia (`CCLE`_). In the Jupyter notebook `CST_Data_Viz.ipynb`_ we:
 
 - Visualize PTM data, gene expression data, and merged PTM-Expression data
 - Identify co-regulated clusters of PTMs/genes in distinct lung cancer cell line subtypes
@@ -27,7 +36,16 @@ Lung cancer is a complex disease that is known to be regulated at the post-trans
 
 CyTOF Data: Single Cell Immune Response to PMA Treatment
 ========================================================
-White blood cells are a key component of the immune system and kinase signaling is known to play an imporant role in immune cell function (see `Isakov and Altman 2013`_).
+
+.. figure:: _static/CyTOF_screenshot.png
+  :width: 450px
+  :align: left
+  :alt: CyTOF Screenshot
+  :target: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
+
+  Screenshot from the `Plasma_vs_PMA_Phosphrylation.ipynb`_ Jupyter notebook showing downsampled single cell CyTOF data (K-means downsampled from 220,000 single cells to 2,000 cell-clusters). Cell-clusters are shown as rows with cell-type categories (e.g. Natural Killer cells) and phosphorylations are shown as columns. See the interactive Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ for more information.
+
+White blood cells are a key component of the immune system and kinase signaling is known to play an important role in immune cell function (see `Isakov and Altman 2013`_). Our collaborators at the `Icahn School of Medicine Human Immune Monitoring Core`_ used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 19 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See `Plasma_vs_PMA_Phosphrylation.ipynb`_ for more information.
 
 Zika Virus RNA-seq Data Visualization
 =====================================
@@ -47,6 +65,8 @@ Clustergrammer was used to visualize several widely used machine learning Datase
 
 These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar Datasets.
 
+.. _`Icahn School of Medicine Human Immune Monitoring Core`: http://icahn.mssm.edu/research/portal/resources/deans-cores/human-immune-monitoring-core
+.. _`Plasma_vs_PMA_Phosphrylation.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
 .. _`Isakov and Altman 2013`: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3831523/
 .. _`CST_Data_Viz.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb?flush_cache=true
 .. _`Cell Signaling Technology Inc`: https://www.cellsignal.com/
