@@ -12,7 +12,12 @@ Clustergrammer has been applied to visualize and analyze a wide variety of biolo
 
 - `Running_clustergrammer_widget.ipynb`_
 - `DataFrame_Example.ipynb`_
+- `CCLE Jupyter Notebook`_
+- `Lung Cancer PTM and Gene Expression Regulation`_
+- `Single-Cell CyTOF Data`_
 - `Single Cell RNA-seq Visualization.ipynb`_
+- `MNIST Handwritten Digit Dataset`_
+- `USDA Nutrient Dataset`_
 - `Iris Dataset.ipynb`_
 
 .. figure:: _static/jupyter_widget_nbviewer.png
@@ -164,6 +169,12 @@ Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use th
 .. _`Python`: https://www.python.org/
 .. _`Jupyter`: http://jupyter.org/
 .. _`install Anaconda`: https://www.continuum.io/downloads
+
+.. _`CCLE Jupyter Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb
+
+.. _`Lung Cancer PTM and Gene Expression Regulation`: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb
+
+.. _`Single-Cell CyTOF Data`: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
 
 .. |pypi-version| image:: https://img.shields.io/pypi/v/clustergrammer_widget.svg
     :alt: pypi-version

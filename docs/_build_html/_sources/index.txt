@@ -29,9 +29,8 @@ Clustergrammer was developed to visualize high-dimensional biological data (e.g.
 - `CCLE Explorer`_ (and the `CCLE Jupyter Notebook`_)
 - `Lung Cancer PTM and Gene Expression Regulation`_
 - `Single-Cell CyTOF Data`_
-
 - `Kinase Substrate Similarity Network`_
-- `MNIST Handwritten Digit Dataset`_
+- `MNIST Notebook`_
 - `Iris Flower Dataset`_
 - `USDA Nutrient Dataset`_
 
@@ -81,8 +80,14 @@ Contents:
 .. _`Lung Cancer PTM and Gene Expression Regulation`: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb
 .. _`CCLE Explorer`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`Iris Flower Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
-.. _`MNIST Handwritten Digit Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb
+
+
 .. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
+
+
+.. _`MNIST Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb#Visualize-Downsampled-Version-of-MNIST
+
+.. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
 
 .. _`Ma'ayan Lab`: http://labs.icahn.mssm.edu/maayanlab/
 .. _`Icahn School of Medicine at Mount Sinai`: http://icahn.mssm.edu/
