@@ -22,8 +22,8 @@ Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js`
 
 Please read the :doc:`getting_started` guide for more information.
 
-Use Cases
-=========
+Case Studies and Examples
+=========================
 Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Below are links to several example use cases (see :ref:`case_studies` for more information):
 
 - `CCLE Explorer`_ (and the `CCLE Jupyter Notebook`_)
