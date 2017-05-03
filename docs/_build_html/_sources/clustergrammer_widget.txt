@@ -8,7 +8,7 @@ Clustergrammer Jupyter Widget
 
 Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
 
-Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and :ref:`case_studies` for more examples:
+Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and :ref:`case_studies` for more information:
 
 - `Running_clustergrammer_widget.ipynb`_
 - `DataFrame_Example.ipynb`_
