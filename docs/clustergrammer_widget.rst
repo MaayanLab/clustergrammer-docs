@@ -139,7 +139,6 @@ To enable rendering interactive widgets on `nbviewer`_ you must have `ipywidgets
   Users can save notebooks with interactive HTML widgets using the "Save Notebook with Widgets" action in the Jupyter Notebook Widgets menu as shown here. `ipywidgets version 6`_  or later must be installed in order to enable this feature.
 
 
-
 .. _clustergrammer_widget_dev:
 
 Clustergrammer-Widget Development

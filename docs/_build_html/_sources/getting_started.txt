@@ -1,7 +1,7 @@
 Getting Started
 ---------------
 
-Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps. Clustergrammer can be used in three main ways:
+Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram` for more information). Clustergrammer can be used in three main ways:
 
 #. :ref:`clustergrammer_web`: `http://amp.pharm.mssm.edu/clustergrammer`_
 #. :ref:`clustergrammer_widget`

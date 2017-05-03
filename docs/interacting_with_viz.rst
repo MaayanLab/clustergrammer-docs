@@ -2,19 +2,21 @@
 
 Interacting with the Visualization
 ----------------------------------
-Data visualization benefits enormously from user interaction -- particularly interactions that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore and perform complex transformations on their data. Clustergrammer visualizations are built using the :ref:`clustergrammer_js` library and are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. This section will overview heatmaps as a visualization tool and cover the types of interactions that are available to the user.
+Data visualization benefits enormously from user interaction -- particularly interactions that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore their data and perform complex data transformations. Clustergrammer visualizations are built using the :ref:`clustergrammer_js` library and are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. This section will overview heatmaps as a visualization tool and cover Clustergrammer's interactive features.
+
+.. _intro_heatmap_clustergram:
 
 Introduction to Clustergrams/Heatmaps
 =====================================
-Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row/column labels, which is commonly referred to as a heatmap or clustergram (this documentation uses the terms 'heatmap' and 'clustergram' interchangeably; see `Eisen et al., 1998`_ for an early example using biological data). Clustergrams also typically use `dendrogram trees`_ to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_.
+Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row/column labels. This type of visualization is commonly referred to as a heatmap or clustergram and this documentation uses these terms interchangeably; refer to `Eisen et al., 1998`_ for an early example using biological data. Clustergrams also typically use `dendrogram trees`_ to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_.
 
-Heatmaps are powerful visualizations that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. `t-SNE`_). For instance, columns can depict data-points (e.g. measured entities) and rows can depict data-dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. in thousand(s)-dimensional space). However, static heatmaps are of limited use for visualizing large datasets (e.g. for large matrices, visualization elements and labels become too small to read). Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns. We built Clustergrammer, in part, to address these issues.
+Heatmaps are powerful visualization tools that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. `t-SNE`_). For instance, columns can depict data-points (e.g. measured entities) and rows can depict data-dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. data in thousand(s)-dimensional space). However, static heatmaps are of limited use for visualizing large datasets because visualization elements and labels become too small to read. Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns. We built Clustergrammer to address these problems and to extend the capabilities of heatmap visualizations.
 
 .. _interactive_demo:
 
 Interactive Demo
 ================
-Press play to take a quick tour of some of Clustergrammer's interactive features or interact with the demo below to explore for yourself:
+Press play to take a quick tour of some of Clustergrammer's interactive features or directly interact with the demo below to explore on your own:
 
 .. raw:: html
 
