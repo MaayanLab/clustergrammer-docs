@@ -2,7 +2,7 @@
 
 Case Studies and Examples
 -------------------------
-Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Below are links to several example case studies and examples using Clustergrammer.
+Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several example case studies and examples using Clustergrammer.
 
 Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================

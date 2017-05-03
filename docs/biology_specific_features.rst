@@ -2,13 +2,13 @@
 
 Biology-Specific Features
 -------------------------
-Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Clustergrammer has several biology-specific features that facilitate the analysis of gene-level biological data, such as: gene-expression data, proteomics-data, etc. To take advantage of these features, row names must be genes. See the `CCLE Explorer`_ for examples of gene-expression data. These optional biology-specific features are available in the :ref:`clustergrammer_web` as well as the :ref:`clustergrammer_widget` and will automatically activate if the row-names are genes.
+Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Clustergrammer has several biology-specific features that facilitate the analysis of gene-level biological data, such as: gene-expression data, proteomics-data, etc. To take advantage of these features, row names must be official gene names. See the `CCLE Explorer`_ for examples of visualizing gene-expression data. These optional biology-specific features are available in the :ref:`clustergrammer_web` as well as the :ref:`clustergrammer_widget` and will automatically activate if the row-names are genes.
 
 .. _hzome_gene_info:
 
 Mouseover Gene Name and Description
 ===================================
-The human genome consists of over 20,000 genes and modern high-throughput measurements are capable of making measurements across the entire genome (e.g. genome-wide expression studies). Human genes have official gene symbols (e.g. *EGFR*) that are frequently used to label genes in these datasets. Since no biologist can be knowledgeable about every gene in the genome a common and repetitive task for biologists is looking up the names and descriptions of genes in a dataset or visualization. To streamline this activity, Clustergrammer automatically displays the full name and description of a gene (provided by data aggregated through the `Harmonizome`_) as a tooltip when a user mouses over a gene label (see screenshot below). This simple feature speeds up analysis of large gene-level datasets.
+The human genome consists of over 20,000 genes and modern high-throughput measurements are capable of making measurements across the entire genome (e.g. genome-wide expression studies). Human genes have official gene symbols (e.g. *EGFR*) that are frequently used to label genes in these datasets. Since no biologist can be knowledgeable about every gene in the genome a common and repetitive task is looking up the names and descriptions of genes in a dataset or visualization. To streamline this activity, Clustergrammer automatically displays the full name and description of a gene (provided by data aggregated through the `Harmonizome`_) as a tooltip when a user mouses over a gene label (see screenshot below). This simple feature speeds up analysis of large gene-level datasets.
 
 .. figure:: _static/gene_info.png
   :width: 700px
@@ -39,7 +39,11 @@ When a user visualizes a matrix with genes as rows, Clustergrammer automatically
 
 **Enrichrgram**
 
-Users can also import biological information about their genes directly into the visualization (see screenshot below). Simply click the Enrichr-logo at the top-left of the heatmap to bring up a list of libraries from Enrichr, then click on a library to obtain enriched terms for your genes of interest. For instance, clicking on 'ChEA 2016' will enrich for up-stream transcription factors. The enriched terms are shown as row categories, which enables users to see which genes are associated with each term. The row-category titles give the enriched term name, and the red-bars represent the significance of the enrichment (see `Enrichr combined score`_). Users can run enrichment analysis on specific clusters of genes by filtering the matrix to only show only their genes of interest: e.g. use the dendrogram Crop buttons or Brush-Crop buttons to select a subset of genes for analysis.
+Enrichrgram enables users to find biological information specific to their genes of interest (using `Enrichr`_) and import this directly into the visualization as row categories (see screenshot below). Enrichrgram can be run on the front-end or back-end (using the :ref:`clustergrammer_py_api` to pre-calculate Enrichrgram results). This feature enables enrichment analysis to be performed within the visualization itself by both the original author of the visualization and anyone viewing the visualization.
+
+To use Enrichrgram on the front-end simply click the Enrichr-logo at the top-left of the heatmap to bring up a list of libraries from Enrichr, then click on a library to obtain enriched terms for your genes of interest (see screenshot below). For instance, clicking on 'ChEA 2016' will enrich for up-stream transcription factors. The enriched terms are shown as row categories, which enables users to see which genes are associated with each term. The row-category titles give the enriched term name, and the red-bars represent the significance of the enrichment (see `Enrichr combined score`_). Users can run enrichment analysis on specific clusters of genes by filtering the matrix to only show only their genes of interest: e.g. use the dendrogram Crop buttons or Brush-Crop buttons to select a subset of genes for analysis.
+
+To pre-calculate enrichment results on the back-end run the ``enrichrgram`` method described in the :ref:`clustergrammer_py_api` before clustering. The Jupyter notebook `Clustergrammer_CCLE_Notebook.ipynb`_ demonstrates how to use the ``enrichrgram`` method to pre-calculate enrichment analysis results for your visualization.
 
 
 .. figure:: _static/enrichrgram_results.png
@@ -49,8 +53,9 @@ Users can also import biological information about their genes directly into the
 
   Users can perform enrichment analysis to find biological information specific to their genes (e.g. a cluster of genes). Users can select from several enrichment libraries, and the top 10 enriched terms will be shown as rows categories. The combined scores for the enriched terms will be shown as red bars behind the row category titles.
 
-`Enrichrgram.js`_ provides this functionality and works with the :ref:`clustergrammer_js` API to depict enriched terms and their associated genes as row categories. The update-row-category functionality can be extended by developers for other domain-specific problems.
+The `Enrichrgram.js`_ library provides this functionality on the front-end and works with the :ref:`clustergrammer_js` API to depict enriched terms and their associated genes as row categories. The update-row-category functionality can be extended by developers for other domain-specific problems.
 
+.. _`Clustergrammer_CCLE_Notebook.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb
 .. _`Enrichrgram.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js
 .. _`hzome_functions.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js
 .. _`load_clustergram.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js
