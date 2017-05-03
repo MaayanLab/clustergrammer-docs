@@ -112,7 +112,7 @@ The ``net`` object can also be used to filter and normalize your data before vis
 
 **Two-way Widget Communication**
 
-Jupyter widgets enable both front-end to back-end communication (e.g. Python kernel to JavaScript) and back-end to front-end (e.g. JavaScript to Python kernel). Clustergrammer-Widget uses front-end to back-end communication to enable users to export their modified matrix (e.g. cropped matrix) to the Python kernel as a DataFrame. This can be used to select a cluster of interest (e.g. by :ref:`crop` or using the :ref:`interactive_dendrogram`) and pass this cluster to a new dataframe. Alternatively, this can be used to export data to a DataFrame after running front-end enrichment analysis using :ref:`Enrichrgram <enrichrgram>`. See the ``df_widget`` method below for an example:
+Jupyter widgets enable both back-end to front-end communication (e.g. Python kernel to JavaScript) and front-end to back-end (e.g. JavaScript to Python kernel). Clustergrammer-Widget uses front-end to back-end communication to enable users to export their modified matrix (e.g. cropped matrix) to the Python kernel as a DataFrame. This can be used to select a cluster of interest (e.g. by :ref:`crop` or using the :ref:`interactive_dendrogram`) and pass this cluster to a new dataframe. Alternatively, this can be used to export data to a DataFrame after running front-end enrichment analysis using :ref:`Enrichrgram <enrichrgram>`. See the ``df_widget`` method below for an example:
 
 ::
 
