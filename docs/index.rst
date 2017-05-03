@@ -2,7 +2,7 @@
 
 Welcome to Clustergrammer's Documentation!
 ------------------------------------------
-Clustergrammer is a web-based tool for visualizing high-dimensional data (e.g. a matrix) as an interactive and shareable hierarchically clustered heatmap. Clustergrammer's front end (:ref:`clustergrammer_js`) is built using `D3.js`_ and its back end (:ref:`clustergrammer_py`) is built using `Python`_. Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features and refer to :ref:`interacting_with_viz` for more information:
+Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data (e.g. a matrix) as an interactive and shareable hierarchically clustered heatmap. Clustergrammer's front end (:ref:`clustergrammer_js`) is built using `D3.js`_ and its back end (:ref:`clustergrammer_py`) is built using `Python`_. Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features and refer to :ref:`interacting_with_viz` for more information:
 
 .. raw:: html
 
@@ -16,7 +16,7 @@ The easiest ways to use Clustergrammer to produce an interactive visualization o
 - upload a tab-separated matrix file using the Clustergrammer web app: `https://amp.pharm.mssm.edu/clustergrammer/`_
 - or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share using `nbviewer`_ (see `example notebook`_)
 
-The :ref:`clustergrammer_web` is the quickest way to generate an interactive and shareable visualization (see `example visualization`_ and :ref:`getting started Web-app<getting_started_web_app>`). For users who want to visualize their data within a notebook workflow, the :ref:`clustergrammer_widget` enables visualizations to be built within Jupyter notebooks and shared through Jupyter's `nbviewer`_ (see `example notebook`_ and :ref:`getting started Widget <getting_started_widget>`).
+The :ref:`clustergrammer_web` is the quickest way to generate an interactive and shareable visualization (see `example visualization`_ and :ref:`getting started Web-app<getting_started_web_app>`). For users who want to visualize their data within a Jupyter notebook, the :ref:`clustergrammer_widget` enables visualizations to be embedded into shareable Jupyter notebooks (see `example notebook`_ and :ref:`Getting Started Widget <getting_started_widget>`).
 
 Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
 
@@ -24,7 +24,7 @@ Please read the :doc:`getting_started` guide for more information.
 
 Case Studies and Examples
 =========================
-Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data (e.g. a matrix). Below are links to several example use cases (see :ref:`case_studies` for more information):
+Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Please refer to the :ref:`case_studies` and links below for more information:
 
 - `CCLE Explorer`_ (and the `CCLE Jupyter Notebook`_)
 - `Lung Cancer PTM and Gene Expression Regulation`_
