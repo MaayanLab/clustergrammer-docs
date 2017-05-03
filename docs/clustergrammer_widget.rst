@@ -6,7 +6,7 @@ Clustergrammer Jupyter Widget
 |pypi-version|
 |npm-version|
 
-Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+`Jupyter`_ notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
 
 Clustergrammer has been applied to a wide variety of biological and non-biological data. See the Jupyter notebook examples below and :ref:`case_studies` for more information:
 
@@ -54,15 +54,15 @@ To use the :ref:`clustergrammer_widget` users need to install: `Python`_, `Jupyt
 
 Clustergrammer-Widget Workflow Example
 ======================================
-The Jupyter notebook `Running_clustergrammer_widget.ipynb`_ (which is rendered using `nbviewer`_) shows how to visualize a matrix from a file and a `Pandas`_ DataFrame. The following examples are taken from this notebook.
+The Jupyter notebook `Running_clustergrammer_widget.ipynb`_ (which is rendered using `nbviewer`_) shows how to visualize: a matrix from a file and a `Pandas`_ DataFrame. The following examples are taken from this notebook.
 
-Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``). We start by instantiating the ``Network`` object, ``net`` and passing the widget, `clustergrammer_widget` as an argument. The `net` object is used to load data, filter, normalize, cluster, and finally to visualize using the widget (for more information about the ``Network`` class, see :ref:`clustergrammer_py_api`).
+Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``). We start by instantiating the ``Network`` object, ``net``, and passing it the widget class, `clustergrammer_widget` as an argument. The `net` object is used to load data, filter, normalize, cluster, and render the widget. For more information about the ``Network`` class, refer to the :ref:`clustergrammer_py_api`.
 
 **Load Data from File**
 
 .. ipywidgets-display::
 
-  # import classes and instantiate Network instance with the widget as an argument
+  # make imports and instantiate a Network instance with the widget class as an argument
   from clustergrammer_widget import *
   net = Network(clustergrammer_widget)
 
@@ -77,7 +77,7 @@ Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``).
 
 **General Purpose DataFrame Viewer**
 
-Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the same ``net`` object from above:
+Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the ``net`` object:
 ::
 
   # load DataFrame
@@ -89,11 +89,11 @@ Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame 
   # make interactive widget
   net.widget()
 
-Loading new data into ``net`` clears out the old data, which allows ``net`` to be easily reused within the same notebook.
+Loading new data into ``net`` removes any old data, which allows the ``net`` object to be easily reused within the same notebook.
 
 **Filtering, Downsampling, and Normalizing**
 
-The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, and filters to keep the top 200 rows based on their absolute value sum:
+The ``net`` object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, filters to keep the top 200 rows based on their absolute value sum, calculates clustering, and finally renders the widget:
 ::
 
   # Z-score normalize columns
@@ -102,10 +102,11 @@ The ``net`` object can also be used to filter and normalize your data before vis
   # filter for the top 200 rows based on their absolute value sum
   net.filter_N_top('row', 200, 'sum')
 
+  # cluster using default parameters
+  net.cluster()
+
   # make interactive widget
   net.widget()
-
-In the examples above, we clustered our matrix using the default parameters.
 
 .. _two_way_communication:
 

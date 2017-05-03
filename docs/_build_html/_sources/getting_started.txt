@@ -69,13 +69,13 @@ Once you upload your data, the :ref:`clustergrammer_web` clusters your data and 
 
   Clustergrammer produces similarity matrices of rows and columns to provide additional perspectives on your data. Above is an example column similarity matrix.
 
-Users can share their interactive visualizations using the permanent link. See :ref:`interacting_with_viz` for more information.
+Users can share their interactive visualizations using their permanent link. See :ref:`interacting_with_viz` for more information.
 
 .. _getting_started_widget:
 
 Clustergrammer-Widget
 =====================
-Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The :ref:`clustergrammer_widget` enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). The :ref:`clustergrammer_widget` can be used to visualize a matrix of data from a matrix file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+`Jupyter`_ notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The :ref:`clustergrammer_widget` enables users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using `nbviewer`_). The :ref:`clustergrammer_widget` can be used to visualize a matrix of data from a matrix file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
 
 Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and :ref:`case_studies` for more information:
 
