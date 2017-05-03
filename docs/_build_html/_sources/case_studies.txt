@@ -2,7 +2,7 @@
 
 Case Studies and Examples
 -------------------------
-Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several example case studies and examples using Clustergrammer.
+Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several case studies and examples using Clustergrammer to explore high-dimensional data. All examples are below are publically available through GitHub.
 
 Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================
@@ -30,7 +30,7 @@ Lung Cancer Post-Translational Modification and Gene Expression Regulation
 
 Lung cancer is a complex disease that is known to be regulated at the post-translational modification (PTM) level, e.g. phosphorylation driven by kinases. Our collaborators at `Cell Signaling Technology Inc`_ used Tandem Mass Tag (TMT) mass spectrometry to measure differential phosphorylation, acetylation, and methylation in a panel of 42 lung cancer cell lines compared to non-cancerous lung tissue. Gene expression data from 37 of these lung cancer cell lines was also independently obtained from the publicly available Cancer Cell Line Encyclopedia (`CCLE`_). In the Jupyter notebook `CST_Data_Viz.ipynb`_ we:
 
-- Visualize PTM data, gene expression data, and merged PTM-Expression data
+- Visualize PTM data, gene expression data, and merged PTM/gene-expression data
 - Identify co-regulated clusters of PTMs/genes in distinct lung cancer cell line subtypes
 - Perform enrichment analysis to understand the biological processes involved in PTM/expression clusters
 
@@ -45,7 +45,7 @@ CyTOF Data: Single Cell Immune Response to PMA Treatment
 
   Screenshot from the `Plasma_vs_PMA_Phosphrylation.ipynb`_ Jupyter notebook showing downsampled single cell CyTOF data (K-means downsampled from 220,000 single cells to 2,000 cell-clusters). Cell-clusters are shown as rows with cell-type categories (e.g. Natural Killer cells) and phosphorylations are shown as columns. See the interactive Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ for more information.
 
-White blood cells are a key component of the immune system and kinase signaling is known to play an important role in immune cell function (see `Isakov and Altman 2013`_). Our collaborators at the `Icahn School of Medicine Human Immune Monitoring Core`_ used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 10 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See `Plasma_vs_PMA_Phosphrylation.ipynb`_ for more information.
+White blood cells are a key component of the immune system and kinase signaling is known to play an important role in immune cell function (see `Isakov and Altman 2013`_). Our collaborators at the `Icahn School of Medicine Human Immune Monitoring Core`_ used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 10 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See the `Plasma_vs_PMA_Phosphrylation.ipynb`_ Jupyter notebook for more information.
 
 Large Network: Kinase Substrate Similarity Network
 ==================================================
@@ -55,9 +55,9 @@ Large Network: Kinase Substrate Similarity Network
   :alt: Kinase Network Screenshot
   :target: https://maayanlab.github.io/kinase_substrate_similarity_network/
 
-  Screenshot from the `Kinase Substrate Similarity Network`_ example that demonstrates Clustergrammer can be used to visualize a large network of kinases based on shared substrates.
+  Screenshot from the `Kinase Substrate Similarity Network`_ example that demonstrates how Clustergrammer can be used to visualize a large network of kinases based on shared substrates.
 
-Clustergrammer can be used to visualize large networks without the formation of 'hairballs'. In the `Kinase Substrate Similarity Network`_ example we use Clustergrammer to visualize a network kinases based on shared substrate that includes 404 kinases and 163,216 links. Kinases are shown as rows and columns. For more information see the `Kinase Substrate Similarity Network`_.
+Clustergrammer can be used to visualize large networks without the formation of 'hairballs'. In the `Kinase Substrate Similarity Network`_ example we use Clustergrammer to visualize a network kinases based on shared substrate that includes 404 kinases and 163,216 links. Kinases are shown as rows and columns. For more information see the `Kinase Substrate Similarity Network`_ example.
 
 Machine Learning and Miscellaneous Datasets
 ===========================================
