@@ -11,7 +11,7 @@ Clustergrammer is a web-based tool for visualizing and analyzing high-dimensiona
 Using Clustergrammer
 ====================
 
-The easiest ways to use Clustergrammer to produce an interactive visualization of your data are:
+The easiest ways to use Clustergrammer to produce an interactive visualization of your data are to:
 
 - upload a tab-separated matrix file using the Clustergrammer web app: `https://amp.pharm.mssm.edu/clustergrammer/`_
 - or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share using `nbviewer`_ (see `example notebook`_)
