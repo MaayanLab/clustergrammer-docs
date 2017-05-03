@@ -7,7 +7,7 @@ Clustergrammer takes as input either:
 - a tab-separated matrix file
 - a Pandas DataFrame (using :ref:`clustergrammer_py`)
 
-The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In all cases, row and column names must be unique. Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer's :ref:`interactive_dim_reduction`.
+The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In all cases, row and column names must be unique (if input names are not unique then unique integers will be apended to names). Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer's :ref:`interactive_dim_reduction`.
 
 The front-end :ref:`clustergrammer_js` library can visualize matrices up to ~500,000 to ~1,000,000 cells in size and is also optimized to visualize matrices with more rows than columns -- this has been done to accommodate datasets with many dimensions (rows) and few measurements (columns) that are common in biology. However very large matrices may take a long time to cluster using the :ref:`clustergrammer_py` library.
 
@@ -48,7 +48,7 @@ Row/column names and categories can also be encoded as Python `tuples`_ as shown
 	('Gene: TP53','Type: Not Interesting')	8.3	4.098	-12.2
 	('Gene: IRAK','Type: Not Interesting')	7.23	3.01	0.88
 
-This tuple-category format is easier to work with in Python and can be imported/exported into Pandas DataFrames and as tab-separated files. Note that titles have been added to row/column names and categories as discussed above. See `tuple_cats.txt`_ for an example of this matrix format.
+The tuple-category format is easier to work with in Python and can be imported/exported into Pandas DataFrames and as tab-separated files. Note that titles have been added to row/column names and categories as discussed above. See `tuple_cats.txt`_ for an example of this matrix format.
 
 Category Types: String and Value
 ================================
@@ -62,7 +62,7 @@ Several example tab-separated matrix files can be found in `example matrix files
 
 Matrix Input/Output to Clustergrammer.py
 ============================================
-Clustergrammer.py can load a matrix directly from a file or from a Pandas DataFrame as well as export to a file or Pandas DataFrame:
+:ref:`clustergrammer_py` can load a matrix directly from a file or from a Pandas DataFrame as well as export to a file or Pandas DataFrame (for more information see :ref:`clustergrammer_py_api`):
 ::
 
 	# initialize Network object
@@ -87,7 +87,6 @@ Clustergrammer.py can load a matrix directly from a file or from a Pandas DataFr
 	# export data to Pandas DataFrame
 	df_export = net.export_df()
 
-For more information about Clustergrammer.py and its API, refer to the :ref:`clustergrammer_py` section.
 
 .. _`example matrix files`: https://github.com/MaayanLab/clustergrammer/tree/master/txt
 .. _`example_tsv.txt`: https://github.com/MaayanLab/clustergrammer/blob/master/txt/example_tsv.txt

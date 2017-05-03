@@ -156,7 +156,7 @@
 <li>a tab-separated matrix file</li>
 <li>a Pandas DataFrame (using <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>)</li>
 </ul>
-<p>The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In all cases, row and column names must be unique. Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer&#8217;s <a class="reference internal" href="interacting_with_viz.html#interactive-dim-reduction"><span class="std std-ref">Interactive Dimensionality Reduction</span></a>.</p>
+<p>The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In all cases, row and column names must be unique (if input names are not unique then unique integers will be apended to names). Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer&#8217;s <a class="reference internal" href="interacting_with_viz.html#interactive-dim-reduction"><span class="std std-ref">Interactive Dimensionality Reduction</span></a>.</p>
 <p>The front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library can visualize matrices up to ~500,000 to ~1,000,000 cells in size and is also optimized to visualize matrices with more rows than columns &#8211; this has been done to accommodate datasets with many dimensions (rows) and few measurements (columns) that are common in biology. However very large matrices may take a long time to cluster using the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> library.</p>
 <div class="section" id="simple-matrix-format">
 <h2>Simple Matrix Format<a class="headerlink" href="#simple-matrix-format" title="Permalink to this headline">¶</a></h2>
@@ -187,7 +187,7 @@
 <span class="p">(</span><span class="s1">&#39;Gene: IRAK&#39;</span><span class="p">,</span><span class="s1">&#39;Type: Not Interesting&#39;</span><span class="p">)</span>  <span class="mf">7.23</span>    <span class="mf">3.01</span>    <span class="mf">0.88</span>
 </pre></div>
 </div>
-<p>This tuple-category format is easier to work with in Python and can be imported/exported into Pandas DataFrames and as tab-separated files. Note that titles have been added to row/column names and categories as discussed above. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/txt/tuple_cats.txt">tuple_cats.txt</a> for an example of this matrix format.</p>
+<p>The tuple-category format is easier to work with in Python and can be imported/exported into Pandas DataFrames and as tab-separated files. Note that titles have been added to row/column names and categories as discussed above. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/txt/tuple_cats.txt">tuple_cats.txt</a> for an example of this matrix format.</p>
 </div>
 <div class="section" id="category-types-string-and-value">
 <h2>Category Types: String and Value<a class="headerlink" href="#category-types-string-and-value" title="Permalink to this headline">¶</a></h2>
@@ -200,7 +200,7 @@
 </div>
 <div class="section" id="matrix-input-output-to-clustergrammer-py">
 <h2>Matrix Input/Output to Clustergrammer.py<a class="headerlink" href="#matrix-input-output-to-clustergrammer-py" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer.py can load a matrix directly from a file or from a Pandas DataFrame as well as export to a file or Pandas DataFrame:</p>
+<p><a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> can load a matrix directly from a file or from a Pandas DataFrame as well as export to a file or Pandas DataFrame (for more information see <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># initialize Network object</span>
 <span class="kn">from</span> <span class="nn">clustergrammer</span> <span class="k">import</span> <span class="n">Network</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
@@ -224,7 +224,6 @@
 <span class="n">df_export</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">export_df</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>For more information about Clustergrammer.py and its API, refer to the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> section.</p>
 </div>
 </div>
 
