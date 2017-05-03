@@ -93,8 +93,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#cancer-cell-line-encyclopedia-gene-expression-data">Cancer Cell Line Encyclopedia Gene Expression Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lung-cancer-post-translational-modification-and-gene-expression-regulation">Lung Cancer Post-Translational Modification and Gene Expression Regulation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cytof-data-single-cell-immune-response-to-pma-treatment">CyTOF Data: Single Cell Immune Response to PMA Treatment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#machine-learning-and-miscellaneous-datasets">Machine Learning and Miscellaneous Datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#large-network-kinase-substrate-similarity-network">Large Network: Kinase Substrate Similarity Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#machine-learning-and-miscellaneous-datasets">Machine Learning and Miscellaneous Datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#zika-virus-rna-seq-data-visualization">Zika Virus RNA-seq Data Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#single-cell-rna-seq-data-visualization">Single-Cell RNA-seq Data Visualization</a></li>
 </ul>
@@ -182,9 +182,17 @@
 </div>
 <p>White blood cells are a key component of the immune system and kinase signaling is known to play an important role in immune cell function (see <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3831523/">Isakov and Altman 2013</a>). Our collaborators at the <a class="reference external" href="http://icahn.mssm.edu/research/portal/resources/deans-cores/human-immune-monitoring-core">Icahn School of Medicine Human Immune Monitoring Core</a> used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 10 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb">Plasma_vs_PMA_Phosphrylation.ipynb</a> we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb">Plasma_vs_PMA_Phosphrylation.ipynb</a> for more information.</p>
 </div>
+<div class="section" id="large-network-kinase-substrate-similarity-network">
+<h2>Large Network: Kinase Substrate Similarity Network<a class="headerlink" href="#large-network-kinase-substrate-similarity-network" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-left" id="id5">
+<a class="reference external image-reference" href="https://maayanlab.github.io/kinase_substrate_similarity_network/"><img alt="Kinase Network Screenshot" src="_images/kinase_network_screenshot.png" style="width: 450px;" /></a>
+<p class="caption"><span class="caption-text">Screenshot from the <a class="reference external" href="https://maayanlab.github.io/kinase_substrate_similarity_network/">Kinase Substrate Similarity Network</a> example that demonstrates Clustergrammer can be used to visualize a large network of kinases based on shared substrates.</span></p>
+</div>
+<p>Clustergrammer can be used to visualize large networks without the formation of &#8216;hairballs&#8217;. In the <a class="reference external" href="https://maayanlab.github.io/kinase_substrate_similarity_network/">Kinase Substrate Similarity Network</a> example we use Clustergrammer to visualize a network kinases based on shared substrate that includes 404 kinases and 163,216 links. Kinases are shown as rows and columns. For more information see the <a class="reference external" href="https://maayanlab.github.io/kinase_substrate_similarity_network/">Kinase Substrate Similarity Network</a>.</p>
+</div>
 <div class="section" id="machine-learning-and-miscellaneous-datasets">
 <h2>Machine Learning and Miscellaneous Datasets<a class="headerlink" href="#machine-learning-and-miscellaneous-datasets" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-left" id="id5">
+<div class="figure align-left" id="id6">
 <a class="reference external image-reference" href="http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb#Visualize-Downsampled-Version-of-MNIST"><img alt="MNIST Screenshot" src="_images/MNIST_screenshot.png" style="width: 450px;" /></a>
 <p class="caption"><span class="caption-text">Screenshot from the <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb">MNIST Notebook</a> that demonstrates how the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> can be used to visualize the <a class="reference external" href="http://yann.lecun.com/exdb/mnist/">MNIST Data</a>. Downsampled handwritten digits (K-means downsampled from 70,0000 handwritten digits to 300 digit-clusters) are shown as columns with digit-type categories and pixels are shown as rows. For more information see the <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb">MNIST Notebook</a>.</span></p>
 </div>
@@ -195,14 +203,6 @@
 <li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb">USDA Nutrient Dataset</a></li>
 </ul>
 <p>These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar Datasets.</p>
-</div>
-<div class="section" id="large-network-kinase-substrate-similarity-network">
-<h2>Large Network: Kinase Substrate Similarity Network<a class="headerlink" href="#large-network-kinase-substrate-similarity-network" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-left" id="id6">
-<a class="reference external image-reference" href="https://maayanlab.github.io/kinase_substrate_similarity_network/"><img alt="Kinase Network Screenshot" src="_images/kinase_network_screenshot.png" style="width: 450px;" /></a>
-<p class="caption"><span class="caption-text">Screenshot from the <a class="reference external" href="https://maayanlab.github.io/kinase_substrate_similarity_network/">Kinase Substrate Similarity Network</a> example that demonstrates Clustergrammer can be used to visualize a large network of kinases based on shared substrates.</span></p>
-</div>
-<p>Clustergrammer can be used to visualize large networks without the formation of &#8216;hairballs&#8217;. In the <a class="reference external" href="https://maayanlab.github.io/kinase_substrate_similarity_network/">Kinase Substrate Similarity Network</a> example we use Clustergrammer to visualize a network kinases based on shared substrate that includes 404 kinases and 163,216 links. Kinases are shown as rows and columns. For more information see the <a class="reference external" href="https://maayanlab.github.io/kinase_substrate_similarity_network/">Kinase Substrate Similarity Network</a>.</p>
 </div>
 <div class="section" id="zika-virus-rna-seq-data-visualization">
 <h2>Zika Virus RNA-seq Data Visualization<a class="headerlink" href="#zika-virus-rna-seq-data-visualization" title="Permalink to this headline">¶</a></h2>

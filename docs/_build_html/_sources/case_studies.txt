@@ -47,6 +47,18 @@ CyTOF Data: Single Cell Immune Response to PMA Treatment
 
 White blood cells are a key component of the immune system and kinase signaling is known to play an important role in immune cell function (see `Isakov and Altman 2013`_). Our collaborators at the `Icahn School of Medicine Human Immune Monitoring Core`_ used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 10 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See `Plasma_vs_PMA_Phosphrylation.ipynb`_ for more information.
 
+Large Network: Kinase Substrate Similarity Network
+==================================================
+.. figure:: _static/kinase_network_screenshot.png
+  :width: 450px
+  :align: left
+  :alt: Kinase Network Screenshot
+  :target: https://maayanlab.github.io/kinase_substrate_similarity_network/
+
+  Screenshot from the `Kinase Substrate Similarity Network`_ example that demonstrates Clustergrammer can be used to visualize a large network of kinases based on shared substrates.
+
+Clustergrammer can be used to visualize large networks without the formation of 'hairballs'. In the `Kinase Substrate Similarity Network`_ example we use Clustergrammer to visualize a network kinases based on shared substrate that includes 404 kinases and 163,216 links. Kinases are shown as rows and columns. For more information see the `Kinase Substrate Similarity Network`_.
+
 Machine Learning and Miscellaneous Datasets
 ===========================================
 .. figure:: _static/MNIST_screenshot.png
@@ -64,19 +76,6 @@ Clustergrammer was used to visualize several widely used machine learning Datase
 - `USDA Nutrient Dataset`_
 
 These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar Datasets.
-
-Large Network: Kinase Substrate Similarity Network
-==================================================
-.. figure:: _static/kinase_network_screenshot.png
-  :width: 450px
-  :align: left
-  :alt: Kinase Network Screenshot
-  :target: https://maayanlab.github.io/kinase_substrate_similarity_network/
-
-  Screenshot from the `Kinase Substrate Similarity Network`_ example that demonstrates Clustergrammer can be used to visualize a large network of kinases based on shared substrates.
-
-Clustergrammer can be used to visualize large networks without the formation of 'hairballs'. In the `Kinase Substrate Similarity Network`_ example we use Clustergrammer to visualize a network kinases based on shared substrate that includes 404 kinases and 163,216 links. Kinases are shown as rows and columns. For more information see the `Kinase Substrate Similarity Network`_.
-
 
 Zika Virus RNA-seq Data Visualization
 =====================================
