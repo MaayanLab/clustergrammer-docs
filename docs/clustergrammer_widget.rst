@@ -8,15 +8,14 @@ Clustergrammer Jupyter Widget
 
 Jupyter notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a `Jupyter`_ notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
 
-Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below:
+Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and :ref:`case_studies` for more information:
 
 - `Running_clustergrammer_widget.ipynb`_
 - `DataFrame_Example.ipynb`_
 - `CCLE Jupyter Notebook`_
 - `Lung Cancer PTM and Gene Expression Regulation`_
 - `Single-Cell CyTOF Data`_
-- `Single Cell RNA-seq Visualization.ipynb`_
-- `MNIST Handwritten Digit Dataset`_
+- `MNIST Notebook`_
 - `USDA Nutrient Dataset`_
 - `Iris Dataset.ipynb`_
 
@@ -158,7 +157,6 @@ Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use th
 
 .. _`DataFrame_Example.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/DataFrame_Example.ipynb
 
-.. _`Single Cell RNA-seq Visualization.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb
 
 .. _`Iris Dataset.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
 
@@ -175,6 +173,10 @@ Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use th
 .. _`Lung Cancer PTM and Gene Expression Regulation`: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb
 
 .. _`Single-Cell CyTOF Data`: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
+
+.. _`MNIST Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb#Visualize-Downsampled-Version-of-MNIST
+
+.. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
 
 .. |pypi-version| image:: https://img.shields.io/pypi/v/clustergrammer_widget.svg
     :alt: pypi-version
