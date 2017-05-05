@@ -6,7 +6,7 @@ Clustergrammer Jupyter Widget
 |pypi-version|
 |npm-version|
 
-`Jupyter`_ notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
+`Jupyter`_ notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer's interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see :ref:`clustergrammer_widget_examples`). The Clustergrammer Widget enables users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using `nbviewer`_). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information). The library is free and open-source and can be found on `GitHub`_.
 
 Clustergrammer has been applied to a wide variety of biological and non-biological data. See the Jupyter notebook examples below and :ref:`case_studies` for more information:
 
@@ -147,6 +147,7 @@ Clustergrammer-Widget's source code can be found in the `clustergrammer-widget`_
 
 Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
 
+.. _`GitHub`: https://github.com/MaayanLab/clustergrammer-widget
 .. _`ipywidgets version 6`: https://github.com/ipython/ipywidgets/releases
 .. _`ipywidgets`: http://ipywidgets.readthedocs.io/en/latest/
 .. _`cookie cutter`: https://github.com/jupyter/widget-cookiecutter

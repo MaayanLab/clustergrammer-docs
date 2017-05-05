@@ -5,7 +5,7 @@ Clustergrammer-JS
 |npm-version|
 |license|
 
-Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in `SVG`_ using the visualization library `D3.js`_
+Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in `SVG`_ using the visualization library `D3.js`_. The library is free and open-source and can be found on `GitHub`_.
 
 .. _clustergrammer_js_dependencies:
 
@@ -33,21 +33,29 @@ JavaScript Workflow Example
 This workflow shows how to generate a visualization using the JSON produced by Clustergrammer.py
 ::
 
-  // load visualization JSON to network_data
+  // the visualization JSON (produced by Clustergrammer-PY)
+  var network_data = {
+                        "row_nodes":[...],
+                        "col_nodes":[...],
+                        "mat": [...]
+                      }
+  // args must contain root of container and the visualization JSON
   var args = {
     'root': '#id_of_container',
     'network_data': 'network_data'
   }
 
+  // Clustergrammer returns a Clustergrammer object in addition to making
+  // the visualization
   var cgm = Clustergrammer(args);
 
-The ``id`` of the container where the visualization will be made is passed as ``root`` (this root container must be made by the user). The :ref:`visualization_json` contains the information necessary to generate the visualization and is passed as ``network_data``. See the :ref:`clustergrammer_js_api` for additional arguments that can be passed to Clustergrammer.js.
+The ``id`` of the container where the visualization will be made is passed as ``root`` (this root container must be made by the user). The :ref:`visualization_json` (produced by :ref:`clustergrammer_py`) contains all the information necessary to generate the visualization and is passed in this example as ``network_data``. See the :ref:`clustergrammer_js_api` for additional arguments that can be passed to Clustergrammer.js.
 
 .. _example_pages:
 
 Example Pages
 =============
-The `Clustergrammer GitHub repo`_ contains several example pages demonstrating how to build a webpage with a Clustergrammer heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
+The `Clustergrammer GitHub repo`_ contains several example pages demonstrating how to build a webpage with a Clustergrammer visualization. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each visualization requires its own container.
 
 .. _clustergrammer_js_api:
 
@@ -297,6 +305,7 @@ The Clustergrammer-JS source code can be found in the `Clustergrammer GitHub rep
 
 Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
 
+.. _`GitHub`: https://github.com/MaayanLab/clustergrammer
 .. _`SVG`: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 .. _`Clustergrammer GitHub repo`: https://github.com/MaayanLab/clustergrammer
 .. _`npm package`: https://www.npmjs.com/package/clustergrammer

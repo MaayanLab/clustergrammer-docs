@@ -4,7 +4,7 @@ Clustergrammer-PY
 -----------------
 |pypi-version|
 
-Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the :ref:`visualization_json` for the front end :ref:`clustergrammer_js` visualization library. Clustergrammer-PY is compatible with Python 2 and 3.
+Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the :ref:`visualization_json` for the front end :ref:`clustergrammer_js` visualization library. Clustergrammer-PY is compatible with Python 2 and 3. The library is free and open-source and can be found on `GitHub`_.
 
 .. _clustergrammer_py_dependencies:
 
@@ -90,6 +90,7 @@ Clustergrammer-PY's source code can be found in the `clustergrammer-py`_ GitHub 
 
 Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
 
+.. _`GitHub`: http://github.com/MaayanLab/clustergrammer-py
 .. _`GitHub repo`: http://github.com/MaayanLab/clustergrammer-py
 .. _`package index`: https://pypi.python.org/pypi?:action=display&name=clustergrammer
 .. _`clustergrammer-py`: https://github.com/MaayanLab/clustergrammer-py
