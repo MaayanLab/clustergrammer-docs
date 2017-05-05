@@ -7,7 +7,7 @@ Clustergrammer takes as input either:
 - a tab-separated matrix file
 - a Pandas DataFrame (using :ref:`clustergrammer_py`)
 
-The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In all cases, row and column names must be unique (if input names are not unique then unique integers will be apended to names). Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer's :ref:`interactive_dim_reduction`.
+The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In all cases, row and column names must be unique (if input names are not unique then unique integers will be appended to names). Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer's :ref:`interactive_dim_reduction`.
 
 The front-end :ref:`clustergrammer_js` library can visualize matrices up to ~500,000 to ~1,000,000 cells in size and is also optimized to visualize matrices with more rows than columns -- this has been done to accommodate datasets with many dimensions (rows) and few measurements (columns) that are common in biology. However very large matrices may take a long time to cluster using the :ref:`clustergrammer_py` library.
 
@@ -55,6 +55,7 @@ Category Types: String and Value
 Row and column categories can be of type: *string* or *value*. If categories are given as strings (e.g. containing letters), then categories will be depicted using colors. If categories are of type value (e.g. all categories contain only numbers), then value-categories will be depicted using color and opacity (gray for positive and orange for negative).
 
 *Value*-based categories can be useful for adding data to your visualization (e.g. drug-dosage value) that you would like to compare to your other dimensions, but that should not influence your clustering. Both *value* and *string* categories can also be used to reorder your matrix by double-clicking their labels (see :ref:`interactive_categories`).
+
 
 Matrix File Examples
 ====================
