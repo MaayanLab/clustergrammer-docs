@@ -39,6 +39,7 @@ This workflow shows how to generate a visualization using the JSON produced by C
                         "col_nodes":[...],
                         "mat": [...]
                       }
+
   // args must contain root of container and the visualization JSON
   var args = {
     'root': '#id_of_container',
