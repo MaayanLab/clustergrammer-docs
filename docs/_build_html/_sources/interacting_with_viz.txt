@@ -26,7 +26,7 @@ Press play to take a quick tour of some of Clustergrammer's interactive features
 
 Zooming and Panning
 ===================
-Clustergrammer allows users to zoom into and pan across their heatmap by scrolling and dragging. Double-clicking the visualization resets zooming and panning. This is useful for working with large datasets, where labels are not readable without zooming, and for closely investigating regions of interest. Users can also increase the size of the visualization using the Expand button to hide the sidebar, see :ref:`expanding` and, when in full-screen mode by adjusting the size of their window (see :ref:`clustergrammer_web_viz` for information about full-screen mode).
+Clustergrammer allows users to zoom into and pan across their heatmap by scrolling and dragging. Double-clicking the heatmap resets zooming and panning. This is useful for working with large datasets where labels are not readable without zooming and for closely investigating regions of interest. Users can also increase the size of the visualization using the Expand button to hide the sidebar, see :ref:`expanding` and, when in full-screen mode by adjusting the size of their window (see :ref:`clustergrammer_web_viz` for information about full-screen mode).
 
 **Zooming and Panning Detailed Behavior**
 
@@ -80,7 +80,7 @@ Clustergrammer's sidebar reordering-buttons allows users to order rows and colum
 - hierarchical clustering order
 - label order
 
-This can be useful for identifying broad patterns in your data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking the category labels (see :ref:`interactive_categories`). For small matrices reordering events are animated to help users visually track the effects of this transformation.
+This can be useful for identifying broad patterns in the data. Users can also reorder their matrix based on the values in a single row/column by double-clicking the row/column labels. Similarly, users can reorder based on categorical information by double-clicking category labels (see :ref:`interactive_categories`). For small matrices reordering events are animated to help users visually track the results of this transformation.
 
 .. _interactive_dim_reduction:
 

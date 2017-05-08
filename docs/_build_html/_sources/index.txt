@@ -18,7 +18,7 @@ The easiest ways to use Clustergrammer to produce an interactive visualization o
 
 The :ref:`clustergrammer_web` is the quickest way to generate an interactive and shareable visualization (see `example visualization`_ and :ref:`getting started Web-app<getting_started_web_app>`). For users who want to visualize their data within a Jupyter notebook, the :ref:`clustergrammer_widget` enables visualizations to be embedded into shareable Jupyter notebooks (see `example notebook`_ and :ref:`Getting Started Widget <getting_started_widget>`).
 
-Web developers can use Clustergrammer's core libraries (:ref:`clustergrammer_js` and :ref:`clustergrammer_py`) or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
+Web developers can use Clustergrammer's core libraries, :ref:`clustergrammer_js` and :ref:`clustergrammer_py`, or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
 
 Please read the :doc:`getting_started` guide for more information.
 

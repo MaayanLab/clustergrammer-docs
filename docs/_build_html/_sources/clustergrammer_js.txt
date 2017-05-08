@@ -5,7 +5,7 @@ Clustergrammer-JS
 |npm-version|
 |license|
 
-Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in `SVG`_ using the visualization library `D3.js`_. The library is free and open-source and can be found on `GitHub`_.
+Clustergrammer-JS is the front end JavaScript library that builds the interactive clustergram visualization in `SVG`_ using the visualization library `D3.js`_. The library is free and open-source and can be found on `GitHub`_.
 
 .. _clustergrammer_js_dependencies:
 
@@ -232,7 +232,7 @@ Clustergrammer-JS API
 
 Visualization-JSON
 ==================
-The visualization-JSON is calculated by :ref:`clustergrammer_py` and encodes everything needed for the front-end Clustergrammer-JS to produce the visualization. The visualization-JSON format is described here (see `clustergrammer_example.json`_ for an example file). An overview of the format is shown below (note that the group arrays are not shown):
+The visualization-JSON is calculated by :ref:`clustergrammer_py` and encodes everything needed for the front end Clustergrammer-JS to produce the visualization. The visualization-JSON format is described here (see `clustergrammer_example.json`_ for an example file). An overview of the format is shown below (note that the group arrays are not shown):
 ::
 
   {

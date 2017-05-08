@@ -4,7 +4,7 @@ Clustergrammer-PY
 -----------------
 |pypi-version|
 
-Clustergrammer-PY is the back-end Python library that is used to hierarchically cluster the data and generate the :ref:`visualization_json` for the front end :ref:`clustergrammer_js` visualization library. Clustergrammer-PY is compatible with Python 2 and 3. The library is free and open-source and can be found on `GitHub`_.
+Clustergrammer-PY is the back end Python library that is used to hierarchically cluster the data and generate the :ref:`visualization_json` for the front end :ref:`clustergrammer_js` visualization library. Clustergrammer-PY is compatible with Python 2 and 3. The library is free and open-source and can be found on `GitHub`_.
 
 .. _clustergrammer_py_dependencies:
 
@@ -40,10 +40,10 @@ This workflow shows how to cluster a matrix of data from a file (see :ref:`matri
   # calculate clustering using default parameters
   net.cluster()
 
-  # save visualization JSON to file for use by front-end
+  # save visualization JSON to file for use by front end
   net.write_json_to_file('viz', 'mult_view.json')
 
-The file ``mult_view.json`` will be loaded by the front-end and used to build the interactive visualization. See `clusterergrammer.py`_ for an additional example.
+The file ``mult_view.json`` will be loaded by the front end and used to build the interactive visualization. See `clusterergrammer.py`_ for an additional example.
 
 Clustergrammer can also load data from a Pandas DataFrame and perform normalization and filtering. In this example, we will load data from a DataFrame, normalize the rows, and filter the columns:
 ::
@@ -61,16 +61,16 @@ Clustergrammer can also load data from a Pandas DataFrame and perform normalizat
   # cluster using default parameters
   net.cluster()
 
-  # save visualization JSON to file for use by front-end
+  # save visualization JSON to file for use by front end
   net.write_json_to_file('viz', 'mult_view.json')
 
-Note that filtering done on the ``Network`` object before clustering is permanent, unlike the filtering done within ``cluster`` which can be toggled on and off in the front-end visualization. The ``keep_orig`` parameter in the ``normalize`` function allows us to show un-normalized data a user mouses over a matrix-cell in the visualization. See the :ref:`clustergrammer_py_api` documentation below for more information.
+Note that filtering done on the ``Network`` object before clustering is permanent, unlike the filtering done within ``cluster`` which can be toggled on and off in the front end visualization. The ``keep_orig`` parameter in the ``normalize`` function allows us to show un-normalized data a user mouses over a matrix-cell in the visualization. See the :ref:`clustergrammer_py_api` documentation below for more information.
 
 .. _clustergrammer_py_api:
 
 Clustergrammer-PY API
 =====================
-Clustergrammer-PY generates a Network object (see `Network class definition`_), which is used to load a matrix (e.g. from a Pandas `DataFrame`_), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front-end Clustergrammer.js.
+Clustergrammer-PY generates a Network object (see `Network class definition`_), which is used to load a matrix (e.g. from a Pandas `DataFrame`_), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front end Clustergrammer.js.
 
 When a matrix is loaded into an instance of ``Network`` (e.g. ``net.load_file('your_file.txt')``) it is stored in the data, ``dat``, attribute. Normalization and filtering will permanently modify the ``dat`` representation of the matrix. When the matrix is clustered (by calling ``cluster``) this produces the :ref:`visualization_json`, which is stored in the ``viz`` attribute. This JSON can then be exported as a string using ``net.export_net_json('viz')`` or saved to a file using ``net.write_json_to_file('viz', filename)``.
 
