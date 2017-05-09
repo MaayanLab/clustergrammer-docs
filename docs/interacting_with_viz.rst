@@ -8,7 +8,7 @@ Data visualization benefits enormously from user interaction -- particularly int
 
 Introduction to Clustergrams
 ============================
-Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored tiles (red for positive numbers and blue for negative numbers) and row/column labels. This type of visualization is commonly referred to as a heatmap or clustergram and this documentation uses these terms interchangeably; refer to `Eisen et al., 1998`_ for an early example using biological data. Clustergrams also typically use `dendrogram trees`_ to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_.
+Clustergrammer visualizes high-dimensional data as a hierarchically clustered matrix with colored matrix-cells (red for positive numbers and blue for negative numbers) and row/column labels. This type of visualization is commonly referred to as a heatmap or clustergram and this documentation uses these terms interchangeably; refer to `Eisen et al., 1998`_ for an early example using biological data. Clustergrams also typically use `dendrogram trees`_ to depict the hierarchy of row and column clusters produced by `hierarchical clustering`_.
 
 Heatmaps are powerful visualization tools that enable users to directly visualize high-dimensional data without the loss of information and interpretability associated with dimensionality reduction techniques (e.g. `t-SNE`_). For instance, columns can depict data-points (e.g. measured entities) and rows can depict data-dimensions (e.g. measured variables). In this way, heatmaps can visualize thousands of data-points in thousands of dimensions (e.g. data in thousand(s)-dimensional space). However, static heatmaps are of limited use for visualizing large datasets because visualization elements and labels become too small to read. Furthermore, static heatmaps prevent users from interactively exploring their data, e.g. reordering rows/columns. We built Clustergrammer to address these problems and to extend the capabilities of heatmap visualizations.
 
@@ -89,7 +89,7 @@ Interactive Dimensionality Reduction
 Dimensionality reduction is a useful data analysis technique (e.g. `PCA`_ , `t-SNE`_) that is often used to reduce the dimensionality of high-dimensional datasets (e.g. hundreds to thousands of dimensions) down to a number that can be easily be visualized (e.g. two or three dimensions). Heatmaps are capable of directly visualizing high-dimensional data, but can also benefit from dimensionality reduction.
 
 
-Clustergrammer enables users to interactively perform dimensionality reduction, by filtering rows based on sum or variance, and instantaneously observe the effects of this transformation on clustering. Users can filter for the top rows based on sum or variance using the row-filter sliders in the sidebar and choose to show the top 500, 250, 100, 50, 20, and 10 rows. This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low absolute value sum) and determining the effect of these dimensions on clustering. For instance, we may see that columns cluster in broadly the same manner when we filter out rows with low variance. Clustered views of the filtered matrices are pre-calculated by :ref:`clustergrammer_py`.
+Clustergrammer enables users to interactively perform dimensionality reduction by filtering rows based on sum or variance and instantaneously observe the effects of this transformation on clustering. Users can filter for the top rows based on sum or variance using the row-filter sliders in the sidebar and choose to show the top 500, 250, 100, 50, 20, and 10 rows. This can be useful for filtering out dimensions that are not of interest (e.g. dimensions with low absolute value sum) and determining the effect of these dimensions on clustering. For instance, we may see that columns cluster in largely the same manner when we filter out rows with low variance. Clustered views of the filtered matrices are pre-calculated by :ref:`clustergrammer_py`.
 
 .. figure:: _static/row_filter.png
   :width: 900px
@@ -139,9 +139,9 @@ Each dendrogram cluster has a small triangular crop button above it pointing tow
 
 Interactive Categories
 ======================
-Prior knowledge can be represented as categories in a heatmap. For instance, columns can represent cell lines and a category can be used to represent their tissue of origin. Overlaying categories on our heatmap can help us understand the relationship between prior knowledge and the structures we find in our data (e.g. clusters). For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that the prior knowledge agrees with clusters identified in a data-driven manner. Similarly, we can explore how categories are re-distributed when the matrix is :ref:`reordered <row_col_reordering>`. We can also use categories to overlay numerical information (e.g. duration of drug treatment of a cell line) and ask similar questions. Please refer to :ref:`matrix_format_io` for more information on how to encode categories.
+Prior knowledge can be represented as categories in a heatmap. For instance, columns can represent cell lines and a category can be used to represent their tissue of origin. Overlaying categories on our heatmap can help us understand the relationship between prior knowledge and the structures we find in our data (e.g. clusters). For instance, we may find that columns with the same category (e.g. the same tissue) cluster near each other based on the underlying data (e.g. gene expression) and we can conclude that the prior knowledge agrees with clusters identified in a data-driven manner. Similarly, we can explore how categories are re-distributed when the matrix is :ref:`reordered <row_col_reordering>`. We can also use categories to overlay numerical information (e.g. the duration of drug treatment) and ask similar questions. Please refer to :ref:`matrix_format_io` for more information on how to encode categories.
 
-Row or column categories are represented by an extra column or row, respectively, of colored category-cells underneath the row or column labels (see screenshot below). Categories can be of type *string* or *value* (see :ref:`matrix_format_io`): each *string*-type category has a different color, while each value-type category ahas a different opacity. The categories also have titles positioned adjacent to the category-cells.
+In the visualization row or column categories are represented by an extra column or row, respectively, of colored category-cells underneath the row or column labels (see screenshot below). Categories can be of type *string* or *value* (see :ref:`matrix_format_io`): each *string*-type category has a different color, while each *value*-type category has a different opacity. The categories also have titles positioned adjacent to the category-cells.
 
 .. figure:: _static/categories.png
   :width: 400px
@@ -152,7 +152,7 @@ Row or column categories are represented by an extra column or row, respectively
 
 **Interacting with Categories**
 
-Mousing over a category will show the category name in a tooltip and highlight the instances of this category (while also dimming the instances of the other categories) to facilitate visualization of a specific category (see screenshot below). Double-clicking a category-title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories (see :ref:`interactive_dendrogram`). Users can also reversibly filter a visualization to only show rows or columns of a particular category by clicking on category while holding down the shift key (and undo this filtering by doing the same).
+Mousing over a category will show the category name in a tooltip and highlight the instances of this category (while also dimming the instances of the other categories) to facilitate visualization of a specific category (see screenshot below). Double-clicking a category-title will reorder the matrix based on this category, which can be useful for getting an overview of all categories. Mousing over a dendrogram cluster will also show a breakdown of the rows/columns in a cluster based on their categories (see :ref:`interactive_dendrogram`). Users can also reversibly filter a visualization to only show rows or columns of a particular category by clicking on a category while holding down the shift key (and undo this filtering by doing the same).
 
 .. figure:: _static/category_interaction.png
   :width: 900px
@@ -163,13 +163,13 @@ Mousing over a category will show the category name in a tooltip and highlight t
 
 **Updating Categories**
 
-Row categories can be updated using the :ref:`clustergrammer_js_api`, which can be used by developers to add dynamic categories. This feature is used by :ref:`Enrichrgram <enrichrgram>` to visualize enrichment analysis results (see :ref:`biology_specific_features` for more information).
+Row categories can be updated using the :ref:`clustergrammer_js_api`, which can be used by developers to add dynamically categories. This feature is used by :ref:`Enrichrgram <enrichrgram>` to visualize enrichment analysis results (see :ref:`biology_specific_features` for more information).
 
 .. _crop:
 
 Cropping
 ========
-The Brush-Cropping icon in the sidebar can be used to crop the matrix to a region of interest (see screenshot below). To crop, click the crop icon and then drag the cursor to define your region of interest. Once you stop dragging, the matrix will crop to show only your selected region of interest. Cropping can be undone by clicking the Undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the :ref:`download` to export a small region of the matrix or in combination with :ref:`Enrichrgram <enrichrgram>` to perform enrichment analysis on a subset of clustered genes.
+The Brush-Cropping icon in the sidebar can be used to crop the matrix to a region of interest (see screenshot below). To crop, click the crop icon and then drag the cursor to define your region of interest. Once dragging has finished, the matrix will crop to show only the selected region of interest. Cropping can be undone by clicking the Undo button in the sidebar (which appears after cropping). This can be useful for focusing in on a small region of your overall matrix. Cropping can be used in combination with the :ref:`download` to export a small region of the matrix or in combination with :ref:`Enrichrgram <enrichrgram>` to perform enrichment analysis on a subset of clustered genes.
 
 .. figure:: _static/brush_crop.png
   :width: 900px

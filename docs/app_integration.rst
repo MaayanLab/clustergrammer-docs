@@ -38,7 +38,7 @@ L1000CDS2
   :alt: L1000CDS2 Clustergram
   :target: http://amp.pharm.mssm.edu/clustergrammer/l1000cds2/55e0b68a5bf3665f1a726bfa
 
-  `L1000CDS2`_ uses Clustergrammer to produce interactive visualizations of input gene signatures and perturbation signatures that mimick or reverse the user's user-input signature. A users's input signature is shown as rows with gene-expression levels shown as row-bars (red/blue for up/down expression) and perturbations found to mimic/reverse their signature are shown as columns in the heatmap.
+  `L1000CDS2`_ uses Clustergrammer to produce interactive visualizations of input gene signatures and perturbation signatures that mimick or reverse the user's user-input signature. A users's input signature is shown as rows with gene expression levels shown as row-bars (red/blue for up/down expression) and perturbations found to mimic/reverse their signature are shown as columns in the heatmap.
 
 Harmonizome
 ===========
