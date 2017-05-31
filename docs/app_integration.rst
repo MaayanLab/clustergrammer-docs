@@ -6,7 +6,7 @@ Clustergrammer can be integrated into web applications to dynamically produce in
 
 Enrichr
 =======
-The enrichment analysis tool, `Enrichr`_, uses Clustergrammer to produce dynamic heatmaps of enriched terms as columns and user input genes as rows. This helps users to understand the relationships between their input genes and the returned enriched terms.
+The enrichment analysis tool, `Enrichr`_, uses Clustergrammer to produce dynamic heatmaps of enriched terms as columns and user input genes as rows, which helps users understand the relationships between their input genes and enriched terms.
 
 .. figure:: _static/enrichr_screenshot_logo.png
   :width: 550px

@@ -22,11 +22,11 @@ The JavaScript file `hzome_functions.js`_ provides this functionality by utilizi
 
 Enrichment Analysis
 ===================
-The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis a popular method to identify biological information specific to a list of genes -- e.g. a biologist may use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their measured set of up-regulated genes and thereby form hypotheses about potential up-stream regulators in their system.
+The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis is a popular method to identify biological information specific to a list of genes -- e.g. a biologist can use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their a set of up-regulated genes and thereby form hypotheses about potential up-stream regulators.
 
 **Export to Enrichr**
 
-When a user visualizes a matrix with genes as rows, Clustergrammer automatically enables integration with the enrichment analysis tool `Enrichr`_. Users can export a set of clustered genes to `Enrichr`_ using the interactive dendrogram (see screenshot) or import enriched terms into the visualization using :ref:`Enrichrgram <enrichrgram>`.
+When a user visualizes a matrix with genes as rows, Clustergrammer automatically enables integration with the enrichment analysis tool `Enrichr`_. Users can export a set of clustered genes to `Enrichr`_ using the interactive dendrogram (see screenshot) or import enriched terms into the visualization using the :ref:`Enrichrgram <enrichrgram>` functionality.
 
 .. figure:: _static/send_to_Enrichr_modal.png
   :width: 600px
@@ -39,11 +39,11 @@ When a user visualizes a matrix with genes as rows, Clustergrammer automatically
 
 **Enrichrgram**
 
-Enrichrgram enables users to find biological information specific to their genes of interest (using `Enrichr`_) and import this information directly into the visualization as row categories (see screenshot below). Enrichrgram can be run on the front- or back-end (using the :ref:`clustergrammer_py_api` to pre-calculate results). This feature enables enrichment analysis to be performed within the visualization itself by both the original author of the visualization and anyone else viewing the visualization.
+Enrichrgram enables users to find biological information specific to their genes of interest (using `Enrichr`_) and import this information directly into the visualization as row categories (see screenshot below). Enrichrgram can be run on the front or back end (using the :ref:`clustergrammer_py_api` to pre-calculate results). This feature enables enrichment analysis to be performed within the visualization itself by both the original author of the visualization and subsequent viewers.
 
-**Enrichrgram Front-End**
+**Enrichrgram Front End**
 
-Enrichrgram on the front-end is available to anyone viewing the visualization and can be used by simply clicking the red DNA-like Enrichr logo on the top left of the heatmap, which brings up a list of Enrichr libraries to choose from. To perform enrichment analysis choose a library and Enrichrgram will return enriched terms from this library that are specifically associated with your list of genes (P-value bars indicate the degree of specificity). For instance, clicking on 'ChEA 2016' will calculate enrichment for up-stream transcription factors. The enriched terms are shown as row categories, which enables users to see which genes are associated with each term. Row-category titles show the enriched term and the red-bars represent the significance of the enrichment (see `Enrichr combined score`_). Users can run enrichment analysis on specific clusters of genes by filtering the matrix to only show only their genes of interest: e.g. use the Dendrogram Crop buttons (see :ref:`interactive_dendrogram`) or Brush-Crop button (see :ref:`crop`) to select a subset of genes for analysis.
+Enrichrgram on the front end is available to anyone viewing the visualization and can be used by simply clicking the red DNA-like Enrichr logo on the top left of the heatmap, which brings up a list of Enrichr libraries to choose from. To perform enrichment analysis, choose a library and Enrichrgram will return enriched terms from this library that are specifically associated with your list of genes (P-value bars indicate the degree of specificity). For instance, clicking on *ChEA 2016* will calculate enrichment for up-stream transcription factors. The enriched terms are shown as row categoris, which enables users to see which genes are associated with each term. Row-category titles show the enriched term and the red-bars represent the significance of the enrichment (see `Enrichr combined score`_). Users can run enrichment analysis on a specific cluster of genes by filtering the matrix to only show only their genes of interest. This filtering can be done using the Dendrogram Crop buttons (see :ref:`interactive_dendrogram`) or Brush-Crop button (see :ref:`crop`) to select a subset of genes for analysis.
 
 .. figure:: _static/enrichrgram_results.png
   :width: 900px
@@ -52,14 +52,14 @@ Enrichrgram on the front-end is available to anyone viewing the visualization an
 
   Users can perform enrichment analysis to find biological information specific to their genes (e.g. a cluster of genes). Users can select from several enrichment libraries, and the top 10 enriched terms will be shown as rows categories. The combined scores for the enriched terms will be shown as red bars behind the row category titles.
 
-Note that Enrichrgram results run on the front-end are not permanent and will be lost after refreshing the page, but the matrix with enriched terms can be saved by downloading the matrix using the :ref:`download` button. Enrichment results can be permanently added to the visualization from the back-end using the ``enrichgram`` method described below.
+Note that Enrichrgram results run on the front end are not permanent and will be lost after refreshing the page, but the matrix with enrichment results can be downloaded using the :ref:`download` button. Enrichment results can be permanently added to the visualization from the back end using the ``enrichgram`` method described below.
 
 
-**Enrichrgram Back-End**
+**Enrichrgram Back End**
 
 To permanently add pre-calculated enrichment results to a visualization run the ``enrichrgram`` method described in the :ref:`clustergrammer_py_api` before clustering. The Jupyter notebook `Clustergrammer_CCLE_Notebook.ipynb`_ demonstrates how to use the ``enrichrgram`` method to pre-calculate enrichment analysis results for a visualization.
 
-The `Enrichrgram.js`_ library provides this functionality on the front-end and works with the :ref:`clustergrammer_js` API to depict enriched terms and their associated genes as row categories. The update-row-category functionality can be extended by developers for other domain-specific problems.
+The `Enrichrgram.js`_ library provides this functionality on the front end and works with the :ref:`clustergrammer_js` API to depict enriched terms and their associated genes as row categories. The update-row-category functionality can be extended by developers for other domain-specific problems.
 
 .. _`Clustergrammer_CCLE_Notebook.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb
 .. _`Enrichrgram.js`: https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js
