@@ -213,7 +213,7 @@
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><span class="sig-paren">(</span><em>widget=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
-<dd><p>version 1.13.3</p>
+<dd><p>version 1.13.5</p>
 <p>Clustergrammer.py takes a matrix as input (either from a file of a Pandas DataFrame), normalizes/filters, hierarchically clusters, and produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> for <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>.</p>
 <p>Networks have two states:</p>
 <blockquote>
@@ -286,7 +286,7 @@ string.</p>
 
 <dl class="method">
 <dt id="clustergrammer_py.Network.downsample">
-<code class="descname">downsample</code><span class="sig-paren">(</span><em>df=None</em>, <em>ds_type='kmeans'</em>, <em>axis='row'</em>, <em>num_samples=100</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.downsample" title="Permalink to this definition">¶</a></dt>
+<code class="descname">downsample</code><span class="sig-paren">(</span><em>df=None</em>, <em>ds_type='kmeans'</em>, <em>axis='row'</em>, <em>num_samples=100</em>, <em>random_state=1000</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.downsample" title="Permalink to this definition">¶</a></dt>
 <dd><p>Downsample the matrix rows or columns (currently supporting kmeans only). Users can optionally pass in a DataFrame to be downsampled (and this will be incorporated into the network object).</p>
 </dd></dl>
 
@@ -294,7 +294,7 @@ string.</p>
 <dt id="clustergrammer_py.Network.enrichrgram">
 <code class="descname">enrichrgram</code><span class="sig-paren">(</span><em>lib</em>, <em>axis='row'</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.enrichrgram" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add Enrichr gene enrichment results to your visualization (where your rows
-are genes). Run enrichrgram before clustering to include enrichment results
+are genes). Run enrichrgram before clustering to incldue enrichment results
 as row categories. Enrichrgram can also be run on the front-end using the
 Enrichr logo at the top left.</p>
 <p>Set lib to the Enrichr library that you want to use for enrichment analysis.
@@ -442,6 +442,12 @@ The main function performs hierarchical clustering, optionally generates filtere
 <dt id="clustergrammer_py.Network.reset">
 <code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.reset" title="Permalink to this definition">¶</a></dt>
 <dd><p>This re-initializes the Network object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="clustergrammer_py.Network.set_cat_color">
+<code class="descname">set_cat_color</code><span class="sig-paren">(</span><em>axis</em>, <em>cat_index</em>, <em>cat_name</em>, <em>inst_color</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.set_cat_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set row/column category colors using index, name and specified color.</p>
 </dd></dl>
 
 <dl class="method">
