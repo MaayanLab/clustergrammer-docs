@@ -40,6 +40,12 @@ Contact
 =======
 Please contact Nicolas Fernandez (nicolas.fernandez@mssm.edu) and Avi Ma'ayan (avi.maayan@mssm.edu) for support, comments, and suggestions.
 
+Citing Clustergrammer
+=====================
+Please consider supporting Clustergrammer by citing our publication:
+
+Fernandez, N. F. et al. Clustergrammer, a web-based heatmap visualization and analysis tool for high-dimensional biological data. Sci. Data 4:170151 doi: `10.1038/sdata.2017.151`_ (2017).
+
 Funding
 =======
 Clustergrammer is being developed by the `Ma'ayan Lab`_ at the `Icahn School of Medicine at Mount Sinai`_ for the `BD2K-LINCS DCIC`_ and the `KMC-IDG`_.
@@ -72,6 +78,7 @@ Contents:
 .. _`Jupyter`: http://jupyter.org/
 .. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
 .. _`example notebook`: http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb
+.. _`10.1038/sdata.2017.151`: https://www.nature.com/articles/sdata2017151
 
 .. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
 

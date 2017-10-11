@@ -4,12 +4,15 @@ Clustergrammer Web App
 ----------------------
 |github-version|
 
-The `Web App`_ (`http://amp.pharm.mssm.edu/clustergrammer/`_) enables users to easily generate interactive and shareable heatmap visualizations by uploading their data as a tab-separated file.
+The `Web App`_ (`http://amp.pharm.mssm.edu/clustergrammer`_) enables users to easily generate interactive and shareable heatmap visualizations by uploading their data as a tab-separated file.
 
 .. _clustergrammer_web_upload:
 
 Uploading Data using the Web App Homepage
 =========================================
+
+Users can easily generate an interactive and shareable heatmap visualization using the :ref:`clustergrammer_web` (see upload section screenshot below). Simply upload a tab-separated matrix file (see :ref:`matrix_format_io` for more information) at the `homepage`_ to be redirected to a permanent and shareable visualization of your data.
+
 
 .. figure:: _static/clustergrammer_web_upload.png
   :width: 900px
@@ -17,7 +20,7 @@ Uploading Data using the Web App Homepage
   :alt: Clustergrammer Web
   :target: http://amp.pharm.mssm.edu/clustergrammer/
 
-  Users can easily generate an interactive and shareable heatmap visualization using the `Web App`_. Simply upload a tab-separated matrix file in the homepage to be redirected to a permanent and shareable visualization of your data.
+  Users can upload their data using the web app `homepage`_. Simply choose your file and upload to be redirected to your permanent and shareable visualization.
 
 
 .. _clustergrammer_web_viz:
@@ -26,9 +29,9 @@ Clustergrammer-Web Visualization
 ================================
 Uploading a matrix to the `Web App`_ will redirect the user to a new permanent and shareable page with three views of their data:
 
-#. clustered heatmap view of their matrix
-#. clustered similarity matrix of the columns in their original matrix
-#. clustered similarity matrix of the rows in their original matrix
+- Heatmap view of their matrix
+- Similarity matrix of the columns in their original matrix
+- Similarity matrix of the rows in their original matrix
 
 See the screenshots below and the `example visualization`_ for an example `Web App`_ visualization page.
 
@@ -92,7 +95,8 @@ Clustergrammer-Web is a `dockerized`_ Web application built using the Python lib
 .. _`clustergrammer-web`: https://github.com/MaayanLab/clustergrammer-web/
 .. _`MongoDB`: https://www.mongodb.com/
 .. _`example visualization`: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
-.. _`http://amp.pharm.mssm.edu/clustergrammer/`: http://amp.pharm.mssm.edu/clustergrammer/
+.. _`http://amp.pharm.mssm.edu/clustergrammer`: http://amp.pharm.mssm.edu/clustergrammer/
+.. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer/
 
 .. |github-version| image:: https://img.shields.io/github/release/MaayanLab/clustergrammer-web.svg
     :alt: version

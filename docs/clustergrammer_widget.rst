@@ -60,7 +60,7 @@ Here we are visualizing a matrix of data from a file (e.g. ``rc_two_cats.txt``).
 
 **Load Data from File**
 
-.. ipywidgets-display::
+::
 
   # make imports and instantiate a Network instance with the widget class as an argument
   from clustergrammer_widget import *

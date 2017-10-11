@@ -5,7 +5,7 @@ Clustergrammer-JS
 |npm-version|
 |license|
 
-Clustergrammer-JS is the front-end JavaScript library that builds the interactive heatmap visualization in `SVG`_ using the visualization library `D3.js`_
+Clustergrammer-JS is the front end JavaScript library that builds the interactive clustergram visualization in `SVG`_ using the visualization library `D3.js`_. The library is free and open-source and can be found on `GitHub`_.
 
 .. _clustergrammer_js_dependencies:
 
@@ -15,6 +15,7 @@ Clustergrammer-JS Dependencies
 - `D3.js`_
 - `JQuery`_
 - `Underscore`_
+- `Bootstrap`_
 
 Installation
 ============
@@ -32,21 +33,30 @@ JavaScript Workflow Example
 This workflow shows how to generate a visualization using the JSON produced by Clustergrammer.py
 ::
 
-  // load visualization JSON to network_data
+  // the visualization JSON (produced by Clustergrammer-PY)
+  var network_data = {
+                        "row_nodes":[...],
+                        "col_nodes":[...],
+                        "mat": [...]
+                      }
+
+  // args must contain root of container and the visualization JSON
   var args = {
     'root': '#id_of_container',
     'network_data': 'network_data'
   }
 
+  // Clustergrammer returns a Clustergrammer object in addition to making
+  // the visualization
   var cgm = Clustergrammer(args);
 
-The ``id`` of the container where the visualization will be made is passed as ``root`` (this root container must be made by the user). The :ref:`visualization_json` contains the information necessary to generate the visualization and is passed as ``network_data``. See the :ref:`clustergrammer_js_api` for additional arguments that can be passed to Clustergrammer.js.
+The ``id`` of the container where the visualization will be made is passed as ``root`` (this root container must be made by the user). The :ref:`visualization_json` (produced by :ref:`clustergrammer_py`) contains all the information necessary to generate the visualization and is passed in this example as ``network_data``. See the :ref:`clustergrammer_js_api` for additional arguments that can be passed to Clustergrammer.js.
 
 .. _example_pages:
 
 Example Pages
 =============
-The `Clustergrammer GitHub repo`_ contains several example pages demonstrating how to build a webpage with a Clustergrammer heatmap. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each heatmap requires its own container.
+The `Clustergrammer GitHub repo`_ contains several example pages demonstrating how to build a webpage with a Clustergrammer visualization. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each visualization requires its own container.
 
 .. _clustergrammer_js_api:
 
@@ -132,6 +142,10 @@ Clustergrammer-JS API
 
       Users can pass a callback function that will run when mousing over a dendrogram cluster (e.g. gray trapezoid)
 
+    .. js:attribute:: args.dendro_click_callback
+
+      Users can pass a callback function that will run when clicking a dendrogram cluster (e.g. gray trapezoid)
+
     .. js:attribute:: args.matrix_update_callback
 
       Users can pass a callback function that will run anytime the matrix has been updated, for instance when filtering/un-filtering, cropping, etc.
@@ -147,6 +161,13 @@ Clustergrammer-JS API
     .. js:attribute:: args.ini_view
 
       Users can initialize the 'view' of their matrix, e.g. initialize the matrix at a particular row filtering level.
+
+    .. js:attribute:: args.make_modals
+
+      This boolean option gives users have the option to not make any Bootstrap modals (e.g. dendrogram group modals) and the default is ``true``.
+
+
+
 
   Clustergrammer's attributes and functions are listed below:
 
@@ -184,9 +205,9 @@ Clustergrammer-JS API
 
     Update the visualization to show the row and column names specified in the ``names`` object.
 
-    :param names: Object with ``row`` and ``col`` attributes that specify the row and column names that will be visible after updating.
+    :param names: Object with ``row`` and/or ``col`` attributes that specify the row and column names that will be visible after updating. Row and column names should be given as a list. Users can include only one attribute, e.g. filter rows only by including no ``col`` attribute, to only filter rows or columns (or users can specify an empty list to not filter).
 
-  .. js:function:: filter_viz_using_names(nodes)
+  .. js:function:: filter_viz_using_nodes(nodes)
 
     Update the visualization to show the row and column names specified in the ``nodes`` object.
 
@@ -211,7 +232,7 @@ Clustergrammer-JS API
 
 Visualization-JSON
 ==================
-The visualization-JSON is calculated by :ref:`clustergrammer_py` and encodes everything needed for the front-end Clustergrammer-JS to produce the visualization. The visualization-JSON format is described here (see `clustergrammer_example.json`_ for an example file). An overview of the format is shown below (note that the group arrays are not shown):
+The visualization-JSON is calculated by :ref:`clustergrammer_py` and encodes everything needed for the front end Clustergrammer-JS to produce the visualization. The visualization-JSON format is described here (see `clustergrammer_example.json`_ for an example file). An overview of the format is shown below (note that the group arrays are not shown):
 ::
 
   {
@@ -283,8 +304,9 @@ Clustergrammer-JS Development
 =============================
 The Clustergrammer-JS source code can be found in the `Clustergrammer GitHub repo`_. The Clustergrammer-JS library is utilized by the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. Clustergrammer-JS is built with `Webpack Module Bundler`_ from the source files in the `src`_ directory.
 
-Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
+Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
 
+.. _`GitHub`: https://github.com/MaayanLab/clustergrammer
 .. _`SVG`: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 .. _`Clustergrammer GitHub repo`: https://github.com/MaayanLab/clustergrammer
 .. _`npm package`: https://www.npmjs.com/package/clustergrammer
@@ -295,6 +317,7 @@ Please :ref:`contact` Nicolas Fernandez or Avi Ma'ayan with questions or use the
 .. _`D3.js`: https://d3js.org/
 .. _`JQuery`: https://jquery.com/
 .. _`Underscore`: http://underscorejs.org/
+.. _`Bootstrap`: http://getbootstrap.com/
 .. _`Webpack Module Bundler`: https://webpack.github.io/
 .. _`src`: https://github.com/MaayanLab/clustergrammer/tree/master/src
 .. _`issues`: https://github.com/MaayanLab/clustergrammer/issues
