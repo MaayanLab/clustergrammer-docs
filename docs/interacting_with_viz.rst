@@ -2,6 +2,13 @@
 
 Interacting with the Visualization
 ----------------------------------
+
+.. figure:: _static/demo_high-fr.gif
+  :width: 800px
+  :align: left
+  :alt: demo GIF
+  :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
+
 Data visualization benefits enormously from user interaction -- particularly interactions that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore their data and perform complex data transformations. Clustergrammer visualizations are built using the :ref:`clustergrammer_js` library and are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. This section will overview heatmaps as a visualization tool and cover Clustergrammer's interactive features.
 
 .. _intro_heatmap_clustergram:
