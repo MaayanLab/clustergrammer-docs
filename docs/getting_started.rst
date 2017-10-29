@@ -11,6 +11,13 @@ This section will provide information on how to interact with the visualization 
 
 Interacting with Clustergrammer Heatmaps
 ========================================
+
+.. figure:: _static/demo_high-fr.gif
+  :width: 800px
+  :align: left
+  :alt: demo GIF
+  :target: http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt
+
 Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data including:
 
 - :ref:`zooming_and_panning`
