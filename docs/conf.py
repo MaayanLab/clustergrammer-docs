@@ -42,12 +42,13 @@ sys.path.insert(0, os.path.abspath('../'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.spelling', 'sphinx.ext.autodoc']
+# extensions = ['sphinxcontrib.spelling', 'sphinx.ext.autodoc']
+extensions = ['sphinx.ext.autodoc']
 
-spelling_word_list_filename='spelling_wordlist.txt'
+# spelling_word_list_filename='spelling_wordlist.txt'
 
-spelling_ignore_pypi_package_names=True
-spelling_ignore_acronyms=True
+# spelling_ignore_pypi_package_names=True
+# spelling_ignore_acronyms=True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
