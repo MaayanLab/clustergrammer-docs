@@ -1,3 +1,2 @@
-sphinxcontrib-spelling
 jupyter_sphinx
 clustergrammer_widget
