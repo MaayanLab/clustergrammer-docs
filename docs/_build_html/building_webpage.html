@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -22,28 +24,21 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Clustergrammer 1.1.0 documentation" href="index.html"/>
-        <link rel="next" title="Clustergrammer-JS" href="clustergrammer_js.html"/>
-        <link rel="prev" title="Matrix Formats and Input/Output" href="matrix_format_io.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Clustergrammer-JS" href="clustergrammer_js.html" />
+    <link rel="prev" title="Matrix Formats and Input/Output" href="matrix_format_io.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -84,7 +79,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer Jupyter Widget</a></li>
@@ -114,34 +112,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Clustergrammer</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Clustergrammer</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Web-Development with Clustergrammer</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Web-Development with Clustergrammer</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/building_webpage.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -153,16 +171,16 @@
 <div class="section" id="embedding-clustergrammer">
 <h2>Embedding Clustergrammer<a class="headerlink" href="#embedding-clustergrammer" title="Permalink to this headline">¶</a></h2>
 <p>The Clustergrammer web app can be used to produce visualizations that are embedded into another page using an IFrame; see below:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">iframe</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;iframe_preview&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt&quot;</span> <span class="n">frameborder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">iframe</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;iframe_preview&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://amp.pharm.mssm.edu/clustergrammer/viz/5734a7399fee36034aeb787e/rc_two_cats.txt&quot;</span> <span class="n">frameborder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Users can obtain a permanent link to their visualization by manually uploading their data  using the Upload section of Clustergrammer-Web&#8217;s <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer">homepage</a> and copying the URL to the full-screen version of their visualization. Alternatively users can programmatically upload their data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web-api"><span class="std std-ref">Clustergrammer-Web API</span></a> and obtain their permanent links through the API.</p>
+<p>Users can obtain a permanent link to their visualization by manually uploading their data  using the Upload section of Clustergrammer-Web’s <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer">homepage</a> and copying the URL to the full-screen version of their visualization. Alternatively users can programmatically upload their data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web-api"><span class="std std-ref">Clustergrammer-Web API</span></a> and obtain their permanent links through the API.</p>
 </div>
 <div class="section" id="adding-clustergrammer-to-a-page">
 <h2>Adding Clustergrammer to a Page<a class="headerlink" href="#adding-clustergrammer-to-a-page" title="Permalink to this headline">¶</a></h2>
 <p>In addition to embedding a visualization hosted by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> application developers add a Clustergrammer to directly their own page using the core libraries:</p>
-<p><strong>Clustergrammer-JS</strong>: The front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> JavaScript library generates the interactive visualization and can be installed via npm: <code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>. See the <a class="reference internal" href="clustergrammer_js.html#example-pages"><span class="std std-ref">Example Pages</span></a> for templates to build a site with your visualization</p>
-<p><strong>Clustergrammer-PY</strong>: The back-end <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> Python library clusters a matrix of data and makes the JSON for the front end and can be installed using pip: <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">clustergrammer</span></code>. See the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-workflow"><span class="std std-ref">Python Workflow Examples</span></a> for examples of how cluster your matrix and generate the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a></p>
+<p><strong>Clustergrammer-JS</strong>: The front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> JavaScript library generates the interactive visualization and can be installed via npm: <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>. See the <a class="reference internal" href="clustergrammer_js.html#example-pages"><span class="std std-ref">Example Pages</span></a> for templates to build a site with your visualization</p>
+<p><strong>Clustergrammer-PY</strong>: The back-end <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> Python library clusters a matrix of data and makes the JSON for the front end and can be installed using pip: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">clustergrammer</span></code>. See the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-workflow"><span class="std std-ref">Python Workflow Examples</span></a> for examples of how cluster your matrix and generate the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a></p>
 <p>To make a page, simply include the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> script in your page and load the pre-calculated <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">visualization-JSON</span></a> to generate a visualization (use <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> to generate this JSON).</p>
 <p><a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> can also be included as a node module (see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">Clustergrammer-Widget source code</a> for an example with Webpack), or can be used with <a class="reference external" href="http://requirejs.org/">RequireJS</a> (see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer_requirejs">Clustergrammer RequireJS example</a>).</p>
 </div>
@@ -174,15 +192,16 @@
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clustergrammer_js.html" class="btn btn-neutral float-right" title="Clustergrammer-JS" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="clustergrammer_js.html" class="btn btn-neutral float-right" title="Clustergrammer-JS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="matrix_format_io.html" class="btn btn-neutral" title="Matrix Formats and Input/Output" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="matrix_format_io.html" class="btn btn-neutral" title="Matrix Formats and Input/Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -191,11 +210,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Nicolas F. Fernandez.
+        &copy; Copyright 2017, Nicolas F. Fernandez
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -210,34 +229,33 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'1.1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

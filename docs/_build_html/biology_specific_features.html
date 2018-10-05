@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -22,28 +24,21 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Clustergrammer 1.1.0 documentation" href="index.html"/>
-        <link rel="next" title="Case Studies and Examples" href="case_studies.html"/>
-        <link rel="prev" title="Interacting with the Visualization" href="interacting_with_viz.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Case Studies and Examples" href="case_studies.html" />
+    <link rel="prev" title="Interacting with the Visualization" href="interacting_with_viz.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -84,7 +79,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer Jupyter Widget</a></li>
@@ -113,34 +111,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Clustergrammer</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Clustergrammer</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Biology-Specific Features</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Biology-Specific Features</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/biology_specific_features.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -156,16 +174,16 @@
 <a class="reference internal image-reference" href="_images/gene_info.png"><img alt="Gene Info" src="_images/gene_info.png" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-text">Mousing over a gene name row brings up the full gene name and description (provided by data aggregated through the <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a>).</span></p>
 </div>
-<p>The JavaScript file <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js">hzome_functions.js</a> provides this functionality by utilizing <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/documentation">Harmonizome&#8217;s RESTful API</a> to obtain gene names and descriptions on mouseover events. <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js">hzome_functions.js</a> is passed to <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> as a callback function. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> for an example use case. Mouseover callback functions can be used by developers to extend functionality for other domain-specific problems.</p>
+<p>The JavaScript file <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js">hzome_functions.js</a> provides this functionality by utilizing <a class="reference external" href="http://amp.pharm.mssm.edu/Harmonizome/documentation">Harmonizome’s RESTful API</a> to obtain gene names and descriptions on mouseover events. <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/hzome_functions.js">hzome_functions.js</a> is passed to <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> as a callback function. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/load_clustergram.js">load_clustergram.js</a> for an example use case. Mouseover callback functions can be used by developers to extend functionality for other domain-specific problems.</p>
 </div>
 <div class="section" id="enrichment-analysis">
 <h2>Enrichment Analysis<a class="headerlink" href="#enrichment-analysis" title="Permalink to this headline">¶</a></h2>
-<p>The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis is a popular method to identify biological information specific to a list of genes &#8211; e.g. a biologist can use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their a set of up-regulated genes and thereby form hypotheses about potential up-stream regulators.</p>
+<p>The field of biology has amassed an enormous amount of information about the genes in living organisms such as: function, disease-association, up-stream regulators, protein-level binding partners, etc. Integration of this information can help biologists understand patterns in their data. For instance, enrichment analysis is a popular method to identify biological information specific to a list of genes – e.g. a biologist can use enrichment analysis to identify up-stream regulatory transcription factors that specifically target their a set of up-regulated genes and thereby form hypotheses about potential up-stream regulators.</p>
 <p><strong>Export to Enrichr</strong></p>
 <p>When a user visualizes a matrix with genes as rows, Clustergrammer automatically enables integration with the enrichment analysis tool <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>. Users can export a set of clustered genes to <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a> using the interactive dendrogram (see screenshot) or import enriched terms into the visualization using the <a class="reference internal" href="#enrichrgram"><span class="std std-ref">Enrichrgram</span></a> functionality.</p>
 <div class="figure align-left" id="id3">
 <a class="reference internal image-reference" href="_images/send_to_Enrichr_modal.png"><img alt="Send to Enrichr Modal" src="_images/send_to_Enrichr_modal.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Clicking a row dendrogram cluster opens a modal window with cluster information, row names, and a &#8216;Send genes to Enrichr&#8217; link that allows users to export their gene list (e.g. cluster of row-genes) to Enrichr.</span></p>
+<p class="caption"><span class="caption-text">Clicking a row dendrogram cluster opens a modal window with cluster information, row names, and a ‘Send genes to Enrichr’ link that allows users to export their gene list (e.g. cluster of row-genes) to Enrichr.</span></p>
 </div>
 <p id="enrichrgram"><strong>Enrichrgram</strong></p>
 <p>Enrichrgram enables users to find biological information specific to their genes of interest (using <a class="reference external" href="http://amp.pharm.mssm.edu/Enrichr/">Enrichr</a>) and import this information directly into the visualization as row categories (see screenshot below). Enrichrgram can be run on the front or back end (using the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a> to pre-calculate results). This feature enables enrichment analysis to be performed within the visualization itself by both the original author of the visualization and subsequent viewers.</p>
@@ -175,24 +193,25 @@
 <a class="reference internal image-reference" href="_images/enrichrgram_results.png"><img alt="Enrichrgram Menu" src="_images/enrichrgram_results.png" style="width: 900px;" /></a>
 <p class="caption"><span class="caption-text">Users can perform enrichment analysis to find biological information specific to their genes (e.g. a cluster of genes). Users can select from several enrichment libraries, and the top 10 enriched terms will be shown as rows categories. The combined scores for the enriched terms will be shown as red bars behind the row category titles.</span></p>
 </div>
-<p>Note that Enrichrgram results run on the front end are not permanent and will be lost after refreshing the page, but the matrix with enrichment results can be downloaded using the <a class="reference internal" href="interacting_with_viz.html#download"><span class="std std-ref">Download Icon</span></a> button. Enrichment results can be permanently added to the visualization from the back end using the <code class="docutils literal"><span class="pre">enrichgram</span></code> method described below.</p>
+<p>Note that Enrichrgram results run on the front end are not permanent and will be lost after refreshing the page, but the matrix with enrichment results can be downloaded using the <a class="reference internal" href="interacting_with_viz.html#download"><span class="std std-ref">Download Icon</span></a> button. Enrichment results can be permanently added to the visualization from the back end using the <code class="docutils literal notranslate"><span class="pre">enrichgram</span></code> method described below.</p>
 <p><strong>Enrichrgram Back End</strong></p>
-<p>To permanently add pre-calculated enrichment results to a visualization run the <code class="docutils literal"><span class="pre">enrichrgram</span></code> method described in the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a> before clustering. The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb">Clustergrammer_CCLE_Notebook.ipynb</a> demonstrates how to use the <code class="docutils literal"><span class="pre">enrichrgram</span></code> method to pre-calculate enrichment analysis results for a visualization.</p>
+<p>To permanently add pre-calculated enrichment results to a visualization run the <code class="docutils literal notranslate"><span class="pre">enrichrgram</span></code> method described in the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a> before clustering. The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb">Clustergrammer_CCLE_Notebook.ipynb</a> demonstrates how to use the <code class="docutils literal notranslate"><span class="pre">enrichrgram</span></code> method to pre-calculate enrichment analysis results for a visualization.</p>
 <p>The <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/js/Enrichrgram.js">Enrichrgram.js</a> library provides this functionality on the front end and works with the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> API to depict enriched terms and their associated genes as row categories. The update-row-category functionality can be extended by developers for other domain-specific problems.</p>
 </div>
 </div>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="case_studies.html" class="btn btn-neutral float-right" title="Case Studies and Examples" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="case_studies.html" class="btn btn-neutral float-right" title="Case Studies and Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="interacting_with_viz.html" class="btn btn-neutral" title="Interacting with the Visualization" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="interacting_with_viz.html" class="btn btn-neutral" title="Interacting with the Visualization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -201,11 +220,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Nicolas F. Fernandez.
+        &copy; Copyright 2017, Nicolas F. Fernandez
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -220,34 +239,33 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'1.1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

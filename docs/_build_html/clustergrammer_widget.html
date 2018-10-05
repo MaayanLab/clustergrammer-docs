@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -22,28 +24,21 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Clustergrammer 1.1.0 documentation" href="index.html"/>
-        <link rel="next" title="Interacting with the Visualization" href="interacting_with_viz.html"/>
-        <link rel="prev" title="Clustergrammer Web App" href="clustergrammer_web.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Interacting with the Visualization" href="interacting_with_viz.html" />
+    <link rel="prev" title="Clustergrammer Web App" href="clustergrammer_web.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -84,7 +79,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer Jupyter Widget</a><ul>
@@ -116,34 +114,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Clustergrammer</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Clustergrammer</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Clustergrammer Jupyter Widget</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Clustergrammer Jupyter Widget</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/clustergrammer_widget.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -153,7 +171,7 @@
 <span id="clustergrammer-widget"></span><h1>Clustergrammer Jupyter Widget<a class="headerlink" href="#clustergrammer-jupyter-widget" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://pypi.python.org/pypi?:action=display&amp;name=clustergrammer_widget"><img alt="pypi-version" src="https://img.shields.io/pypi/v/clustergrammer_widget.svg" /></a>
 <a class="reference external" href="https://www.npmjs.com/package/clustergrammer_widgt"><img alt="npm-version" src="https://img.shields.io/npm/v/clustergrammer_widget.svg" /></a></p>
-<p><a class="reference external" href="http://jupyter.org/">Jupyter</a> notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer&#8217;s interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see <a class="reference internal" href="#clustergrammer-widget-examples"><span class="std std-ref">Sharing with nbviewer</span></a>). The Clustergrammer Widget enables users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information). The library is free and open-source and can be found on <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">GitHub</a>.</p>
+<p><a class="reference external" href="http://jupyter.org/">Jupyter</a> notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer’s interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see <a class="reference internal" href="#clustergrammer-widget-examples"><span class="std std-ref">Sharing with nbviewer</span></a>). The Clustergrammer Widget enables users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information). The library is free and open-source and can be found on <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">GitHub</a>.</p>
 <p>Clustergrammer has been applied to a wide variety of biological and non-biological data. See the Jupyter notebook examples below and <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Examples</span></a> for more information:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a></li>
@@ -181,8 +199,8 @@
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>To use the <a class="reference internal" href="#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> users need to install: <a class="reference external" href="https://www.python.org/">Python</a>, <a class="reference external" href="http://jupyter.org/">Jupyter</a> notebook, the widget dependencies (see <a class="reference internal" href="#clustergrammer-widget-dependencies"><span class="std std-ref">Jupyter Widget Dependencies</span></a>), and <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a> version 6.0.0 (to save the notebook with widgets, version 6.0.0 is recommended). Users can <a class="reference external" href="https://www.continuum.io/downloads">install Anaconda</a>, a Python distribution that includes the Jupyter notebook as well as other scientific computing libraries, to easily obtain the necessary dependencies (except ipywidgets version 6.0.0). The <code class="docutils literal"><span class="pre">clustergrammer_widget</span></code> can the be installed (with pip) and enabled using the following commands:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">clustergrammer_widget</span>
+<p>To use the <a class="reference internal" href="#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> users need to install: <a class="reference external" href="https://www.python.org/">Python</a>, <a class="reference external" href="http://jupyter.org/">Jupyter</a> notebook, the widget dependencies (see <a class="reference internal" href="#clustergrammer-widget-dependencies"><span class="std std-ref">Jupyter Widget Dependencies</span></a>), and <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a> version 6.0.0 (to save the notebook with widgets, version 6.0.0 is recommended). Users can <a class="reference external" href="https://www.continuum.io/downloads">install Anaconda</a>, a Python distribution that includes the Jupyter notebook as well as other scientific computing libraries, to easily obtain the necessary dependencies (except ipywidgets version 6.0.0). The <code class="docutils literal notranslate"><span class="pre">clustergrammer_widget</span></code> can the be installed (with pip) and enabled using the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">clustergrammer_widget</span>
 <span class="n">jupyter</span> <span class="n">nbextension</span> <span class="n">enable</span> <span class="o">--</span><span class="n">py</span> <span class="o">--</span><span class="n">sys</span><span class="o">-</span><span class="n">prefix</span> <span class="n">widgetsnbextension</span>
 <span class="n">jupyter</span> <span class="n">nbextension</span> <span class="n">enable</span> <span class="o">--</span><span class="n">py</span> <span class="o">--</span><span class="n">sys</span><span class="o">-</span><span class="n">prefix</span> <span class="n">clustergrammer_widget</span>
 </pre></div>
@@ -191,9 +209,9 @@
 <div class="section" id="clustergrammer-widget-workflow-example">
 <span id="clustergrammer-widget-workflow"></span><h2>Clustergrammer-Widget Workflow Example<a class="headerlink" href="#clustergrammer-widget-workflow-example" title="Permalink to this headline">¶</a></h2>
 <p>The Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> (which is rendered using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>) shows how to visualize: a matrix from a file and a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame. The following examples are taken from this notebook.</p>
-<p>Here we are visualizing a matrix of data from a file (e.g. <code class="docutils literal"><span class="pre">rc_two_cats.txt</span></code>). We start by instantiating the <code class="docutils literal"><span class="pre">Network</span></code> object, <code class="docutils literal"><span class="pre">net</span></code>, and passing it the widget class, <cite>clustergrammer_widget</cite> as an argument. The <cite>net</cite> object is used to load data, filter, normalize, cluster, and render the widget. For more information about the <code class="docutils literal"><span class="pre">Network</span></code> class, refer to the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>.</p>
+<p>Here we are visualizing a matrix of data from a file (e.g. <code class="docutils literal notranslate"><span class="pre">rc_two_cats.txt</span></code>). We start by instantiating the <code class="docutils literal notranslate"><span class="pre">Network</span></code> object, <code class="docutils literal notranslate"><span class="pre">net</span></code>, and passing it the widget class, <cite>clustergrammer_widget</cite> as an argument. The <cite>net</cite> object is used to load data, filter, normalize, cluster, and render the widget. For more information about the <code class="docutils literal notranslate"><span class="pre">Network</span></code> class, refer to the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>.</p>
 <p><strong>Load Data from File</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># make imports and instantiate a Network instance with the widget class as an argument</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># make imports and instantiate a Network instance with the widget class as an argument</span>
 <span class="kn">from</span> <span class="nn">clustergrammer_widget</span> <span class="k">import</span> <span class="o">*</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">(</span><span class="n">clustergrammer_widget</span><span class="p">)</span>
 
@@ -208,8 +226,8 @@
 </pre></div>
 </div>
 <p><strong>General Purpose DataFrame Viewer</strong></p>
-<p>Clustergrammer-Widget can also be used as a general purpose <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, <code class="docutils literal"><span class="pre">df</span></code>, by loading it into the <code class="docutils literal"><span class="pre">net</span></code> object:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># load DataFrame</span>
+<p>Clustergrammer-Widget can also be used as a general purpose <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, <code class="docutils literal notranslate"><span class="pre">df</span></code>, by loading it into the <code class="docutils literal notranslate"><span class="pre">net</span></code> object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># load DataFrame</span>
 <span class="n">net</span><span class="o">.</span><span class="n">load_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
 <span class="c1"># cluster using default parameters</span>
@@ -219,10 +237,10 @@
 <span class="n">net</span><span class="o">.</span><span class="n">widget</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Loading new data into <code class="docutils literal"><span class="pre">net</span></code> removes any old data, which allows the <code class="docutils literal"><span class="pre">net</span></code> object to be easily reused within the same notebook.</p>
+<p>Loading new data into <code class="docutils literal notranslate"><span class="pre">net</span></code> removes any old data, which allows the <code class="docutils literal notranslate"><span class="pre">net</span></code> object to be easily reused within the same notebook.</p>
 <p><strong>Filtering, Downsampling, and Normalizing</strong></p>
-<p>The <code class="docutils literal"><span class="pre">net</span></code> object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, filters to keep the top 200 rows based on their absolute value sum, calculates clustering, and finally renders the widget:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Z-score normalize columns</span>
+<p>The <code class="docutils literal notranslate"><span class="pre">net</span></code> object can also be used to filter and normalize your data before visualizing (note that filtering and normalization are permanent and irreversible). The example below performs Z-score normalization on the columns, filters to keep the top 200 rows based on their absolute value sum, calculates clustering, and finally renders the widget:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Z-score normalize columns</span>
 <span class="n">net</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;col&#39;</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="s1">&#39;zscore&#39;</span><span class="p">,</span> <span class="n">keep_orig</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># filter for the top 200 rows based on their absolute value sum</span>
@@ -236,41 +254,42 @@
 </pre></div>
 </div>
 <p id="two-way-communication"><strong>Two-way Widget Communication</strong></p>
-<p>Jupyter widgets enable both back-end to front-end communication (e.g. Python kernel to JavaScript) and front-end to back-end (e.g. JavaScript to Python kernel). Clustergrammer-Widget uses front-end to back-end communication to enable users to export their modified matrix (e.g. cropped matrix) to the Python kernel as a DataFrame. This can be used to select a cluster of interest (e.g. by <a class="reference internal" href="interacting_with_viz.html#crop"><span class="std std-ref">Cropping</span></a> or using the <a class="reference internal" href="interacting_with_viz.html#interactive-dendrogram"><span class="std std-ref">Interactive Dendrogram</span></a>) and pass this cluster to a new dataframe. Alternatively, this can be used to export data to a DataFrame after running front-end enrichment analysis using <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a>. See the <code class="docutils literal"><span class="pre">df_widget</span></code> method below for an example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># After modifying the visualization (e.g. dendrogram cropping) we can export the</span>
+<p>Jupyter widgets enable both back-end to front-end communication (e.g. Python kernel to JavaScript) and front-end to back-end (e.g. JavaScript to Python kernel). Clustergrammer-Widget uses front-end to back-end communication to enable users to export their modified matrix (e.g. cropped matrix) to the Python kernel as a DataFrame. This can be used to select a cluster of interest (e.g. by <a class="reference internal" href="interacting_with_viz.html#crop"><span class="std std-ref">Cropping</span></a> or using the <a class="reference internal" href="interacting_with_viz.html#interactive-dendrogram"><span class="std std-ref">Interactive Dendrogram</span></a>) and pass this cluster to a new dataframe. Alternatively, this can be used to export data to a DataFrame after running front-end enrichment analysis using <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a>. See the <code class="docutils literal notranslate"><span class="pre">df_widget</span></code> method below for an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># After modifying the visualization (e.g. dendrogram cropping) we can export the</span>
 <span class="c1"># modified matrix to the back end using the df_widget method</span>
 <span class="n">df_new</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">df_widget</span><span class="p">()</span>
 </pre></div>
 </div>
 <p><strong>Clustergrammer-PY API</strong></p>
-<p>For more information about the <code class="docutils literal"><span class="pre">Network</span></code> object and additional options refer to the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>.</p>
+<p>For more information about the <code class="docutils literal notranslate"><span class="pre">Network</span></code> object and additional options refer to the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>.</p>
 </div>
 <div class="section" id="sharing-with-nbviewer">
 <span id="clustergrammer-widget-examples"></span><h2>Sharing with nbviewer<a class="headerlink" href="#sharing-with-nbviewer" title="Permalink to this headline">¶</a></h2>
-<p>To enable rendering interactive widgets on <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a> you must have <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later installed and use the &#8220;Save Notebook with Widgets&#8221; action in the Widgets menu in the Jupyter notebook (see ipywidgets <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/embedding.html?highlight=save#rendering-interactive-widgets-on-nbviewer">Rendering Interactive Widgets on nbviewer</a> documentation and screenshot below):</p>
+<p>To enable rendering interactive widgets on <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a> you must have <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later installed and use the “Save Notebook with Widgets” action in the Widgets menu in the Jupyter notebook (see ipywidgets <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/embedding.html?highlight=save#rendering-interactive-widgets-on-nbviewer">Rendering Interactive Widgets on nbviewer</a> documentation and screenshot below):</p>
 <div class="figure align-left" id="id4">
 <a class="reference internal image-reference" href="_images/jupyter_save_widgets.png"><img alt="Save Jupyter Widget" src="_images/jupyter_save_widgets.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">Users can save notebooks with interactive HTML widgets using the &#8220;Save Notebook with Widgets&#8221; action in the Jupyter Notebook Widgets menu as shown here. <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later must be installed in order to enable this feature.</span></p>
+<p class="caption"><span class="caption-text">Users can save notebooks with interactive HTML widgets using the “Save Notebook with Widgets” action in the Jupyter Notebook Widgets menu as shown here. <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later must be installed in order to enable this feature.</span></p>
 </div>
 </div>
 <div class="section" id="clustergrammer-widget-development">
 <span id="clustergrammer-widget-dev"></span><h2>Clustergrammer-Widget Development<a class="headerlink" href="#clustergrammer-widget-development" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-Widget&#8217;s source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">clustergrammer-widget</a> GitHub repo. Clustergrammer-Widget is built using the <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a> framework (using the <a class="reference external" href="https://github.com/jupyter/widget-cookiecutter">cookie cutter</a> template).</p>
-<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez and Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget/issues">issues</a> feature to report an issue.</p>
+<p>Clustergrammer-Widget’s source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">clustergrammer-widget</a> GitHub repo. Clustergrammer-Widget is built using the <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a> framework (using the <a class="reference external" href="https://github.com/jupyter/widget-cookiecutter">cookie cutter</a> template).</p>
+<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez and Avi Ma’ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget/issues">issues</a> feature to report an issue.</p>
 </div>
 </div>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="interacting_with_viz.html" class="btn btn-neutral float-right" title="Interacting with the Visualization" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="interacting_with_viz.html" class="btn btn-neutral float-right" title="Interacting with the Visualization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="clustergrammer_web.html" class="btn btn-neutral" title="Clustergrammer Web App" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="clustergrammer_web.html" class="btn btn-neutral" title="Clustergrammer Web App" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -279,11 +298,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Nicolas F. Fernandez.
+        &copy; Copyright 2017, Nicolas F. Fernandez
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -298,34 +317,33 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'1.1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

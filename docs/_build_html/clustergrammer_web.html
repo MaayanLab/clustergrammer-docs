@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -22,28 +24,21 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Clustergrammer 1.1.0 documentation" href="index.html"/>
-        <link rel="next" title="Clustergrammer Jupyter Widget" href="clustergrammer_widget.html"/>
-        <link rel="prev" title="Getting Started" href="getting_started.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Clustergrammer Jupyter Widget" href="clustergrammer_widget.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -84,7 +79,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer Web App</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#uploading-data-using-the-web-app-homepage">Uploading Data using the Web App Homepage</a></li>
@@ -115,34 +113,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Clustergrammer</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Clustergrammer</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Clustergrammer Web App</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Clustergrammer Web App</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/clustergrammer_web.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -177,20 +195,20 @@
 <p><strong>Similarity Matrix View</strong></p>
 <div class="figure align-left" id="id5">
 <a class="reference external image-reference" href="http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt"><img alt="Web application sim-mat" src="_images/web_app_sim_mat.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-text">The <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">Web App</a> produces similarity matrices of rows and columns to provide additional perspectives on a user&#8217;s data. Above is an example column similarity matrix.</span></p>
+<p class="caption"><span class="caption-text">The <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">Web App</a> produces similarity matrices of rows and columns to provide additional perspectives on a user’s data. Above is an example column similarity matrix.</span></p>
 </div>
 <p>Users can view the heatmap/similarity-matrices in full screen by clicking the blue link under the visualizations. All visualizations are permanent and shareable, which enables sharing with collaborators. See <a class="reference internal" href="interacting_with_viz.html#interacting-with-viz"><span class="std std-ref">Interacting with the Visualization</span></a> for more information.</p>
 </div>
 <div class="section" id="clustergrammer-web-api">
 <span id="id1"></span><h2>Clustergrammer-Web API<a class="headerlink" href="#clustergrammer-web-api" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-Web&#8217;s RESTful API enables users to programmatically generate visualizations. The API can be convenient for users that need to generate many clustergrams or developers who need to automatically generate visualizations for their own Web application.</p>
+<p>Clustergrammer-Web’s RESTful API enables users to programmatically generate visualizations. The API can be convenient for users that need to generate many clustergrams or developers who need to automatically generate visualizations for their own Web application.</p>
 <p><em>Matrix Upload</em></p>
 <p>Users can post a matrix file to Clustergrammer-Web using the endpoint</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">amp</span><span class="o">.</span><span class="n">pharm</span><span class="o">.</span><span class="n">mssm</span><span class="o">.</span><span class="n">edu</span><span class="o">/</span><span class="n">clustergrammer</span><span class="o">/</span><span class="n">matrix_upload</span><span class="o">/</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">amp</span><span class="o">.</span><span class="n">pharm</span><span class="o">.</span><span class="n">mssm</span><span class="o">.</span><span class="n">edu</span><span class="o">/</span><span class="n">clustergrammer</span><span class="o">/</span><span class="n">matrix_upload</span><span class="o">/</span>
 </pre></div>
 </div>
 <p>and receive a permanent link to their visualization. Below is an example in Python 2.7 showing the post request and how to obtain the link from the response object:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;example_matrix.txt&#39;</span>
 <span class="n">upload_url</span> <span class="o">=</span> <span class="s1">&#39;http://amp.pharm.mssm.edu/clustergrammer/matrix_upload/&#39;</span>
@@ -209,15 +227,16 @@
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clustergrammer_widget.html" class="btn btn-neutral float-right" title="Clustergrammer Jupyter Widget" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="clustergrammer_widget.html" class="btn btn-neutral float-right" title="Clustergrammer Jupyter Widget" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="getting_started.html" class="btn btn-neutral" title="Getting Started" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="getting_started.html" class="btn btn-neutral" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -226,11 +245,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Nicolas F. Fernandez.
+        &copy; Copyright 2017, Nicolas F. Fernandez
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -245,34 +264,33 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'1.1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

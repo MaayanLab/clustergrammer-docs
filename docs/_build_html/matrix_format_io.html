@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -22,28 +24,21 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Clustergrammer 1.1.0 documentation" href="index.html"/>
-        <link rel="next" title="Web-Development with Clustergrammer" href="building_webpage.html"/>
-        <link rel="prev" title="Case Studies and Examples" href="case_studies.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Web-Development with Clustergrammer" href="building_webpage.html" />
+    <link rel="prev" title="Case Studies and Examples" href="case_studies.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -84,7 +79,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer Jupyter Widget</a></li>
@@ -117,34 +115,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Clustergrammer</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Clustergrammer</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Matrix Formats and Input/Output</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Matrix Formats and Input/Output</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/matrix_format_io.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -157,32 +175,32 @@
 <li>a tab-separated matrix file</li>
 <li>a Pandas DataFrame (using <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a>)</li>
 </ul>
-<p>The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In all cases, row and column names must be unique (if input names are not unique then unique integers will be appended to names). Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer&#8217;s <a class="reference internal" href="interacting_with_viz.html#interactive-dim-reduction"><span class="std std-ref">Interactive Dimensionality Reduction</span></a>.</p>
-<p>The front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library can visualize matrices up to ~500,000 to ~1,000,000 cells in size and is also optimized to visualize matrices with more rows than columns &#8211; this has been done to accommodate datasets with many dimensions (rows) and few measurements (columns) that are common in biology. However very large matrices may take a long time to cluster using the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> library.</p>
+<p>The tab-separated matrix file can take several formats shown below, which can include row/column categories and name/category titles. In all cases, row and column names must be unique (if input names are not unique then unique integers will be appended to names). Users are encouraged to arrange their matrix with data-points as columns and dimensions as rows, which enables users to take advantage of Clustergrammer’s <a class="reference internal" href="interacting_with_viz.html#interactive-dim-reduction"><span class="std std-ref">Interactive Dimensionality Reduction</span></a>.</p>
+<p>The front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> library can visualize matrices up to ~500,000 to ~1,000,000 cells in size and is also optimized to visualize matrices with more rows than columns – this has been done to accommodate datasets with many dimensions (rows) and few measurements (columns) that are common in biology. However very large matrices may take a long time to cluster using the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> library.</p>
 <div class="section" id="simple-matrix-format">
 <h2>Simple Matrix Format<a class="headerlink" href="#simple-matrix-format" title="Permalink to this headline">¶</a></h2>
 <p>The simplest tab-separated file format is shown here:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>      <span class="n">Col</span><span class="o">-</span><span class="n">A</span>   <span class="n">Col</span><span class="o">-</span><span class="n">B</span>   <span class="n">Col</span><span class="o">-</span><span class="n">C</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>      <span class="n">Col</span><span class="o">-</span><span class="n">A</span>   <span class="n">Col</span><span class="o">-</span><span class="n">B</span>   <span class="n">Col</span><span class="o">-</span><span class="n">C</span>
 <span class="n">Row</span><span class="o">-</span><span class="n">A</span> <span class="mf">0.0</span>     <span class="o">-</span><span class="mf">0.1</span>    <span class="mf">1.0</span>
 <span class="n">Row</span><span class="o">-</span><span class="n">B</span> <span class="mf">3.0</span>     <span class="mf">0.0</span>     <span class="mf">8.0</span>
 <span class="n">Row</span><span class="o">-</span><span class="n">C</span> <span class="mf">0.2</span>     <span class="mf">0.1</span>     <span class="mf">2.5</span>
 </pre></div>
 </div>
-<p>The first row gives the column names and starts with a blank tab. All other rows start with the row name followed by the row data. Row and column titles can be added by prefixing each row or column name with <code class="docutils literal"><span class="pre">'Title:</span> <span class="pre">'</span></code> (not shown in this example). See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/txt/example_tsv.txt">example_tsv.txt</a> for an example of this matrix format.</p>
+<p>The first row gives the column names and starts with a blank tab. All other rows start with the row name followed by the row data. Row and column titles can be added by prefixing each row or column name with <code class="docutils literal notranslate"><span class="pre">'Title:</span> <span class="pre">'</span></code> (not shown in this example). See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/txt/example_tsv.txt">example_tsv.txt</a> for an example of this matrix format.</p>
 </div>
 <div class="section" id="simple-category-matrix-format">
 <h2>Simple-Category Matrix Format<a class="headerlink" href="#simple-category-matrix-format" title="Permalink to this headline">¶</a></h2>
 <p>Row and column categories can be included in two ways. The first, simple-category format, is shown below:</p>
 <div class="figure align-left" id="id1">
 <a class="reference internal image-reference" href="_images/cat_tsv.png"><img alt="Simple Matrix-Category Format" src="_images/cat_tsv.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">A matrix with row and column categories in &#8216;simple&#8217; format.</span></p>
+<p class="caption"><span class="caption-text">A matrix with row and column categories in ‘simple’ format.</span></p>
 </div>
-<p>This simple-category format allows users to encode column categories as extra rows underneath column labels and row categories as an extra columns next to row labels. The above screenshot of an Excel spreadsheet shows a single row category being added as an additional column of strings (e.g. <code class="docutils literal"><span class="pre">Type:</span> <span class="pre">Interesting</span></code>) and a single column category being added as an additional row of strings (e.g. <code class="docutils literal"><span class="pre">Gender:</span> <span class="pre">Male</span></code>). Up to 15 categories can be added in a similar manner. Titles for row or column names or categories can be added by prefixing each string with <code class="docutils literal"><span class="pre">'Title:</span> <span class="pre">'</span></code> (note the space after the colon). For example, the title of the column names is <code class="docutils literal"><span class="pre">Cell</span> <span class="pre">Line</span></code> and the title of the row categories is <code class="docutils literal"><span class="pre">Gender</span></code>. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/txt/rc_two_cats.txt">rc_two_cats.txt</a> for an example of this matrix format. Titles, if given, will be shown as labels above row/column names or adjacent to row/column categories.</p>
+<p>This simple-category format allows users to encode column categories as extra rows underneath column labels and row categories as an extra columns next to row labels. The above screenshot of an Excel spreadsheet shows a single row category being added as an additional column of strings (e.g. <code class="docutils literal notranslate"><span class="pre">Type:</span> <span class="pre">Interesting</span></code>) and a single column category being added as an additional row of strings (e.g. <code class="docutils literal notranslate"><span class="pre">Gender:</span> <span class="pre">Male</span></code>). Up to 15 categories can be added in a similar manner. Titles for row or column names or categories can be added by prefixing each string with <code class="docutils literal notranslate"><span class="pre">'Title:</span> <span class="pre">'</span></code> (note the space after the colon). For example, the title of the column names is <code class="docutils literal notranslate"><span class="pre">Cell</span> <span class="pre">Line</span></code> and the title of the row categories is <code class="docutils literal notranslate"><span class="pre">Gender</span></code>. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer/blob/master/txt/rc_two_cats.txt">rc_two_cats.txt</a> for an example of this matrix format. Titles, if given, will be shown as labels above row/column names or adjacent to row/column categories.</p>
 </div>
 <div class="section" id="tuple-category-matrix-format">
 <h2>Tuple-Category Matrix Format<a class="headerlink" href="#tuple-category-matrix-format" title="Permalink to this headline">¶</a></h2>
 <p>Row/column names and categories can also be encoded as Python <a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html">tuples</a> as shown below:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>        <span class="p">(</span><span class="s1">&#39;Cell Line: A549&#39;</span><span class="p">,</span> <span class="s1">&#39;Gender: Male&#39;</span><span class="p">)</span>     <span class="p">(</span><span class="s1">&#39;Cell Line: H1299&#39;</span><span class="p">,</span> <span class="s1">&#39;Gender: Female&#39;</span><span class="p">)</span>  <span class="p">(</span><span class="s1">&#39;Cell Line: H661&#39;</span><span class="p">,</span> <span class="s1">&#39;Gender: Female&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="p">(</span><span class="s1">&#39;Cell Line: A549&#39;</span><span class="p">,</span> <span class="s1">&#39;Gender: Male&#39;</span><span class="p">)</span>     <span class="p">(</span><span class="s1">&#39;Cell Line: H1299&#39;</span><span class="p">,</span> <span class="s1">&#39;Gender: Female&#39;</span><span class="p">)</span>  <span class="p">(</span><span class="s1">&#39;Cell Line: H661&#39;</span><span class="p">,</span> <span class="s1">&#39;Gender: Female&#39;</span><span class="p">)</span>
 <span class="p">(</span><span class="s1">&#39;Gene: EGFR&#39;</span><span class="p">,</span><span class="s1">&#39;Type: Interesting&#39;</span><span class="p">)</span>      <span class="o">-</span><span class="mf">3.234</span>  <span class="mf">5.03</span>    <span class="mf">0.001</span>
 <span class="p">(</span><span class="s1">&#39;Gene: TP53&#39;</span><span class="p">,</span><span class="s1">&#39;Type: Not Interesting&#39;</span><span class="p">)</span>  <span class="mf">8.3</span>     <span class="mf">4.098</span>   <span class="o">-</span><span class="mf">12.2</span>
 <span class="p">(</span><span class="s1">&#39;Gene: IRAK&#39;</span><span class="p">,</span><span class="s1">&#39;Type: Not Interesting&#39;</span><span class="p">)</span>  <span class="mf">7.23</span>    <span class="mf">3.01</span>    <span class="mf">0.88</span>
@@ -202,7 +220,7 @@
 <div class="section" id="matrix-input-output-to-clustergrammer-py">
 <h2>Matrix Input/Output to Clustergrammer.py<a class="headerlink" href="#matrix-input-output-to-clustergrammer-py" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> can load a matrix directly from a file or from a Pandas DataFrame as well as export to a file or Pandas DataFrame (for more information see <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a>):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># initialize Network object</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># initialize Network object</span>
 <span class="kn">from</span> <span class="nn">clustergrammer</span> <span class="k">import</span> <span class="n">Network</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
 
@@ -230,15 +248,16 @@
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="building_webpage.html" class="btn btn-neutral float-right" title="Web-Development with Clustergrammer" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="building_webpage.html" class="btn btn-neutral float-right" title="Web-Development with Clustergrammer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="case_studies.html" class="btn btn-neutral" title="Case Studies and Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="case_studies.html" class="btn btn-neutral" title="Case Studies and Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -247,11 +266,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Nicolas F. Fernandez.
+        &copy; Copyright 2017, Nicolas F. Fernandez
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -266,34 +285,33 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'1.1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -8,6 +8,18 @@ Clustergrammer is a web-based tool for visualizing and analyzing high-dimensiona
 
          <iframe id='iframe_preview' src="https://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
 
+JupyterCon 2018
+===============
+
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/82epZkmfkrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+Clustergrammer-Widget was recently presented at JupyterCon 2018.
+
 Using Clustergrammer
 ====================
 

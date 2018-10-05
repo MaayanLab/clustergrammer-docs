@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -22,28 +24,21 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Clustergrammer 1.1.0 documentation" href="index.html"/>
-        <link rel="next" title="App Integration Examples" href="app_integration.html"/>
-        <link rel="prev" title="Clustergrammer-JS" href="clustergrammer_js.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="App Integration Examples" href="app_integration.html" />
+    <link rel="prev" title="Clustergrammer-JS" href="clustergrammer_js.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -84,7 +79,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer Jupyter Widget</a></li>
@@ -116,34 +114,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Clustergrammer</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Clustergrammer</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Clustergrammer-PY</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Clustergrammer-PY</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/clustergrammer_py.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -165,7 +183,7 @@
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer-PY can be installed using pip (<a class="reference external" href="https://pypi.python.org/pypi?:action=display&amp;name=clustergrammer">package index</a>) with the following:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">clustergrammer</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">clustergrammer</span>
 </pre></div>
 </div>
 <p>or the source code can be obtained from the <a class="reference external" href="http://github.com/MaayanLab/clustergrammer-py">GitHub repo</a>.</p>
@@ -173,7 +191,7 @@
 <div class="section" id="python-workflow-examples">
 <span id="clustergrammer-py-workflow"></span><h2>Python Workflow Examples<a class="headerlink" href="#python-workflow-examples" title="Permalink to this headline">¶</a></h2>
 <p>This workflow shows how to cluster a matrix of data from a file (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a>) and generate a <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a> (for use by <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># make network object and load file</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># make network object and load file</span>
 <span class="kn">from</span> <span class="nn">clustergrammer</span> <span class="k">import</span> <span class="n">Network</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
 <span class="n">net</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s1">&#39;your_matrix.txt&#39;</span><span class="p">)</span>
@@ -185,9 +203,9 @@
 <span class="n">net</span><span class="o">.</span><span class="n">write_json_to_file</span><span class="p">(</span><span class="s1">&#39;viz&#39;</span><span class="p">,</span> <span class="s1">&#39;mult_view.json&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The file <code class="docutils literal"><span class="pre">mult_view.json</span></code> will be loaded by the front end and used to build the interactive visualization. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/clusterergrammer.py">clusterergrammer.py</a> for an additional example.</p>
+<p>The file <code class="docutils literal notranslate"><span class="pre">mult_view.json</span></code> will be loaded by the front end and used to build the interactive visualization. See <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/clusterergrammer.py">clusterergrammer.py</a> for an additional example.</p>
 <p>Clustergrammer can also load data from a Pandas DataFrame and perform normalization and filtering. In this example, we will load data from a DataFrame, normalize the rows, and filter the columns:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># make network object and load DataFrame, df</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># make network object and load DataFrame, df</span>
 <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">()</span>
 <span class="n">net</span><span class="o">.</span><span class="n">load_df</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
@@ -204,13 +222,13 @@
 <span class="n">net</span><span class="o">.</span><span class="n">write_json_to_file</span><span class="p">(</span><span class="s1">&#39;viz&#39;</span><span class="p">,</span> <span class="s1">&#39;mult_view.json&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Note that filtering done on the <code class="docutils literal"><span class="pre">Network</span></code> object before clustering is permanent, unlike the filtering done within <code class="docutils literal"><span class="pre">cluster</span></code> which can be toggled on and off in the front end visualization. The <code class="docutils literal"><span class="pre">keep_orig</span></code> parameter in the <code class="docutils literal"><span class="pre">normalize</span></code> function allows us to show un-normalized data a user mouses over a matrix-cell in the visualization. See the <a class="reference internal" href="#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a> documentation below for more information.</p>
+<p>Note that filtering done on the <code class="docutils literal notranslate"><span class="pre">Network</span></code> object before clustering is permanent, unlike the filtering done within <code class="docutils literal notranslate"><span class="pre">cluster</span></code> which can be toggled on and off in the front end visualization. The <code class="docutils literal notranslate"><span class="pre">keep_orig</span></code> parameter in the <code class="docutils literal notranslate"><span class="pre">normalize</span></code> function allows us to show un-normalized data a user mouses over a matrix-cell in the visualization. See the <a class="reference internal" href="#clustergrammer-py-api"><span class="std std-ref">Clustergrammer-PY API</span></a> documentation below for more information.</p>
 </div>
 <div class="section" id="clustergrammer-py-api">
 <span id="id3"></span><h2>Clustergrammer-PY API<a class="headerlink" href="#clustergrammer-py-api" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer-PY generates a Network object (see <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/blob/master/clustergrammer/__init__.py">Network class definition</a>), which is used to load a matrix (e.g. from a Pandas <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html">DataFrame</a>), optionally normalize or filter the matrix, cluster the matrix, and finally generate the visualization JSON for the front end Clustergrammer.js.</p>
-<p>When a matrix is loaded into an instance of <code class="docutils literal"><span class="pre">Network</span></code> (e.g. <code class="docutils literal"><span class="pre">net.load_file('your_file.txt')</span></code>) it is stored in the data, <code class="docutils literal"><span class="pre">dat</span></code>, attribute. Normalization and filtering will permanently modify the <code class="docutils literal"><span class="pre">dat</span></code> representation of the matrix. When the matrix is clustered (by calling <code class="docutils literal"><span class="pre">cluster</span></code>) this produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a>, which is stored in the <code class="docutils literal"><span class="pre">viz</span></code> attribute. This JSON can then be exported as a string using <code class="docutils literal"><span class="pre">net.export_net_json('viz')</span></code> or saved to a file using <code class="docutils literal"><span class="pre">net.write_json_to_file('viz',</span> <span class="pre">filename)</span></code>.</p>
-<p>The function <code class="docutils literal"><span class="pre">cluster</span></code> calculates hierarchical clustering of your data and hierarchical clustering of successive-row-filtered versions of your data. These alternate filtered-views are stored as <code class="docutils literal"><span class="pre">views</span></code> within the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a>.</p>
+<p>When a matrix is loaded into an instance of <code class="docutils literal notranslate"><span class="pre">Network</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">net.load_file('your_file.txt')</span></code>) it is stored in the data, <code class="docutils literal notranslate"><span class="pre">dat</span></code>, attribute. Normalization and filtering will permanently modify the <code class="docutils literal notranslate"><span class="pre">dat</span></code> representation of the matrix. When the matrix is clustered (by calling <code class="docutils literal notranslate"><span class="pre">cluster</span></code>) this produces the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a>, which is stored in the <code class="docutils literal notranslate"><span class="pre">viz</span></code> attribute. This JSON can then be exported as a string using <code class="docutils literal notranslate"><span class="pre">net.export_net_json('viz')</span></code> or saved to a file using <code class="docutils literal notranslate"><span class="pre">net.write_json_to_file('viz',</span> <span class="pre">filename)</span></code>.</p>
+<p>The function <code class="docutils literal notranslate"><span class="pre">cluster</span></code> calculates hierarchical clustering of your data and hierarchical clustering of successive-row-filtered versions of your data. These alternate filtered-views are stored as <code class="docutils literal notranslate"><span class="pre">views</span></code> within the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a>.</p>
 <span class="target" id="module-clustergrammer_py"></span><dl class="class">
 <dt id="clustergrammer_py.Network">
 <em class="property">class </em><code class="descclassname">clustergrammer_py.</code><code class="descname">Network</code><span class="sig-paren">(</span><em>widget=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network" title="Permalink to this definition">¶</a></dt>
@@ -229,8 +247,8 @@ the network that will be used as input to clustergram.js.</p>
 <dt id="clustergrammer_py.Network.add_cats">
 <code class="descname">add_cats</code><span class="sig-paren">(</span><em>axis</em>, <em>cat_data</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.add_cats" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add categories to rows or columns using cat_data array of objects. Each object in cat_data is a dictionary with one key (category title) and value (rows/column names) that have this category. Categories will be added onto the existing categories and will be added in the order of the objects in the array.</p>
-<p>Example <code class="docutils literal"><span class="pre">cat_data</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span>
+<p>Example <code class="docutils literal notranslate"><span class="pre">cat_data</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
   <span class="p">{</span>
     <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;First Category&quot;</span><span class="p">,</span>
     <span class="s2">&quot;cats&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -262,7 +280,7 @@ the network that will be used as input to clustergram.js.</p>
 <dl class="method">
 <dt id="clustergrammer_py.Network.cluster">
 <code class="descname">cluster</code><span class="sig-paren">(</span><em>dist_type='cosine', run_clustering=True, dendro=True, views=['N_row_sum', 'N_row_var'], linkage_type='average', sim_mat=False, filter_sim=0.1, calc_cat_pval=False, run_enrichr=None, enrichrgram=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.cluster" title="Permalink to this definition">¶</a></dt>
-<dd><p>The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :<code class="docutils literal"><span class="pre">visualization_json</span></code>.</p>
+<dd><p>The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :<code class="docutils literal notranslate"><span class="pre">visualization_json</span></code>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -355,13 +373,13 @@ N.</p>
 <dl class="method">
 <dt id="clustergrammer_py.Network.filter_names">
 <code class="descname">filter_names</code><span class="sig-paren">(</span><em>axis</em>, <em>names</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.filter_names" title="Permalink to this definition">¶</a></dt>
-<dd><p>Filter the visualization using row/column names. The function takes, axis (&#8216;row&#8217;/&#8217;col&#8217;) and names, a list of strings.</p>
+<dd><p>Filter the visualization using row/column names. The function takes, axis (‘row’/’col’) and names, a list of strings.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="clustergrammer_py.Network.filter_sum">
 <code class="descname">filter_sum</code><span class="sig-paren">(</span><em>inst_rc</em>, <em>threshold</em>, <em>take_abs=True</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.filter_sum" title="Permalink to this definition">¶</a></dt>
-<dd><p>Filter a network&#8217;s rows or columns based on the sum across rows or columns.</p>
+<dd><p>Filter a network’s rows or columns based on the sum across rows or columns.</p>
 </dd></dl>
 
 <dl class="method">
@@ -374,7 +392,7 @@ threshold (in absolute value).</p>
 <dl class="method">
 <dt id="clustergrammer_py.Network.load_data_file_to_net">
 <code class="descname">load_data_file_to_net</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.load_data_file_to_net" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load Clustergrammer&#8217;s dat format (saved as JSON).</p>
+<dd><p>Load Clustergrammer’s dat format (saved as JSON).</p>
 </dd></dl>
 
 <dl class="method">
@@ -417,8 +435,8 @@ be possible to load data without having to read from a file.</p>
 <dl class="method">
 <dt id="clustergrammer_py.Network.make_clust">
 <code class="descname">make_clust</code><span class="sig-paren">(</span><em>dist_type='cosine', run_clustering=True, dendro=True, views=['N_row_sum', 'N_row_var'], linkage_type='average', sim_mat=False, filter_sim=0.1, calc_cat_pval=False, run_enrichr=None, enrichrgram=None</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.make_clust" title="Permalink to this definition">¶</a></dt>
-<dd><p>... Will be deprecated, renaming method cluster ...
-The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :<code class="docutils literal"><span class="pre">visualization_json</span></code>.</p>
+<dd><p>… Will be deprecated, renaming method cluster …
+The main function performs hierarchical clustering, optionally generates filtered views (e.g. row-filtered views), and generates the :<code class="docutils literal notranslate"><span class="pre">visualization_json</span></code>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -490,22 +508,23 @@ get a dataframe of this cluster using the widget_df method.</p>
 </div>
 <div class="section" id="clustergrammer-py-development">
 <span id="clustergrammer-py-dev"></span><h2>Clustergrammer-PY Development<a class="headerlink" href="#clustergrammer-py-development" title="Permalink to this headline">¶</a></h2>
-<p>Clustergrammer-PY&#8217;s source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py">clustergrammer-py</a> GitHub repo. The Clustergrammer-PY library is utilized by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>.</p>
-<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez and Avi Ma&#8217;ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/issues">issues</a> feature to report an issue.</p>
+<p>Clustergrammer-PY’s source code can be found in the <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py">clustergrammer-py</a> GitHub repo. The Clustergrammer-PY library is utilized by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a>.</p>
+<p>Please <a class="reference internal" href="index.html#contact"><span class="std std-ref">Contact</span></a> Nicolas Fernandez and Avi Ma’ayan with questions or use the GitHub <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-py/issues">issues</a> feature to report an issue.</p>
 </div>
 </div>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="app_integration.html" class="btn btn-neutral float-right" title="App Integration Examples" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="app_integration.html" class="btn btn-neutral float-right" title="App Integration Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="clustergrammer_js.html" class="btn btn-neutral" title="Clustergrammer-JS" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="clustergrammer_js.html" class="btn btn-neutral" title="Clustergrammer-JS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -514,11 +533,11 @@ get a dataframe of this cluster using the widget_df method.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Nicolas F. Fernandez.
+        &copy; Copyright 2017, Nicolas F. Fernandez
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -533,34 +552,33 @@ get a dataframe of this cluster using the widget_df method.</p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'1.1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>
