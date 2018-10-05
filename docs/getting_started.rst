@@ -9,6 +9,18 @@ Clustergrammer is a web-based tool for visualizing and analyzing high-dimensiona
 
 This section will provide information on how to interact with the visualization and how to quickly visualize your own data using the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. See :ref:`case_studies` for examples of how Clustergrammer can be used to explore and analyze real world data. For developers interested in building their own web page using Clustergrammer, please refer to the :ref:`building_web_page` section.
 
+JupyterCon 2018
+===============
+
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/82epZkmfkrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+Clustergrammer-Widget was recently presented at JupyterCon 2018.
+
 Interacting with Clustergrammer Heatmaps
 ========================================
 
