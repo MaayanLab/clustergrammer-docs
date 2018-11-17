@@ -2,11 +2,13 @@
 
 Welcome to Clustergrammer's Documentation!
 ------------------------------------------
-Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). Clustergrammer's front end (:ref:`clustergrammer_js`) is built using `D3.js`_ and its back end (:ref:`clustergrammer_py`) is built using `Python`_. Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. The project is free and open-source and can be found on `GitHub`_. Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features and refer to :ref:`interacting_with_viz` for more information:
+Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). Clustergrammer's front end (:ref:`clustergrammer_js`) is built using `D3.js`_ and its back end (:ref:`clustergrammer_py`) is built using `Python`_. Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. The project is free and open-source and can be found on `GitHub`_.
 
 .. raw:: html
 
          <iframe id='iframe_preview' src="https://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
+
+Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features and refer to :ref:`interacting_with_viz` for more information.
 
 JupyterCon 2018
 ===============
@@ -18,7 +20,7 @@ JupyterCon 2018
          <iframe width="560" height="315" src="https://www.youtube.com/embed/82epZkmfkrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
-Clustergrammer-Widget was recently presented at JupyterCon 2018.
+The Clustergrammer-Widget was recently presented at JupyterCon 2018.
 
 Using Clustergrammer
 ====================
@@ -60,7 +62,7 @@ Fernandez, N. F. et al. Clustergrammer, a web-based heatmap visualization and an
 
 Funding
 =======
-Clustergrammer is being developed by the `Ma'ayan Lab`_ at the `Icahn School of Medicine at Mount Sinai`_ for the `BD2K-LINCS DCIC`_ and the `KMC-IDG`_.
+Clustergrammer is being developed by the `Ma'ayan Lab`_ and the `Human Immune Monitoring Center`_ at the `Icahn School of Medicine at Mount Sinai`_ for the `BD2K-LINCS DCIC`_ and the `KMC-IDG`_.
 
 Contents:
 =========
@@ -110,6 +112,7 @@ Contents:
 .. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
 
 .. _`Ma'ayan Lab`: http://labs.icahn.mssm.edu/maayanlab/
+.. _`Human Immune Monitoring Center`: https://icahn.mssm.edu/research/human-immune-monitoring-center
 .. _`Icahn School of Medicine at Mount Sinai`: http://icahn.mssm.edu/
 .. _`BD2K-LINCS DCIC`: http://lincs-dcic.org/
 .. _`KMC-IDG`: http://commonfund.nih.gov/idg/overview
