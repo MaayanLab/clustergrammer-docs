@@ -27,9 +27,9 @@ What's New?
 Clustergrammer is currently being re-built using the WebGL library `regl`_:
 
 * :ref:`clustergrammer_gl`: WebGL JavaScript Library
-* `Clustergrammer2`_: WebGL Jupyter Widget
+* :ref:`clustergrammer2`: WebGL Jupyter Widget
 
-Try running Clustergrammer2 on mybinder
+Try running the Clustergrammer2 Jupyter widget on MyBinder
 
 |intro-notebook|
 
@@ -88,6 +88,7 @@ Contents:
    getting_started
    clustergrammer_web
    clustergrammer_widget
+   clustergrammer2
    interacting_with_viz
    biology_specific_features
    case_studies
