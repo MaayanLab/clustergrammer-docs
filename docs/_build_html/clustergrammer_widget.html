@@ -26,6 +26,7 @@
 
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.5.0/css/font-awesome.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Interacting with the Visualization" href="interacting_with_viz.html" />
@@ -254,7 +255,7 @@
 </pre></div>
 </div>
 <p id="two-way-communication"><strong>Two-way Widget Communication</strong></p>
-<p>Jupyter widgets enable both back-end to front-end communication (e.g. Python kernel to JavaScript) and front-end to back-end (e.g. JavaScript to Python kernel). Clustergrammer-Widget uses front-end to back-end communication to enable users to export their modified matrix (e.g. cropped matrix) to the Python kernel as a DataFrame. This can be used to select a cluster of interest (e.g. by <a class="reference internal" href="interacting_with_viz.html#crop"><span class="std std-ref">Cropping</span></a> or using the <a class="reference internal" href="interacting_with_viz.html#interactive-dendrogram"><span class="std std-ref">Interactive Dendrogram</span></a>) and pass this cluster to a new dataframe. Alternatively, this can be used to export data to a DataFrame after running front-end enrichment analysis using <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a>. See the <code class="docutils literal notranslate"><span class="pre">df_widget</span></code> method below for an example:</p>
+<p>Jupyter widgets enable both back-end to front-end communication (e.g. Python kernel to JavaScript) and front-end to back-end (e.g. JavaScript to Python kernel). Clustergrammer-Widget uses front-end to back-end communication to enable users to export their modified matrix (e.g. cropped matrix) to the Python kernel as a DataFrame. This can be used to select a cluster of interest (e.g. by <a class="reference internal" href="interacting_with_viz.html#crop"><span class="std std-ref">Cropping</span></a> or using the <a class="reference internal" href="interacting_with_viz.html#interactive-dendrogram"><span class="std std-ref">Interactive Dendrogram</span></a>) and pass this cluster to a new DataFrame. Alternatively, this can be used to export data to a DataFrame after running front-end enrichment analysis using <a class="reference internal" href="biology_specific_features.html#enrichrgram"><span class="std std-ref">Enrichrgram</span></a>. See the <code class="docutils literal notranslate"><span class="pre">df_widget</span></code> method below for an example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># After modifying the visualization (e.g. dendrogram cropping) we can export the</span>
 <span class="c1"># modified matrix to the back end using the df_widget method</span>
 <span class="n">df_new</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">df_widget</span><span class="p">()</span>
@@ -333,6 +334,8 @@
         <script type="text/javascript" src="_static/jquery.js"></script>
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.14.0/dist/embed-amd.js"></script>
     
 
   

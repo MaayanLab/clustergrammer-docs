@@ -26,6 +26,7 @@
 
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.5.0/css/font-awesome.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="App Integration Examples" href="app_integration.html" />
@@ -313,7 +314,7 @@ string.</p>
 <dt id="clustergrammer_py.Network.enrichrgram">
 <code class="descname">enrichrgram</code><span class="sig-paren">(</span><em>lib</em>, <em>axis='row'</em><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.enrichrgram" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add Enrichr gene enrichment results to your visualization (where your rows
-are genes). Run enrichrgram before clustering to incldue enrichment results
+are genes). Run enrichrgram before clustering to include enrichment results
 as row categories. Enrichrgram can also be run on the front-end using the
 Enrichr logo at the top left.</p>
 <p>Set lib to the Enrichr library that you want to use for enrichment analysis.
@@ -488,7 +489,7 @@ returned and visualized on the front-end.</p>
 <code class="descname">widget_df</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#clustergrammer_py.Network.widget_df" title="Permalink to this definition">¶</a></dt>
 <dd><p>Export a DataFrame from the front-end visualization. For instance, a user
 can filter to show only a single cluster using the dendrogram and then
-get a dataframe of this cluster using the widget_df method.</p>
+get a DataFrame of this cluster using the widget_df method.</p>
 </dd></dl>
 
 <dl class="method">
@@ -568,6 +569,8 @@ get a dataframe of this cluster using the widget_df method.</p>
         <script type="text/javascript" src="_static/jquery.js"></script>
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.14.0/dist/embed-amd.js"></script>
     
 
   

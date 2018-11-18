@@ -11,6 +11,18 @@ add words to dictionary
 edit spelling_wordlist.txt
 
 
+Embedding Widget
+------------------
+.. ipywidgets-setup::
+
+  from clustergrammer2 import net
+
+.. ipywidgets-display::
+
+    net.load_file('rc_two_cats.txt')
+    net.widget()
+
+
 Kathleen Suggestions
 --------------------
 

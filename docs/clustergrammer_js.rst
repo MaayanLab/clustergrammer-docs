@@ -56,7 +56,7 @@ The ``id`` of the container where the visualization will be made is passed as ``
 
 Example Pages
 =============
-The `Clustergrammer GitHub repo`_ contains several example pages demonstrating how to build a webpage with a Clustergrammer visualization. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each visualization requires its own container.
+The `Clustergrammer GitHub repo`_ contains several example pages demonstrating how to build a web page with a Clustergrammer visualization. The page `index.html`_ and corresponding script `load_clustergram.js`_ show how to make a full-screen resizable visualization. The page `multiple_clust.html`_ and corresponding script `load_multiple_clustergrams.js`_ show how to visualize multiple clustergrams on one page. Note that each visualization requires its own container.
 
 .. _clustergrammer_js_api:
 

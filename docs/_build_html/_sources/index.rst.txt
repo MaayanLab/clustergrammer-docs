@@ -8,7 +8,7 @@ Clustergrammer is a web-based tool for visualizing and analyzing high-dimensiona
 
          <iframe id='iframe_preview' src="https://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
 
-Press play or interact with the gene-expression demo below to see some of Clustergrammer's interactive features and refer to :ref:`interacting_with_viz` for more information.
+Press play or interact with the gene-expression demo above to see some of Clustergrammer's interactive features and refer to :ref:`interacting_with_viz` for more information.
 
 JupyterCon 2018
 ===============

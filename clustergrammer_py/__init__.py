@@ -204,7 +204,7 @@ class Network(object):
     '''
     Export a DataFrame from the front-end visualization. For instance, a user
     can filter to show only a single cluster using the dendrogram and then
-    get a dataframe of this cluster using the widget_df method.
+    get a DataFrame of this cluster using the widget_df method.
     '''
 
     if hasattr(self, 'widget_instance') == True:
@@ -379,7 +379,7 @@ class Network(object):
   def enrichrgram(self, lib, axis='row'):
     '''
     Add Enrichr gene enrichment results to your visualization (where your rows
-    are genes). Run enrichrgram before clustering to incldue enrichment results
+    are genes). Run enrichrgram before clustering to include enrichment results
     as row categories. Enrichrgram can also be run on the front-end using the
     Enrichr logo at the top left.
 

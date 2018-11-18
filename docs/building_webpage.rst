@@ -31,7 +31,7 @@ To make a page, simply include the :ref:`clustergrammer_js` script in your page 
 Jupyter Notebook Webpages
 =========================
 
-The :ref:`clustergrammer_widget` can also be used in combination with `nbviewer`_ to share static Jupyter notebook webpages with embedded interactive Clustergrammer visualizations. This is one of the easiest ways to generate a webpage with Clustergrammer visualizations and several of the :ref:`case_studies` are Jupyter notebooks.
+The :ref:`clustergrammer_widget` can also be used in combination with `nbviewer`_ to share static Jupyter notebook web pages with embedded interactive Clustergrammer visualizations. This is one of the easiest ways to generate a web page with Clustergrammer visualizations and several of the :ref:`case_studies` are Jupyter notebooks.
 
 .. _`nbviewer`: http://nbviewer.jupyter.org/
 .. _`homepage`: http://amp.pharm.mssm.edu/clustergrammer
