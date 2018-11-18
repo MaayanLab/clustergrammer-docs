@@ -35,7 +35,7 @@ Try running the Clustergrammer2 Jupyter widget on MyBinder
 
 |ccle-notebook|
 
-and see `Clustergrammer2-Examples`_
+and see `Clustergrammer2-Examples`_.
 
 Using Clustergrammer
 ====================
