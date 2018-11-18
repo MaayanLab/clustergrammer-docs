@@ -7,6 +7,12 @@ Clustergrammer2 is the new in-development WegGL Jupyter Widget. This widget can 
 
 Clustergrammer2 is being built using the WebGL library `regl`_, is free and open-source, and can be found on `GitHub`_.
 
+.. figure:: _static/clustergrammer2_480px.gif
+  :width: 800px
+  :align: left
+  :alt: demo GIF
+  :target: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F2.0_CCLE_Gene_Expression.ipynb
+
 Try running the Clustergrammer2 Jupyter widget on MyBinder
 
 |intro-notebook|
