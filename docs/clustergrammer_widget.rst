@@ -1,6 +1,6 @@
 .. _clustergrammer_widget:
 
-Clustergrammer-Widget
+Clustergrammer Jupyter Widget
 -----------------------------
 |pypi-version|
 |npm-version|

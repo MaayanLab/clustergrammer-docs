@@ -1,6 +1,6 @@
 .. _clustergrammer2:
 
-Clustergrammer2 Widget
+Clustergrammer2 Jupyter Widget
 ------------------------
 
 Clustergrammer2 is the new in-development WegGL Jupyter Widget. This widget can visualize much larger datasets (matrices with ~millions of matrix-cells).
@@ -11,7 +11,7 @@ Clustergrammer2 is being built using the WebGL library `regl`_, is free and open
   :width: 800px
   :align: left
   :alt: demo GIF
-  :target: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F2.0_CCLE_Gene_Expression.ipynb
+  :target: https://github.com/ismms-himc/clustergrammer2-examples
 
 Try running the Clustergrammer2 Jupyter widget on MyBinder
 
