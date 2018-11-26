@@ -10,6 +10,9 @@ Clustergrammer is a web-based tool for visualizing and analyzing high-dimensiona
 
 Press play or interact with the gene-expression demo above to see some of Clustergrammer's interactive features and refer to :ref:`interacting_with_viz` for more information.
 
+What's New
+-----------
+
 JupyterCon 2018
 ===============
 
@@ -22,8 +25,15 @@ JupyterCon 2018
 
 The Clustergrammer-Widget was recently presented at JupyterCon 2018.
 
-What's New?
-===========
+Clustergrammer2
+===============
+
+.. figure:: _static/clustergrammer2_480px.gif
+  :width: 800px
+  :align: left
+  :alt: demo GIF
+  :target: https://github.com/ismms-himc/clustergrammer2-examples
+
 Clustergrammer is currently being re-built using the WebGL library `regl`_:
 
 * :ref:`clustergrammer_gl`: WebGL JavaScript Library

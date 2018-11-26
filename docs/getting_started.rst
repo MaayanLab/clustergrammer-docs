@@ -9,6 +9,9 @@ Clustergrammer is a web-based tool for visualizing and analyzing high-dimensiona
 
 This section will provide information on how to interact with the visualization and how to quickly visualize your own data using the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. See :ref:`case_studies` for examples of how Clustergrammer can be used to explore and analyze real world data. For developers interested in building their own web page using Clustergrammer, please refer to the :ref:`building_web_page` section.
 
+What's New
+-----------
+
 JupyterCon 2018
 ===============
 
@@ -19,10 +22,17 @@ JupyterCon 2018
          <iframe width="560" height="315" src="https://www.youtube.com/embed/82epZkmfkrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
-Clustergrammer-Widget was recently presented at JupyterCon 2018.
+The Clustergrammer-Widget was recently presented at JupyterCon 2018.
 
-What's New?
-===========
+Clustergrammer2
+===============
+
+.. figure:: _static/clustergrammer2_480px.gif
+  :width: 800px
+  :align: left
+  :alt: demo GIF
+  :target: https://github.com/ismms-himc/clustergrammer2-examples
+
 Clustergrammer is currently being re-built using the WebGL library `regl`_:
 
 * :ref:`clustergrammer_gl`: WebGL JavaScript Library
