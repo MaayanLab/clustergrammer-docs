@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Clustergrammer Jupyter Widget &mdash; Clustergrammer 1.1.0 documentation</title>
+  <title>Clustergrammer-Widget &mdash; Clustergrammer 1.1.0 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.5.0/css/font-awesome.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Clustergrammer2 Widget" href="clustergrammer2.html" />
+    <link rel="next" title="Clustergrammer2 Jupyter Widget" href="clustergrammer2.html" />
     <link rel="prev" title="Clustergrammer Web App" href="clustergrammer_web.html" /> 
 
   
@@ -85,8 +85,9 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html#what-s-new">What’s New</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer Jupyter Widget</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer-Widget</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#jupyter-widget-dependencies">Jupyter Widget Dependencies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-widget-workflow-example">Clustergrammer-Widget Workflow Example</a></li>
@@ -94,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-widget-development">Clustergrammer-Widget Development</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer2.html">Clustergrammer2 Widget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer2.html">Clustergrammer2 Jupyter Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
@@ -151,7 +152,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Clustergrammer Jupyter Widget</li>
+      <li>Clustergrammer-Widget</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -170,8 +171,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="clustergrammer-jupyter-widget">
-<span id="clustergrammer-widget"></span><h1>Clustergrammer Jupyter Widget<a class="headerlink" href="#clustergrammer-jupyter-widget" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="clustergrammer-widget">
+<span id="id1"></span><h1>Clustergrammer-Widget<a class="headerlink" href="#clustergrammer-widget" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://pypi.python.org/pypi?:action=display&amp;name=clustergrammer_widget"><img alt="pypi-version" src="https://img.shields.io/pypi/v/clustergrammer_widget.svg" /></a>
 <a class="reference external" href="https://www.npmjs.com/package/clustergrammer_widgt"><img alt="npm-version" src="https://img.shields.io/npm/v/clustergrammer_widget.svg" /></a></p>
 <p><a class="reference external" href="http://jupyter.org/">Jupyter</a> notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer’s interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see <a class="reference internal" href="#clustergrammer-widget-examples"><span class="std std-ref">Sharing with nbviewer</span></a>). The Clustergrammer Widget enables users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information). The library is free and open-source and can be found on <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">GitHub</a>.</p>
@@ -186,7 +187,7 @@
 <li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb">USDA Nutrient Dataset</a></li>
 <li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb">Iris Dataset.ipynb</a></li>
 </ul>
-<div class="figure align-left" id="id3">
+<div class="figure align-left" id="id4">
 <a class="reference external image-reference" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb"><img alt="Jupyter Widget NBViewer" src="_images/jupyter_widget_nbviewer.png" style="width: 900px;" /></a>
 <p class="caption"><span class="caption-text">Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> example).</span></p>
 </div>
@@ -202,7 +203,7 @@
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>To use the <a class="reference internal" href="#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> users need to install: <a class="reference external" href="https://www.python.org/">Python</a>, <a class="reference external" href="http://jupyter.org/">Jupyter</a> notebook, the widget dependencies (see <a class="reference internal" href="#clustergrammer-widget-dependencies"><span class="std std-ref">Jupyter Widget Dependencies</span></a>), and <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a> version 6.0.0 (to save the notebook with widgets, version 6.0.0 is recommended). Users can <a class="reference external" href="https://www.continuum.io/downloads">install Anaconda</a>, a Python distribution that includes the Jupyter notebook as well as other scientific computing libraries, to easily obtain the necessary dependencies (except ipywidgets version 6.0.0). The <code class="docutils literal notranslate"><span class="pre">clustergrammer_widget</span></code> can the be installed (with pip) and enabled using the following commands:</p>
+<p>To use the <a class="reference internal" href="#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a> users need to install: <a class="reference external" href="https://www.python.org/">Python</a>, <a class="reference external" href="http://jupyter.org/">Jupyter</a> notebook, the widget dependencies (see <a class="reference internal" href="#clustergrammer-widget-dependencies"><span class="std std-ref">Jupyter Widget Dependencies</span></a>), and <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a> version 6.0.0 (to save the notebook with widgets, version 6.0.0 is recommended). Users can <a class="reference external" href="https://www.continuum.io/downloads">install Anaconda</a>, a Python distribution that includes the Jupyter notebook as well as other scientific computing libraries, to easily obtain the necessary dependencies (except ipywidgets version 6.0.0). The <code class="docutils literal notranslate"><span class="pre">clustergrammer_widget</span></code> can the be installed (with pip) and enabled using the following commands:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">clustergrammer_widget</span>
 <span class="n">jupyter</span> <span class="n">nbextension</span> <span class="n">enable</span> <span class="o">--</span><span class="n">py</span> <span class="o">--</span><span class="n">sys</span><span class="o">-</span><span class="n">prefix</span> <span class="n">widgetsnbextension</span>
 <span class="n">jupyter</span> <span class="n">nbextension</span> <span class="n">enable</span> <span class="o">--</span><span class="n">py</span> <span class="o">--</span><span class="n">sys</span><span class="o">-</span><span class="n">prefix</span> <span class="n">clustergrammer_widget</span>
@@ -269,7 +270,7 @@
 <div class="section" id="sharing-with-nbviewer">
 <span id="clustergrammer-widget-examples"></span><h2>Sharing with nbviewer<a class="headerlink" href="#sharing-with-nbviewer" title="Permalink to this headline">¶</a></h2>
 <p>To enable rendering interactive widgets on <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a> you must have <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later installed and use the “Save Notebook with Widgets” action in the Widgets menu in the Jupyter notebook (see ipywidgets <a class="reference external" href="http://ipywidgets.readthedocs.io/en/latest/embedding.html?highlight=save#rendering-interactive-widgets-on-nbviewer">Rendering Interactive Widgets on nbviewer</a> documentation and screenshot below):</p>
-<div class="figure align-left" id="id4">
+<div class="figure align-left" id="id5">
 <a class="reference internal image-reference" href="_images/jupyter_save_widgets.png"><img alt="Save Jupyter Widget" src="_images/jupyter_save_widgets.png" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-text">Users can save notebooks with interactive HTML widgets using the “Save Notebook with Widgets” action in the Jupyter Notebook Widgets menu as shown here. <a class="reference external" href="https://github.com/ipython/ipywidgets/releases">ipywidgets version 6</a>  or later must be installed in order to enable this feature.</span></p>
 </div>
@@ -289,7 +290,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clustergrammer2.html" class="btn btn-neutral float-right" title="Clustergrammer2 Widget" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="clustergrammer2.html" class="btn btn-neutral float-right" title="Clustergrammer2 Jupyter Widget" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="clustergrammer_web.html" class="btn btn-neutral" title="Clustergrammer Web App" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
