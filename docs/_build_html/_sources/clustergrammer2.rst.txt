@@ -35,3 +35,16 @@ Check back soon for more updates.
     :alt: version
     :target: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F2.0_CCLE_Gene_Expression.ipynb
 
+
+
+.. _clustergrammer2_dev:
+
+Clustergrammer2 Widget Development
+===================================
+Clustergrammer2's source code can be found in the `Clustergrammer2 GitHub repo`_. Clustergrammer2 is built using the jupyter-widgets framework (using the `cookie cutter`_ template).
+
+Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions or use the GitHub `issues`_ feature to report an issue.
+
+
+.. _`Clustergrammer2 GitHub repo`: https://github.com/ismms-himc/clustergrammer2
+.. _`cookie cutter`: https://github.com/jupyter-widgets/widget-ts-cookiecutter

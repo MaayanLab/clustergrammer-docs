@@ -13,18 +13,6 @@ Press play or interact with the gene-expression demo above to see some of Cluste
 What's New
 -----------
 
-JupyterCon 2018
-===============
-
-.. raw:: html
-
-         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/82epZkmfkrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-         </div>
-
-The Clustergrammer-Widget was recently presented at JupyterCon 2018.
-
 Clustergrammer2
 ===============
 
@@ -46,6 +34,18 @@ Try running the Clustergrammer2 Jupyter widget on MyBinder
 |ccle-notebook|
 
 and see `Clustergrammer2-Examples`_.
+
+JupyterCon 2018
+===============
+
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/82epZkmfkrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+The Clustergrammer-Widget was presented at JupyterCon 2018.
 
 Using Clustergrammer
 ====================
@@ -98,9 +98,9 @@ Contents:
    getting_started
    clustergrammer_web
    clustergrammer2
+   case_studies
    interacting_with_viz
    biology_specific_features
-   case_studies
    matrix_format_io
    building_webpage
    clustergrammer_widget
