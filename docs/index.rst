@@ -97,13 +97,13 @@ Contents:
 
    getting_started
    clustergrammer_web
-   clustergrammer_widget
    clustergrammer2
    interacting_with_viz
    biology_specific_features
    case_studies
    matrix_format_io
    building_webpage
+   clustergrammer_widget
    clustergrammer_js
    clustergrammer_gl
    clustergrammer_py
