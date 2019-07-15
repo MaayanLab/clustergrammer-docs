@@ -16,24 +16,22 @@ What's New
 Clustergrammer2
 ===============
 
+Clustergrammer is currently being re-built using the WebGL library `regl`_:
+
 .. figure:: _static/clustergrammer2_480px.gif
   :width: 800px
   :align: left
   :alt: demo GIF
   :target: https://github.com/ismms-himc/clustergrammer2-examples
 
-Clustergrammer is currently being re-built using the WebGL library `regl`_:
-
 * :ref:`clustergrammer_gl`: WebGL JavaScript Library
 * :ref:`clustergrammer2`: WebGL Jupyter Widget
 
-Try running the Clustergrammer2 Jupyter widget on MyBinder
+Users can try out Clustergrammer2 on NBViewer, MyBinder, Kaggle, and Saturn.io (see :ref:`PBMC 2700 <try_clustergrammer2_2700>`).
 
-|intro-notebook|
+|intro-notebook|  |ccle-notebook|
 
-|ccle-notebook|
-
-and see `Clustergrammer2-Examples`_.
+Also, see :ref:`case_studies` and `Clustergrammer2-Examples`_.
 
 JupyterCon 2018
 ===============
