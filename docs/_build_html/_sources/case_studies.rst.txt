@@ -103,10 +103,6 @@ Clustergrammer was used to visualize several widely used machine learning Datase
 
 These examples demonstrate the generality of heatmap visualizations and enable users to interactively explore familiar Datasets.
 
-Zika Virus RNA-seq Data Visualization
-=====================================
-Clustergrammer was used to visualize the results of an RNA-Seq data analysis pipeline within a Jupyter notebook: `An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study`_ (`Wang et al.`_).
-
 
 .. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
 .. _`MNIST Data`: http://yann.lecun.com/exdb/mnist/
@@ -118,14 +114,10 @@ Clustergrammer was used to visualize the results of an RNA-Seq data analysis pip
 .. _`Cell Signaling Technology Inc`: https://www.cellsignal.com/
 .. _`CCLE Explorer`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
 .. _`CCLE Jupyter Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb
-.. _`An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study`: http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb
 .. _`Iris Flower Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
 .. _`MNIST Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb
 .. _`MNIST Handwritten Digit Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb
-.. _`Single-Cell RNA-seq Data Visualization`: http://nbviewer.jupyter.org/github/MaayanLab/single_cell_RNAseq_Visualization/blob/master/Single%20Cell%20RNAseq%20Visualization%20Example.ipynb
 .. _`CCLE`: https://portals.broadinstitute.org/ccle/home
-.. _`Wang et al.`: https://f1000research.com/articles/5-1574/v1
-.. _`Olsson et al.`: http://www.nature.com/nature/journal/v537/n7622/full/nature19348.html
 .. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
 .. _`10X Genomics`: https://www.10xgenomics.com/resources/datasets/
 .. _`CIBERSORT`: https://cibersort.stanford.edu/
