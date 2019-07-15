@@ -1,7 +1,7 @@
 .. _app_integration:
 
-App Integration Examples
-------------------------
+App Integrations
+----------------
 Clustergrammer can be integrated into web applications to dynamically produce interactive visualizations -- see :ref:`building_web_page` for information. Clustergrammer is currently being utilized to visualize data for the following `Ma'ayan lab`_ web applications:
 
 Enrichr

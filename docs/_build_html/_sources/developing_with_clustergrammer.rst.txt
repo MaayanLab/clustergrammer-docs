@@ -1,5 +1,5 @@
-Developing Clustergrammer
--------------------------
+Developing
+----------
 Developers interested in working with the source code or in contributing to the Clustergrammer project can find instructions for the sub-projects here:
 
 #. :ref:`clustergrammer_js_dev`

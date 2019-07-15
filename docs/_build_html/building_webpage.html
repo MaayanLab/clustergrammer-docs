@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Web-Development with Clustergrammer &mdash; Clustergrammer 1.1.0 documentation</title>
+  <title>Web-Development &mdash; Clustergrammer 1.1.0 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.5.0/css/font-awesome.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Clustergrammer-JS" href="clustergrammer_js.html" />
+    <link rel="next" title="Clustergrammer-Widget" href="clustergrammer_widget.html" />
     <link rel="prev" title="Matrix Formats and Input/Output" href="matrix_format_io.html" /> 
 
   
@@ -85,19 +85,21 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer Jupyter Widget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer-Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer2.html">Clustergrammer2 Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Web-Development with Clustergrammer</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Web-Development</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#embedding-clustergrammer">Embedding Clustergrammer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-clustergrammer-to-a-page">Adding Clustergrammer to a Page</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#jupyter-notebook-webpages">Jupyter Notebook Webpages</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer-Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_gl.html">Clustergrammer-GL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="app_integration.html">App Integration Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
@@ -147,7 +149,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Web-Development with Clustergrammer</li>
+      <li>Web-Development</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -166,8 +168,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="web-development-with-clustergrammer">
-<span id="building-web-page"></span><h1>Web-Development with Clustergrammer<a class="headerlink" href="#web-development-with-clustergrammer" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="web-development">
+<span id="building-web-page"></span><h1>Web-Development<a class="headerlink" href="#web-development" title="Permalink to this headline">¶</a></h1>
 <p>Clustergrammer can be used by developers to add interactive heatmap visualizations to their web pages and web applications (see <a class="reference internal" href="app_integration.html#app-integration"><span class="std std-ref">App Integration Examples</span></a>).</p>
 <div class="section" id="embedding-clustergrammer">
 <h2>Embedding Clustergrammer<a class="headerlink" href="#embedding-clustergrammer" title="Permalink to this headline">¶</a></h2>
@@ -179,7 +181,7 @@
 </div>
 <div class="section" id="adding-clustergrammer-to-a-page">
 <h2>Adding Clustergrammer to a Page<a class="headerlink" href="#adding-clustergrammer-to-a-page" title="Permalink to this headline">¶</a></h2>
-<p>In addition to embedding a visualization hosted by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> application developers add a Clustergrammer to directly their own page using the core libraries:</p>
+<p>In addition to embedding a visualization hosted by the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer-Web</span></a> application developers add a Clustergrammer to directly their own page using the core libraries:</p>
 <p><strong>Clustergrammer-JS</strong>: The front-end <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> JavaScript library generates the interactive visualization and can be installed via npm: <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">Clustergrammer</span></code>. See the <a class="reference internal" href="clustergrammer_js.html#example-pages"><span class="std std-ref">Example Pages</span></a> for templates to build a site with your visualization</p>
 <p><strong>Clustergrammer-PY</strong>: The back-end <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> Python library clusters a matrix of data and makes the JSON for the front end and can be installed using pip: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">clustergrammer</span></code>. See the <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py-workflow"><span class="std std-ref">Python Workflow Examples</span></a> for examples of how cluster your matrix and generate the <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">Visualization-JSON</span></a></p>
 <p>To make a page, simply include the <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> script in your page and load the pre-calculated <a class="reference internal" href="clustergrammer_js.html#visualization-json"><span class="std std-ref">visualization-JSON</span></a> to generate a visualization (use <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> to generate this JSON).</p>
@@ -187,7 +189,7 @@
 </div>
 <div class="section" id="jupyter-notebook-webpages">
 <h2>Jupyter Notebook Webpages<a class="headerlink" href="#jupyter-notebook-webpages" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer Jupyter Widget</span></a> can also be used in combination with <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a> to share static Jupyter notebook web pages with embedded interactive Clustergrammer visualizations. This is one of the easiest ways to generate a web page with Clustergrammer visualizations and several of the <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Examples</span></a> are Jupyter notebooks.</p>
+<p>The <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a> can also be used in combination with <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a> to share static Jupyter notebook web pages with embedded interactive Clustergrammer visualizations. This is one of the easiest ways to generate a web page with Clustergrammer visualizations and several of the <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a> are Jupyter notebooks.</p>
 </div>
 </div>
 
@@ -199,7 +201,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clustergrammer_js.html" class="btn btn-neutral float-right" title="Clustergrammer-JS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="clustergrammer_widget.html" class="btn btn-neutral float-right" title="Clustergrammer-Widget" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="matrix_format_io.html" class="btn btn-neutral" title="Matrix Formats and Input/Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
