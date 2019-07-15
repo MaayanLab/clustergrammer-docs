@@ -107,10 +107,6 @@ Zika Virus RNA-seq Data Visualization
 =====================================
 Clustergrammer was used to visualize the results of an RNA-Seq data analysis pipeline within a Jupyter notebook: `An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study`_ (`Wang et al.`_).
 
-Single-Cell RNA-seq Data Visualization
-======================================
-Clustergrammer was used to visualize published single-cell gene expression data: `Single-Cell RNA-seq Data Visualization`_ (`Olsson et al.`_). The visualization was produced using an Excel file provided alongside the figures.
-
 
 .. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
 .. _`MNIST Data`: http://yann.lecun.com/exdb/mnist/
