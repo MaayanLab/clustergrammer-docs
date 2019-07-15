@@ -96,9 +96,9 @@ Contents:
    :maxdepth: 2
 
    getting_started
+   case_studies
    clustergrammer_web
    clustergrammer2
-   case_studies
    interacting_with_viz
    biology_specific_features
    matrix_format_io

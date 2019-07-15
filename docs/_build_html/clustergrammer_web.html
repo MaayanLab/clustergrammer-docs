@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Clustergrammer Web App &mdash; Clustergrammer 1.1.0 documentation</title>
+  <title>Clustergrammer-Web &mdash; Clustergrammer 1.1.0 documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.5.0/css/font-awesome.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Clustergrammer Jupyter Widget" href="clustergrammer_widget.html" />
-    <link rel="prev" title="Getting Started" href="getting_started.html" /> 
+    <link rel="next" title="Clustergrammer2 Widget" href="clustergrammer2.html" />
+    <link rel="prev" title="Case Studies and Tutorials" href="case_studies.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -85,20 +85,22 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer Web App</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Tutorials</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer-Web</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#uploading-data-using-the-web-app-homepage">Uploading Data using the Web App Homepage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-web-visualization">Clustergrammer-Web Visualization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-web-api">Clustergrammer-Web API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-web-development">Clustergrammer-Web Development</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer Jupyter Widget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer2.html">Clustergrammer2 Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Web-Development with Clustergrammer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer-Widget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_gl.html">Clustergrammer-GL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="app_integration.html">App Integration Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
@@ -148,7 +150,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Clustergrammer Web App</li>
+      <li>Clustergrammer-Web</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -167,14 +169,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="clustergrammer-web-app">
-<span id="clustergrammer-web"></span><h1>Clustergrammer Web App<a class="headerlink" href="#clustergrammer-web-app" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="clustergrammer-web">
+<span id="id1"></span><h1>Clustergrammer-Web<a class="headerlink" href="#clustergrammer-web" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://github.com/MaayanLab/clustergrammer-web"><img alt="version" src="https://img.shields.io/github/release/MaayanLab/clustergrammer-web.svg" /></a></p>
 <p>The <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">Web App</a> (<a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">http://amp.pharm.mssm.edu/clustergrammer</a>) enables users to easily generate interactive and shareable heatmap visualizations by uploading their data as a tab-separated file.</p>
 <div class="section" id="uploading-data-using-the-web-app-homepage">
 <span id="clustergrammer-web-upload"></span><h2>Uploading Data using the Web App Homepage<a class="headerlink" href="#uploading-data-using-the-web-app-homepage" title="Permalink to this headline">¶</a></h2>
-<p>Users can easily generate an interactive and shareable heatmap visualization using the <a class="reference internal" href="#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> (see upload section screenshot below). Simply upload a tab-separated matrix file (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information) at the <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">homepage</a> to be redirected to a permanent and shareable visualization of your data.</p>
-<div class="figure align-left" id="id3">
+<p>Users can easily generate an interactive and shareable heatmap visualization using the <a class="reference internal" href="#clustergrammer-web"><span class="std std-ref">Clustergrammer-Web</span></a> (see upload section screenshot below). Simply upload a tab-separated matrix file (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information) at the <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">homepage</a> to be redirected to a permanent and shareable visualization of your data.</p>
+<div class="figure align-left" id="id4">
 <a class="reference external image-reference" href="http://amp.pharm.mssm.edu/clustergrammer/"><img alt="Clustergrammer Web" src="_images/clustergrammer_web_upload.png" style="width: 900px;" /></a>
 <p class="caption"><span class="caption-text">Users can upload their data using the web app <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">homepage</a>. Simply choose your file and upload to be redirected to your permanent and shareable visualization.</span></p>
 </div>
@@ -189,19 +191,19 @@
 </ul>
 <p>See the screenshots below and the <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt">example visualization</a> for an example <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">Web App</a> visualization page.</p>
 <p><strong>Heatmap View</strong></p>
-<div class="figure align-left" id="id4">
+<div class="figure align-left" id="id5">
 <a class="reference external image-reference" href="http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt"><img alt="Web application heatmap" src="_images/web_app_heatmap.png" style="width: 800px;" /></a>
 <p class="caption"><span class="caption-text">Above is an example clustergram visualization produced by the <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">Web App</a>. Clustergrammer produces three views of your data and the clustered heatmap view is shown above.</span></p>
 </div>
 <p><strong>Similarity Matrix View</strong></p>
-<div class="figure align-left" id="id5">
+<div class="figure align-left" id="id6">
 <a class="reference external image-reference" href="http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt"><img alt="Web application sim-mat" src="_images/web_app_sim_mat.png" style="width: 800px;" /></a>
 <p class="caption"><span class="caption-text">The <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">Web App</a> produces similarity matrices of rows and columns to provide additional perspectives on a user’s data. Above is an example column similarity matrix.</span></p>
 </div>
 <p>Users can view the heatmap/similarity-matrices in full screen by clicking the blue link under the visualizations. All visualizations are permanent and shareable, which enables sharing with collaborators. See <a class="reference internal" href="interacting_with_viz.html#interacting-with-viz"><span class="std std-ref">Interacting with the Visualization</span></a> for more information.</p>
 </div>
 <div class="section" id="clustergrammer-web-api">
-<span id="id1"></span><h2>Clustergrammer-Web API<a class="headerlink" href="#clustergrammer-web-api" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Clustergrammer-Web API<a class="headerlink" href="#clustergrammer-web-api" title="Permalink to this headline">¶</a></h2>
 <p>Clustergrammer-Web’s RESTful API enables users to programmatically generate visualizations. The API can be convenient for users that need to generate many clustergrams or developers who need to automatically generate visualizations for their own Web application.</p>
 <p><em>Matrix Upload</em></p>
 <p>Users can post a matrix file to Clustergrammer-Web using the endpoint</p>
@@ -234,10 +236,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clustergrammer_widget.html" class="btn btn-neutral float-right" title="Clustergrammer Jupyter Widget" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="clustergrammer2.html" class="btn btn-neutral float-right" title="Clustergrammer2 Widget" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="getting_started.html" class="btn btn-neutral" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="case_studies.html" class="btn btn-neutral" title="Case Studies and Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

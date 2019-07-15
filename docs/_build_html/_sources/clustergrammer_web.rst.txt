@@ -1,6 +1,6 @@
 .. _clustergrammer_web:
 
-Clustergrammer Web App
+Clustergrammer-Web
 ----------------------
 |github-version|
 
