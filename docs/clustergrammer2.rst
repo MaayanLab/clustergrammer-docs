@@ -1,7 +1,7 @@
 .. _clustergrammer2:
 
-Clustergrammer2 Widget
-------------------------
+Clustergrammer2
+---------------
 
 Clustergrammer2 is the new in-development WegGL Jupyter Widget. This widget can visualize much larger datasets (matrices with ~millions of matrix-cells).
 

@@ -2,7 +2,7 @@
 
 Welcome to Clustergrammer's Documentation!
 ------------------------------------------
-Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). Clustergrammer's front end (:ref:`clustergrammer_js`) is built using `D3.js`_ and its back end (:ref:`clustergrammer_py`) is built using `Python`_. Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. The project is free and open-source and can be found on `GitHub`_.
+Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. The project is free and open-source (all code is available on GitHub).
 
 .. raw:: html
 
@@ -95,8 +95,8 @@ Contents:
 
    getting_started
    case_studies
-   clustergrammer_web
    clustergrammer2
+   clustergrammer_web
    interacting_with_viz
    biology_specific_features
    matrix_format_io
@@ -112,7 +112,6 @@ Contents:
 .. _`Clustergrammer2-Examples`: https://github.com/ismms-himc/clustergrammer2-examples
 .. _`Clustergrammer2`: https://github.com/ismms-himc/clustergrammer2
 .. _`regl`: http://regl.party/
-.. _`GitHub`: https://github.com/MaayanLab/clustergrammer
 .. _`https://amp.pharm.mssm.edu/clustergrammer/`: https://amp.pharm.mssm.edu/clustergrammer/
 .. _`D3.js`: https://d3js.org/
 .. _`Python`: https://www.python.org/
