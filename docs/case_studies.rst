@@ -4,6 +4,32 @@ Case Studies and Tutorials
 --------------------------
 Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several case studies and examples using Clustergrammer to explore high-dimensional data. All examples are below are publically available through GitHub.
 
+Single Cell Gene Expression 2,700 PBMC
+=======================================
+
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/f-snXe2Bn9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+Single cell RNA-seq (scRNA-seq) is a powerful method to interrogate gene expression across thousands of single cells. This method provides thousands of measurements (single cells) across thousands of dimensions (genes). Clustergrammer2 is used to interactively explore an example dataset of 2,700 PBMCs obtained from `10X Genomics`_. Bulk gene expression signatures of cell types obtained from `CIBERSORT`_ were used to obtain a tentative cell type for each cell. The data and code can be found on GitHub at `clustergrammer2-notebooks`_ and the notebook can be viewed and re-run on the cloud - see below.
+
+View Interactive Notebook
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+The interactive pre-run notebook can be viewed on NBVIewer.
+
+* NBViewer: `NBViewer-2700`_.
+
+Run Notebook on the Cloud
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+This notebook can be re-run and modified on the cloud using:
+
+* MyBinder: `MyBinder-2700`_
+* Kaggle: `Viz-2-700-pbmcs-with-cell-type-predictions`_, `Clustergrammer2-2-700-pbmc-notebook`_
+* Saturn Cloud: `Saturn-2700`_
+
 Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================
 
@@ -104,5 +130,12 @@ Clustergrammer was used to visualize published single-cell gene expression data:
 .. _`CCLE`: https://portals.broadinstitute.org/ccle/home
 .. _`Wang et al.`: https://f1000research.com/articles/5-1574/v1
 .. _`Olsson et al.`: http://www.nature.com/nature/journal/v537/n7622/full/nature19348.html
-
 .. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
+.. _`10X Genomics`: https://www.10xgenomics.com/resources/datasets/
+.. _`CIBERSORT`: https://cibersort.stanford.edu/
+.. _`clustergrammer2-notebooks`: https://github.com/ismms-himc/clustergrammer2-notebooks
+.. _`Viz-2-700-pbmcs-with-cell-type-predictions`: https://www.kaggle.com/cornhundred/viz-2-700-pbmcs-with-cell-type-predictions
+.. _`Clustergrammer2-2-700-pbmc-notebook`: https://www.kaggle.com/cornhundred/clustergrammer2-2-700-pbmc-notebook
+.. _`MyBinder-2700`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F3.0_10X_Genomics_2700_Dataset.ipynb
+.. _`NBViewer-2700`: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/3.0_10X_Genomics_2700_Dataset_NBViewer.ipynb
+.. _`Saturn-2700`: https://www.saturncloud.io/published/cornhundred/clustergrammer2-notebooks/notebooks/pbmc_2700_scRNA-seq/1.0_PBMC_2700_scRNA-seq.ipynb

@@ -85,9 +85,12 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#web-application">Web application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#jupyter-widget">Jupyter Widget</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#javascript-and-python-libraries">JavaScript and Python libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-clustergrammer">Using Clustergrammer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#web-application">Web application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jupyter-widget">Jupyter Widget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#javascript-and-python-libraries">JavaScript and Python libraries</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#interacting-with-clustergrammer-heatmaps">Interacting with Clustergrammer Heatmaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-web-app">Clustergrammer Web-App</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#jupyter-widgets">Jupyter Widgets</a></li>
@@ -95,9 +98,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer2.html">Clustergrammer2 Widget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Web-Development with Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer-Widget</a></li>
@@ -173,26 +176,35 @@
             
   <div class="section" id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see <a class="reference internal" href="interacting_with_viz.html#intro-heatmap-clustergram"><span class="std std-ref">Introduction to Clustergrams</span></a> for more information). Clustergrammer can be used in the following ways:</p>
+<p>Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see <a class="reference internal" href="interacting_with_viz.html#intro-heatmap-clustergram"><span class="std std-ref">Introduction to Clustergrams</span></a>).</p>
+<div class="section" id="using-clustergrammer">
+<h2>Using Clustergrammer<a class="headerlink" href="#using-clustergrammer" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="web-application">
-<h2>Web application<a class="headerlink" href="#web-application" title="Permalink to this headline">¶</a></h2>
+<h3>Web application<a class="headerlink" href="#web-application" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a>: <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">http://amp.pharm.mssm.edu/clustergrammer</a></li>
 </ul>
 </div>
 <div class="section" id="jupyter-widget">
-<h2>Jupyter Widget<a class="headerlink" href="#jupyter-widget" title="Permalink to this headline">¶</a></h2>
+<h3>Jupyter Widget<a class="headerlink" href="#jupyter-widget" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2 Widget</span></a></li>
-<li><a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a></li>
+<li><a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2 Widget</span></a><ul>
+<li>WebGL for larger datasets (e.g. scRNA-seq)</li>
+</ul>
+</li>
+<li><a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a><ul>
+<li>SVG for smaller datasets (e.g. bulk RNA-seq)</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="javascript-and-python-libraries">
-<h2>JavaScript and Python libraries<a class="headerlink" href="#javascript-and-python-libraries" title="Permalink to this headline">¶</a></h2>
+<h3>JavaScript and Python libraries<a class="headerlink" href="#javascript-and-python-libraries" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> and <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> libraries</li>
 </ul>
 <p>This section will provide information on how to interact with the visualization and how to quickly visualize your own data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer Web App</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a>. See <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a> for examples of how Clustergrammer can be used to explore and analyze real world data. For developers interested in building their own web page using Clustergrammer, please refer to the <a class="reference internal" href="building_webpage.html#building-web-page"><span class="std std-ref">Web-Development with Clustergrammer</span></a> section.</p>
+</div>
 </div>
 <div class="section" id="interacting-with-clustergrammer-heatmaps">
 <h2>Interacting with Clustergrammer Heatmaps<a class="headerlink" href="#interacting-with-clustergrammer-heatmaps" title="Permalink to this headline">¶</a></h2>

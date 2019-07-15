@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.5.0/css/font-awesome.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Matrix Formats and Input/Output" href="matrix_format_io.html" />
-    <link rel="prev" title="Biology-Specific Features" href="biology_specific_features.html" /> 
+    <link rel="next" title="Interacting with the Visualization" href="interacting_with_viz.html" />
+    <link rel="prev" title="Clustergrammer2 Widget" href="clustergrammer2.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -85,12 +85,14 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html#what-s-new">What’s New</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer2.html">Clustergrammer2 Widget</a></li>
-<li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Case Studies and Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#single-cell-gene-expression-2-700-pbmc">Single Cell Gene Expression 2,700 PBMC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#view-interactive-notebook">View Interactive Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-notebook-on-the-cloud">Run Notebook on the Cloud</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#cancer-cell-line-encyclopedia-gene-expression-data">Cancer Cell Line Encyclopedia Gene Expression Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lung-cancer-post-translational-modification-and-gene-expression-regulation">Lung Cancer Post-Translational Modification and Gene Expression Regulation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cytof-data-single-cell-immune-response-to-pma-treatment">CyTOF Data: Single Cell Immune Response to PMA Treatment</a></li>
@@ -100,6 +102,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#single-cell-rna-seq-data-visualization">Single-Cell RNA-seq Data Visualization</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Web-Development with Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_widget.html">Clustergrammer-Widget</a></li>
@@ -176,6 +180,29 @@
   <div class="section" id="case-studies-and-tutorials">
 <span id="case-studies"></span><h1>Case Studies and Tutorials<a class="headerlink" href="#case-studies-and-tutorials" title="Permalink to this headline">¶</a></h1>
 <p>Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several case studies and examples using Clustergrammer to explore high-dimensional data. All examples are below are publically available through GitHub.</p>
+<div class="section" id="single-cell-gene-expression-2-700-pbmc">
+<h2>Single Cell Gene Expression 2,700 PBMC<a class="headerlink" href="#single-cell-gene-expression-2-700-pbmc" title="Permalink to this headline">¶</a></h2>
+<div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f-snXe2Bn9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><p>Single cell RNA-seq (scRNA-seq) is a powerful method to interrogate gene expression across thousands of single cells. This method provides thousands of measurements (single cells) across thousands of dimensions (genes). Clustergrammer2 is used to interactively explore an example dataset of 2,700 PBMCs obtained from <a class="reference external" href="https://www.10xgenomics.com/resources/datasets/">10X Genomics</a>. Bulk gene expression signatures of cell types obtained from <a class="reference external" href="https://cibersort.stanford.edu/">CIBERSORT</a> were used to obtain a tentative cell type for each cell. The data and code can be found on GitHub at <a class="reference external" href="https://github.com/ismms-himc/clustergrammer2-notebooks">clustergrammer2-notebooks</a> and the notebook can be viewed and re-run on the cloud - see below.</p>
+<div class="section" id="view-interactive-notebook">
+<h3>View Interactive Notebook<a class="headerlink" href="#view-interactive-notebook" title="Permalink to this headline">¶</a></h3>
+<p>The interactive pre-run notebook can be viewed on NBVIewer.</p>
+<ul class="simple">
+<li>NBViewer: <a class="reference external" href="https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/3.0_10X_Genomics_2700_Dataset_NBViewer.ipynb">NBViewer-2700</a>.</li>
+</ul>
+</div>
+<div class="section" id="run-notebook-on-the-cloud">
+<h3>Run Notebook on the Cloud<a class="headerlink" href="#run-notebook-on-the-cloud" title="Permalink to this headline">¶</a></h3>
+<p>This notebook can be re-run and modified on the cloud using:</p>
+<ul class="simple">
+<li>MyBinder: <a class="reference external" href="https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F3.0_10X_Genomics_2700_Dataset.ipynb">MyBinder-2700</a></li>
+<li>Kaggle: <a class="reference external" href="https://www.kaggle.com/cornhundred/viz-2-700-pbmcs-with-cell-type-predictions">Viz-2-700-pbmcs-with-cell-type-predictions</a>, <a class="reference external" href="https://www.kaggle.com/cornhundred/clustergrammer2-2-700-pbmc-notebook">Clustergrammer2-2-700-pbmc-notebook</a></li>
+<li>Saturn Cloud: <a class="reference external" href="https://www.saturncloud.io/published/cornhundred/clustergrammer2-notebooks/notebooks/pbmc_2700_scRNA-seq/1.0_PBMC_2700_scRNA-seq.ipynb">Saturn-2700</a></li>
+</ul>
+</div>
+</div>
 <div class="section" id="cancer-cell-line-encyclopedia-gene-expression-data">
 <h2>Cancer Cell Line Encyclopedia Gene Expression Data<a class="headerlink" href="#cancer-cell-line-encyclopedia-gene-expression-data" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-left" id="id2">
@@ -245,10 +272,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="matrix_format_io.html" class="btn btn-neutral float-right" title="Matrix Formats and Input/Output" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="interacting_with_viz.html" class="btn btn-neutral float-right" title="Interacting with the Visualization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="biology_specific_features.html" class="btn btn-neutral" title="Biology-Specific Features" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="clustergrammer2.html" class="btn btn-neutral" title="Clustergrammer2 Widget" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
