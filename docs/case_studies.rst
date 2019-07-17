@@ -126,6 +126,6 @@ These examples demonstrate the generality of heatmap visualizations and enable u
 .. _`clustergrammer2-notebooks`: https://github.com/ismms-himc/clustergrammer2-notebooks
 .. _`Viz-2-700-pbmcs-with-cell-type-predictions`: https://www.kaggle.com/cornhundred/viz-2-700-pbmcs-with-cell-type-predictions
 .. _`Clustergrammer2-2-700-pbmc-notebook`: https://www.kaggle.com/cornhundred/clustergrammer2-2-700-pbmc-notebook
-.. _`MyBinder-2700`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F3.0_10X_Genomics_2700_Dataset.ipynb
+.. _`MyBinder-2700`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/master?filepath=notebooks%2F3.0_2700_PBMC_scRNA-seq.ipynb
 .. _`NBViewer-2700`: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/3.0_10X_Genomics_2700_Dataset_NBViewer.ipynb
 .. _`Saturn-2700`: https://www.saturncloud.io/published/cornhundred/clustergrammer2-notebooks/notebooks/pbmc_2700_scRNA-seq/1.0_PBMC_2700_scRNA-seq.ipynb
