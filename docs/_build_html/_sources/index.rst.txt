@@ -4,46 +4,22 @@ Welcome to Clustergrammer's Documentation!
 ------------------------------------------
 Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. The project is free and open-source (all code is available on GitHub).
 
-.. raw:: html
-
-         <iframe id='iframe_preview' src="https://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
-
-Press play or interact with the gene-expression demo above to see some of Clustergrammer's interactive features and refer to :ref:`interacting_with_viz` for more information.
-
-What's New
------------
 
 Clustergrammer2
 ===============
 
-Clustergrammer is currently being re-built using the WebGL library `regl`_:
-
-.. figure:: _static/clustergrammer2_480px.gif
-  :width: 800px
-  :align: left
-  :alt: demo GIF
-  :target: https://github.com/ismms-himc/clustergrammer2-examples
-
-* :ref:`clustergrammer_gl`: WebGL JavaScript Library
-* :ref:`clustergrammer2`: WebGL Jupyter Widget
-
-Users can try out Clustergrammer2 on NBViewer, MyBinder, Kaggle, and Saturn.io (see :ref:`PBMC 2700 <try_clustergrammer2_2700>`).
-
 |intro-notebook|  |ccle-notebook|
-
-Also, see :ref:`case_studies` and `Clustergrammer2-Examples`_.
-
-JupyterCon 2018
-===============
 
 .. raw:: html
 
          <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
 
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/82epZkmfkrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/f-snXe2Bn9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
-The Clustergrammer-Widget was presented at JupyterCon 2018.
+Clustergrammer is currently being re-built using the WebGL library `regl`_. Users can try out Clustergrammer2 on NBViewer, MyBinder, Kaggle, and Saturn.io (see :ref:`case_studies`).
+
+
 
 Using Clustergrammer
 ====================
@@ -72,6 +48,18 @@ Clustergrammer was developed to visualize high-dimensional biological data (e.g.
 - `USDA Nutrient Dataset`_
 
 .. _contact:
+
+JupyterCon 2018
+===============
+
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/82epZkmfkrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+The Clustergrammer-Widget was presented at JupyterCon 2018.
 
 Contact
 =======
@@ -109,7 +97,6 @@ Contents:
    developing_with_clustergrammer
    license
 
-.. _`Clustergrammer2-Examples`: https://github.com/ismms-himc/clustergrammer2-examples
 .. _`Clustergrammer2`: https://github.com/ismms-himc/clustergrammer2
 .. _`regl`: http://regl.party/
 .. _`https://amp.pharm.mssm.edu/clustergrammer/`: https://amp.pharm.mssm.edu/clustergrammer/

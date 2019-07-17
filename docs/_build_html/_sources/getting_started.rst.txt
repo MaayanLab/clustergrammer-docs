@@ -29,6 +29,9 @@ JavaScript and Python libraries
 
 This section will provide information on how to interact with the visualization and how to quickly visualize your own data using the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. See :ref:`case_studies` for examples of how Clustergrammer can be used to explore and analyze real world data. For developers interested in building their own web page using Clustergrammer, please refer to the :ref:`building_web_page` section.
 
+Case Studies and Tutorials
+========================================
+
 Interacting with Clustergrammer Heatmaps
 ========================================
 
