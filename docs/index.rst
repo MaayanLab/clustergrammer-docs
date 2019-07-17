@@ -2,7 +2,7 @@
 
 Welcome to Clustergrammer's Documentation!
 ------------------------------------------
-Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. The project is free and open-source (all code is available on GitHub).
+The Clustergrammer project consists of web-based tools for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. The project is free, open-source (all code is available on GitHub), and being actively developed at the `Human Immune Monitoring Center`_ at the `Icahn School of Medicine at Mount Sinai`_.
 
 
 Clustergrammer2
@@ -17,23 +17,7 @@ Clustergrammer2
          <iframe width="560" height="315" src="https://www.youtube.com/embed/f-snXe2Bn9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
-Clustergrammer is currently being re-built using the WebGL library `regl`_. Users can try out Clustergrammer2 on NBViewer, MyBinder, Kaggle, and Saturn.io (see :ref:`case_studies`).
-
-
-
-Using Clustergrammer
-====================
-
-The easiest ways to use Clustergrammer to produce an interactive visualization of your data are to:
-
-- upload a tab-separated matrix file using the Clustergrammer web app: `https://amp.pharm.mssm.edu/clustergrammer/`_
-- or use the :ref:`clustergrammer_widget` within a `Jupyter`_ notebook and share using `nbviewer`_ (see `example notebook`_)
-
-The :ref:`clustergrammer_web` is the quickest way to generate an interactive and shareable visualization (see `example visualization`_ and :ref:`getting started Web-app<getting_started_web_app>`). For users who want to visualize their data within a Jupyter notebook, the :ref:`clustergrammer_widget` enables visualizations to be embedded into shareable Jupyter notebooks (see `example notebook`_ and :ref:`Getting Started Widget <getting_started_widget>`).
-
-Web developers can use Clustergrammer's core libraries, :ref:`clustergrammer_js` and :ref:`clustergrammer_py`, or the :ref:`clustergrammer_web_api` to dynamically generate visualizations for their own web applications (see examples in :ref:`app_integration`).
-
-Please read the :doc:`getting_started` guide for more information.
+Clustergrammer2 uses the WebGL library `regl`_ to handle larger single-cell datasets (e.g. scRNA-seq data) and enable researchers to interactively explore datasets consisting of millions of data points without the need for dimensionality reduction. Please see :ref:`case_studies` and :ref:`getting_started` for more information.
 
 Case Studies and Examples
 =========================
