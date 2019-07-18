@@ -3,13 +3,13 @@
 Getting Started
 ---------------
 
-Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). This section will provide information on how to interact with the visualization and how to quickly visualize your own data using the :ref:`clustergrammer_web`, :ref:`clustergrammer_widget` and :ref:`clustergrammer2`.
+Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). This section will provide information on how to interact with the visualization and how to quickly visualize your own data using the :ref:`clustergrammer_web`, :ref:`clustergrammer2`, and :ref:`clustergrammer_widget`.
 
 See :ref:`case_studies` for examples of how Clustergrammer can be used to explore and analyze real world data. For developers interested in building their own web page using Clustergrammer, please refer to the :ref:`building_web_page` section.
 
 Using Clustergrammer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Clustergrammer can be used as a web application :ref:`clustergrammer_web`, Jupyter Widgets (:ref:`clustergrammer2` and :ref:`clustergrammer_widget`) or stand alone JavaScript libraries (:ref:`clustergrammer_gl` and :ref:`clustergrammer_js`). The newer :ref:`clustergrammer2` and `clustergrammer_gl` libraries are built to handle larger datasets such as scRNA-seq data.
+Clustergrammer can be used as a web application :ref:`clustergrammer_web`, a Jupyter Widget (:ref:`clustergrammer2` and :ref:`clustergrammer_widget`) or stand alone JavaScript libraries (:ref:`clustergrammer_gl` and :ref:`clustergrammer_js`). The newer :ref:`clustergrammer2` and :ref:`clustergrammer_gl` libraries are built to handle larger datasets such as scRNA-seq data.
 
 
 scRNA-seq 2,700 PBMC Clustergrammer2 Example
