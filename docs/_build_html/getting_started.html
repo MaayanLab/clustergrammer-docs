@@ -85,16 +85,14 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#using-clustergrammer">Using Clustergrammer</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#web-application">Web application</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#jupyter-widget">Jupyter Widget</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#javascript-and-python-libraries">JavaScript and Python libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-clustergrammer">Using Clustergrammer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scrna-seq-2-700-pbmc-clustergrammer2-example">scRNA-seq 2,700 PBMC Clustergrammer2 Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#case-studies-and-tutorials">Case Studies and Tutorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interacting-with-clustergrammer-heatmaps">Interacting with Clustergrammer Heatmaps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clustergrammer-web-app">Clustergrammer Web-App</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jupyter-widgets">Jupyter Widgets</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#case-studies-and-tutorials">Case Studies and Tutorials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#interacting-with-clustergrammer-heatmaps">Interacting with Clustergrammer Heatmaps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#clustergrammer-web-app">Clustergrammer Web-App</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#jupyter-widgets">Jupyter Widgets</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Tutorials</a></li>
@@ -177,41 +175,23 @@
             
   <div class="section" id="getting-started">
 <span id="id1"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see <a class="reference internal" href="interacting_with_viz.html#intro-heatmap-clustergram"><span class="std std-ref">Introduction to Clustergrams</span></a>).</p>
+<p>Clustergrammer is a web-based tool for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see <a class="reference internal" href="interacting_with_viz.html#intro-heatmap-clustergram"><span class="std std-ref">Introduction to Clustergrams</span></a>). This section will provide information on how to interact with the visualization and how to quickly visualize your own data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer-Web</span></a>, <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a> and <a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a>.</p>
+<p>See <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a> for examples of how Clustergrammer can be used to explore and analyze real world data. For developers interested in building their own web page using Clustergrammer, please refer to the <a class="reference internal" href="building_webpage.html#building-web-page"><span class="std std-ref">Web-Development</span></a> section.</p>
 <div class="section" id="using-clustergrammer">
 <h2>Using Clustergrammer<a class="headerlink" href="#using-clustergrammer" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="web-application">
-<h3>Web application<a class="headerlink" href="#web-application" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer-Web</span></a>: <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">http://amp.pharm.mssm.edu/clustergrammer</a></li>
-</ul>
+<p>Clustergrammer can be used as a web application <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer-Web</span></a>, Jupyter Widgets (<a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a> and <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a>) or stand alone JavaScript libraries (<a class="reference internal" href="clustergrammer_gl.html#clustergrammer-gl"><span class="std std-ref">Clustergrammer-GL</span></a> and <a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a>). The newer <a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a> and <cite>clustergrammer_gl</cite> libraries are built to handle larger datasets such as scRNA-seq data.</p>
 </div>
-<div class="section" id="jupyter-widget">
-<h3>Jupyter Widget<a class="headerlink" href="#jupyter-widget" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a><ul>
-<li>WebGL for larger datasets (e.g. scRNA-seq)</li>
-</ul>
-</li>
-<li><a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a><ul>
-<li>SVG for smaller datasets (e.g. bulk RNA-seq)</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="javascript-and-python-libraries">
-<h3>JavaScript and Python libraries<a class="headerlink" href="#javascript-and-python-libraries" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><a class="reference internal" href="clustergrammer_js.html#clustergrammer-js"><span class="std std-ref">Clustergrammer-JS</span></a> and <a class="reference internal" href="clustergrammer_py.html#clustergrammer-py"><span class="std std-ref">Clustergrammer-PY</span></a> libraries</li>
-</ul>
-<p>This section will provide information on how to interact with the visualization and how to quickly visualize your own data using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer-Web</span></a> and the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a>. See <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a> for examples of how Clustergrammer can be used to explore and analyze real world data. For developers interested in building their own web page using Clustergrammer, please refer to the <a class="reference internal" href="building_webpage.html#building-web-page"><span class="std std-ref">Web-Development</span></a> section.</p>
-</div>
-</div>
+<div class="section" id="scrna-seq-2-700-pbmc-clustergrammer2-example">
+<h2>scRNA-seq 2,700 PBMC Clustergrammer2 Example<a class="headerlink" href="#scrna-seq-2-700-pbmc-clustergrammer2-example" title="Permalink to this headline">¶</a></h2>
+<div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BEPspcC7vIY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><p>Single cell RNA-seq (scRNA-seq) is a powerful method to interrogate gene expression across thousands of single cells. This method provides thousands of measurements (single cells) across thousands of dimensions (genes). Clustergrammer2 is used to interactively explore an example dataset of 2,700 PBMCs obtained from <a class="reference external" href="https://www.10xgenomics.com/resources/datasets/">10X Genomics</a>. Bulk gene expression signatures of cell types obtained from <a class="reference external" href="https://cibersort.stanford.edu/">CIBERSORT</a> were used to obtain a tentative cell type for each cell. The data and code can be found on GitHub at <a class="reference external" href="https://github.com/ismms-himc/clustergrammer2-notebooks">clustergrammer2-notebooks</a> and the notebook can be viewed and re-run on the cloud - see below.</p>
 <div class="section" id="case-studies-and-tutorials">
-<h2>Case Studies and Tutorials<a class="headerlink" href="#case-studies-and-tutorials" title="Permalink to this headline">¶</a></h2>
+<h3>Case Studies and Tutorials<a class="headerlink" href="#case-studies-and-tutorials" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="interacting-with-clustergrammer-heatmaps">
-<h2>Interacting with Clustergrammer Heatmaps<a class="headerlink" href="#interacting-with-clustergrammer-heatmaps" title="Permalink to this headline">¶</a></h2>
+<h3>Interacting with Clustergrammer Heatmaps<a class="headerlink" href="#interacting-with-clustergrammer-heatmaps" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-left">
 <a class="reference external image-reference" href="http://amp.pharm.mssm.edu/clustergrammer/viz_sim_mats/58a492b4a63cb826f0be6476/rc_two_cats.txt"><img alt="demo GIF" src="_images/demo_high-fr.gif" style="width: 800px;" /></a>
 </div>
@@ -232,7 +212,7 @@
 </ul>
 </div>
 <div class="section" id="clustergrammer-web-app">
-<span id="getting-started-web-app"></span><h2>Clustergrammer Web-App<a class="headerlink" href="#clustergrammer-web-app" title="Permalink to this headline">¶</a></h2>
+<span id="getting-started-web-app"></span><h3>Clustergrammer Web-App<a class="headerlink" href="#clustergrammer-web-app" title="Permalink to this headline">¶</a></h3>
 <p>Users can easily generate an interactive and shareable heatmap visualization using the <a class="reference internal" href="clustergrammer_web.html#clustergrammer-web"><span class="std std-ref">Clustergrammer-Web</span></a> (see upload section screenshot below). Simply upload a tab-separated matrix file (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information) at the <a class="reference external" href="http://amp.pharm.mssm.edu/clustergrammer/">homepage</a> to be redirected to a permanent and shareable visualization of your data.</p>
 <div class="figure align-left" id="id2">
 <a class="reference external image-reference" href="http://amp.pharm.mssm.edu/clustergrammer/"><img alt="Clustergrammer Web" src="_images/clustergrammer_web_upload.png" style="width: 550px;" /></a>
@@ -252,7 +232,7 @@
 <p>Users can share their interactive visualizations using their permanent link. See <a class="reference internal" href="interacting_with_viz.html#interacting-with-viz"><span class="std std-ref">Interacting with the Visualization</span></a> for more information.</p>
 </div>
 <div class="section" id="jupyter-widgets">
-<span id="getting-started-widget"></span><h2>Jupyter Widgets<a class="headerlink" href="#jupyter-widgets" title="Permalink to this headline">¶</a></h2>
+<span id="getting-started-widget"></span><h3>Jupyter Widgets<a class="headerlink" href="#jupyter-widgets" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://jupyter.org/">Jupyter</a> notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer’s interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget-examples"><span class="std std-ref">Sharing with nbviewer</span></a>).</p>
 <p><a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a> and <a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a> enable users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>). The <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a> can be used to visualize a matrix of data from a matrix file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information).</p>
 <p>Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a> for more information:</p>
@@ -266,6 +246,7 @@
 <li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb">USDA Nutrient Dataset</a></li>
 <li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb">Iris Dataset.ipynb</a></li>
 </ul>
+</div>
 </div>
 </div>
 
