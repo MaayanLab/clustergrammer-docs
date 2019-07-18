@@ -16,36 +16,34 @@ Single Cell Gene Expression 2,700 PBMC
 
          <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
 
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/f-snXe2Bn9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/BEPspcC7vIY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
 Single cell RNA-seq (scRNA-seq) is a powerful method to interrogate gene expression across thousands of single cells. This method provides thousands of measurements (single cells) across thousands of dimensions (genes). Clustergrammer2 is used to interactively explore an example dataset of 2,700 PBMCs obtained from `10X Genomics`_. Bulk gene expression signatures of cell types obtained from `CIBERSORT`_ were used to obtain a tentative cell type for each cell. The data and code can be found on GitHub at `clustergrammer2-notebooks`_ and the notebook can be viewed and re-run on the cloud - see below.
 
 
-View Notebook
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-View the interactive notebook using NBViewer: `NBViewer-2700`_.
-
-Run Notebook
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-This notebook can be re-run and modified on the cloud using `MyBinder`_ and other cloud based notebooks:
-
-* MyBinder: `MyBinder-2700`_
+View and Run 2,700 PBMC scRNA-seq Notebook
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `NBViewer-2700`_
+* `MyBinder-2700`_
 * Kaggle: `Viz-2-700-pbmcs-with-cell-type-predictions`_, `Clustergrammer2-2-700-pbmc-notebook`_
-* Saturn Cloud: `Saturn-2700`_
 
 Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================
 
-.. figure:: _static/CCLE_explorer.png
-  :width: 800px
-  :align: left
-  :alt: CCLE Explorer
-  :target: https://maayanlab.github.io/CCLE_Clustergrammer/
+.. raw:: html
 
-  Screenshot from the `CCLE Explorer`_ showing the tissue breakdown of the CCLE. Clicking on a tissue brings up an interactive heatmap with the top 250 most variable genes within a tissue. Also see the `CCLE Jupyter Notebook`_ for an example of how to explore the CCLE gene expression data in a Jupyter notebook.
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/6wZ0E6Veod0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
 
 The Cancer Cell Line Encyclopedia (`CCLE`_) is a publicly available project that has characterized (e.g. genetic characterization) over 1,000 cancer cell lines. We used Clustergrammer to re-analyze and visualize CCLE's gene expression data in the `CCLE Explorer`_. The CCLE Explorer allows users to explore the CCLE by tissue type and visualize the most commonly differentially expressed genes for each tissue type as an interactive heatmap. The `CCLE Jupyter Notebook`_ generates an overview of the CCLE gene expression data, investigates specific tissues, and explains how to use :ref:`Enrichrgram <enrichrgram>` to understand the biological functions of differentially expressed genes.
+
+View and Run CCLE Notebook
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `NBViewer-CCLE`_
+* `MyBinder-CCLE`_
 
 Lung Cancer Post-Translational Modification and Gene Expression Regulation
 ==========================================================================
@@ -127,7 +125,8 @@ These examples demonstrate the generality of heatmap visualizations and enable u
 .. _`clustergrammer2-notebooks`: https://github.com/ismms-himc/clustergrammer2-notebooks
 .. _`Viz-2-700-pbmcs-with-cell-type-predictions`: https://www.kaggle.com/cornhundred/viz-2-700-pbmcs-with-cell-type-predictions
 .. _`Clustergrammer2-2-700-pbmc-notebook`: https://www.kaggle.com/cornhundred/clustergrammer2-2-700-pbmc-notebook
+.. _`MyBinder`: https://gke.mybinder.org/
 .. _`MyBinder-2700`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/master?filepath=notebooks%2F3.0_2700_PBMC_scRNA-seq.ipynb
 .. _`NBViewer-2700`: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/3.0_10X_Genomics_2700_Dataset_NBViewer.ipynb
-.. _`Saturn-2700`: https://www.saturncloud.io/published/cornhundred/clustergrammer2-notebooks/notebooks/pbmc_2700_scRNA-seq/1.0_PBMC_2700_scRNA-seq.ipynb
-.. _`MyBinder`: https://gke.mybinder.org/
+.. _`MyBinder-CCLE`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F2.0_CCLE_Gene_Expression.ipynb
+.. _`NBViewer-CCLE`: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/2.0_CCLE_Gene_Expression.ipynb?flush_cache=True
