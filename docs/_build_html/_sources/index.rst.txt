@@ -14,7 +14,7 @@ Clustergrammer2
 
          <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
 
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/UgO5LLvcfB0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/BEPspcC7vIY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
 Clustergrammer2 uses the WebGL library `regl`_ to handle larger single-cell datasets (e.g. scRNA-seq data) and enable researchers to interactively explore datasets consisting of millions of data points without the need for dimensionality reduction. Please see :ref:`case_studies` and :ref:`getting_started` for more information.
