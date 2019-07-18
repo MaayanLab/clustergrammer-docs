@@ -12,7 +12,18 @@ Using Clustergrammer
 Clustergrammer can be used as a web application :ref:`clustergrammer_web`, a Jupyter Widget (:ref:`clustergrammer2` and :ref:`clustergrammer_widget`) or stand alone JavaScript libraries (:ref:`clustergrammer_gl` and :ref:`clustergrammer_js`). The newer :ref:`clustergrammer2` and :ref:`clustergrammer_gl` libraries are built to handle larger datasets such as scRNA-seq data.
 
 
-scRNA-seq 2,700 PBMC Clustergrammer2 Example
+Using Clustergrammer2
+~~~~~~~~~~~~~~~~~~~~~~
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/UgO5LLvcfB0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+This tutorial shows how Clustergrammer2 can be run on the cloud using MyBinder.
+
+Single Cell Gene Expression 2,700 PBMC
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
