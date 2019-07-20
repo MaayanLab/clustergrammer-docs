@@ -4,7 +4,7 @@ Case Studies and Tutorials
 --------------------------
 Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several case studies and examples using Clustergrammer to explore high-dimensional data. All examples are below are publically available through GitHub.
 
-.. _try_clustergrammer2_2700:
+.. _clustergrammer2_2700:
 
 Single Cell Gene Expression 2,700 PBMC
 =======================================
@@ -27,6 +27,7 @@ View and Run 2,700 PBMC scRNA-seq Notebook
 * `NBViewer scRNA-seq 2700`_
 * `MyBinder scRNA-seq 2700`_
 
+.. _clustergrammer2_7800:
 
 CITE-seq 7,800 PBMC
 =======================================
@@ -48,6 +49,8 @@ View and Run 2,700 PBMC scRNA-seq Notebook
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * `NBViewer CITE-seq 7800`_
 * `MyBinder CITE-seq 7800`_
+
+.. _clustergrammer2_CCLE:
 
 Cancer Cell Line Encyclopedia Gene Expression Data
 ==================================================

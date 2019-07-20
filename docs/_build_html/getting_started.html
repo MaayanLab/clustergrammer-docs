@@ -86,8 +86,7 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#using-clustergrammer">Using Clustergrammer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#using-clustergrammer2">Using Clustergrammer2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#single-cell-gene-expression-2-700-pbmc">Single Cell Gene Expression 2,700 PBMC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-clustergrammer2">Using Clustergrammer2</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#case-studies-and-tutorials">Case Studies and Tutorials</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#interacting-with-clustergrammer-heatmaps">Interacting with Clustergrammer Heatmaps</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#clustergrammer-web-app">Clustergrammer Web-App</a></li>
@@ -187,14 +186,7 @@
 <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgO5LLvcfB0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div><p>This tutorial shows how Clustergrammer2 can be run on the cloud using MyBinder.</p>
-</div>
-<div class="section" id="single-cell-gene-expression-2-700-pbmc">
-<h2>Single Cell Gene Expression 2,700 PBMC<a class="headerlink" href="#single-cell-gene-expression-2-700-pbmc" title="Permalink to this headline">¶</a></h2>
-<div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BEPspcC7vIY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div><p>Single cell RNA-seq (scRNA-seq) is a powerful method to interrogate gene expression across thousands of single cells. This method provides thousands of measurements (single cells) across thousands of dimensions (genes). Clustergrammer2 is used to interactively explore an example dataset of 2,700 PBMCs obtained from <a class="reference external" href="https://www.10xgenomics.com/resources/datasets/">10X Genomics</a>. Bulk gene expression signatures of cell types obtained from <a class="reference external" href="https://cibersort.stanford.edu/">CIBERSORT</a> were used to obtain a tentative cell type for each cell. The data and code can be found on GitHub at <a class="reference external" href="https://github.com/ismms-himc/clustergrammer2-notebooks">clustergrammer2-notebooks</a> and the notebook can be viewed and re-run on the cloud - see below.</p>
+</div><p>This tutorial shows how Clustergrammer2 can be run on the cloud using MyBinder. For additional examples with real world data (e.g. scRNA-seq data), please see <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a>.</p>
 <div class="section" id="case-studies-and-tutorials">
 <h3>Case Studies and Tutorials<a class="headerlink" href="#case-studies-and-tutorials" title="Permalink to this headline">¶</a></h3>
 </div>
@@ -243,17 +235,7 @@
 <span id="getting-started-widget"></span><h3>Jupyter Widgets<a class="headerlink" href="#jupyter-widgets" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://jupyter.org/">Jupyter</a> notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer’s interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget-examples"><span class="std std-ref">Sharing with nbviewer</span></a>).</p>
 <p><a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a> and <a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a> enable users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>). The <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a> can be used to visualize a matrix of data from a matrix file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information).</p>
-<p>Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a> for more information:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/DataFrame_Example.ipynb">DataFrame_Example.ipynb</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb">CCLE Jupyter Notebook</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb">Lung Cancer PTM and Gene Expression Regulation</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb">Single-Cell CyTOF Data</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb">MNIST Notebook</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb">USDA Nutrient Dataset</a></li>
-<li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb">Iris Dataset.ipynb</a></li>
-</ul>
+<p>Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a> for more information.</p>
 </div>
 </div>
 </div>

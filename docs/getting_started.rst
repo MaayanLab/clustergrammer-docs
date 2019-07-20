@@ -21,19 +21,7 @@ Using Clustergrammer2
          <iframe width="560" height="315" src="https://www.youtube.com/embed/UgO5LLvcfB0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
-This tutorial shows how Clustergrammer2 can be run on the cloud using MyBinder.
-
-Single Cell Gene Expression 2,700 PBMC
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. raw:: html
-
-         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/BEPspcC7vIY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-         </div>
-
-Single cell RNA-seq (scRNA-seq) is a powerful method to interrogate gene expression across thousands of single cells. This method provides thousands of measurements (single cells) across thousands of dimensions (genes). Clustergrammer2 is used to interactively explore an example dataset of 2,700 PBMCs obtained from `10X Genomics`_. Bulk gene expression signatures of cell types obtained from `CIBERSORT`_ were used to obtain a tentative cell type for each cell. The data and code can be found on GitHub at `clustergrammer2-notebooks`_ and the notebook can be viewed and re-run on the cloud - see below.
+This tutorial shows how Clustergrammer2 can be run on the cloud using MyBinder. For additional examples with real world data (e.g. scRNA-seq data), please see :ref:`case_studies`.
 
 Case Studies and Tutorials
 ========================================
@@ -109,17 +97,7 @@ Jupyter Widgets
 
 :ref:`clustergrammer_widget` and :ref:`clustergrammer2` enable users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using `nbviewer`_). The :ref:`clustergrammer_widget` can be used to visualize a matrix of data from a matrix file or from a `Pandas`_ DataFrame (see :ref:`matrix_format_io` for more information).
 
-Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and :ref:`case_studies` for more information:
-
-- `Running_clustergrammer_widget.ipynb`_
-- `DataFrame_Example.ipynb`_
-- `CCLE Jupyter Notebook`_
-- `Lung Cancer PTM and Gene Expression Regulation`_
-- `Single-Cell CyTOF Data`_
-- `MNIST Notebook`_
-- `USDA Nutrient Dataset`_
-- `Iris Dataset.ipynb`_
-
+Clustergrammer has been applied to visualize and analyze a wide variety of biological and non-biological data. See the Jupyter notebook examples below and :ref:`case_studies` for more information.
 
 
 .. _`Clustergrammer2-Examples`: https://github.com/ismms-himc/clustergrammer2-examples
@@ -146,13 +124,10 @@ Clustergrammer has been applied to visualize and analyze a wide variety of biolo
 
 .. _`Single-Cell CyTOF Data`: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
 
-.. _`Iris Dataset.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/iris_clustergrammer_visualization/blob/master/Iris%20Dataset.ipynb
 
 .. _`CCLE Jupyter Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/CCLE_Clustergrammer/blob/master/notebooks/Clustergrammer_CCLE_Notebook.ipynb
 
-.. _`MNIST Notebook`: http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb
 
-.. _`USDA Nutrient Dataset`: http://nbviewer.jupyter.org/github/MaayanLab/USDA_Nutrients_Viz/blob/master/USDA_Nutrients.ipynb
 
 .. _`10X Genomics`: https://www.10xgenomics.com/resources/datasets/
 .. _`CIBERSORT`: https://cibersort.stanford.edu/
