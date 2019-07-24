@@ -62,12 +62,7 @@ Mouse Organogenesis Cell Atlas 2 Million Cells
          <iframe width="560" height="315" src="https://www.youtube.com/embed/pNPxuPDavO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
-`Cao, J and Spielmann, M et al`_ profiled gene expression from ~2 million mouse cells (~1.3 million non-doublets) between 9.5 and 13.5 days of gestation. They identified 38 major cell types and measured ~25,000 genes. We generated a downsampled view of this data representing the ~1.3 million single cells (~excluding 600K suspected doublets) in the dataset by averaging expression for each cell type in each embryo, resulting in ~2,000 cell-type and embryo representative clusters. We use Clustergrammer2 to explore this dataset in notebook 5.2. We demonstrate how Clustergrammer2 can be used to find genes associated with cell type clusters as well as identify genes that are differentially regulated across developmental stage.
-
-View and Run Mouse Atlas Notebook
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* `NBViewer-Mouse-Atlas`_
-* `MyBinder-Mouse-Atlas`_
+`Cao, J and Spielmann, M et al`_ profiled gene expression from ~2 million mouse cells between 9.5 and 13.5 days of gestation. They identified 38 major cell types and measured ~25,000 genes. We generated a downsampled view of this data representing the ~1.3 million single cells (excluding ~600K suspected doublets) in the dataset by averaging expression for each cell type in each embryo, resulting in ~2,000 cell-type and embryo representative clusters. We demonstrate how Clustergrammer2 can be used to explore cell type clustering, find genes associated with cell type clusters, as well as identify genes that are differentially regulated across developmental stage. For more information, see the video tutorial above and launch or view the notebook using the badges.
 
 .. _clustergrammer2_CCLE:
 
