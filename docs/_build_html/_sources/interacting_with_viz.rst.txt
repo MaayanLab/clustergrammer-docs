@@ -11,6 +11,17 @@ Interacting with the Visualization
 
 Data visualization benefits enormously from user interaction -- particularly interactions that allow users to explore their data and interactively generate new views. Clustergrammer produces highly interactive heatmaps that enable users to intuitively explore their data and perform complex data transformations. Clustergrammer visualizations are built using the :ref:`clustergrammer_js` library and are consistent across the :ref:`clustergrammer_web` and the :ref:`clustergrammer_widget`. This section will overview heatmaps as a visualization tool and cover Clustergrammer's interactive features.
 
+Clustergrammer2 Video Tutorial
+================================
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/UgO5LLvcfB0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+This tutorial shows how Clustergrammer2 can be run on the cloud (using MyBinder) and some of Clustergrammer2's interactive features. For additional examples with real world data (e.g. scRNA-seq data), please see :ref:`case_studies`.
+
 .. _intro_heatmap_clustergram:
 
 Introduction to Clustergrams
@@ -21,13 +32,7 @@ Heatmaps are powerful visualization tools that enable users to directly visualiz
 
 .. _interactive_demo:
 
-Interactive Demo
-================
-Press play to take a quick tour of some of Clustergrammer's interactive features or directly interact with the demo below to explore on your own:
 
-.. raw:: html
-
-         <iframe id='iframe_preview' src="https://amp.pharm.mssm.edu/clustergrammer/demo/" frameBorder="0" style='height: 495px; width:730px; margin-bottom:20px;'></iframe>
 
 .. _zooming_and_panning:
 
