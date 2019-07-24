@@ -50,6 +50,26 @@ View and Run 2,700 PBMC scRNA-seq Notebook
 * `NBViewer CITE-seq 7800`_
 * `MyBinder CITE-seq 7800`_
 
+
+Mouse Organogenesis Cell Atlas 2 Million Cells
+==================================================
+.. image:: https://img.shields.io/badge/launch-5.2%20Viz%202M%20Mouse%20Atlas%20Downsampled-579ACA.svg?logo=data:image/png;base64,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
+   :target: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/master?filepath=notebooks%2F5.2_Viz_2M-Mouse-Atlas_Downsampled.ipynb
+
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/pNPxuPDavO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+`Cao, J and Spielmann, M et al`_ profiled gene expression from ~2 million mouse cells (~1.3 million non-doublets) between 9.5 and 13.5 days of gestation. They identified 38 major cell types and measured ~25,000 genes. We generated a downsampled view of this data representing the ~1.3 million single cells (~excluding 600K suspected doublets) in the dataset by averaging expression for each cell type in each embryo, resulting in ~2,000 cell-type and embryo representative clusters. We use Clustergrammer2 to explore this dataset in notebook 5.2. We demonstrate how Clustergrammer2 can be used to find genes associated with cell type clusters as well as identify genes that are differentially regulated across developmental stage.
+
+View and Run Mouse Atlas Notebook
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `NBViewer-Mouse-Atlas`_
+* `MyBinder-Mouse-Atlas`_
+
 .. _clustergrammer2_CCLE:
 
 Cancer Cell Line Encyclopedia Gene Expression Data
@@ -68,6 +88,7 @@ View and Run CCLE Notebook
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 * `NBViewer-CCLE`_
 * `MyBinder-CCLE`_
+
 
 Lung Cancer Post-Translational Modification and Gene Expression Regulation
 ==========================================================================
@@ -149,11 +170,16 @@ These examples demonstrate the generality of heatmap visualizations and enable u
 .. _`clustergrammer2-notebooks`: https://github.com/ismms-himc/clustergrammer2-notebooks
 .. _`MyBinder`: https://gke.mybinder.org/
 
+.. _`Cao, J and Spielmann, M et al`: https://oncoscape.v3.sttrcancer.org/atlas.gs.washington.edu.mouse.rna/landing:
+
 .. _`MyBinder scRNA-seq 2700`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/master?filepath=notebooks%2F3.0_2700_PBMC_scRNA-seq.ipynb
 .. _`NBViewer scRNA-seq 2700`: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/3.0_10X_Genomics_2700_Dataset_NBViewer.ipynb
 
 .. _`MyBinder CITE-seq 7800`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/master?filepath=notebooks%2F4.1_10K_PBMC_CITE-seq_Visualize_Data.ipynb
 .. _`NBViewer CITE-seq 7800`: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/4.1_10K_PBMC_CITE-seq_Visualize_Data.ipynb?flush_cache=true
+
+.. _`MyBinder-Mouse-Atlas`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2-notebooks/master?filepath=notebooks%2F5.2_Viz_2M-Mouse-Atlas_Downsampled.ipynb
+.. _`NBViewer-Mouse-Atlas`: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/5.2_Viz_2M-Mouse-Atlas_Downsampled.ipynb?flush_cache=true
 
 .. _`MyBinder-CCLE`: https://mybinder.org/v2/gh/ismms-himc/clustergrammer2_examples/master?filepath=notebooks%2F2.0_CCLE_Gene_Expression.ipynb
 .. _`NBViewer-CCLE`: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/2.0_CCLE_Gene_Expression.ipynb?flush_cache=True
