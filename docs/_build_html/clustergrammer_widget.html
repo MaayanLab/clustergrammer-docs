@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.5.0/css/font-awesome.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Clustergrammer2 Jupyter Widget" href="clustergrammer2.html" />
-    <link rel="prev" title="Clustergrammer Web App" href="clustergrammer_web.html" /> 
+    <link rel="next" title="Clustergrammer-JS" href="clustergrammer_js.html" />
+    <link rel="prev" title="Web-Development" href="building_webpage.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -85,9 +85,16 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html#what-s-new">What’s New</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer Web App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer2.html">Clustergrammer2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustergrammer_web.html">Clustergrammer-Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Web-Development</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Clustergrammer-Widget</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#see-clustergrammer2-for-latest-widget">See Clustergrammer2 for Latest Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#about-clustergrammer-widget">About Clustergrammer-Widget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#jupyter-widget-dependencies">Jupyter Widget Dependencies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-widget-workflow-example">Clustergrammer-Widget Workflow Example</a></li>
@@ -95,17 +102,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#clustergrammer-widget-development">Clustergrammer-Widget Development</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="clustergrammer2.html">Clustergrammer2 Jupyter Widget</a></li>
-<li class="toctree-l1"><a class="reference internal" href="interacting_with_viz.html">Interacting with the Visualization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="biology_specific_features.html">Biology-Specific Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="case_studies.html">Case Studies and Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_format_io.html">Matrix Formats and Input/Output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="building_webpage.html">Web-Development with Clustergrammer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_js.html">Clustergrammer-JS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_gl.html">Clustergrammer-GL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustergrammer_py.html">Clustergrammer-PY</a></li>
-<li class="toctree-l1"><a class="reference internal" href="app_integration.html">App Integration Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing Clustergrammer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_integration.html">App Integrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developing_with_clustergrammer.html">Developing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
@@ -175,8 +176,14 @@
 <span id="id1"></span><h1>Clustergrammer-Widget<a class="headerlink" href="#clustergrammer-widget" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://pypi.python.org/pypi?:action=display&amp;name=clustergrammer_widget"><img alt="pypi-version" src="https://img.shields.io/pypi/v/clustergrammer_widget.svg" /></a>
 <a class="reference external" href="https://www.npmjs.com/package/clustergrammer_widgt"><img alt="npm-version" src="https://img.shields.io/npm/v/clustergrammer_widget.svg" /></a></p>
+<div class="section" id="see-clustergrammer2-for-latest-widget">
+<h2>See Clustergrammer2 for Latest Widget<a class="headerlink" href="#see-clustergrammer2-for-latest-widget" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a> is the new WebGL widget that is being developed to handle larger datasets (e.g. scRNA-seq data). This widget will be the focus of future development and feature additions. The original Clustergrammer-Widget will still be maintained, but users are encouraged to migrate to <a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a>.</p>
+</div>
+<div class="section" id="about-clustergrammer-widget">
+<h2>About Clustergrammer-Widget<a class="headerlink" href="#about-clustergrammer-widget" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://jupyter.org/">Jupyter</a> notebooks are ideal for generating reproducible workflows and analysis. They are also the best way to share Clustergrammer’s interactive visualizations while providing context, analysis, and the underlying data to enable reproducibility (see <a class="reference internal" href="#clustergrammer-widget-examples"><span class="std std-ref">Sharing with nbviewer</span></a>). The Clustergrammer Widget enables users to easily produce interactive visualizations within a Jupyter notebook that can be shared with collaborators (using <a class="reference external" href="http://nbviewer.jupyter.org/">nbviewer</a>). Clustergrammer-Widget can be used to visualize a matrix of data from a file or from a <a class="reference external" href="http://pandas.pydata.org/">Pandas</a> DataFrame (see <a class="reference internal" href="matrix_format_io.html#matrix-format-io"><span class="std std-ref">Matrix Formats and Input/Output</span></a> for more information). The library is free and open-source and can be found on <a class="reference external" href="https://github.com/MaayanLab/clustergrammer-widget">GitHub</a>.</p>
-<p>Clustergrammer has been applied to a wide variety of biological and non-biological data. See the Jupyter notebook examples below and <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Examples</span></a> for more information:</p>
+<p>Clustergrammer has been applied to a wide variety of biological and non-biological data. See the Jupyter notebook examples below and <a class="reference internal" href="case_studies.html#case-studies"><span class="std std-ref">Case Studies and Tutorials</span></a> for more information:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a></li>
 <li><a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/DataFrame_Example.ipynb">DataFrame_Example.ipynb</a></li>
@@ -190,6 +197,7 @@
 <div class="figure align-left" id="id4">
 <a class="reference external image-reference" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb"><img alt="Jupyter Widget NBViewer" src="_images/jupyter_widget_nbviewer.png" style="width: 900px;" /></a>
 <p class="caption"><span class="caption-text">Clustergrammer can be used as an interactive widget within a Jupyter notebook and shared using nbviewer (see <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/clustergrammer-widget/blob/master/Running_clustergrammer_widget.ipynb">Running_clustergrammer_widget.ipynb</a> example).</span></p>
+</div>
 </div>
 <div class="section" id="jupyter-widget-dependencies">
 <span id="clustergrammer-widget-dependencies"></span><h2>Jupyter Widget Dependencies<a class="headerlink" href="#jupyter-widget-dependencies" title="Permalink to this headline">¶</a></h2>
@@ -290,10 +298,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clustergrammer2.html" class="btn btn-neutral float-right" title="Clustergrammer2 Jupyter Widget" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="clustergrammer_js.html" class="btn btn-neutral float-right" title="Clustergrammer-JS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="clustergrammer_web.html" class="btn btn-neutral" title="Clustergrammer Web App" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="building_webpage.html" class="btn btn-neutral" title="Web-Development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
