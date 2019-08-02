@@ -23,7 +23,7 @@ Case Studies and Examples
 Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Please refer to the :ref:`case_studies` and links below for more information:
 
 -  :ref:`clustergrammer2_2700`
--  :ref:`clustergrammer2_7800`
+-  :ref:`clustergrammer2_citeseq_7800`
 -  :ref:`clustergrammer2_CCLE`
 - `Lung Cancer PTM and Gene Expression Regulation`_
 - `Single-Cell CyTOF Data`_
