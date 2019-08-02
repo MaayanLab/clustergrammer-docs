@@ -49,6 +49,21 @@ Mouse Organogenesis Cell Atlas 2 Million Cells
 
 `Cao, J and Spielmann, M et al`_ profiled gene expression from ~2 million mouse cells between 9.5 and 13.5 days of gestation. They identified 38 major cell types and measured ~25,000 genes. We generated a downsampled view of this data representing the ~1.3 million single cells (excluding ~600K suspected doublets) in the dataset by averaging expression for each cell type in each embryo, resulting in ~2,000 cell-type and embryo representative clusters. We demonstrate how Clustergrammer2 can be used to explore cell type clustering, find genes associated with cell type clusters, as well as identify genes that are differentially regulated across developmental stage. For more information, see the video tutorial above and launch or view the notebook using the badges.
 
+CODEX Single Cell Multiplexed Imaging Dashboard
+=================================================
+|MyBinder-Codex|
+
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/JlUvt4rpF-s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+
+`Goltsev et al`_ used a highly multiplexed cytometric approach called CODEX to measure ~30 surface markers in spatially resolved single cells from mouse spleens. We utilized Clustergrammer2 to hierarchically cluster ~5,000 sinlge cells (from a subset of a segmented spleen image). We also used the Jupyter Widget `bqplot`_ to visualize single cell location data using voronoi plots. We then built a dasnboard using the library `voila`_, which converts Jupyter notebooks to dashboards/web-apps, and linked our heatmap to the spatial map. This allows to interact with the Clustergrammer2 heatmap and highlight cells in the spatially resolved map. These kind of linked views are crucial for exploration of spatially resolved high-dimensional single cell data. Finally, we are running this dashboard using MyBinder. See `CODEX Dashboard`_ for code.
+
+
 .. _clustergrammer2_CCLE:
 
 Cancer Cell Line Encyclopedia Gene Expression Data
@@ -147,6 +162,12 @@ These examples demonstrate the generality of heatmap visualizations and enable u
 
 .. _`Cao, J and Spielmann, M et al`: https://oncoscape.v3.sttrcancer.org/atlas.gs.washington.edu.mouse.rna/landing:
 
+.. _`Goltsev et al`: https://linkinghub.elsevier.com/retrieve/pii/S0092867418309048
+
+.. _`bqplot`: https://github.com/bloomberg/bqplot
+.. _`voila`: https://github.com/QuantStack/voila
+.. _`CODEX Dashboard`: https://github.com/ismms-himc/codex_dashboard
+
 
 .. |MyBinder-CCLE| image:: https://img.shields.io/badge/launch-2.0%20CCLE%20Gene%20Expression-579ACA.svg?logo=data:image/png;base64,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
     :alt: MyBinder-CCLE
@@ -193,3 +214,10 @@ These examples demonstrate the generality of heatmap visualizations and enable u
     :alt: NBViewer-Mouse-Atlas
     :scale: 100%
     :target: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/5.2_Viz_2M-Mouse-Atlas_Downsampled.ipynb
+
+
+
+.. |MyBinder-CODEX| image:: https://mybinder.org/badge_logo.svg
+    :alt: MyBinder-CODEX
+    :scale: 100%
+    :target: https://mybinder.org/v2/gh/ismms-himc/codex_dashboard/master?urlpath=voila%2Frender%2Findex.ipynb
