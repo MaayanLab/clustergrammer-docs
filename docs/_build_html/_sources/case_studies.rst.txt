@@ -4,6 +4,23 @@ Case Studies and Tutorials
 --------------------------
 Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several case studies and examples using Clustergrammer to explore high-dimensional data. All examples are below are publically available through GitHub.
 
+.. _athero_plaques:
+
+Single-cell Gene Expression and Proteomics from Human Atherosclerotic Plaques
+==========================
+
+.. figure:: _static/chiara_citeseq_adt.gif
+  :width: 450px
+  :align: left
+  :alt: CyTOF Screenshot
+  :target: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
+
+  Immune Profiling of Atherosclerotic Plaques Identifies Innate and Adaptive Dysregulations Associated with Ischemic Cerebrovascular Events (Fernandez et al.). The interactive visualizations are made using the single cell data analysis and visualization toolkit Clustergrammer2 and work best using the Chrome browser.
+
+
+
+Our collaborators in the `Giannarelli Lab`_ and the `Icahn School of Medicine Human Immune Monitoring Core`_ used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 10 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See the `Plasma_vs_PMA_Phosphrylation.ipynb`_ Jupyter notebook for more information.
+
 .. _clustergrammer2_2700:
 
 scRNA-seq Gene Expression 2,700 PBMC
@@ -98,18 +115,7 @@ Lung cancer is a complex disease that is known to be regulated at the post-trans
 - Identify co-regulated clusters of PTMs/genes in distinct lung cancer cell line subtypes
 - Perform enrichment analysis to understand the biological processes involved in PTM/expression clusters
 
-Single Cell CyTOF Dataset
-==========================
 
-.. figure:: _static/CyTOF_screenshot.png
-  :width: 450px
-  :align: left
-  :alt: CyTOF Screenshot
-  :target: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
-
-  Screenshot from the `Plasma_vs_PMA_Phosphrylation.ipynb`_ Jupyter notebook showing downsampled single cell CyTOF data (K-means downsampled from 220,000 single cells to 2,000 cell-clusters). Cell-clusters are shown as rows with cell-type categories (e.g. Natural Killer cells) and phosphorylations are shown as columns. See the interactive Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ for more information.
-
-Our collaborators in the `Giannarelli Lab`_ and the `Icahn School of Medicine Human Immune Monitoring Core`_ used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 10 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See the `Plasma_vs_PMA_Phosphrylation.ipynb`_ Jupyter notebook for more information.
 
 Large Network: Kinase Substrate Similarity Network
 ==================================================
