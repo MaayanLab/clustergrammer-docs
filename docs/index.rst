@@ -4,9 +4,6 @@ Welcome to Clustergrammer's Documentation!
 ------------------------------------------
 The Clustergrammer project consists of web-based tools for visualizing and analyzing high-dimensional data as interactive and shareable hierarchically clustered heatmaps (see :ref:`intro_heatmap_clustergram`). Clustergrammer produces highly interactive visualizations that enable intuitive exploration of high-dimensional data and has several optional biology-specific features (e.g. enrichment analysis; see :ref:`biology_specific_features`) to facilitate the exploration of gene-level biological data. The project is free, open-source (all code is available on GitHub), and being actively developed at the `Human Immune Monitoring Center`_ and the `Ma'ayan Lab`_ at the `Icahn School of Medicine at Mount Sinai`_.
 
-What's New
-===============
-
 
 Clustergrammer2
 ===============

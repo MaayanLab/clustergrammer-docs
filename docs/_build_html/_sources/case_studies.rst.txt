@@ -15,11 +15,11 @@ Single-cell Gene Expression and Proteomics from Human Atherosclerotic Plaques
   :alt: CyTOF Screenshot
   :target: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
 
-  Immune Profiling of Atherosclerotic Plaques Identifies Innate and Adaptive Dysregulations Associated with Ischemic Cerebrovascular Events (Fernandez et al.). The interactive visualizations are made using the single cell data analysis and visualization toolkit Clustergrammer2 and work best using the Chrome browser.
+  Immune Profiling of Atherosclerotic Plaques Identifies Innate and Adaptive Dysregulations Associated with Ischemic Cerebrovascular Events (`Fernandez et al.`_).
 
 
 
-Our collaborators in the `Giannarelli Lab`_ and the `Icahn School of Medicine Human Immune Monitoring Core`_ used Mass Cytometry, CyTOF (Fluidigm), to investigate the phosphorylation response of peripheral blood mononuclear cells (PBMC) immune cells exposed to PMA (phorbol 12-myristate 13-acetate), a tumor promoter and activator of protein kinase C (PKC). A total of 28 markers (18 surface markers and 10 phosphorylation markers) were measured in over 200,000 single cells. In the Jupyter notebook `Plasma_vs_PMA_Phosphrylation.ipynb`_ we semi-automatically identify cell types using surface markers and cluster cells based on phosphorylation to identify cell-type specific behavior at the phosphorylation level. See the `Plasma_vs_PMA_Phosphrylation.ipynb`_ Jupyter notebook for more information.
+Our collaborators in the `Giannarelli Lab`_ used single-cell proteomics and transcriptomics to investigate the immune landscape of atheroscelerotic plaques (`Fernandez et al.`_) and identify features of T cells and macrophages that were associated with clinical symptomatic disease state. We used Clustergrammer2 to analyze scRNA-seq and CITE-seq data as well as infer cell-cell communication pathways. Interactive notebooks can be found in the Giannarelli lab GitHub repo: `Single-Cell-Immune-Profiling-of-Atherosclerotic-Plaques`_.
 
 .. _clustergrammer2_2700:
 
@@ -151,8 +151,11 @@ These examples demonstrate the generality of heatmap visualizations and enable u
 .. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
 .. _`MNIST Data`: http://yann.lecun.com/exdb/mnist/
 .. _`Giannarelli Lab`: http://labs.icahn.mssm.edu/giannarellilab/
+
+.. _`Fernandez et al.`: https://www.nature.com/articles/s41591-019-0590-4
+.. _`Single-Cell-Immune-Profiling-of-Atherosclerotic-Plaques`: https://github.com/giannarelli-lab/Single-Cell-Immune-Profiling-of-Atherosclerotic-Plaques
+
 .. _`Icahn School of Medicine Human Immune Monitoring Core`: http://icahn.mssm.edu/research/portal/resources/deans-cores/human-immune-monitoring-core
-.. _`Plasma_vs_PMA_Phosphrylation.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb
 .. _`CST_Data_Viz.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb
 .. _`Cell Signaling Technology Inc`: https://www.cellsignal.com/
 .. _`CCLE Explorer`: http://amp.pharm.mssm.edu/clustergrammer/CCLE/
