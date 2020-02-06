@@ -4,6 +4,20 @@ Case Studies and Tutorials
 --------------------------
 Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several case studies and examples using Clustergrammer to explore high-dimensional data. All examples are below are publically available through GitHub.
 
+Visium Spatial Transcriptomics Data from 10X Genomics
+====================================================================
+|visium-clustergrammer2|
+
+.. raw:: html
+
+         <div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/eGDZA-xm_oc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+
+We used :ref:`clustergrammer2`, the plotting library `bqplot`_, the Jupyter dashboard library `voila`_, and the Jupyter notebook hosting service `Binder`_ to build an interactive data explroation dashboard for `Visium`_ data from the mouse brain from `10X Genomics`_ (try dashboard: `Visium-Clustergrammer2 Dashboard`_, code: `https://github.com/ismms-himc/visium-clustergrammer2`_). This dashboard generates linked views of spatial tissue data and high-dimensional gene expression data - see GitHub repo `https://github.com/ismms-himc/visium-clustergrammer2`_ for more information.
+
+
 .. _athero_plaques:
 
 Single-cell Gene Expression and Proteomics from Human Atherosclerotic Plaques
@@ -20,6 +34,7 @@ Single-cell Gene Expression and Proteomics from Human Atherosclerotic Plaques
 
 
 Our collaborators in the `Giannarelli Lab`_ used single-cell proteomics and transcriptomics to investigate the immune landscape of atheroscelerotic plaques (`Fernandez et al.`_) and identify features of T cells and macrophages that were associated with clinical symptomatic disease state. We used Clustergrammer2 to analyze scRNA-seq and CITE-seq data as well as infer cell-cell communication pathways. Interactive notebooks can be found in the Giannarelli lab GitHub repo: `Single-Cell-Immune-Profiling-of-Atherosclerotic-Plaques`_.
+
 
 .. _clustergrammer2_2700:
 
@@ -150,10 +165,16 @@ These examples demonstrate the generality of heatmap visualizations and enable u
 
 .. _`Kinase Substrate Similarity Network`: https://maayanlab.github.io/kinase_substrate_similarity_network/
 .. _`MNIST Data`: http://yann.lecun.com/exdb/mnist/
-.. _`Giannarelli Lab`: http://labs.icahn.mssm.edu/giannarellilab/
 
+.. _`Giannarelli Lab`: http://labs.icahn.mssm.edu/giannarellilab/
 .. _`Fernandez et al.`: https://www.nature.com/articles/s41591-019-0590-4
 .. _`Single-Cell-Immune-Profiling-of-Atherosclerotic-Plaques`: https://github.com/giannarelli-lab/Single-Cell-Immune-Profiling-of-Atherosclerotic-Plaques
+
+.. _`bqplot`: https://github.com/bloomberg/bqplot
+.. _`Binder`: https://mybinder.org/
+.. _`https://github.com/ismms-himc/visium-clustergrammer2`: https://github.com/ismms-himc/visium-clustergrammer2
+.. _`Visium`: https://www.10xgenomics.com/spatial-transcriptomics/
+.. _`Visium-Clustergrammer2 Dashboard`: http://bit.ly/visium-clustergrammer2
 
 .. _`Icahn School of Medicine Human Immune Monitoring Core`: http://icahn.mssm.edu/research/portal/resources/deans-cores/human-immune-monitoring-core
 .. _`CST_Data_Viz.ipynb`: http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb
@@ -231,3 +252,10 @@ These examples demonstrate the generality of heatmap visualizations and enable u
     :alt: MyBinder-CODEX
     :scale: 100%
     :target: https://mybinder.org/v2/gh/ismms-himc/codex_dashboard/master?urlpath=voila%2Frender%2Findex.ipynb
+
+
+
+.. |visium-clustergrammer2| image:: https://mybinder.org/badge_logo.svg?style=flat
+    :alt: visium-clustergrammer2
+    :scale: 100%
+    :target: http://bit.ly/visium-clustergrammer2

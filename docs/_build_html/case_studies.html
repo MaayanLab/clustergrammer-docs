@@ -88,6 +88,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Case Studies and Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#visium-spatial-transcriptomics-data-from-10x-genomics">Visium Spatial Transcriptomics Data from 10X Genomics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#single-cell-gene-expression-and-proteomics-from-human-atherosclerotic-plaques">Single-cell Gene Expression and Proteomics from Human Atherosclerotic Plaques</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#scrna-seq-gene-expression-2-700-pbmc">scRNA-seq Gene Expression 2,700 PBMC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cite-seq-7-800-pbmc">CITE-seq 7,800 PBMC</a></li>
@@ -179,9 +180,17 @@
   <div class="section" id="case-studies-and-tutorials">
 <span id="case-studies"></span><h1>Case Studies and Tutorials<a class="headerlink" href="#case-studies-and-tutorials" title="Permalink to this headline">¶</a></h1>
 <p>Clustergrammer was developed to visualize high-dimensional biological data (e.g. genome-wide expression data), but it can also generally be applied to any high-dimensional data. Below are links to several case studies and examples using Clustergrammer to explore high-dimensional data. All examples are below are publically available through GitHub.</p>
+<div class="section" id="visium-spatial-transcriptomics-data-from-10x-genomics">
+<h2>Visium Spatial Transcriptomics Data from 10X Genomics<a class="headerlink" href="#visium-spatial-transcriptomics-data-from-10x-genomics" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://bit.ly/visium-clustergrammer2"><img alt="visium-clustergrammer2" src="https://mybinder.org/badge_logo.svg?style=flat" /></a></p>
+<div style="position: relative; padding-bottom: 10px; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eGDZA-xm_oc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><p>We used <a class="reference internal" href="clustergrammer2.html#clustergrammer2"><span class="std std-ref">Clustergrammer2</span></a>, the plotting library <a class="reference external" href="https://github.com/bloomberg/bqplot">bqplot</a>, the Jupyter dashboard library <a class="reference external" href="https://github.com/QuantStack/voila">voila</a>, and the Jupyter notebook hosting service <a class="reference external" href="https://mybinder.org/">Binder</a> to build an interactive data explroation dashboard for <a class="reference external" href="https://www.10xgenomics.com/spatial-transcriptomics/">Visium</a> data from the mouse brain from <a class="reference external" href="https://www.10xgenomics.com/resources/datasets/">10X Genomics</a> (try dashboard: <a class="reference external" href="http://bit.ly/visium-clustergrammer2">Visium-Clustergrammer2 Dashboard</a>, code: <a class="reference external" href="https://github.com/ismms-himc/visium-clustergrammer2">https://github.com/ismms-himc/visium-clustergrammer2</a>). This dashboard generates linked views of spatial tissue data and high-dimensional gene expression data - see GitHub repo <a class="reference external" href="https://github.com/ismms-himc/visium-clustergrammer2">https://github.com/ismms-himc/visium-clustergrammer2</a> for more information.</p>
+</div>
 <div class="section" id="single-cell-gene-expression-and-proteomics-from-human-atherosclerotic-plaques">
 <span id="athero-plaques"></span><h2>Single-cell Gene Expression and Proteomics from Human Atherosclerotic Plaques<a class="headerlink" href="#single-cell-gene-expression-and-proteomics-from-human-atherosclerotic-plaques" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-left" id="id1">
+<div class="figure align-left" id="id2">
 <a class="reference external image-reference" href="http://nbviewer.jupyter.org/github/MaayanLab/Cytof_Plasma_PMA/blob/master/notebooks/Plasma_vs_PMA_Phosphorylation.ipynb"><img alt="CyTOF Screenshot" src="_images/chiara_citeseq_adt.gif" style="width: 450px;" /></a>
 <p class="caption"><span class="caption-text">Immune Profiling of Atherosclerotic Plaques Identifies Innate and Adaptive Dysregulations Associated with Ischemic Cerebrovascular Events (<a class="reference external" href="https://www.nature.com/articles/s41591-019-0590-4">Fernandez et al.</a>).</span></p>
 </div>
@@ -229,7 +238,7 @@
 </div>
 <div class="section" id="lung-cancer-post-translational-modification-and-gene-expression-regulation">
 <h2>Lung Cancer Post-Translational Modification and Gene Expression Regulation<a class="headerlink" href="#lung-cancer-post-translational-modification-and-gene-expression-regulation" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-left" id="id2">
+<div class="figure align-left" id="id3">
 <a class="reference external image-reference" href="http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb"><img alt="CST Screenshot" src="_images/CST_screenshot.png" style="width: 450px;" /></a>
 <p class="caption"><span class="caption-text">Screenshot from the <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb">CST_Data_Viz.ipynb</a> Jupyter notebook showing hierarchical clustering of differential phosphorylation, methylation, acetylation, and gene expression data across 37 lung cancer cell lines. See the interactive Jupyter notebook <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/CST_Lung_Cancer_Viz/blob/master/notebooks/CST_Data_Viz.ipynb">CST_Data_Viz.ipynb</a> for more information.</span></p>
 </div>
@@ -242,7 +251,7 @@
 </div>
 <div class="section" id="large-network-kinase-substrate-similarity-network">
 <h2>Large Network: Kinase Substrate Similarity Network<a class="headerlink" href="#large-network-kinase-substrate-similarity-network" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-left" id="id3">
+<div class="figure align-left" id="id4">
 <a class="reference external image-reference" href="https://maayanlab.github.io/kinase_substrate_similarity_network/"><img alt="Kinase Network Screenshot" src="_images/kinase_network_screenshot.png" style="width: 450px;" /></a>
 <p class="caption"><span class="caption-text">Screenshot from the <a class="reference external" href="https://maayanlab.github.io/kinase_substrate_similarity_network/">Kinase Substrate Similarity Network</a> example that demonstrates how Clustergrammer can be used to visualize a large network of kinases based on shared substrates.</span></p>
 </div>
@@ -250,7 +259,7 @@
 </div>
 <div class="section" id="machine-learning-and-miscellaneous-datasets">
 <h2>Machine Learning and Miscellaneous Datasets<a class="headerlink" href="#machine-learning-and-miscellaneous-datasets" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-left" id="id4">
+<div class="figure align-left" id="id5">
 <a class="reference external image-reference" href="http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb#Visualize-Downsampled-Version-of-MNIST"><img alt="MNIST Screenshot" src="_images/MNIST_screenshot.png" style="width: 450px;" /></a>
 <p class="caption"><span class="caption-text">Screenshot from the <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb">MNIST Notebook</a> that demonstrates how the <a class="reference internal" href="clustergrammer_widget.html#clustergrammer-widget"><span class="std std-ref">Clustergrammer-Widget</span></a> can be used to visualize the <a class="reference external" href="http://yann.lecun.com/exdb/mnist/">MNIST Data</a>. Downsampled handwritten digits (K-means downsampled from 70,0000 handwritten digits to 300 digit-clusters) are shown as columns with digit-type categories and pixels are shown as rows. For more information see the <a class="reference external" href="http://nbviewer.jupyter.org/github/MaayanLab/MNIST_heatmaps/blob/master/notebooks/MNIST_Notebook.ipynb">MNIST Notebook</a>.</span></p>
 </div>
