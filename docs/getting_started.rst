@@ -141,7 +141,6 @@ Clustergrammer has been applied to visualize and analyze a wide variety of biolo
 
 
 
-.. _`10X Genomics`: https://www.10xgenomics.com/resources/datasets/
 .. _`CIBERSORT`: https://cibersort.stanford.edu/
 .. _`clustergrammer2-notebooks`: https://github.com/ismms-himc/clustergrammer2-notebooks
 
