@@ -95,17 +95,17 @@ Contents:
    getting_started
    case_studies
    clustergrammer2
+   clustergrammer_gl
    clustergrammer_web
    interacting_with_viz
    biology_specific_features
    matrix_format_io
    building_webpage
-   clustergrammer_widget
-   clustergrammer_js
-   clustergrammer_gl
-   clustergrammer_py
    app_integration
    developing_with_clustergrammer
+   clustergrammer_widget
+   clustergrammer_js
+   clustergrammer_py
    license
 
 .. _`Clustergrammer2`: https://github.com/ismms-himc/clustergrammer2
