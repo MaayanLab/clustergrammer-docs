@@ -15,13 +15,13 @@ Visium Spatial Transcriptomics Data from 10X Genomics
          <iframe width="560" height="315" src="https://www.youtube.com/embed/eGDZA-xm_oc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
-We used :ref:`clustergrammer2`, the plotting library `bqplot`_, the Jupyter dashboard library `voila`_, and the Jupyter notebook hosting service `Binder`_ to build an interactive data explroation dashboard for `Visium`_ data from the mouse brain from `10X Genomics`_ (try dashboard: `Visium-Clustergrammer2 Dashboard`_, code: `https://github.com/ismms-himc/visium-clustergrammer2`_). This dashboard generates linked views of spatial tissue data and high-dimensional gene expression data - see GitHub repo `https://github.com/ismms-himc/visium-clustergrammer2`_ for more information.
+We used :ref:`clustergrammer2`, the plotting library `bqplot`_, the Jupyter dashboard library `voila`_, and the Jupyter notebook hosting service `Binder`_ to build an interactive data exploration dashboard for `Visium`_ data from the mouse brain from `10X Genomics`_ (try dashboard: `Visium-Clustergrammer2 Dashboard`_, code: `https://github.com/ismms-himc/visium-clustergrammer2`_). This dashboard generates linked views of spatial tissue data and high-dimensional gene expression data - see GitHub repo `https://github.com/ismms-himc/visium-clustergrammer2`_ for more information.
 
 
 .. _athero_plaques:
 
 Single-cell Gene Expression and Proteomics from Human Atherosclerotic Plaques
-==========================
+==============================================================================
 
 .. figure:: _static/chiara_citeseq_adt.gif
   :width: 450px
