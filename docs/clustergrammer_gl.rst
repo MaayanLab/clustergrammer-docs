@@ -18,5 +18,5 @@ Check back soon for more updates.
 
 .. _`GitHub`: https://github.com/ismms-himc/clustergrammer-gl
 .. _`regl`: http://regl.party/
-.._`Observable`: https://observablehq.com/
-.._`https://observablehq.com/@cornhundred/clustergrammer-test`
+.. _`Observable`: https://observablehq.com/
+.. _`https://observablehq.com/@cornhundred/clustergrammer-test`
