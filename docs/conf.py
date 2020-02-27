@@ -66,7 +66,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Clustergrammer'
-copyright = u'2017, Nicolas F. Fernandez'
+copyright = u'2020, Nicolas F. Fernandez'
 author = u'Nicolas F. Fernandez'
 
 # The version info for the project you're documenting, acts as replacement for
