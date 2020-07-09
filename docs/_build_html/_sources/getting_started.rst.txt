@@ -19,7 +19,7 @@ Scipy 2020
          <iframe width="560" height="315" src="https://www.youtube.com/embed/BFCj5SIuuRE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
          </div>
 
-We recently presented Clustergrammer :ref:`clustergrammer2` at SciPy 2020 Virtual Conference and showed off new examples (Citi Bike, 10X Genomics Visium) and features (e.g. manual annotation of categories).
+We recently presented :ref:`clustergrammer2` at SciPy 2020 Virtual Conference and showed off new examples (Citi Bike, 10X Genomics Visium) and features (e.g. manual annotation of categories).
 
 Visium Spatial Transcriptomics Data from 10X Genomics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
