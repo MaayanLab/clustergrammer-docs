@@ -61,3 +61,39 @@ Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions, use the 
     :alt: NBViewer-scRNA-seq
     :scale: 100%
     :target: https://nbviewer.jupyter.org/github/ismms-himc/clustergrammer2-notebooks/blob/master/notebooks/3.0_2700_PBMC_scRNA-seq.ipynb
+
+Clustergrammer2 Workflow Example
+================================
+
+The net object is automaticllay created when you import Clustergrammer2. It is used to load data, filter, normalize, cluster, and render the widget.
+
+
+**Load Data from File**
+
+::
+
+  # make imports and instantiate a Network instance with the widget class as an argument
+  from clustergrammer2 import *
+
+  # load matrix file
+  net.load_file('path/to/file.txt')
+
+  # cluster using default parameters
+  net.cluster()
+
+  # make interactive widget
+  net.widget()
+
+**General Purpose DataFrame Viewer**
+
+Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the ``net`` object:
+::
+
+  # load DataFrame
+  net.load_df(df)
+
+  # cluster using default parameters
+  net.cluster()
+
+  # make interactive widget
+  net.widget()
