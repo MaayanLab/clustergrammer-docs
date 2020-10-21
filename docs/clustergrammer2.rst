@@ -72,7 +72,6 @@ The net object is automaticllay created when you import Clustergrammer2. It is u
 
 ::
 
-  # make imports and instantiate a Network instance with the widget class as an argument
   from clustergrammer2 import *
 
   # load matrix file
@@ -86,9 +85,11 @@ The net object is automaticllay created when you import Clustergrammer2. It is u
 
 **General Purpose DataFrame Viewer**
 
-Clustergrammer-Widget can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the ``net`` object:
+Clustergrammer2 can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the ``net`` object:
 ::
 
+  from clustergrammer2 import *
+     
   # load DataFrame
   net.load_df(df)
 
