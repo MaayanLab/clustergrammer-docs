@@ -30,12 +30,13 @@ Clustergrammer2's source code can be found in the `Clustergrammer2 GitHub repo`_
 Contact
 =======
 
-Please :ref:`contact` Nicolas Fernandez and Avi Ma'ayan with questions, use the GitHub `issues`_ feature to report an issue, or use the `gitter`_ discussion board to discuss the project.
+Please `contact`_ Nicolas Fernandez and Avi Ma'ayan with questions, use the GitHub `issues`_ feature to report an issue, or use the `gitter`_ discussion board to discuss the project.
 
 
 
 
 
+.. _`contact`: https://clustergrammer.readthedocs.io/index.html#contact
 .. _`Clustergrammer2 GitHub repo`: https://github.com/ismms-himc/clustergrammer2
 .. _`cookie cutter`: https://github.com/jupyter-widgets/widget-ts-cookiecutter
 .. _`regl`: http://regl.party/
@@ -85,7 +86,7 @@ The net object is automaticllay created when you import Clustergrammer2. It is u
 
 **General Purpose DataFrame Viewer**
 
-Clustergrammer2 can also be used as a general purpose `Pandas`_ DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the ``net`` object:
+Clustergrammer2 can also be used as a general purpose Pandas DataFrame viewer. Below is an example of how to visualize a Pandas DataFrame, ``df``, by loading it into the ``net`` object:
 ::
 
   from clustergrammer2 import *
